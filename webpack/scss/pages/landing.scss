@@ -1,0 +1,123 @@
+.landing {
+  .container {
+    width: 100%;
+    max-width: 2100px;
+    margin: 0 auto;
+  }
+
+  .backgrounds {
+    width: 100%;
+    max-width: 2100px;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include from(large) {
+      min-height: 100vh;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+  }
+
+  .background-1 {
+    width: 100%;
+
+    &__image {
+      width: 70%;
+
+      @include from(large) {
+        width: 100%;
+      }
+    }
+  }
+
+  .background-2 {
+    width: 100%;
+    height: 326px;
+    display: flex;
+    justify-content: flex-end;
+
+    @include from(large) {
+      align-items: flex-end;
+      align-self: flex-end;
+    }
+
+    &__image {
+      height: 100%;
+
+      @include from(large) {
+        height: auto;
+        width: 30%;
+      }
+    }
+  }
+
+  .content {
+    width: 80%;
+    max-width: 2100px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include from(large) {
+      width: 65%;
+      align-items: flex-start;
+    }
+  }
+
+  .text {
+    padding: 25px 45px 100px;
+
+    @include from(large) {
+      padding: 0;
+      width: 70%;
+      margin-left: 40%;
+      margin-top: -40px;
+    }
+  }
+
+  .logo {
+    width: 100%;
+    margin-top: 80px;
+
+    @include from(large) {
+      width: 80%;
+      margin-top: 80px;
+      max-height: 600px;
+    }
+  }
+
+  .header-2 {
+    margin-top: 10px;
+  }
+
+  .paragraph {
+    margin-top: 70px;
+
+    @include from(large) {
+      margin-top: 30px;
+    }
+  }
+
+  .cp-button {
+    width: 590px;
+
+    @include from(large) {
+      width: 285px;
+      margin-left: 40%;
+      margin-top: 30px;
+    }
+  }
+}

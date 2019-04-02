@@ -1,2 +1,5 @@
 [project]
 name = scipyala2019_webpage2
+
+[packages]
+lektor-webpack-support = 0.5
