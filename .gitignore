@@ -1,6 +1,8 @@
 .DS_Store
 
 gen/
+build/
+docs/
 
 # Created by https://www.gitignore.io/api/node
 # Edit at https://www.gitignore.io/?templates=node
