@@ -1,9 +1,21 @@
 .container {
   width: 100%;
   max-width: 2100px;
-  min-height: 100vh;
   margin: 0 auto;
   position: relative;
+}
+
+.content {
+  padding-top: 60px;
+}
+
+.content-footer {
+  min-height: calc(100vh - #{$nav-height} - #{$footer-height});
+}
+
+.footer {
+  height: $footer-height;
+  background-color: $blue;
 }
 
 .landing__background-1 {
@@ -27,5 +39,58 @@
 
   @include from(large) {
     width: 20%;
+  }
+}
+
+.general__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  z-index: 2;
+}
+
+.content_background__top {
+  position: absolute;
+  top: $nav-height;
+  right: 0;
+  width: 150px;
+  transform: rotate(270deg);
+  z-index: 2;
+}
+
+.content_background__bottom {
+  position: absolute;
+  bottom: $footer-height;
+  left: 0;
+  width: 150px;
+  transform: rotate(90deg);
+  z-index: 2;
+}
+
+.general__menu-logo {
+  position: absolute;
+  top: 0;
+  left: 45px;
+  width: 125px;
+  z-index: 2;
+}
+
+.general__menu {
+  height: $nav-height;
+  background-color: $white;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+
+  &-list {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &-item {
+    padding: 20px;
   }
 }

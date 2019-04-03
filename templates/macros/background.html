@@ -1,5 +1,5 @@
-{% macro render_background(background='landing') %} {% if background ==
-'landing' %}
+{% macro render_background(background='landing', content_background='false') %}
+{% if background == 'landing' %}
 <img
   class="landing__background-1"
   src="{{ '/static/images/scipy-bg1.svg' | asseturl }}"
@@ -13,6 +13,35 @@
 {% elif background == 'general' %}
 <img
   class="general__background"
+  src="{{ '/static/images/scipy-bg1.svg' | asseturl }}"
+  alt="Background 1"
+/>
+<img
+  class="general__menu-logo"
+  src="{{ '/static/images/logo-menu.svg' | asseturl }}"
+  alt="Logo"
+/>
+<nav class="general__menu">
+  <ul class="general__menu-list">
+    <li class="general__menu-item">
+      <a class="general__menu-link" href="">Speakers</a>
+    </li>
+    <li class="general__menu-item">
+      <a class="general__menu-link" href="">Speakers</a>
+    </li>
+    <li class="general__menu-item">
+      <a class="general__menu-link" href="">Speakers</a>
+    </li>
+  </ul>
+</nav>
+{% endif %} {% if content_background == 'true' %}
+<img
+  class="content_background__top"
+  src="{{ '/static/images/scipy-bg2.svg' | asseturl }}"
+  alt="Background 2"
+/>
+<img
+  class="content_background__bottom"
   src="{{ '/static/images/scipy-bg2.svg' | asseturl }}"
   alt="Background 2"
 />

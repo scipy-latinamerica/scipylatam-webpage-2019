@@ -1,0 +1,10 @@
+_template: code-conduct.html
+---
+_model: Code
+---
+title: Welcome to scipyala2019_webpage2!
+---
+body:
+
+This is a basic demo website that shows how to use Lektor for a basic
+website with some pages.
