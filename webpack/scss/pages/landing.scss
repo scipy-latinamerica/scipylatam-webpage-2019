@@ -1,0 +1,62 @@
+.landing {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include from(large) {
+    width: 65%;
+    align-items: flex-start;
+  }
+
+  .text {
+    width: 90%;
+    padding: 25px 45px 100px;
+
+    @include from(large) {
+      padding: 0;
+      width: 70%;
+      margin-left: 35%;
+      margin-top: -50px;
+    }
+  }
+
+  .logo-wrapper {
+    width: 90%;
+    margin-top: 170px;
+
+    @include from(large) {
+      width: 70%;
+      margin-top: 120px;
+    }
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  .header-2 {
+    margin-top: 10px;
+  }
+
+  .paragraph {
+    margin-top: 70px;
+
+    @include from(large) {
+      margin-top: 30px;
+    }
+  }
+
+  .cp-button {
+    margin-bottom: 300px;
+    width: 610px;
+
+    @include from(large) {
+      margin-left: 35%;
+      margin-top: 30px;
+      margin-bottom: 150px;
+      width: 330px;
+    }
+  }
+}

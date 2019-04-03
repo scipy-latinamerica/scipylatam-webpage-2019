@@ -1,0 +1,19 @@
+{% macro render_background(background='landing') %} {% if background ==
+'landing' %}
+<img
+  class="landing__background-1"
+  src="{{ '/static/images/scipy-bg1.svg' | asseturl }}"
+  alt="Background 1"
+/>
+<img
+  class="landing__background-2"
+  src="{{ '/static/images/scipy-bg2.svg' | asseturl }}"
+  alt="Background 2"
+/>
+{% elif background == 'general' %}
+<img
+  class="general__background"
+  src="{{ '/static/images/scipy-bg2.svg' | asseturl }}"
+  alt="Background 2"
+/>
+{% endif %} {% endmacro %}

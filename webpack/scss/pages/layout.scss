@@ -1,0 +1,31 @@
+.container {
+  width: 100%;
+  max-width: 2100px;
+  min-height: 100vh;
+  margin: 0 auto;
+  position: relative;
+}
+
+.landing__background-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  z-index: -1;
+
+  @include from(large) {
+    width: 50%;
+  }
+}
+
+.landing__background-2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30%;
+  z-index: -1;
+
+  @include from(large) {
+    width: 20%;
+  }
+}

@@ -1,0 +1,30 @@
+{% extends "layout.html" %} {% from "macros/background.html" import
+render_background %} {% block title %}{{ this.title }}{% endblock %} {% block
+body %}
+{{ render_background(background='landing') }}
+<main class="landing content">
+  <div class="logo-wrapper">
+    <img
+      class="logo"
+      src="{{ '/static/images/logo.svg' | asseturl }}"
+      alt="logo"
+    />
+  </div>
+
+  <div class="text">
+    <h1 class="header-1">October 8th to 10th, 2019</h1>
+    <h2 class="header-2">Bogotá, Colombia</h2>
+    <p class="paragraph">
+      Share experiences around the use of scientific Python both academically
+      and profesionally.
+    </p>
+  </div>
+  <a
+    class="button-red cp-button"
+    href="https://docs.google.com/forms/d/e/1FAIpQLSd9HVivE4bJKMqfi1jAD8SPBn-ra8kECMNpngBo1mziXtV-Nw/viewform"
+    aria-label="Application Form Link"
+  >
+    CALL FOR PROPOSALS
+  </a>
+</main>
+{% endblock %}
