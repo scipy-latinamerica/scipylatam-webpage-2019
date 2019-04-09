@@ -21,6 +21,6 @@ deploy:
        branch: develop
 
   - provider: script
-    script: "lektor deploy develop && python scripts/deploy.py"
+    script: "lektor deploy production && python scripts/deploy.py"
     on:
        branch: production
