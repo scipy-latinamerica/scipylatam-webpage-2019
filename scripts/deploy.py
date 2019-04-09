@@ -28,11 +28,11 @@ def deploy(branch):
 
     con.run(
         'cd web;'
-        # 'ls;'
-        'git fetch origin;'
-        'git checkout {branch};'
-        'git pull origin {branch};'
-        ''.format(branch=branch)
+        'ls;'
+        # 'git fetch origin;'
+        # 'git checkout {branch};'
+        # 'git pull origin {branch};'
+        # ''.format(branch=branch)
     )
 
 
