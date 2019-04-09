@@ -3,3 +3,21 @@ name = scipyala2019_webpage2
 
 [packages]
 lektor-webpack-support = 0.5
+
+[alternatives.es]
+name = Español
+primary = yes
+locale = es
+
+[alternatives.en]
+name = English
+url_prefix = /en/
+locale = en
+
+[servers.develop]
+name = Develop
+target = ghpages+https://scipy-latinamerica/scipylatam-webpage-2019-develop
+
+[servers.production]
+name = Production
+target = ghpages+https://scipy-latinamerica/scipylatam-webpage-2019
