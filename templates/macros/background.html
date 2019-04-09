@@ -21,19 +21,6 @@
   src="{{ '/static/images/logo-menu.svg' | asseturl }}"
   alt="Logo"
 />
-<nav class="general__menu">
-  <ul class="general__menu-list">
-    <li class="general__menu-item">
-      <a class="general__menu-link" href="">Speakers</a>
-    </li>
-    <li class="general__menu-item">
-      <a class="general__menu-link" href="">Speakers</a>
-    </li>
-    <li class="general__menu-item">
-      <a class="general__menu-link" href="">Speakers</a>
-    </li>
-  </ul>
-</nav>
 {% endif %} {% if content_background == 'true' %}
 <img
   class="content_background__top"
@@ -45,4 +32,15 @@
   src="{{ '/static/images/scipy-bg2.svg' | asseturl }}"
   alt="Background 2"
 />
-{% endif %} {% endmacro %}
+{% endif %}
+<nav class="general__menu">
+  <ul class="general__menu-list">
+    <li class="general__menu-item">
+      <a class="general__menu-link" href="/">HOME</a>
+    </li>
+    <li class="general__menu-item">
+      <a class="general__menu-link" href="/code-conduct">CODE OF CONDUCT</a>
+    </li>
+  </ul>
+</nav>
+{% endmacro %}
