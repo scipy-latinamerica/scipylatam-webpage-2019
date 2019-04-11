@@ -6,86 +6,47 @@ title: Código de conducta
 ---
 body:
 
-# CODE OF CONDUCT
+# CÓDIGO DE CONDUCTA
 
-Scipy Latam is a community conference intended for networking and
-collaboration in the developer community. We value the participation of
-each member of the Python community and want all attendees to have an
-enjoyable and fulfilling experience. Accordingly, all attendees are
-expected to show respect and courtesy to other attendees throughout the
-conference and at all conference events, whether officially sponsored by
-the Python Software Foundation or not. To make clear what is expected,
-all staff, attendees, speakers, exhibitors, organizers, and volunteers
-at any Scipy Latam event are required to conform to the following Code
-of Conduct. Organizers will enforce this code throughout the event.
+Scipy Latam es una conferencia comunitaria destinada a la creación de redes y la colaboración en la comunidad de desarrolladores. Valoramos la participación de cada miembro de la comunidad de Python y queremos que todos los asistentes tengan una experiencia agradable y satisfactoria. En consecuencia, se espera que todos los asistentes muestren respeto y cortesía a los demás asistentes a lo largo de la conferencia y en todos los eventos de la conferencia, ya sea oficialmente patrocinado por la Python Software Foundation o no. Para aclarar lo que se espera, todo el personal, los asistentes, los oradores, los expositores, los organizadores y los voluntarios en cualquier evento de Scipy Latam deben cumplir con el siguiente Código de conducta. Los organizadores harán cumplir este código durante todo el evento.
 
-## Our Standards
+## Nuestras Normas
 
-Scipy Latam is dedicated to providing a positive conference experience
-for everyone, regardless of age, gender identity and expression, sexual
-orientation, disability, physical appearance, body size, ethnicity,
-nationality, race, or religion (or lack thereof), education, or
-socio-economic status. Examples of behavior that contributes to creating
-a positive environment include:
+Scipy Latam se dedica a brindar una experiencia de conferencia positiva para todos, independientemente de su edad, identidad y expresión de género, orientación sexual, discapacidad, apariencia física, tamaño corporal, origen étnico, nacionalidad, raza o religión (o falta de ellos), educación o estatus socioeconómico. Ejemplos de comportamiento que contribuyen a crear un ambiente positivo incluyen:
 
-* Being kind to others
-* Behaving professionally
-* Using welcoming and inclusive language
-* Being respectful of differing viewpoints and experiences
-* Gracefully accepting constructive criticism
+<br>
+* Ser amable con los demás
+* Comportarse profesionalmente
+* Usar lenguaje acogedor e inclusivo.
+* Ser respetuoso de diferentes puntos de vista y experiencias.
+* Aceptar con agrado la crítica constructiva.
+<br> <br>
 
-Participants asked to stop any inappropriate behavior are expected to
-comply immediately. If a participant engages in behavior that violates
-this code of conduct, the conference organizers may take any action they
-deem appropriate, including warning the offender or expulsion from the
-conference with no refund. Thank you for helping make this a welcoming,
-friendly event for all.
+Los participantes a los que se les pide que detengan cualquier comportamiento inapropiado se espera que cumplan inmediatamente. Si un participante se involucra en un comportamiento que viola este código de conducta, los organizadores de la conferencia pueden tomar cualquier acción que consideren apropiada, incluyendo advertir al ofensor o la expulsión de la conferencia sin reembolso. Gracias por ayudarnos a hacer de este un evento acogedor y amigable para todos.
 
-## Weapons Policy
+## Política de armas
 
-No weapons are allowed at conference venues, including but not limited
-to explosives (including fireworks), guns, and large knives such as
-those used for hunting or display, as well as any other item used for
-the purpose of causing injury or harm to others. Anyone seen in
-possession of one of these items will be asked to leave immediately, and
-will only be allowed to return without the weapon. Attendees are further
-expected to comply with all state and local laws on this matter.
+No se permiten armas en los lugares de la conferencia, incluidos, entre otros, explosivos (incluidos los fuegos artificiales), pistolas y cuchillos grandes como los que se usan para cazar o exhibir, así como cualquier otro elemento utilizado con el propósito de causar lesiones o daños a otros. A cualquier persona que se encuentre en posesión de uno de estos artículos se le pedirá que se vaya de inmediato, y solo se le permitirá regresar sin el arma. Además, se espera que los asistentes cumplan con todas las leyes nacionales y locales sobre este asunto.
 
-## Scope
+## Alcance
 
-All Scipy Latam attendees are subject to the Code of Conduct. This
-includes Scipy Latam staff and volunteers, as well as attendees of the
-tutorials, workshops, summits, poster sessions, receptions, conference,
-sprints, and sponsored or unofficial events. Exhibitors in the expo
-hall, sponsor or vendor booths, or similar activities are also subject
-to the Code of Conduct. In particular, exhibitors should not use
-sexualized images, activities, or other material. Booth staff (including
-volunteers) should not use sexualized clothing/uniforms/costumes, or
-otherwise create a sexualized environment.
+Todos los asistentes a Scipy Latam están sujetos al Código de conducta. Esto incluye al personal y voluntarios de Scipy Latam, así como a los asistentes de los tutoriales, talleres, sesiones de pósteres, recepciones, conferencias, sprints y eventos patrocinados o no oficiales. Los expositores en las salas de exposiciones, patrocinadores o puestos de vendedores o actividades similares también están sujetos al Código de conducta. En particular, los expositores no deben usar imágenes, actividades u otro material sexualizado. El personal de la cabina (incluidos los voluntarios) no debe usar ropa / uniformes / disfraces sexualizados, o crear un ambiente sexualizado.
 
-## Contact Information
+## Información del contacto
 
-If you believe that someone is violating the code of conduct during a
-Scipy Latam event, or have any other concerns, please contact a member
-of the event staff immediately. Scipy Latam Incident Report Address
-pycon-us-report@python.org
+Si cree que alguien está violando el código de conducta durante un evento de Scipy Latam, o si tiene alguna otra inquietud, comuníquese con un miembro del personal del evento de inmediato. La Dirección de Informe de Incidentes de Scipy Latam es: [contact@scipyla.org] (mailto: contact@scipyla.org)
 
+En caso de conflicto de intereses, puede contactar individualmente a:
+<br>
+ * Camilo Gómez - Universidad de los Andes - [gomez.ch@uniandes.edu.co] (gomez.ch@uniandes.edu.co)
+ * Johana Sanchez - Python Colombia - [ellaqumica@gmail.com] (ellaquimica@gmail.com)
+ * Gonzalo Peña Castellanos - Python Colombia - [goanpeca@gmail.com] (goanpeca@gmail.com)
+<br>
 
-In case of a conflict of interest, you can individually contact:
+El personal de la conferencia estará encantado de ayudar a los participantes a ponerse en contacto con la seguridad del hotel / lugar de reunión o al personal de la ley local, proporcionar acompañantes o ayudar a cualquier asistente a sentirse seguro durante la conferencia. Valoramos su asistencia.
 
-Ewa Jodlowska Python Software Foundation - Director of Operations
-ewa@python.org Ernest W. Durbin III PyCon US - Conference Chair
-ernest@python.org
+## licencia
 
-Conference staff will be happy to help participants contact hotel/venue
-security or local law enforcement, provide escorts, or otherwise assist
-any attendee to feel safe for the duration of the conference. We value
-your attendance.
-
-## License
-
-This Code of Conduct was forked from the example policy from the PyCon
-2018 Cleveland , which is under a Creative Commons Zero license.
-
+Este Código de conducta se deriva de la política de ejemplo de la PyCon 2018 Cleveland, que está bajo una licencia Creative Commons Zero.
 ---
 _slug: codigo-de-conducta
