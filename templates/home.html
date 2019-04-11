@@ -27,12 +27,10 @@
         {{ this.body }}
       </p>
     </div>
-    <!-- <a
-      class="button-red cp-button"
-      href="{{ this.call_for_proposals }}"
-      aria-label="Application Form Link"
-    >
+    {%- if 'call_for_proposals' in this.sections -%}
+    <a class="button-red cp-button" href="{{ this.call_for_proposals }}" aria-label="Application Form Link">
       {{ t_call_for_proposals|upper }}
-    </a> -->
+    </a>
+    {%- endif -%}
   </main>
 {% endblock %}
