@@ -1,13 +1,14 @@
 {%- from "macros/translation.html" import transbag -%}
 
 {%- set event = site.get('/', alt=this.alt) -%}
-{%- set op_image = '/static/images/opimage.jpg'|asseturl -%}
+{%- set l_opimage = ('/static/images/opimage_' +  this.alt|string + '.jpg')|asseturl -%}
 
 {%- set t_home =  transbag('menu', this.alt, 'home') -%}
 {%- set t_code_of_conduct = transbag('menu', this.alt, 'code_of_conduct') -%}
 
 {%- set t_footer_message = transbag('translate', this.alt, 'footer_message') -%} 
 {%- set t_open_chat =  transbag('translate', this.alt, 'open_chat') -%}
+
 
 <!doctype html>
 <head>
@@ -19,9 +20,9 @@
 <meta name="google-site-verification" content="tS192x5OfHOZKosOfhq39D1Wlk6EwH_gaSw8ZUVe_bs" />
 
 <meta property="og:site_name" content="{{ event.title }}" />
-<meta property="og:title" content="{{ event.title }} | {{ this.title }}" />
-<meta property="og:description" content="{{ event.title }} | {{ this.description }}">
-<meta property="og:image" content="{{ op_image }}">
+<meta property="og:title" content="{{ this.title }}" />
+<meta property="og:description" content="{{ this.description }}">
+<meta property="og:image" content="{{ l_opimage }}">
 <meta property="og:url" content="http://scipyla.org/conf/2019">
 <meta property="og:type" content="website" />
 
@@ -29,8 +30,8 @@
 <meta name="twitter:site" content="@scipyla">
 <meta name="twitter:creator" content="@isaquinva">
 <meta name="twitter:title" content="{{ event.title }} | {{ this.title }}">
-<meta name="twitter:description" content="{{ event.title }} | {{ this.description }}">
-<meta name="twitter:image" content="{{ op_image }}">
+<meta name="twitter:description" content="{{ this.description }}">
+<meta name="twitter:image" content="{{ l_opimage }}">
 
 <title>SciPy Latam 2019 - {% block title %}{% endblock %}</title>
 
