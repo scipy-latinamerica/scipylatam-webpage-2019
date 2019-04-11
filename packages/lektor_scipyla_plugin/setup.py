@@ -16,7 +16,7 @@ setup(
     install_requires=['Lektor'],
     entry_points={
         'lektor.plugins': [
-            'pycon-plugin = lektor_scipyla_plugin:SciPyLaPlugin',
+            'scipyla-plugin = lektor_scipyla_plugin:SciPyLaPlugin',
         ]
     }
 )
