@@ -46,3 +46,45 @@ p {
     padding: 20px 30px;
   }
 }
+
+.footer {
+  border-top: 5px solid red;
+
+  &__links {
+    height: 50px;
+    width: 100%;
+    background-color: $dark-blue;
+    display: flex;
+    align-items: center;
+
+    ul {
+      display: flex;
+    }
+
+    li {
+      margin-left: 35px;
+    }
+
+    a {
+      color: $white;
+      font-family: "Montserrat", sans-serif;
+      font-size: 12px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+  }
+
+  &__copyright {
+    height: 55px;
+    background-color: $base-blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__copyright-copy {
+    color: $white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+  }
+}
