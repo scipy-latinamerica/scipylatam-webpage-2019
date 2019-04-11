@@ -96,3 +96,4 @@ typings/
 .DS_Store
 
 lektor_scipyla_plugin.egg-info
+__pycache__
