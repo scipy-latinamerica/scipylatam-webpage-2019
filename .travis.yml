@@ -8,6 +8,7 @@ cache:
     - $HOME/.cache/lektor/builds
 
 install:
+  - "npm install npm@latest -g"
   - "pip install -U pip"
   - "pip install Lektor"
   - "pip install fabric"
