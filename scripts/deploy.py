@@ -31,8 +31,8 @@ def deploy(branch):
         'ls;'
         # 'git fetch origin;'
         # 'git checkout {branch};'
-        # 'git pull origin {branch};'
-        # ''.format(branch=branch)
+        'git pull origin {branch};'
+        ''.format(branch=branch)
     )
 
 
