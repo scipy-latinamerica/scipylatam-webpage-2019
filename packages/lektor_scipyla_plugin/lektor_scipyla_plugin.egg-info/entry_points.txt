@@ -1,0 +1,3 @@
+[lektor.plugins]
+pycon-plugin = lektor_scipyla_plugin:SciPyLaPlugin
+

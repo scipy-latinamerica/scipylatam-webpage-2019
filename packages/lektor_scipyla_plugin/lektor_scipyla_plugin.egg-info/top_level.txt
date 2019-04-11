@@ -1,0 +1,1 @@
+lektor_scipyla_plugin

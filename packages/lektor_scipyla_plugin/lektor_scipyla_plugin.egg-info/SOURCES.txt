@@ -1,0 +1,7 @@
+lektor_scipyla_plugin.py
+lektor_scipyla_plugin.egg-info/PKG-INFO
+lektor_scipyla_plugin.egg-info/SOURCES.txt
+lektor_scipyla_plugin.egg-info/dependency_links.txt
+lektor_scipyla_plugin.egg-info/entry_points.txt
+lektor_scipyla_plugin.egg-info/requires.txt
+lektor_scipyla_plugin.egg-info/top_level.txt
