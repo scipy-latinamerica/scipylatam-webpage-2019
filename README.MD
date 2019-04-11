@@ -135,7 +135,7 @@ La configuración de dichos repositorios se encuentra en [scipylatam2019_webpage
 $ lektor deploy
 ```
 
-Se desplegará el contenido de la rama `develop` en `https://scipy-latinamerica.github.io/scipylatam-webpage-2019/`
+Se desplegará el contenido de la rama `develop` en [https://scipy-latinamerica.github.io/scipylatam-webpage-2019/](https://scipy-latinamerica.github.io/scipylatam-webpage-2019/)
 
 ## ✔️✔️ Producción
 
@@ -143,7 +143,8 @@ Se desplegará el contenido de la rama `develop` en `https://scipy-latinamerica.
 $ lektor deploy production
 ```
 
-Se desplegará el contenido de la rama `production` en `http://scipyla.org/conf/2019`
+Se desplegará el contenido de la rama `production` en [http://scipyla.org/conf/2019](http://scipyla.org/conf/2019)
+
 
 [build-badge]: https://img.shields.io/travis/scipy-latinamerica/scipylatam-webpage-2019.svg?style=flat-square
 [build]: https://travis-ci.org/scipy-latinamerica/scipylatam-webpage-2019

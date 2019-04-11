@@ -15,8 +15,8 @@ before_install:
 
 install:
   - "pip install -U pip"
-  - "pip install Lektor"
-  - "pip install fabric"
+  - "pip install -U Lektor"
+  - "pip install -U fabric"
 
 script: "lektor build -f webpack"
 
