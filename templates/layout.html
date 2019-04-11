@@ -1,8 +1,13 @@
 {%- from "macros/translation.html" import transbag -%}
 
-{%- set t_code_of_conduct = transbag('menu', this.alt, 'code_of_conduct') -%}
-{%- set t_footer_message = transbag('translate', this.alt, 'footer_message') -%} 
+{%- set event = site.get('/', alt=this.alt) -%}
+{%- set op_image = '/static/images/logo.svg'|asseturl -%}
+
 {%- set t_home =  transbag('menu', this.alt, 'home') -%}
+{%- set t_code_of_conduct = transbag('menu', this.alt, 'code_of_conduct') -%}
+
+{%- set t_footer_message = transbag('translate', this.alt, 'footer_message') -%} 
+{%- set t_open_chat =  transbag('translate', this.alt, 'open_chat') -%}
 
 <!doctype html>
 <head>
@@ -10,22 +15,22 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
 <meta name="format-detection" content="telephone=no">
-<meta name="description" content="SciPy Latam 2019">
+<meta name="description" content="{{ event.title }} | {{ this.description }}">
 <meta name="google-site-verification" content="tS192x5OfHOZKosOfhq39D1Wlk6EwH_gaSw8ZUVe_bs" />
 
-<meta property="og:site_name" content="SciPy Latam" />
-<meta property="og:title" content="SciPy Latam | 10/2019 | Colombia" />
-<meta property="og:description" content="SciPy Latam 2019" />
-<meta property="og:image" content="{{ '/static/images/opimage.jpg'|asseturl }}">
+<meta property="og:site_name" content="{{ event.title }}" />
+<meta property="og:title" content="{{ event.title }} | {{ this.title }}" />
+<meta property="og:description" content="{{ event.title }} | {{ this.description }}">
+<meta property="og:image" content="{{ op_image }}">
 <meta property="og:url" content="http://scipyla.org/conf/2019">
 <meta property="og:type" content="website" />
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@scipyla">
 <meta name="twitter:creator" content="@isaquinva">
-<meta name="twitter:title" content="PSciPy Latam 2019 | 10/2019 | Colombia">
-<meta name="twitter:description" content="SciPy Latam 2019">
-<meta name="twitter:image" content="{{ '/static/images/opimage.jpg'|asseturl }}">
+<meta name="twitter:title" content="{{ event.title }} | {{ this.title }}">
+<meta name="twitter:description" content="{{ event.title }} | {{ this.description }}">
+<meta name="twitter:image" content="{{ op_image }}">
 
 <title>SciPy Latam 2019 - {% block title %}{% endblock %}</title>
 
@@ -47,9 +52,19 @@
 
   gtag('config', 'UA-138156801-1');
 </script>
+
+<!-- Scripts: Gitter chat -->
+<script>
+    ((window.gitter = {}).chat = {}).options = {
+      room: 'scipy-latinamerica/lobby',
+      activationElement: '.gitter-button'
+    };
+  </script>
+  <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
 </head>
 
 <body>
+    <button class="js-gitter-toggle-chat-button gitter-custom-button">{{ t_open_chat }}</button>
   <div class="container landing-page">
   {% block background %}
   {% endblock %}

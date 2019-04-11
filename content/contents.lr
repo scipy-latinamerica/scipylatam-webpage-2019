@@ -2,7 +2,7 @@ _template: home.html
 ---
 _model: event
 ---
-title: Bienvenidos a SciPy Latinoamérica 2019
+title: SciPy Latam 2019
 ---
 date_end: 2019-10-10
 ---
@@ -13,3 +13,5 @@ body: Comparte experiencias sobre el uso de Python científico tanto académicam
 _slug: 
 ---
 sections: 
+---
+description: Comparte experiencias sobre el uso de Python científico tanto académicamente como profesionalmente.
