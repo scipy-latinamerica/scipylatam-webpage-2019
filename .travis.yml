@@ -12,7 +12,7 @@ install:
   - "pip install Lektor"
   - "pip install fabric"
 
-script: "lektor build"
+script: "lektor build -f webpack"
 
 deploy:
   - provider: script
