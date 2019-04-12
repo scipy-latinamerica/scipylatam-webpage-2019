@@ -91,16 +91,17 @@ Usando cURL:
 $ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
 ```
 
-Después instalamos Node:
+Después instalamos Node y Yarn:
 
 ```
 $ nvm install --lts
+$ brew install yarn
 ```
 
 Instalar paquetes necesarios para el bundle:
 ```
 $ cd webpack
-$ npm i
+$ yarn install
 ```
 
 ## ✅ Corre el servidor local
