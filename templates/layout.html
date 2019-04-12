@@ -1,110 +1,197 @@
-{%- from "macros/translation.html" import transbag -%}
+{%- from "macros/translation.html" import transbag -%} {%- set event =
+site.get('/', alt=this.alt) -%} {%- set l_opimage = ('/static/images/opimage_' +
+this.alt|string + '.jpg')|asseturl -%} {%- set t_home = transbag('menu',
+this.alt, 'home') -%} {%- set t_code_of_conduct = transbag('menu', this.alt,
+'code_of_conduct') -%} {%- set t_footer_message = transbag('translate',
+this.alt, 'footer_message') -%} {%- set t_open_chat = transbag('translate',
+this.alt, 'open_chat') -%}
 
-{%- set event = site.get('/', alt=this.alt) -%}
-{%- set l_opimage = ('/static/images/opimage_' +  this.alt|string + '.jpg')|asseturl -%}
-
-{%- set t_home =  transbag('menu', this.alt, 'home') -%}
-{%- set t_code_of_conduct = transbag('menu', this.alt, 'code_of_conduct') -%}
-
-{%- set t_footer_message = transbag('translate', this.alt, 'footer_message') -%} 
-{%- set t_open_chat =  transbag('translate', this.alt, 'open_chat') -%}
-
-
-<!doctype html>
+<!DOCTYPE html>
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-<meta name="format-detection" content="telephone=no">
-<meta name="description" content="{{ event.title }} | {{ this.description }}">
-<meta name="google-site-verification" content="tS192x5OfHOZKosOfhq39D1Wlk6EwH_gaSw8ZUVe_bs" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"
+  />
+  <meta name="format-detection" content="telephone=no" />
+  <meta
+    name="description"
+    content="{{ event.title }} | {{ this.description }}"
+  />
+  <meta
+    name="google-site-verification"
+    content="tS192x5OfHOZKosOfhq39D1Wlk6EwH_gaSw8ZUVe_bs"
+  />
 
-<meta property="og:site_name" content="{{ event.title }}" />
-<meta property="og:title" content="{{ this.title }}" />
-<meta property="og:description" content="{{ this.description }}">
-<meta property="og:image" content="{{ l_opimage }}">
-<meta property="og:url" content="http://scipyla.org/conf/2019">
-<meta property="og:type" content="website" />
+  <meta property="og:site_name" content="{{ event.title }}" />
+  <meta property="og:title" content="{{ this.title }}" />
+  <meta property="og:description" content="{{ this.description }}" />
+  <meta property="og:image" content="{{ l_opimage }}" />
+  <meta property="og:url" content="http://scipyla.org/conf/2019" />
+  <meta property="og:type" content="website" />
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@scipyla">
-<meta name="twitter:creator" content="@isaquinva">
-<meta name="twitter:title" content="{{ event.title }} | {{ this.title }}">
-<meta name="twitter:description" content="{{ this.description }}">
-<meta name="twitter:image" content="{{ l_opimage }}">
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@scipyla" />
+  <meta name="twitter:creator" content="@isaquinva" />
+  <meta name="twitter:title" content="{{ event.title }} | {{ this.title }}" />
+  <meta name="twitter:description" content="{{ this.description }}" />
+  <meta name="twitter:image" content="{{ l_opimage }}" />
 
-<title>SciPy Latam 2019 - {% block title %}{% endblock %}</title>
+  <title>SciPy Latam 2019 - {% block title %}{% endblock %}</title>
 
-<!-- Fonts -->
-<link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,700|Poppins:300,500,700" rel="stylesheet">
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Poppins:300,500,700"
+    rel="stylesheet"
+  />
 
-<!-- CSS -->
-<link rel="stylesheet" href="{{ '/static/gen/styles.css'|asseturl }}">
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ '/static/gen/styles.css' | asseturl }}" />
+</head>
 
-<!-- Scripts -->
-<script type=text/javascript src="{{ '/static/gen/app.js'|asseturl }}" charset="utf-8"></script>
+<body>
+  <div class="container landing-page">
+    {% block background %} {% endblock %}
+    <div class="wrapper-hamburger">
+      <button class="general__hamburger">
+        <img
+          src="{{ '/static/images/hamburger.svg' | asseturl }}"
+          alt="Hamburger menu"
+        />
+      </button>
+    </div>
 
-<!-- Scripts: Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138156801-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <nav class="general__menu">
+      <ul class="general__menu-list">
+        <li class="general__menu-item">
+          <a class="general__menu-link" href="{{ '/'|url(this.alt) }}">{{
+            t_home | upper
+          }}</a>
+        </li>
+        <li class="general__menu-item">
+          <a
+            class="general__menu-link"
+            href="{{ '/code-of-conduct'|url(this.alt) }}"
+            >{{ t_code_of_conduct | upper }}</a
+          >
+        </li>
+      </ul>
+      <span class="general__menu-follow">Follow us: </span>
+      <ul class="general__menu-logos">
+        <li>
+          <a
+            href="https://www.instagram.com/scipyla/"
+            aria-label="Go to Instagram Scipy Latam page"
+          >
+            <img
+              src="{{ '/static/images/instagram-mobile.svg' | asseturl }}"
+              alt="Instagram Logo"
+            />
+          </a>
+        </li>
+        <li>
+          <!-- TODO: Add twitter page -->
+          <a href="" aria-label="Go to Twitter Scipy Latam page">
+            <img
+              src="{{ '/static/images/twitter-mobile.svg' | asseturl }}"
+              alt="Twitter Logo"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.facebook.com/scipyla/"
+            aria-label="Go to Facebook Scipy Latam page"
+          >
+            <img
+              src="{{ '/static/images/facebook-mobile.svg' | asseturl }}"
+              alt="Facebook Logo"
+            />
+          </a>
+        </li>
+      </ul>
 
-  gtag('config', 'UA-138156801-1');
-</script>
+      <span class="general__language-label">Change language: </span>
+      <ul class="general__language-menu">
+        {%- if this.alt == 'es' -%}
+        <li class="general__language-item">
+          <a class="general__language-link" href="{{ '.'|url(alt='en') }}"
+            >English</a
+          >
+        </li>
+        {%- elif this.alt == 'en' -%}
+        <li class="general__language-item">
+          <a class="general__language-link" href="{{ '.'|url(alt='es') }}"
+            >Español</a
+          >
+        </li>
+        {%- endif-%}
+      </ul>
+    </nav>
 
-<!-- Scripts: Gitter chat -->
-<script>
+    {% block body %} {% endblock %}
+  </div>
+
+  <footer class="footer">
+    <div class="footer__links">
+      <ul>
+        <li>
+          <a href="{{ '/codigo-de-conducta'|url(this.alt) }}">{{
+            t_code_of_conduct | upper
+          }}</a>
+        </li>
+      </ul>
+      <div class="footerlanguage">
+        <span class="footerlanguage-label">Change language: </span>
+        <ul class="footerlanguage-menu">
+          {%- if this.alt == 'es' -%}
+          <li class="footerlanguage-item">
+            <a class="footerlanguage-link" href="{{ '.'|url(alt='en') }}"
+              >English</a
+            >
+          </li>
+          {%- elif this.alt == 'en' -%}
+          <li class="footerlanguage-item">
+            <a class="footerlanguage-link" href="{{ '.'|url(alt='es') }}"
+              >Español</a
+            >
+          </li>
+          {%- endif-%}
+        </ul>
+      </div>
+    </div>
+    <div class="footer__copyright">
+      <span class="footer__copyright-copy">{{ t_footer_message }}</span>
+    </div>
+  </footer>
+  <div class="wrapper-gitter">
+    <div class="container-gitter">
+      <button class="js-gitter-toggle-chat-button gitter-custom-button">
+        {{ t_open_chat }}
+      </button>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script type=text/javascript src="{{ '/static/gen/app.js'|asseturl }}" charset="utf-8"></script>
+
+  <!-- Scripts: Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138156801-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-138156801-1');
+  </script>
+
+  <!-- Scripts: Gitter chat -->
+  <script>
     ((window.gitter = {}).chat = {}).options = {
       room: 'scipy-latinamerica/lobby',
       activationElement: '.gitter-button'
     };
   </script>
   <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
-</head>
-
-<body>
-    <button class="js-gitter-toggle-chat-button gitter-custom-button">{{ t_open_chat }}</button>
-  <div class="container landing-page">
-  {% block background %}
-  {% endblock %}
-  <nav class="general__menu">
-    <ul class="general__menu-list">
-      <li class="general__menu-item">
-        <a class="general__menu-link" href="{{ '/'|url(this.alt) }}">{{ t_home|upper }}</a>
-      </li>
-      <li class="general__menu-item">
-        <a class="general__menu-link" href="{{ '/code-of-conduct'|url(this.alt) }}">{{ t_code_of_conduct|upper }}</a>
-      </li>
-      {%- if this.alt == 'es' -%}
-      <li class="general__menu-item">
-          <a class="general__menu-link" href="{{ '.'|url(alt='en') }}">English</a>
-      </li>
-      {%- elif this.alt == 'en' -%}
-      <li class="general__menu-item">
-        <a class="general__menu-link" href="{{ '.'|url(alt='es') }}">Español</a>
-      </li>
-      {%- endif-%}
-    </ul>
-  </nav>
-  {% block body %}
-  {% endblock %}
-  </div>
-
-  <footer class="footer">
-      <div class="footer__links">
-        <ul>
-          <li>
-            <a href="{{ '/code-conduct'|url(this.alt) }}">{{ t_code_of_conduct|upper }}</a>
-          </li>
-          <!-- <li>
-            <a href="{{ '/code-conduct'|url(this.alt) }}">{{ transbag('menu', this.alt, 'convince_boss')|upper }}</a>
-          </li> -->
-        </ul>
-      </div>
-      <div class="footer__copyright">
-        <span class="footer__copyright-copy">{{ t_footer_message }}</span>
-      </div>
-    </footer>  
 </body>

@@ -10,9 +10,62 @@
     align-items: flex-start;
   }
 
+  h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+
+    @include from(large) {
+      font-size: 35px;
+    }
+  }
+
+  h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+
+    @include from(large) {
+      font-size: 25px;
+    }
+  }
+
+  p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+    @include from(large) {
+      font-size: 18px;
+    }
+  }
+
+  .button-red {
+    font-family: "Poppins", sans-serif;
+    background-color: $red;
+    font-size: 40px;
+    color: $white;
+    letter-spacing: 5px;
+    padding: 40px 60px;
+    border-radius: 80px;
+    font-weight: 500;
+    white-space: nowrap;
+    cursor: pointer;
+    text-decoration: none;
+
+    @include from(large) {
+      font-size: 18px;
+      padding: 20px 30px;
+    }
+  }
+
   .text {
     width: 90%;
-    padding: 25px 45px 100px;
+    padding: 15px;
+
+    @include from(medium) {
+      padding: 0 80px;
+    }
 
     @include from(large) {
       padding: 0;
@@ -23,8 +76,7 @@
   }
 
   .logo-wrapper {
-    width: 90%;
-    margin-top: 110px;
+    width: 100%;
 
     @include from(large) {
       width: 70%;
@@ -41,7 +93,7 @@
   }
 
   .paragraph {
-    margin-top: 70px;
+    margin-top: 10px;
 
     @include from(large) {
       margin-top: 30px;

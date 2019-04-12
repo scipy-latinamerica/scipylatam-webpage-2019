@@ -1,68 +1,36 @@
-h1 {
-  font-family: "Poppins", sans-serif;
-  font-size: 85px;
-  font-weight: 700;
-
-  @include from(large) {
-    font-size: 35px;
-  }
-}
-
-h2 {
-  font-family: "Poppins", sans-serif;
-  font-size: 60px;
-  font-weight: 500;
-
-  @include from(large) {
-    font-size: 25px;
-  }
-}
-
-p {
-  font-family: "Montserrat", sans-serif;
-  font-size: 40px;
-  font-weight: 300;
-
-  @include from(large) {
-    font-size: 18px;
-  }
-}
-
-.button-red {
-  font-family: "Poppins", sans-serif;
-  background-color: $red;
-  font-size: 40px;
-  color: $white;
-  letter-spacing: 5px;
-  padding: 40px 60px;
-  border-radius: 80px;
-  font-weight: 500;
-  white-space: nowrap;
-  cursor: pointer;
-  text-decoration: none;
-
-  @include from(large) {
-    font-size: 18px;
-    padding: 20px 30px;
-  }
-}
-
 .footer {
   border-top: 5px solid red;
+  max-width: 2100px;
+  margin: 0 auto;
 
   &__links {
-    height: 50px;
     width: 100%;
     background-color: $dark-blue;
     display: flex;
     align-items: center;
+    justify-content: center;
+
+    @include from(large) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
 
     ul {
       display: flex;
+      margin: 10px 0 0;
+
+      @include from(large) {
+        justify-content: flex-start;
+      }
     }
 
     li {
-      margin-left: 35px;
+      margin-bottom: 12px;
+
+      @include from(large) {
+        padding-left: 15px;
+        margin-bottom: 0;
+      }
     }
 
     a {
@@ -75,16 +43,50 @@ p {
   }
 
   &__copyright {
-    height: 55px;
     background-color: $base-blue;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 50px;
+
+    @include from(large) {
+      height: 55px;
+      padding-bottom: 0;
+    }
   }
 
   &__copyright-copy {
     color: $white;
     font-family: "Montserrat", sans-serif;
     font-size: 10px;
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+.footerlanguage {
+  display: none;
+
+  @include from(large) {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+  }
+
+  &-label {
+    color: #fff;
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+  ul {
+    margin: 0;
+    height: auto;
+  }
+
+  li {
+    margin: 0;
   }
 }

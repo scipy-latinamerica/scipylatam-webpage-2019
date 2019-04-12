@@ -3,6 +3,8 @@
   margin: 0 auto 200px;
 
   h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
     font-size: 40px;
     margin-top: 30px;
     letter-spacing: 1px;
@@ -10,6 +12,8 @@
   }
 
   h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
     font-size: 30px;
     margin-top: 40px;
   }
@@ -22,8 +26,12 @@
     margin-top: 10px;
   }
 
-  p {
+  p,
+  ul,
+  li {
+    font-family: "Montserrat", sans-serif;
     font-size: 14px;
+    font-weight: 400;
     color: $gray;
     line-height: 40px;
   }

@@ -97,3 +97,5 @@ typings/
 
 lektor_scipyla_plugin.egg-info
 __pycache__
+
+package-lock.json
