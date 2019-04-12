@@ -97,6 +97,12 @@ Después instalamos Node:
 $ nvm install --lts
 ```
 
+Instalar paquetes necesarios para el bundle:
+```
+$ cd webpack
+$ npm i
+```
+
 ## ✅ Corre el servidor local
 
 ```
