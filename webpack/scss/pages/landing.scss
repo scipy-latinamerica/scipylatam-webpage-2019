@@ -114,6 +114,87 @@
   }
 }
 
-.speakers {
-  background-color: $dark-blue;
+.speakers-landing {
+  h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    color: $white;
+    margin-bottom: 25px;
+    letter-spacing: 5px;
+
+    @include from(large) {
+      font-size: 40px;
+    }
+  }
+}
+
+.speakers-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.sponsors-landing {
+  h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    color: $black;
+    margin-bottom: 25px;
+    letter-spacing: 5px;
+    margin-bottom: 50px;
+  }
+
+  h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+}
+
+.sponsors-container {
+  display: flex;
+  flex-direction: column;
+
+  @include from(large) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.sponsors__category-left {
+  display: flex;
+  justify-content: center;
+
+  @include from(large) {
+    width: 30%;
+  }
+}
+
+.sponsors__category-logos {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include from(large) {
+    width: 70%;
+    justify-content: space-between;
+  }
+
+  div {
+    margin-bottom: 30px;
+    padding: 0 30px;
+
+    @include from(large) {
+      padding: 0;
+    }
+  }
+}
+
+.sponsors__category-logo {
+  max-width: 250px;
+  max-height: 150px;
 }

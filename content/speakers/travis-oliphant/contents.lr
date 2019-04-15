@@ -6,7 +6,7 @@ email: travis@quansight.com
 ---
 keynote: yes
 ---
-photo: static/images/keynotes/travis-Oliphant.jpeg
+photo: static/images/keynotes/travis-Oliphant.jpg
 ---
 last_name: Oliphant
 ---
@@ -18,8 +18,8 @@ company: Quansight
 ---
 instagram: 
 ---
-twitter: 
+twitter: https://twitter.com/teoliphant
 ---
-facebook: 
+facebook: https://www.facebook.com/teoliphant
 ---
 linkedin: https://www.linkedin.com/in/teoliphant/

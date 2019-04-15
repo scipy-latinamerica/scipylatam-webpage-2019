@@ -35,16 +35,61 @@ alt=this.alt) -%} {% block title %}{{ this.title }}{% endblock %} {% block body
   </main>
 </div>
 <div class="container">
-  <h1>KEYNOTES</h1>
-  <div class="speakers content">
-    {% for speaker in site.get('/speakers', alt = this.alt).children %} {% if
-    speaker.keynote %}
-    <img class="logo" src="{{ speaker.photo | asseturl }}" alt="logo" />
-    {{ speaker.name + speaker.last_name }}
-    {{ speaker.short_description }}
-    {{ speaker.company }}
-    {{ render_social(speaker) }}
-    {% endif %} {% endfor %}
+  {{ render_background(background='color', color='#2811CE') }}
+  <div class="speakers-landing content">
+    <h1>KEYNOTES</h1>
+    <div class="speakers-container">
+      {% for speaker in site.get('/speakers', alt = this.alt).children %} {% if
+      speaker.keynote %}
+      <div class="speaker__card">
+        <div class="speaker__card-wrapper">
+          <img
+            class="speaker__card-photo"
+            src="{{ speaker.photo | asseturl }}"
+            alt="Speaker photo: {{ speaker.name + ' ' + speaker.last_name }}"
+          />
+          <img
+            class="speaker__card-background"
+            src="{{ '/static/images/speaker-background.svg' | asseturl }}"
+            alt="Speaker background"
+          />
+        </div>
+        <span class="speaker__card-name">{{
+        speaker.name | upper + " " + speaker.last_name | upper
+        }}</span>
+        <span class="speaker__card-description">{{
+          speaker.short_description
+        }}</span>
+        <span class="speaker__card-company">{{ speaker.company }}</span>
+        {{ render_social(speaker) }}
+      </div>
+      {% endif %} {% endfor %}
+    </div>
+  </div>
+</div>
+<div class="container">
+  {{ render_background(background='color', color='#FFF') }}
+  <div class="sponsors-landing content">
+    <h1>SPONSORS</h1>
+    <div class="sponsors-container">
+      {% for category in ['Platinum', 'Bronze'] %}
+      <div class="sponsors__category-left">
+        <h2 class="sponsors__category-name">{{ category }}</h2>
+      </div>
+      <div class="sponsors__category-logos">
+        {% for sponsor in site.get('/sponsors', alt = this.alt).children %} {%
+        if sponsor.category == category%}
+        <div>
+          <img
+            class="sponsors__category-logo"
+            src="{{ sponsor.logo | asseturl }}"
+            alt="{{ sponsor.name }} Logo"
+          />
+        </div>
+        {% endif %} {% endfor %}
+      </div>
+      {% endfor %}
+    </div>
   </div>
 </div>
 {% endblock %}
