@@ -6,6 +6,20 @@ email: travis@quansight.com
 ---
 keynote: yes
 ---
+photo: static/images/keynotes/travis-Oliphant.jpeg
+---
 last_name: Oliphant
 ---
 prefix: Dr.
+---
+short_description: Founder of Quansight, Anaconda (Continuum), NumFOCUS and PyData. Creator of NumPy, SciPy, Conda, Numba and XND.
+---
+company: Quansight
+---
+instagram: 
+---
+twitter: 
+---
+facebook: 
+---
+linkedin: https://www.linkedin.com/in/teoliphant/

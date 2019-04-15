@@ -1,5 +1,6 @@
 .landing {
   width: 80%;
+  min-height: 100vh;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -111,4 +112,8 @@
       width: 330px;
     }
   }
+}
+
+.speakers {
+  background-color: $dark-blue;
 }

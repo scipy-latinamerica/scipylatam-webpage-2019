@@ -1,6 +1,13 @@
+.global-container {
+  width: 100%;
+  max-width: 2100px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
 .container {
   width: 100%;
-  min-height: 100vh;
   max-width: 2100px;
   margin: 0 auto;
   position: relative;
@@ -114,7 +121,7 @@
   transition: transform 0.3s ease-in-out;
 
   @include from(large) {
-    position: relative;
+    position: absolute;
     height: $nav-height;
     background-color: transparent;
     top: 0;
