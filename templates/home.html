@@ -1,37 +1,35 @@
-{%- extends "layout.html" -%}
-{%- from "macros/background.html" import render_background -%}
-{%- from "macros/translation.html" import transbag -%}
+{%- extends "layout.html" -%} {%- from "macros/background.html" import
+render_background -%} {%- from "macros/translation.html" import transbag -%} {%-
+set t_call_for_proposals = transbag('translate', this.alt, 'call_for_proposals')
+-%} {%- set t_date = transbag('translate', this.alt, 'date') -%} {%- set venue =
+site.get('/venue', alt=this.alt) -%} {% block title %}{{ this.title }}{%
+endblock %} {% block background %}{{ render_background(background='landing', alt=this.alt)
+}}{% endblock %} {% block body %}
+<main class="landing content">
+  <div class="logo-wrapper">
+    <img
+      class="logo"
+      src="{{ '/static/images/logo.svg' | asseturl }}"
+      alt="logo"
+    />
+  </div>
 
-{%- set t_call_for_proposals = transbag('translate', this.alt, 'call_for_proposals') -%}
-{%- set t_date = transbag('translate', this.alt, 'date') -%}
-
-{%- set venue = site.get('/venue', alt=this.alt) -%}
-
-{% block title %}{{ this.title }}{% endblock %}
-{% block background %}{{ render_background(background='landing') }}{% endblock %}
-
-{% block body %}
-  <main class="landing content">
-    <div class="logo-wrapper">
-      <img
-        class="logo"
-        src="{{ '/static/images/logo.svg'|asseturl }}"
-        alt="logo"
-      />
-    </div>
-
-    <div class="text">
-      <h1 class="header-1">{{ t_date }}</h1>
-      <h2 class="header-2">{{ venue.location }}</h2>
-      <h2 class="header-2">{{ venue.name }}</h2>
-      <p class="paragraph">
-        {{ this.body }}
-      </p>
-    </div>
-    {%- if 'call_for_proposals' in this.sections -%}
-    <a class="button-red cp-button" href="{{ this.call_for_proposals }}" aria-label="Application Form Link">
-      {{ t_call_for_proposals|upper }}
-    </a>
-    {%- endif -%}
-  </main>
+  <div class="text">
+    <h1 class="header-1">{{ t_date }}</h1>
+    <h2 class="header-2">{{ venue.location }}</h2>
+    <h2 class="header-2">{{ venue.name }}</h2>
+    <p class="paragraph">
+      {{ this.body }}
+    </p>
+  </div>
+  {%- if 'call_for_proposals' in this.sections -%}
+  <a
+    class="button-red cp-button"
+    href="{{ this.call_for_proposals }}"
+    aria-label="Application Form Link"
+  >
+    {{ t_call_for_proposals | upper }}
+  </a>
+  {%- endif -%}
+</main>
 {% endblock %}

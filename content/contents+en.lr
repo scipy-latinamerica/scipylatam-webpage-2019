@@ -1,5 +1,7 @@
 _template: home.html
 ---
+menu_label: Home
+---
 date_end: 2019-10-10
 ---
 date_start: 2019-10-08

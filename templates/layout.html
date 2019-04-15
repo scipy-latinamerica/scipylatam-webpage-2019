@@ -1,10 +1,10 @@
-{%- from "macros/translation.html" import transbag -%} {%- set event =
-site.get('/', alt=this.alt) -%} {%- set l_opimage = ('/static/images/opimage_' +
-this.alt|string + '.jpg')|asseturl -%} {%- set t_home = transbag('menu',
-this.alt, 'home') -%} {%- set t_code_of_conduct = transbag('menu', this.alt,
-'code_of_conduct') -%} {%- set t_footer_message = transbag('translate',
-this.alt, 'footer_message') -%} {%- set t_open_chat = transbag('translate',
-this.alt, 'open_chat') -%}
+{%- from "macros/translation.html" import transbag -%} 
+{%- set event = site.get('/', alt=this.alt) -%} 
+{%- set l_opimage = ('/static/images/opimage_' + this.alt|string + '.jpg')|asseturl -%} 
+{%- set t_home = transbag('menu', this.alt, 'home') -%} 
+{%- set t_code_of_conduct = transbag('menu', this.alt, 'code_of_conduct') -%} 
+{%- set t_footer_message = transbag('translate', this.alt, 'footer_message') -%} 
+{%- set t_open_chat = transbag('translate', this.alt, 'open_chat') -%}
 
 <!DOCTYPE html>
 <head>
@@ -51,7 +51,7 @@ this.alt, 'open_chat') -%}
 </head>
 
 <body>
-  <div class="container landing-page">
+  <div class="container">
     {% block background %} {% endblock %}
     <div class="wrapper-hamburger">
       <button class="general__hamburger">
@@ -61,21 +61,24 @@ this.alt, 'open_chat') -%}
         />
       </button>
     </div>
-
     <nav class="general__menu">
       <ul class="general__menu-list">
         <li class="general__menu-item">
-          <a class="general__menu-link" href="{{ '/'|url(this.alt) }}">{{
-            t_home | upper
-          }}</a>
+          <a class="general__menu-link {% if this == site.get('/', alt=this.alt) %} general__menu-link--active {% endif%}" 
+            href="{{ site.get('/', alt=this.alt)|url }}">
+              {{ site.get('/', alt=this.alt).menu_label | upper }}
+            </a>
         </li>
-        <li class="general__menu-item">
-          <a
-            class="general__menu-link"
-            href="{{ '/code-of-conduct'|url(this.alt) }}"
-            >{{ t_code_of_conduct | upper }}</a
-          >
-        </li>
+        {% for page in site.get('/', alt=this.alt).children %}
+          {% if page.display and page.main_menu %}
+          <li class="general__menu-item">
+            <a class="general__menu-link {% if this == page %} general__menu-link--active {% endif%}" 
+              href="{{ page|url }}">
+                {{ page.menu_label | upper }}
+              </a>
+          </li>
+          {% endif %}
+        {% endfor %}
       </ul>
       <span class="general__menu-follow">Follow us: </span>
       <ul class="general__menu-logos">
@@ -111,7 +114,6 @@ this.alt, 'open_chat') -%}
           </a>
         </li>
       </ul>
-
       <span class="general__language-label">Change language: </span>
       <ul class="general__language-menu">
         {%- if this.alt == 'es' -%}
@@ -129,37 +131,19 @@ this.alt, 'open_chat') -%}
         {%- endif-%}
       </ul>
     </nav>
-
     {% block body %} {% endblock %}
   </div>
-
   <footer class="footer">
     <div class="footer__links">
       <ul>
-        <li>
-          <a href="{{ '/codigo-de-conducta'|url(this.alt) }}">{{
-            t_code_of_conduct | upper
-          }}</a>
-        </li>
+        {% for page in site.get('/', alt=this.alt).children %}
+          {% if page.display and page.footer_menu %}
+          <li>
+            <a href="{{ page|url }}">{{ page.menu_label | upper }}</a>
+          </li>
+          {% endif %}
+        {% endfor %}
       </ul>
-      <div class="footerlanguage">
-        <span class="footerlanguage-label">Change language: </span>
-        <ul class="footerlanguage-menu">
-          {%- if this.alt == 'es' -%}
-          <li class="footerlanguage-item">
-            <a class="footerlanguage-link" href="{{ '.'|url(alt='en') }}"
-              >English</a
-            >
-          </li>
-          {%- elif this.alt == 'en' -%}
-          <li class="footerlanguage-item">
-            <a class="footerlanguage-link" href="{{ '.'|url(alt='es') }}"
-              >Español</a
-            >
-          </li>
-          {%- endif-%}
-        </ul>
-      </div>
     </div>
     <div class="footer__copyright">
       <span class="footer__copyright-copy">{{ t_footer_message }}</span>

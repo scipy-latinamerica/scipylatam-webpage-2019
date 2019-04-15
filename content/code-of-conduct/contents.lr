@@ -1,6 +1,14 @@
-_template: page.html
+_template: code-conduct.html
 ---
 _model: page
+---
+display: true
+---
+menu_label: Código de conducta
+---
+main_menu: true
+---
+footer_menu: true
 ---
 title: Código de conducta
 ---

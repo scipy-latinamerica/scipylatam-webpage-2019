@@ -17,7 +17,7 @@
 
     ul {
       display: flex;
-      margin: 10px 0 0;
+      margin: 0;
 
       @include from(large) {
         justify-content: flex-start;
@@ -25,10 +25,9 @@
     }
 
     li {
-      margin-bottom: 12px;
+      padding: 15px;
 
       @include from(large) {
-        padding-left: 15px;
         margin-bottom: 0;
       }
     }

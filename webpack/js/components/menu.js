@@ -38,7 +38,7 @@ class Menu {
   }
 
   setMenuBackground () {
-    if (window['scrollY'] > 20) {
+    if (window['scrollY'] > 0) {
       this.wrapperMenu.classList.add(this.states['BACKGROUND']);
     } else {
       this.wrapperMenu.classList.remove(this.states['BACKGROUND']);
