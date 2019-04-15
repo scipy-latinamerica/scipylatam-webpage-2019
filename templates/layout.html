@@ -78,6 +78,15 @@
           </li>
           {% endif %}
         {% endfor %}
+        <li class="general__menu-language">
+          {%- if this.alt == 'en' -%}
+          <a class="general__menu-language-button" 
+          href="{{ '.'|url(alt='es') }}">ES</a>
+          {%- elif this.alt == 'es' -%}
+          <a class="general__menu-language-button" 
+          href="{{ '.'|url(alt='en') }}">EN</a>
+          {%- endif-%}
+        </li>
       </ul>
       <span class="general__menu-follow">Follow us: </span>
       <span class="general__language-label">Change language: </span>
