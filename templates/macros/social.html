@@ -1,0 +1,41 @@
+{% macro render_social(item) %}
+<ul class="general__menu-logos">
+  {% if item.instagram != '' %}
+  <li>
+    <a href="{{ item.instagram }}" aria-label="Go to Instagram profile">
+      <img
+        src="{{ '/static/images/instagram-mobile.svg' | asseturl }}"
+        alt="Instagram Logo"
+      />
+    </a>
+  </li>
+  {% endif %} {% if item.twitter != '' %}
+  <li>
+    <a href="{{ item.twitter }}" aria-label="Go to Twitter profile">
+      <img
+        src="{{ '/static/images/twitter-mobile.svg' | asseturl }}"
+        alt="Twitter Logo"
+      />
+    </a>
+  </li>
+  {% endif %} {% if item.facebook != '' %}
+  <li>
+    <a href="{{ item.facebook }}" aria-label="Go to Facebook profile">
+      <img
+        src="{{ '/static/images/facebook-mobile.svg' | asseturl }}"
+        alt="Facebook Logo"
+      />
+    </a>
+  </li>
+  {% endif %} {% if item.linkedin != '' %}
+  <li>
+    <a href="{{ item.linkedin }}" aria-label="Go to LinkedIn profile">
+      <img
+        src="{{ '/static/images/linkedin-mobile.svg' | asseturl }}"
+        alt="LinkedIn Logo"
+      />
+    </a>
+  </li>
+  {% endif %}
+</ul>
+{% endmacro %}

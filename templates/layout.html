@@ -51,8 +51,7 @@
 </head>
 
 <body>
-  <div class="container">
-    {% block background %} {% endblock %}
+  <div class="global-container">
     <div class="wrapper-hamburger">
       <button class="general__hamburger">
         <img
@@ -81,39 +80,6 @@
         {% endfor %}
       </ul>
       <span class="general__menu-follow">Follow us: </span>
-      <ul class="general__menu-logos">
-        <li>
-          <a
-            href="https://www.instagram.com/scipyla/"
-            aria-label="Go to Instagram Scipy Latam page"
-          >
-            <img
-              src="{{ '/static/images/instagram-mobile.svg' | asseturl }}"
-              alt="Instagram Logo"
-            />
-          </a>
-        </li>
-        <li>
-          <!-- TODO: Add twitter page -->
-          <a href="" aria-label="Go to Twitter Scipy Latam page">
-            <img
-              src="{{ '/static/images/twitter-mobile.svg' | asseturl }}"
-              alt="Twitter Logo"
-            />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.facebook.com/scipyla/"
-            aria-label="Go to Facebook Scipy Latam page"
-          >
-            <img
-              src="{{ '/static/images/facebook-mobile.svg' | asseturl }}"
-              alt="Facebook Logo"
-            />
-          </a>
-        </li>
-      </ul>
       <span class="general__language-label">Change language: </span>
       <ul class="general__language-menu">
         {%- if this.alt == 'es' -%}

@@ -2,10 +2,11 @@
 render_background -%} {%- from "macros/translation.html" import transbag -%} {%
 block title %}
 {{ this.title }}
-{% endblock %} {% block background %}
-{{ render_background(background='general', content_background='true', alt=this.alt)}}
 {% endblock %} {% block body %}
-<main class="conduct-code content">
-  {{ this.body }}
-</main>
+<div class="container">
+  {{ render_background(background='general', content_background='true', alt=this.alt) }}
+  <main class="conduct-code content">
+    {{ this.body }}
+  </main>
+</div>
 {% endblock %}

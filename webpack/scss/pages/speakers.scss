@@ -1,0 +1,55 @@
+.speaker__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0 50px;
+  max-width: 270px;
+  margin: 0 40px;
+
+  &-wrapper {
+    position: relative;
+    margin-bottom: 50px;
+  }
+
+  &-photo {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 240px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  &-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  &-name {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: $white;
+    margin-bottom: 5px;
+  }
+
+  &-description {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: $white;
+    margin-bottom: 5px;
+    line-height: 17px;
+  }
+
+  &-company {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: $white;
+    margin-bottom: 15px;
+  }
+}

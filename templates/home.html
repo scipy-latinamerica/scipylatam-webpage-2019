@@ -1,35 +1,95 @@
 {%- extends "layout.html" -%} {%- from "macros/background.html" import
-render_background -%} {%- from "macros/translation.html" import transbag -%} {%-
-set t_call_for_proposals = transbag('translate', this.alt, 'call_for_proposals')
--%} {%- set t_date = transbag('translate', this.alt, 'date') -%} {%- set venue =
-site.get('/venue', alt=this.alt) -%} {% block title %}{{ this.title }}{%
-endblock %} {% block background %}{{ render_background(background='landing', alt=this.alt)
-}}{% endblock %} {% block body %}
-<main class="landing content">
-  <div class="logo-wrapper">
-    <img
-      class="logo"
-      src="{{ '/static/images/logo.svg' | asseturl }}"
-      alt="logo"
-    />
+render_background -%} {%- from "macros/social.html" import render_social -%} {%-
+from "macros/translation.html" import transbag -%} {%- set t_call_for_proposals
+= transbag('translate', this.alt, 'call_for_proposals') -%} {%- set t_date =
+transbag('translate', this.alt, 'date') -%} {%- set venue = site.get('/venue',
+alt=this.alt) -%} {% block title %}{{ this.title }}{% endblock %} {% block body
+%}
+<div class="container">
+  {{ render_background(background='landing', alt=this.alt) }}
+  <main class="landing content">
+    <div class="logo-wrapper">
+      <img
+        class="logo"
+        src="{{ '/static/images/logo.svg' | asseturl }}"
+        alt="logo"
+      />
+    </div>
+    <div class="text">
+      <h1 class="header-1">{{ t_date }}</h1>
+      <h2 class="header-2">{{ venue.location }}</h2>
+      <h2 class="header-2">{{ venue.name }}</h2>
+      <p class="paragraph">
+        {{ this.body }}
+      </p>
+    </div>
+    {%- if 'call_for_proposals' in this.sections -%}
+    <a
+      class="button-red cp-button"
+      href="{{ this.call_for_proposals }}"
+      aria-label="Application Form Link"
+    >
+      {{ t_call_for_proposals | upper }}
+    </a>
+    {%- endif -%}
+  </main>
+</div>
+<div class="container">
+  {{ render_background(background='color', color='#2811CE') }}
+  <div class="speakers-landing content">
+    <h1>KEYNOTES</h1>
+    <div class="speakers-container">
+      {% for speaker in site.get('/speakers', alt = this.alt).children %} {% if
+      speaker.keynote %}
+      <div class="speaker__card">
+        <div class="speaker__card-wrapper">
+          <img
+            class="speaker__card-photo"
+            src="{{ speaker.photo | asseturl }}"
+            alt="Speaker photo: {{ speaker.name + ' ' + speaker.last_name }}"
+          />
+          <img
+            class="speaker__card-background"
+            src="{{ '/static/images/speaker-background.svg' | asseturl }}"
+            alt="Speaker background"
+          />
+        </div>
+        <span class="speaker__card-name">{{
+        speaker.name | upper + " " + speaker.last_name | upper
+        }}</span>
+        <span class="speaker__card-description">{{
+          speaker.short_description
+        }}</span>
+        <span class="speaker__card-company">{{ speaker.company }}</span>
+        {{ render_social(speaker) }}
+      </div>
+      {% endif %} {% endfor %}
+    </div>
   </div>
-
-  <div class="text">
-    <h1 class="header-1">{{ t_date }}</h1>
-    <h2 class="header-2">{{ venue.location }}</h2>
-    <h2 class="header-2">{{ venue.name }}</h2>
-    <p class="paragraph">
-      {{ this.body }}
-    </p>
+</div>
+<div class="container">
+  {{ render_background(background='color', color='#FFF') }}
+  <div class="sponsors-landing content">
+    <h1>SPONSORS</h1>
+    <div class="sponsors-container">
+      {% for category in ['Platinum', 'Bronze'] %}
+      <div class="sponsors__category-left">
+        <h2 class="sponsors__category-name">{{ category }}</h2>
+      </div>
+      <div class="sponsors__category-logos">
+        {% for sponsor in site.get('/sponsors', alt = this.alt).children %} {%
+        if sponsor.category == category%}
+        <div>
+          <img
+            class="sponsors__category-logo"
+            src="{{ sponsor.logo | asseturl }}"
+            alt="{{ sponsor.name }} Logo"
+          />
+        </div>
+        {% endif %} {% endfor %}
+      </div>
+      {% endfor %}
+    </div>
   </div>
-  {%- if 'call_for_proposals' in this.sections -%}
-  <a
-    class="button-red cp-button"
-    href="{{ this.call_for_proposals }}"
-    aria-label="Application Form Link"
-  >
-    {{ t_call_for_proposals | upper }}
-  </a>
-  {%- endif -%}
-</main>
+</div>
 {% endblock %}
