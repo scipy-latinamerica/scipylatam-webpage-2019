@@ -178,6 +178,7 @@
 .sponsors__category-logos {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 
   @include from(large) {
     width: 70%;
