@@ -129,6 +129,8 @@
   top: 15px;
   right: 20px;
   cursor: pointer;
+  background-color: $dark-blue;
+  border: none;
 
   @include from(large) {
     display: none;
