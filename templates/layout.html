@@ -5,6 +5,7 @@
 {%- set t_code_of_conduct = transbag('menu', this.alt, 'code_of_conduct') -%} 
 {%- set t_footer_message = transbag('translate', this.alt, 'footer_message') -%} 
 {%- set t_open_chat = transbag('translate', this.alt, 'open_chat') -%}
+{%- from "macros/social.html" import render_social -%}
 
 <!DOCTYPE html>
 <head>
@@ -61,6 +62,10 @@
       </button>
     </div>
     <nav class="general__menu">
+      <button class="general__close-button">
+        <img 
+        src="{{ '/static/images/close.svg' | asseturl }}" alt="Close menu">
+      </button>
       <ul class="general__menu-list">
         <li class="general__menu-item">
           <a class="general__menu-link {% if this == site.get('/', alt=this.alt) %} general__menu-link--active {% endif%}" 
@@ -88,23 +93,26 @@
           {%- endif-%}
         </li>
       </ul>
-      <span class="general__menu-follow">Follow us: </span>
-      <span class="general__language-label">Change language: </span>
+      <div class="general__menu-line"></div>
       <ul class="general__language-menu">
         {%- if this.alt == 'es' -%}
         <li class="general__language-item">
           <a class="general__language-link" href="{{ '.'|url(alt='en') }}"
-            >English</a
+            >ENGLISH</a
           >
         </li>
         {%- elif this.alt == 'en' -%}
         <li class="general__language-item">
           <a class="general__language-link" href="{{ '.'|url(alt='es') }}"
-            >Español</a
+            >ESPAÑOL</a
           >
         </li>
         {%- endif-%}
       </ul>
+      <a class="general__menu-code" href="{{ './code-of-conduct'|url(alt=this.alt) }}">
+        Code of Conduct
+      </a>
+      {{ render_social(site.get('/')) }}
     </nav>
     {% block body %} {% endblock %}
   </div>
@@ -119,6 +127,7 @@
           {% endif %}
         {% endfor %}
       </ul>
+      {{ render_social(site.get('/')) }}
     </div>
     <div class="footer__copyright">
       <span class="footer__copyright-copy">{{ t_footer_message }}</span>

@@ -16,12 +16,14 @@ class Menu {
     this.node = document.querySelector('.general__menu')
     this.button = document.querySelector('.general__hamburger')
     this.wrapperMenu = document.querySelector('.wrapper-hamburger')
+    this.closeButton = document.querySelector('.general__close-button')
     this.body = document.body
   }
 
   setEvents () {
     this.button.addEventListener('click', this.openMenu.bind(this))
-    document.addEventListener('click', this.closeMenu.bind(this))
+    this.closeButton.addEventListener('click', this.closeMenu.bind(this))
+    document.addEventListener('click', this.closeWhenClickOutside.bind(this))
     window.addEventListener('scroll', throttle(this.setMenuBackground.bind(this), 200))
   }
 
@@ -31,6 +33,11 @@ class Menu {
   }
 
   closeMenu (event) {
+    this.node.classList.remove(this.states['OPEN'])
+    this.body.classList.remove(this.states['NOSCROLL'])
+  }
+
+  closeWhenClickOutside (event) {
     if (event.target.classList.contains('container')) {
       this.node.classList.remove(this.states['OPEN'])
       this.body.classList.remove(this.states['NOSCROLL'])

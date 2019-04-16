@@ -106,9 +106,52 @@
   border: none;
 }
 
+.general__menu-line {
+  height: 1px;
+  background-color: $white;
+  width: 190px;
+  margin-left: 64px;
+  margin-bottom: 37px;
+
+  @include from(large) {
+    display: none;
+  }
+}
+
+.general__language-menu {
+  @include from(large) {
+    display: none;
+  }
+}
+
+.general__close-button {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
+
+  @include from(large) {
+    display: none;
+  }
+}
+
 .body--noscroll {
   height: 100vh;
   overflow: hidden;
+}
+
+.general__menu-code {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: none;
+  color: $white;
+  padding-left: 64px;
+  margin-bottom: 20px;
+
+  @include from(large) {
+    display: none;
+  }
 }
 
 .general__menu {
@@ -139,7 +182,7 @@
   }
 
   &-list {
-    padding: 84px 0 0 74px;
+    padding: 74px 0 0 64px;
     min-height: 430px;
     align-items: center;
 
@@ -222,13 +265,18 @@
   &-logos {
     display: flex;
     justify-content: center;
-    width: 270px;
 
     li {
       margin: 0 15px;
       display: flex;
       align-items: center;
     }
+  }
+}
+
+.general__menu > .general__menu-logos {
+  @include from(large) {
+    display: none;
   }
 }
 
@@ -246,12 +294,15 @@
       display: none;
     }
   }
+  &-item {
+    margin-bottom: 15px;
+  }
 
   &-link {
-    font-family: "Montserrat", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    padding-left: 74px;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    padding-left: 64px;
     color: $white;
     text-decoration: none;
 

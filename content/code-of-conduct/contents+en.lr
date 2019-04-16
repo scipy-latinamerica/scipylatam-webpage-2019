@@ -4,12 +4,6 @@ _template: code-conduct.html
 ---
 display: true
 ---
-menu_label: Code of Conduct
----
-main_menu: true
----
-footer_menu: true
----
 title: Code of conduct
 ---
 body:

@@ -6,7 +6,7 @@ display: true
 ---
 menu_label: Código de conducta
 ---
-main_menu: true
+main_menu: false
 ---
 footer_menu: true
 ---

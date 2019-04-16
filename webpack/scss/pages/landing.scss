@@ -146,6 +146,10 @@
     margin-bottom: 25px;
     letter-spacing: 5px;
     margin-bottom: 50px;
+
+    @include from(large) {
+      margin-bottom: 100px;
+    }
   }
 
   h2 {
@@ -179,19 +183,22 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 50px;
 
   @include from(large) {
     width: 70%;
     justify-content: space-between;
+    margin-bottom: 100px;
   }
 
   div {
     margin-bottom: 30px;
     padding: 0 30px;
+    text-align: center;
 
     @include from(large) {
       padding: 0;
-      width: 30%;
+      width: 33%;
       max-width: 250px;
     }
   }
@@ -199,5 +206,5 @@
 
 .sponsors__category-logo {
   max-width: 180px;
-  max-height: 150px;
+  max-height: 70px;
 }
