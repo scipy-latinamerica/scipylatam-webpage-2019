@@ -76,8 +76,9 @@ alt=this.alt) -%} {% block title %}{{ this.title }}{% endblock %} {% block body
     <h1>{{ t_sponsors|upper }}</h1>
     <div class="sponsors-container">
       {% for category in ['Platinum'] %}
+      {%- set t_cat = transbag('translate', this.alt, category|lower) -%}
       <div class="sponsors__category-left">
-        <h2 class="sponsors__category-name">{{ category }}</h2>
+        <h2 class="sponsors__category-name">{{ t_cat }}</h2>
       </div>
       <div class="sponsors__category-logos">
         {% for sponsor in site.get('/sponsors', alt = this.alt).children %} {%
