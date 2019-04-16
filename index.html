@@ -1,62 +1,147 @@
-<!doctype html>
+<!DOCTYPE html>
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-<meta name="format-detection" content="telephone=no">
-<meta name="description" content="SciPy Latam 2019 | Comparte experiencias sobre el uso de Python científico tanto académicamente como profesionalmente.">
-<meta name="google-site-verification" content="tS192x5OfHOZKosOfhq39D1Wlk6EwH_gaSw8ZUVe_bs" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"
+  />
+  <meta name="format-detection" content="telephone=no" />
+  <meta
+    name="description"
+    content="SciPy Latam 2019 | Comparte experiencias sobre el uso de Python científico tanto académica como profesionalmente."
+  />
+  <meta
+    name="google-site-verification"
+    content="tS192x5OfHOZKosOfhq39D1Wlk6EwH_gaSw8ZUVe_bs"
+  />
 
-<meta property="og:site_name" content="SciPy Latam 2019" />
-<meta property="og:title" content="SciPy Latam 2019 | SciPy Latam 2019" />
-<meta property="og:description" content="SciPy Latam 2019 | Comparte experiencias sobre el uso de Python científico tanto académicamente como profesionalmente.">
-<meta property="og:image" content="./static/images/opimage.jpg?h=892b4f94">
-<meta property="og:url" content="http://scipyla.org/conf/2019">
-<meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SciPy Latam 2019" />
+  <meta property="og:title" content="SciPy Latam 2019" />
+  <meta property="og:description" content="Comparte experiencias sobre el uso de Python científico tanto académica como profesionalmente." />
+  <meta property="og:image" content="./static/images/opimage.jpg?h=7f7c0656" />
+  <meta property="og:url" content="http://scipyla.org/conf/2019" />
+  <meta property="og:type" content="website" />
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@scipyla">
-<meta name="twitter:creator" content="@isaquinva">
-<meta name="twitter:title" content="SciPy Latam 2019 | SciPy Latam 2019">
-<meta name="twitter:description" content="SciPy Latam 2019 | Comparte experiencias sobre el uso de Python científico tanto académicamente como profesionalmente.">
-<meta name="twitter:image" content="./static/images/opimage.jpg?h=892b4f94">
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@scipyla" />
+  <meta name="twitter:creator" content="@isaquinva" />
+  <meta name="twitter:title" content="SciPy Latam 2019 | SciPy Latam 2019" />
+  <meta name="twitter:description" content="Comparte experiencias sobre el uso de Python científico tanto académica como profesionalmente." />
+  <meta name="twitter:image" content="./static/images/opimage.jpg?h=7f7c0656" />
 
-<title>SciPy Latam 2019 - SciPy Latam 2019</title>
+  <!-- Favicon -->
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="apple-touch-icon" sizes="180x180" href="./static/favicon/apple-touch-icon.png?h=ac032284">
+  <link rel="icon" type="image/png" sizes="32x32" href="./static/favicon/favicon-32x32.png?h=a4abd457">
+  <link rel="icon" type="image/png" sizes="16x16" href="./static/favicon/favicon-16x16.png?h=30175b39">
+  <link rel="mask-icon" href="" color="#5bbad5">
 
-<!-- Fonts -->
-<link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,700|Poppins:300,500,700" rel="stylesheet">
+  <title>SciPy Latam 2019 - SciPy Latam 2019</title>
 
-<!-- CSS -->
-<link rel="stylesheet" href="./static/gen/styles.css?h=85451f3b">
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Poppins:300,500,700"
+    rel="stylesheet"
+  />
 
-<!-- Scripts -->
-<script type=text/javascript src="./static/gen/app.js?h=3db4c4ad" charset="utf-8"></script>
-
-<!-- Scripts: Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138156801-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-138156801-1');
-</script>
-
-<!-- Scripts: Gitter chat -->
-<script>
-    ((window.gitter = {}).chat = {}).options = {
-      room: 'scipy-latinamerica/lobby',
-      activationElement: '.gitter-button'
-    };
-  </script>
-  <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./static/gen/styles.css?h=3300c170" />
 </head>
 
 <body>
-    <button class="js-gitter-toggle-chat-button gitter-custom-button">Abrir chat</button>
-  <div class="container landing-page">
+  <div class="global-container">
+    <div class="wrapper-hamburger">
+      <button class="general__hamburger">
+        <img
+          src="./static/images/hamburger.svg?h=61b89864"
+          alt="Hamburger menu"
+        />
+      </button>
+    </div>
+    <nav class="general__menu">
+      <button class="general__close-button">
+        <img 
+        src="./static/images/close.svg?h=f9b7536d" alt="Close menu">
+      </button>
+      <ul class="general__menu-list">
+        <li class="general__menu-item">
+          <a class="general__menu-link  general__menu-link--active " 
+            href="./">
+              INICIO
+            </a>
+        </li>
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        <li class="general__menu-language"><a class="general__menu-language-button" 
+          href="./en/">EN</a></li>
+      </ul>
+      <div class="general__menu-line"></div>
+      <ul class="general__language-menu"><li class="general__language-item">
+          <a class="general__language-link" href="./en/"
+            >ENGLISH</a
+          >
+        </li></ul>
+      <a class="general__menu-code" href="./codigo-de-conducta/">
+        Código de conducta
+      </a>
+      
+<ul class="general__menu-logos">
   
+  <li>
+    <a href="https://www.instagram.com/scipyla" aria-label="Go to Instagram profile">
+      <img
+        src="./static/images/instagram-mobile.svg?h=1cb83d45"
+        alt="Instagram Logo"
+      />
+    </a>
+  </li>
+   
+  <li>
+    <a href="https://www.twitter.com/scipyla" aria-label="Go to Twitter profile">
+      <img
+        src="./static/images/twitter-mobile.svg?h=cb75177e"
+        alt="Twitter Logo"
+      />
+    </a>
+  </li>
+   
+  <li>
+    <a href="https://www.facebook.com/scipyla" aria-label="Go to Facebook profile">
+      <img
+        src="./static/images/facebook-mobile.svg?h=929c0a83"
+        alt="Facebook Logo"
+      />
+    </a>
+  </li>
+   
+  <li>
+    <a href="https://www.linkedin.com/company/scipy-latin-america/about" aria-label="Go to LinkedIn profile">
+      <img
+        src="./static/images/linkedin-mobile.svg?h=d116a3d8"
+        alt="LinkedIn Logo"
+      />
+    </a>
+  </li>
+  
+</ul>
 
+    </nav>
+    
+<div class="container">
+   
 <img
   class="landing__background-1"
   src="./static/images/scipy-bg1.svg?h=fb01fdd9"
@@ -67,20 +152,7 @@
   src="./static/images/scipy-bg2.svg?h=1091fcb1"
   alt="Background 2"
 />
- 
-
-  <nav class="general__menu">
-    <ul class="general__menu-list">
-      <li class="general__menu-item">
-        <a class="general__menu-link" href="./">INICIO</a>
-      </li>
-      <li class="general__menu-item">
-        <a class="general__menu-link" href="./codigo-de-conducta/">CÓDIGO DE CONDUCTA</a>
-      </li><li class="general__menu-item">
-          <a class="general__menu-link" href="./en/">English</a>
-      </li></ul>
-  </nav>
-  
+   
   <main class="landing content">
     <div class="logo-wrapper">
       <img
@@ -89,32 +161,189 @@
         alt="logo"
       />
     </div>
-
     <div class="text">
       <h1 class="header-1">Octubre 8 al 10 de 2019</h1>
       <h2 class="header-2">Bogotá, Colombia</h2>
       <h2 class="header-2">Universidad de Los Andes</h2>
       <p class="paragraph">
-        <p>Comparte experiencias sobre el uso de Python científico tanto académicamente como profesionalmente.</p>
+        <p>Comparte experiencias sobre el uso de Python científico tanto académica como profesionalmente.</p>
 
       </p>
     </div></main>
+</div>
+<div class="container">
+     
+<div class="color-background" style="background-color: #2811CE"></div>
+ 
+  <div class="speakers-landing content">
+    <h1>PONENTES INVITADOS</h1>
+    <div class="speakers-container">
+       
+      <div class="speaker__card">
+        <div class="speaker__card-wrapper">
+          <img
+            class="speaker__card-photo"
+            src="./ponentes/travis-oliphant/travis-oliphant.jpg"
+            alt="Speaker photo: Travis Oliphant"
+          />
+          <img
+            class="speaker__card-background"
+            src="./static/images/speaker-background.svg?h=aa0790c5"
+            alt="Speaker background"
+          />
+        </div>
+        <span class="speaker__card-name">TRAVIS OLIPHANT</span>
+        <span class="speaker__card-description">Fundador de Quansight, Anaconda (Continuum), NumFOCUS y PyData. Creador de NumPy, SciPy, Conda, Numba y XND.</span>
+        <span class="speaker__card-company">Quansight, Inc</span>
+        
+<ul class="general__menu-logos">
+   
+  <li>
+    <a href="https://www.twitter.com/teoliphant" aria-label="Go to Twitter profile">
+      <img
+        src="./static/images/twitter-mobile.svg?h=cb75177e"
+        alt="Twitter Logo"
+      />
+    </a>
+  </li>
+    
+  <li>
+    <a href="https://www.linkedin.com/in/teoliphant/" aria-label="Go to LinkedIn profile">
+      <img
+        src="./static/images/linkedin-mobile.svg?h=d116a3d8"
+        alt="LinkedIn Logo"
+      />
+    </a>
+  </li>
+  
+</ul>
+
+      </div>
+       
+    </div>
+  </div>
+</div>
+<div class="container">
+     
+<div class="color-background" style="background-color: #FFF"></div>
+ 
+  <div class="sponsors-landing content">
+    <h1>PATROCINADORES</h1>
+    <div class="sponsors-container">
+      <div class="sponsors__category-left">
+        <h2 class="sponsors__category-name">Platino</h2>
+      </div>
+      <div class="sponsors__category-logos">
+         
+        <div>
+          <img
+            class="sponsors__category-logo"
+            src="./patrocinadores/uniandes/uniandes.png"
+            alt="Universidad de Los Andes Logo"
+          />
+        </div>
+               
+      </div>
+      
+    </div>
+  </div>
+</div>
 
   </div>
-
   <footer class="footer">
-      <div class="footer__links">
-        <ul>
+    <div class="footer__links">
+      <ul>
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
           <li>
-            <a href="./code-conduct">CÓDIGO DE CONDUCTA</a>
+            <a href="./codigo-de-conducta/">CÓDIGO DE CONDUCTA</a>
           </li>
-          <!-- <li>
-            <a href="./code-conduct">CONVENCE A TU JEFE</a>
-          </li> -->
-        </ul>
-      </div>
-      <div class="footer__copyright">
-        <span class="footer__copyright-copy">Hecho con amor en Colombia. Derechos de autor, Python Colombia 2019. Todos los derechos reservados.</span>
-      </div>
-    </footer>  
+          
+        
+      </ul>
+      
+<ul class="general__menu-logos">
+  
+  <li>
+    <a href="https://www.instagram.com/scipyla" aria-label="Go to Instagram profile">
+      <img
+        src="./static/images/instagram-mobile.svg?h=1cb83d45"
+        alt="Instagram Logo"
+      />
+    </a>
+  </li>
+   
+  <li>
+    <a href="https://www.twitter.com/scipyla" aria-label="Go to Twitter profile">
+      <img
+        src="./static/images/twitter-mobile.svg?h=cb75177e"
+        alt="Twitter Logo"
+      />
+    </a>
+  </li>
+   
+  <li>
+    <a href="https://www.facebook.com/scipyla" aria-label="Go to Facebook profile">
+      <img
+        src="./static/images/facebook-mobile.svg?h=929c0a83"
+        alt="Facebook Logo"
+      />
+    </a>
+  </li>
+   
+  <li>
+    <a href="https://www.linkedin.com/company/scipy-latin-america/about" aria-label="Go to LinkedIn profile">
+      <img
+        src="./static/images/linkedin-mobile.svg?h=d116a3d8"
+        alt="LinkedIn Logo"
+      />
+    </a>
+  </li>
+  
+</ul>
+
+    </div>
+    <div class="footer__copyright">
+      <span class="footer__copyright-copy">Hecho con amor en Colombia. Derechos de autor, Python Colombia 2019. Todos los derechos reservados.</span>
+    </div>
+  </footer>
+  <div class="wrapper-gitter">
+    <div class="container-gitter">
+      <button class="js-gitter-toggle-chat-button gitter-custom-button">
+        Abrir chat
+      </button>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script type=text/javascript src="./static/gen/app.js?h=ced4b94d" charset="utf-8"></script>
+
+  <!-- Scripts: Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138156801-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-138156801-1');
+  </script>
+
+  <!-- Scripts: Gitter chat -->
+  <script>
+    ((window.gitter = {}).chat = {}).options = {
+      room: 'scipy-latinamerica/lobby',
+      activationElement: '.gitter-button'
+    };
+  </script>
+  <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
 </body>
