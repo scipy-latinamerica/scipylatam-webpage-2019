@@ -2,4 +2,6 @@ name: NVidia
 ---
 category: Bronze
 ---
-logo: static/images/sponsors/nvidia.png
+logo: nvidia.png
+---
+confirmed: no

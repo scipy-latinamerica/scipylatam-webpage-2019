@@ -2,7 +2,10 @@
 render_background -%} {%- from "macros/social.html" import render_social -%} {%-
 from "macros/translation.html" import transbag -%} {%- set t_call_for_proposals
 = transbag('translate', this.alt, 'call_for_proposals') -%} {%- set t_date =
-transbag('translate', this.alt, 'date') -%} {%- set venue = site.get('/venue',
+transbag('translate', this.alt, 'date') -%}
+{%- set t_keynotes = transbag('translate', this.alt, 'keynotes') -%}
+{%- set t_sponsors = transbag('translate', this.alt, 'sponsors') -%}
+{%- set venue = site.get('/venue',
 alt=this.alt) -%} {% block title %}{{ this.title }}{% endblock %} {% block body
 %}
 <div class="container">
@@ -37,7 +40,7 @@ alt=this.alt) -%} {% block title %}{{ this.title }}{% endblock %} {% block body
 <div class="container">
   {{ render_background(background='color', color='#2811CE') }}
   <div class="speakers-landing content">
-    <h1>KEYNOTES</h1>
+    <h1>{{ t_keynotes|upper }}</h1>
     <div class="speakers-container">
       {% for speaker in site.get('/speakers', alt = this.alt).children %} {% if
       speaker.keynote %}
@@ -45,7 +48,7 @@ alt=this.alt) -%} {% block title %}{{ this.title }}{% endblock %} {% block body
         <div class="speaker__card-wrapper">
           <img
             class="speaker__card-photo"
-            src="{{ speaker.photo | asseturl }}"
+            src="{{ speaker|url + speaker.image }}"
             alt="Speaker photo: {{ speaker.name + ' ' + speaker.last_name }}"
           />
           <img
@@ -70,9 +73,9 @@ alt=this.alt) -%} {% block title %}{{ this.title }}{% endblock %} {% block body
 <div class="container">
   {{ render_background(background='color', color='#FFF') }}
   <div class="sponsors-landing content">
-    <h1>SPONSORS</h1>
+    <h1>{{ t_sponsors|upper }}</h1>
     <div class="sponsors-container">
-      {% for category in ['Platinum', 'Bronze'] %}
+      {% for category in ['Platinum'] %}
       <div class="sponsors__category-left">
         <h2 class="sponsors__category-name">{{ category }}</h2>
       </div>
@@ -82,7 +85,7 @@ alt=this.alt) -%} {% block title %}{{ this.title }}{% endblock %} {% block body
         <div>
           <img
             class="sponsors__category-logo"
-            src="{{ sponsor.logo | asseturl }}"
+            src="{{ sponsor|url + sponsor.logo }}"
             alt="{{ sponsor.name }} Logo"
           />
         </div>

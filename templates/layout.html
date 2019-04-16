@@ -1,6 +1,6 @@
 {%- from "macros/translation.html" import transbag -%} 
 {%- set event = site.get('/', alt=this.alt) -%} 
-{%- set l_opimage = ('/static/images/opimage_' + this.alt|string + '.jpg')|asseturl -%} 
+{%- set l_opimage = ('/static/images/opimage.jpg')|asseturl -%} 
 {%- set t_home = transbag('menu', this.alt, 'home') -%} 
 {%- set t_code_of_conduct = transbag('menu', this.alt, 'code_of_conduct') -%} 
 {%- set t_footer_message = transbag('translate', this.alt, 'footer_message') -%} 
@@ -38,6 +38,14 @@
   <meta name="twitter:title" content="{{ event.title }} | {{ this.title }}" />
   <meta name="twitter:description" content="{{ this.description }}" />
   <meta name="twitter:image" content="{{ l_opimage }}" />
+
+  <!-- Favicon -->
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/static/favicon/apple-touch-icon.png'|asseturl }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/static/favicon/favicon-32x32.png'|asseturl }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/static/favicon/favicon-16x16.png'|asseturl }}">
+  <link rel="mask-icon" href="{{ '/static/favicon/safari-pinned-tab.svg'|asseturl }}" color="#5bbad5">
 
   <title>SciPy Latam 2019 - {% block title %}{% endblock %}</title>
 
@@ -110,7 +118,7 @@
         {%- endif-%}
       </ul>
       <a class="general__menu-code" href="{{ './code-of-conduct'|url(alt=this.alt) }}">
-        Code of Conduct
+        {{ t_code_of_conduct }}
       </a>
       {{ render_social(site.get('/')) }}
     </nav>

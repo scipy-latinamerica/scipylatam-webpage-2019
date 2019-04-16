@@ -2,7 +2,7 @@
 <ul class="general__menu-logos">
   {% if item.instagram != '' %}
   <li>
-    <a href="{{ item.instagram }}" aria-label="Go to Instagram profile">
+    <a href="https://www.instagram.com/{{ item.instagram }}" aria-label="Go to Instagram profile">
       <img
         src="{{ '/static/images/instagram-mobile.svg' | asseturl }}"
         alt="Instagram Logo"
@@ -11,7 +11,7 @@
   </li>
   {% endif %} {% if item.twitter != '' %}
   <li>
-    <a href="{{ item.twitter }}" aria-label="Go to Twitter profile">
+    <a href="https://www.twitter.com/{{ item.twitter }}" aria-label="Go to Twitter profile">
       <img
         src="{{ '/static/images/twitter-mobile.svg' | asseturl }}"
         alt="Twitter Logo"
@@ -20,7 +20,7 @@
   </li>
   {% endif %} {% if item.facebook != '' %}
   <li>
-    <a href="{{ item.facebook }}" aria-label="Go to Facebook profile">
+    <a href="https://www.facebook.com/{{ item.facebook }}" aria-label="Go to Facebook profile">
       <img
         src="{{ '/static/images/facebook-mobile.svg' | asseturl }}"
         alt="Facebook Logo"

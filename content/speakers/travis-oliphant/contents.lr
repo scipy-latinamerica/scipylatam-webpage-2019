@@ -12,14 +12,16 @@ last_name: Oliphant
 ---
 prefix: Dr.
 ---
-short_description: Founder of Quansight, Anaconda (Continuum), NumFOCUS and PyData. Creator of NumPy, SciPy, Conda, Numba and XND.
+short_description: Fundador de Quansight, Anaconda (Continuum), NumFOCUS y PyData. Creador de NumPy, SciPy, Conda, Numba y XND.
 ---
-company: Quansight
+company: Quansight, Inc
 ---
 instagram: 
 ---
-twitter: https://twitter.com/teoliphant
+twitter: teoliphant
 ---
-facebook: https://www.facebook.com/teoliphant
+facebook: 
 ---
 linkedin: https://www.linkedin.com/in/teoliphant/
+---
+image: travis-oliphant.jpg
