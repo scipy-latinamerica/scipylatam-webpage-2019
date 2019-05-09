@@ -1,0 +1,15 @@
+_model: page
+---
+display: no
+---
+redirect: https://docs.google.com/forms/d/e/1FAIpQLSd9HVivE4bJKMqfi1jAD8SPBn-ra8kECMNpngBo1mziXtV-Nw/viewform
+---
+body:
+
+<br><br>
+# Vamos a redirigirte al formulario de aplicación de charlas y talleres.
+<br><br>
+---
+description: Convocatoria de charlas
+---
+title: Convocatoria de charlas

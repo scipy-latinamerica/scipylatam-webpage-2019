@@ -152,6 +152,12 @@
   <!-- Scripts -->
   <script type=text/javascript src="{{ '/static/gen/app.js'|asseturl }}" charset="utf-8"></script>
 
+  {%- if this.redirect -%}  
+  <script type=text/javascript charset="utf-8">
+      window.location = "{{ this.redirect }}";
+  </script>
+  {%- endif -%}  
+
   <!-- Scripts: Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138156801-1"></script>
   <script>

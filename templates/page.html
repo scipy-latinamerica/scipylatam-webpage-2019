@@ -1,0 +1,12 @@
+{%- extends "layout.html" -%} {%- from "macros/background.html" import
+render_background -%} {%- from "macros/translation.html" import transbag -%} {%
+block title %}
+{{ this.title }}
+{% endblock %} {% block body %}
+<div class="container">
+  {{ render_background(background='general', content_background='true', alt=this.alt) }}
+  <main class="content">
+    {{ this.body }}
+  </main>
+</div>
+{% endblock %}
