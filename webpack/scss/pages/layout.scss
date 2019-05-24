@@ -17,6 +17,7 @@
 .content {
   padding-top: $nav-height;
   width: 80%;
+  min-height: calc(100vh - 380px);
   margin: 0 auto;
 }
 
