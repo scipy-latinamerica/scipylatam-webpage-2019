@@ -1,16 +1,32 @@
-{%- extends "layout.html" -%}
-{%- from "macros/background.html" import render_background -%}
-{%- from "macros/translation.html" import transbag -%}
-
-{% block title %}{{ this.title }}{% endblock %}
-{% block background %}{{ render_background(background='general', content_background='true') }}{% endblock %}
-
-{% block body %}
+{%- extends "layout.html" -%} {%- from "macros/background.html" import
+render_background -%} {%- from "macros/social.html" import render_social -%} {%-
+from "macros/translation.html" import transbag -%} {%- set t_call_for_proposals
+= transbag('translate', this.alt, 'call_for_proposals') -%} {%- set t_date =
+transbag('translate', this.alt, 'date') -%}
+{%- set t_team = transbag('translate', this.alt, 'team') -%}
+{%- set venue = site.get('/venue',
+alt=this.alt) -%} {% block title %}{{ this.title }}{% endblock %} {% block body
+%}
 <div class="container">
-  <main class="content content-footer">
-    <div class="conduct-code">
-    {{ this.body }}
+  {{ render_background(background='color-cut', color='#FCD116') }}
+  <div class="team-members content">
+    <h1>{{ t_team|upper }}</h1>
+    <div class="team-members-container">
+      {% for member in site.query('/team', alt=this.alt) %}
+        <div class="team-member__card">
+          <div class="team-member__card-wrapper">
+            <img
+              class="team-member__card-photo"
+              src="{{ member|url(alt='es')|replace('/en', '') + member.image }}"
+              alt="Member photo: {{ member.name + ' ' + member.last_name }}"
+            />
+          </div>
+          <span class="team-member__card-name">
+            {{ member.name + ' ' + member.last_name }}
+          </span>
+        </div>
+      {% endfor %}
     </div>
-  </main>
+  </div>
 </div>
 {% endblock %}

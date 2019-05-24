@@ -1,3 +1,7 @@
+_model: team-member
+---
 name: Camilo
 ---
 last_name: Gomez
+---
+image: travis-oliphant.jpg

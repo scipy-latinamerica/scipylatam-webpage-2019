@@ -39,4 +39,6 @@ alt='es', color='#FFF') %} {% if background == 'landing' %}
 />
 {% endif %} {% if background == 'color' %}
 <div class="color-background" style="background-color: {{ color }}"></div>
+{% endif %} {% if background == 'color-cut' %}
+<div class="color-background cut-background" style="background-color: {{ color }}"></div>
 {% endif %} {% endmacro %}
