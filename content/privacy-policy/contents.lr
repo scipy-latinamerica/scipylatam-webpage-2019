@@ -1,0 +1,18 @@
+_template: code-conduct.html
+---
+_model: page
+---
+display: true
+---
+menu_label: Politica de privacidad
+---
+main_menu: false
+---
+footer_menu: true
+---
+title: Politica de privacidad
+---
+body:
+# Politica de privacidad
+---
+_slug: privacidad

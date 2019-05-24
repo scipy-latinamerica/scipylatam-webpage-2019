@@ -1,0 +1,18 @@
+_template: code-conduct.html
+---
+_model: page
+---
+display: true
+---
+menu_label: Diversidad
+---
+main_menu: false
+---
+footer_menu: true
+---
+title: Diversidad
+---
+body:
+# DIVERSIDAD
+---
+_slug: diversidad

@@ -1,5 +1,11 @@
 _template: team-members.html
 ---
+display: true
+---
+main_menu: true
+---
+menu_label: Equipo
+---
 _model: team-members
 ---
 title: Team

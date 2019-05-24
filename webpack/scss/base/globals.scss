@@ -13,15 +13,22 @@
 
     @include from(large) {
       justify-content: space-between;
+      flex-direction: row;
     }
 
     ul {
       display: flex;
+      flex-direction: column;
       margin: 0;
 
       @include from(large) {
+        flex-direction: row;
         justify-content: flex-start;
       }
+    }
+
+    .general__menu-logos {
+      flex-direction: row;
     }
 
     li {
@@ -51,6 +58,8 @@
     @include from(large) {
       height: 55px;
       padding-bottom: 0;
+      justify-content: flex-end;
+      padding-right: 150px;
     }
   }
 
