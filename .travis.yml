@@ -18,6 +18,8 @@ install:
   - "pip install -U Lektor"
   - "pip install -U fabric"
   - "lektor plugins reinstall"
+  - "lektor build -f webpack --no-prune"
+  - "npm rebuild node-sass"
 
 script: "lektor build -f webpack --no-prune"
 
