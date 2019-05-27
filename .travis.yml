@@ -19,7 +19,7 @@ install:
   - "pip install -U fabric"
   - "lektor plugins reinstall"
 
-script: "lektor build -f webpack"
+script: "lektor build -f webpack --no-prune"
 
 deploy:
   - provider: script
