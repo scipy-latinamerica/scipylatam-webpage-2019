@@ -4,6 +4,4 @@ category: Collaborator
 ---
 last_name: Sánchez
 ---
-publish: yes
----
-image: travis-oliphant.jpg
+publish: no

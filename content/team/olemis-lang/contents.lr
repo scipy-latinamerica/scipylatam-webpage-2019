@@ -1,9 +1,11 @@
 name: Olemis
 ---
-category: Collaborator
+category: Ambassador
 ---
 last_name: Lang
 ---
 publish: yes
 ---
-image: travis-oliphant.jpg
+responsibility: Cuba
+---
+image: olemis.jpg

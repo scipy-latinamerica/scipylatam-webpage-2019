@@ -10,6 +10,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 
     @include from(large) {
       justify-content: space-between;

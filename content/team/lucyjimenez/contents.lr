@@ -2,4 +2,10 @@ name: Lucy
 ---
 last_name: Jimenez
 ---
-image: travis-oliphant.jpg
+publish: yes
+---
+category: Co-Organizer
+---
+responsibility: Patrocinadores, Comité de diversidad
+---
+image: lucy.jpg

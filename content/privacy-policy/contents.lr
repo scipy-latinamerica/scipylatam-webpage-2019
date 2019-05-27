@@ -4,15 +4,68 @@ _model: page
 ---
 display: true
 ---
-menu_label: Politica de privacidad
+menu_label: Politica de datos
 ---
 main_menu: false
 ---
 footer_menu: true
 ---
-title: Politica de privacidad
+title: Politica de datos
 ---
 body:
-# Politica de privacidad
+
+# POLITICA DE DATOS
+
+Valoramos su privacidad y damos todos los pasos posibles para protegerlo a usted y a sus datos.
+
+La Universidad de los Andes es el patrocinador institucional de la Conferencia SciPy Latam. Como tal, la universidad proporciona apoyo administrativo para la conferencia y, el proceso de registro y el proceso de inscripción. Para obtener más información sobre el manejo de datos de la Universidad, visite [Uso de datos personales](https://uniandes.edu.co/es/uso-de-datos-personales-uniandes).
+
+## Ponentes y postulantes
+
+Si está aplicando como ponente para charlas y talleres, los datos proporcionados en el formulario de aplicación se utilizarán para comunicar cualquier actualización sobre su proceso de selección y la aprobación final o el rechazo de su propuesta de charla o taller.
+
+Su información anónima también se utilizará para crear estadísticas sobre la asistencia de los ponentes y el alcance de la conferencia.
+
+## Asistentes
+
+Si aplica como asistente a la conferencia, los datos proporcionados en el formulario de registro se utilizarán para comunicarse con usted con las actualizaciones sobre la compra de los boletos, así como las actualizaciones de fechas importantes y eventos de la conferencia.
+
+Su información anónima también se utilizará para crear estadísticas sobre la asistencia de los ponentes y el alcance de la conferencia.
+
+## Información de tarjeta de crédito
+
+No almacenamos los detalles de la tarjeta de crédito ni compartimos los detalles de la tarjeta de crédito con terceros.
+
+## Cookies
+
+Las cookies son piezas de datos que su navegador web almacena en su disco duro a petición de un sitio web.
+
+No utilizamos cookies de sesión en el sitio web de la Conferencia SciPy Latam.
+
+## Información Agregada
+
+Recopilamos información agregada sobre las visitas realizadas a nuestras páginas. Esta información nos ayuda a mejorar el contenido de nuestro sitio. También rastreamos qué sitios web remiten a los visitantes al sitio web de la Conferencia SciPy Latam.
+
+## Comunicación por correo electrónico
+
+Utilizamos un proceso de inclusión para agregar nombres a la lista de correo electrónico de la conferencia. Todos los correos electrónicos masivos que enviamos incluyen un enlace de exclusión que le permitirá retirarse de todos los correos futuros. No compartimos nuestras listas de correo electrónico con nadie sin su permiso.
+
+## Divulgación de la Política de Información
+
+En ningún momento permitimos que otras personas ajenas al comité de organización accedan a su información personal. Su información tampoco será proporcionada a nuestros socios, proveedores externos o agencias de marketing sin su permiso previo. Le proporcionaremos su información de contacto a los patrocinadores de la Conferencia SciPy Latam (enumerados en el sitio web) solo si opta por inscribirse durante el proceso de registro.
+
+## Fotografía, Audio y Grabación de Video.
+
+La Conferencia SciPy Latam se lleva a cabo en un espacio privado, por lo tanto, prohibimos a los participantes, expositores, patrocinadores u organizaciones de noticias que realicen actividades de conferencias, videos o grabaciones de audio. SciPy Latam se reserva el derecho de usar imágenes y videos tomados en la Conferencia con su fotografía y / o imagen en las redes sociales, incluyendo YouTube y / o en futuros materiales de marketing. SciPy Latam no es responsable del uso individual de su imagen o imagen por parte de los asistentes.
+
+Si tiene dudas sobre cómo se utiliza su imagen y semejanza de esta manera, comuníquese con los organizadores de la conferencia.
+
+## Contáctenos
+
+Si tiene alguna pregunta o inquietud sobre la Política de datos o las prácticas de este sitio web, contáctenos por correo electrónico a: [contact@scipyla.org](mailto: contact@scipyla.org)
+
+## Licencia
+
+Esta Política de privacidad se basó en la política definida por la [conferencia SciPy 2019](https://www.scipy2019.scipy.org/privacy-policy)
 ---
-_slug: privacidad
+_slug: política-de-datos

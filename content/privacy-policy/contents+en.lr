@@ -1,4 +1,4 @@
-_slug:
+_slug: privacy-policy
 ---
 _template: code-conduct.html
 ---
@@ -7,5 +7,66 @@ display: true
 title: Privacy Policy
 ---
 body:
+
+# PRIVACY POLICY
+
+We value your privacy and take every step possible to protect you and your data.
+
+University of Los Andes is the institutional sponsor for the SciPy Latam Conference. As such, the university provides administrative support for the conference and, registration process and entry process. For more information on the University handling of data, please visit [Personal Data Usage](https://uniandes.edu.co/es/uso-de-datos-personales-uniandes).
+
+## Speakers and speaker applicants
+
+If you are applying to be a speaker for talks and workshops the data provided on the application form will be used to communicate any updates on your selection process and final approval or rejection of your talk/workshop proposal.
+
+Your anonymized information will also be used to create statistics on speaker attendance, background and outreach of the conference. 
+
+## Attendees
+
+If you are attending the conference the data provided on the registration form will be used to communicate with you updates on the purchase of the tickets as well as updates on important dates and events of the conference. 
+
+Your anonymized information will also be used to create statistics on speaker attendance, background and outreach of the conference. 
+
+## Credit Card Information
+
+We do not store credit card details nor do we share credit card details with any 3rd parties.
+​
+## Cookies
+
+Cookies are pieces of data that your web browser stores on your hard drive at the request of a website.
+
+We do not use session cookies on the SciPy Latam Conference website.
+
+## Aggregate Information
+
+We collect aggregate information on visits made to our pages. This information helps us improve the content of our site. We also track which websites refer visitors to the SciPy Latam Conference website.
+
+## Email Communication
+
+We use an opt-in process to add names to the conference e-mail list. All mass emails we send include an opt-out link that will allow you to remove yourself from all future mailings. We do not share our email lists with anyone without your permission.​
+
+## Disclosure of Information Policy
+
+At no time do we allow others outside of the organization committee to access your personal information. Your information will likewise not be provided to our partners, outside vendors or any marketing agencies without your prior permission. We will provide your contact information to the SciPy Latam Conference sponsors (listed on the website) only if you choose to opt-in during the registration process.
+​
+## Photography, Audio and Video Recording
+
+The SciPy Latam Conference is held in a private space, therefore we do prohibit participants, exhibitors, sponsors, or news organizations from photographing, video or audio-taping Conference activities. SciPy Latam reserves the right to use images and video taken at the Conference with your photograph and/or likeness on social media including YouTube and/or in future marketing materials. SciPy Latam is not responsible for individual attendee’s use of your image or likeness.
+
+For concerns about your image and likeness being used in this manner, please contact the conference organizers.
+
+## Contacting Us
+
+If you have any questions or concerns about the Data Policy or the practices of this Website, please contact us by email at: [contact@scipyla.org](mailto:contact@scipyla.org)
+​
+## License
+
+This Privacy Policy is based on the policy defined by the [SciPy 2019 conference](https://www.scipy2019.scipy.org/privacy-policy).
+
 ---
 menu_label: Privacy Policy
+---
+description: 
+---
+footer_menu: true
+---
+main_menu: false

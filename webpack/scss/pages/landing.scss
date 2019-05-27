@@ -50,10 +50,10 @@
   .button-red {
     font-family: "Poppins", sans-serif;
     background-color: $red;
-    font-size: 40px;
+    font-size: 20px;
     color: $white;
     letter-spacing: 5px;
-    padding: 40px 60px;
+    padding: 20px 30px;
     border-radius: 80px;
     font-weight: 500;
     white-space: nowrap;
@@ -108,17 +108,60 @@
   }
 
   .cp-button {
-    margin-bottom: 300px;
-    width: 610px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    width: 400px;
+    text-align: center;
 
     @include from(large) {
-      margin-left: 35%;
-      margin-top: 30px;
-      margin-bottom: 150px;
+      margin: auto;
+      margin-top: 60px;
+      margin-bottom: 30px;
       width: 330px;
     }
   }
+
+  .countdown {
+    margin-bottom: 150px;
+    padding-top: 1em;
+    width: 100%;
+    border: 4px solid $red;
+    border-radius: 20px;
+    
+    min-height: 4.5em;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+
+    @include from(large) {
+      display: block;
+      margin: auto;
+      margin-top: 30px;
+      margin-bottom: 100px;
+      width: 400px;
+
+    }
+
+    &-number {
+      display: inline-block;
+      font-size: 25px;
+      font-weight: 700;
+    }
+
+    &-label {
+      padding-top: 0.5em;
+      font-size: 12px;
+      font-weight: 300;
+    }
+
+    span {
+      display: inline-block;
+      width: 80px;
+    }
+  }
 }
+
+
+
 
 .speakers-landing {
   h1 {

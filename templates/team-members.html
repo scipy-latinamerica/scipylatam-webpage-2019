@@ -10,23 +10,35 @@ alt=this.alt) -%} {% block title %}{{ this.title }}{% endblock %} {% block body
 <div class="container">
   {{ render_background(background='color-cut', color='#FCD116') }}
   <div class="team-members content">
-    <h1>{{ t_team|upper }}</h1>
+    {% for role in ['Co-Organizer', 'Collaborator', 'Reviewer', 'Volunteer', 'Ambassador'] %}
+    {%   set role_query = site.query('/team', alt=this.alt).filter(F.category == role) %}
+    {%   if role_query.count() %}
+    <h1>{{ transbag('translate', this.alt, role.lower())|upper }}</h1>
     <div class="team-members-container">
-      {% for member in site.query('/team', alt=this.alt) %}
-        <div class="team-member__card">
-          <div class="team-member__card-wrapper">
-            <img
-              class="team-member__card-photo"
-              src="{{ member|url(alt='es')|replace('/en', '') + member.image }}"
-              alt="Member photo: {{ member.name + ' ' + member.last_name }}"
-            />
-          </div>
-          <span class="team-member__card-name">
-            {{ member.name + ' ' + member.last_name }}
-          </span>
+    {%     for member in role_query %}
+    {%       if member.publish %} 
+      <div class="team-member__card">
+        <div class="team-member__card-wrapper">
+          {% if member.image %}
+          <img
+            class="team-member__card-photo"
+            src="/equipo/{{ member._id }}/{{ member.image }}"
+            alt="Member photo: {{ member.name + ' ' + member.last_name }}"
+          />
+          {% endif %}
         </div>
-      {% endfor %}
+        <span class="team-member__card-name">
+          {{ member.name + ' ' + member.last_name }}
+        </span>
+        <span class="team-member__card-responsibility">
+            {{ member.responsibility }}
+        </span>
+      </div>
+    {%       endif %}    
+    {%     endfor %}
     </div>
+    {%   endif %}
+    {% endfor %}
   </div>
 </div>
 {% endblock %}

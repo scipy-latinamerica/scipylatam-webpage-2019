@@ -4,4 +4,10 @@ name: Camilo
 ---
 last_name: Gomez
 ---
-image: travis-oliphant.jpg
+publish: yes
+---
+category: Co-Organizer
+---
+responsibility: Lugar, Patrocinadores y Ponentes
+---
+image: camilo-gomez.png
