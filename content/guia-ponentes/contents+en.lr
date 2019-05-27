@@ -1,0 +1,70 @@
+_slug: speaker-guidelines
+---
+_template: code-conduct.html
+---
+body:
+
+# SPEAKER GUIDELINES
+
+​Planning for your proposal submission?​
+
+Proposals must be submitted by <b>July 3rd<b>, 2019. Here's what you'll need for a submission:
+
+## The title
+
+You have 300 characters to sell your talk. This is known as the "elevator pitch". Make it as exciting and enticing as possible 
+
+## The abstract
+
+The description which will appear in the online program and give attendees the content of your talk/workshop.
+<br><br>
+Your placement in the program will be based on reviews of your abstract. This should be a roughly 500 word outline of your presentation. This outline should concisely describe software of interest to the SciPy Latam community, tools or techniques for more effective computing, or how scientific Python was applied to solve a research problem. A traditional background/motivation, methods, results, and conclusion structure is encouraged but not required. Links to project websites, source code repositories, figures, full papers, and evidence of public speaking ability are encouraged.
+
+## Tips for Submitting a Proposal
+
+The SciPy Latam Conference is in awe of the work that is being done in the community. We receive many interesting and thought-provoking proposals but we have a limited number of spaces. Please take a look at our tips below to improve your chances of having a talk or workshop accepted by the conference. In the unfortunate event that your proposal is not accepted, please keep in mind that you are welcome to give a lightning talk.
+
+* ● Submit your proposal early
+​In the talk notes, be sure to include answers to some basic questions:
+* ● Who is the intended audience for your talk?
+* ● What, specifically, will attendees learn from your talk?
+* ● Ensure that your talk will be relevant to a broad range of people. If your talk is on a particular Python package or piece of software, it should useful to more than a niche group.
+* ● Include links to source code, articles, blog posts, or other writing that adds context to the presentation.
+* ● If you've given a talk, tutorial, or other presentation before, include that information as well as a link to slides or a video if they're available.
+* ● SciPy Latam talks are generally 35 minutes with 2-3 minutes for questions. Please keep the length of time in mind as you structure your outline.
+* ● Your talk should not be a commercial for your company’s product. However, you are welcome to talk about how your company solved a problem, or notable open-source projects that may benefit attendees.
+<br><br>
+​Many of these tips are adapted from the PyCon Proposal Resources. Thanks PSF!
+
+<h2>How proposals are reviewed and selected​</h2>
+
+The talks and workshops go through a similar process consisting of a two step process. First a series of closed reviews are made to preselect candidates (i.e., the identities of the submitter are private) followed by a set of open reviews (i.e., the identities of the submitter and the reviewers are public).
+<br><br>
+Submissions are automatically assigned to reviewers with expertise in the domain specific topic. Each submission is reviewed by 3 reviewers and rated in the following categories: 
+
+* ● ​Would you recommend accepting this proposal (yes/no)?
+* ● Proposal rating? (numerical score 1 to 5)
+* ● How confident are you in your review? (numerical score 1 to 5)
+* ● Does this abstract concisely describe software of interest to the SciPy Latam community, tools or techniques for more effective computing, or how scientific Python was applied to solve a research problem? (numerical score 1 to 5)
+<br><br>
+​The submissions and their reviews are provided to the review chairs. The Chairs review the abstracts, scores and comments for all the submissions and make recommendations to the Program Committee Co-Chairs. The Program Committee Co-Chairs take the recommendations and build the initial SciPy Latam schedule.
+<br><br>
+Those that submitted talks that are selected are contacted by the Committee and they are asked to confirm their attendance at the SciPy Latam Conference. The Program Committee works with the chairs and co-chairs to identify a second tier of talks that will be added to the schedule in the event that some of the initial selections are not able to attend.
+<br><br>
+The Tutorial/workshops Co-Chairs review the scores and comments for all tutorials and build the schedule. They consider the scores as well as balancing the level of the tutorials (beginner, intermediate, advanced) and striving for a broad mix of topics.
+<br><br>
+ If you have questions about the process, feel free to reach out to [contact@scipyla.org](contact@scipyla.org)
+ 
+## License
+
+This content is based on the guidelines by the [SciPy 2019 Conference](https://www.scipy2019.scipy.org/talk-poster-presentations).
+---
+display: yes
+---
+footer_menu: yes
+---
+menu_label: Speaker guidelines
+---
+title: Speaker guidelines
+---
+order: 4

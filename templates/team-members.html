@@ -21,8 +21,8 @@ alt=this.alt) -%} {% block title %}{{ this.title }}{% endblock %} {% block body
         <div class="team-member__card-wrapper">
           {% if member.image %}
           <img
-            class="team-member__card-photo"
-            src="../equipo/{{ member._id }}/{{ member.image }}"
+            class="team-member__card-photo"            
+            src="{{ '../' if this.alt != 'es' else '' }}../equipo/{{ member._id }}/{{ member.image }}"
             alt="Member photo: {{ member.name + ' ' + member.last_name }}"
           />
           {% endif %}

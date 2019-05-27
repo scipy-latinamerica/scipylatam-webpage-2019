@@ -1,0 +1,72 @@
+_model: page
+---
+body:
+
+# GUIA PARA PONENTES
+
+¿Estás planeando aplicar a la convocatoria de charlas y propuestas?
+
+Las propuestas deben enviarse antes del <b>3 de julio<b> de 2019. Esto es lo que vas a necesitar para enviarlas:
+
+## Título
+
+Tienes 300 caracteres para vender tu charla. Esto se conoce como el "paso del ascensor". Hazlo lo más emocionante y atractivo posible.
+
+## Resumen
+
+El resumen que aparecerá en el programa en línea y le dará a los asistentes el contenido de tu tema de charla o taller. 
+<br><br>
+Tu ubicación en el programa se basará en las revisiones de tu resumen. Este debe ser un resumen de aproximadamente 500 palabras de tu charla o taller. Este esquema debe describir de manera concisa el software de interés para la comunidad de SciPy Latam, las herramientas o técnicas para una computación más efectivas, o cómo aplicaste Python científico para resolver un problema de investigación. Se alienta un fondo/motivación tradicional, métodos, resultados y estructura de conclusión, pero no es obligatorio presentar esto.
+<br><br>
+Se recomiendan incluir enlaces a sitios web de proyectos, repositorios de código fuente, cifras, artículos completos y evidencia de la capacidad para hablar en público.
+
+## Consejos para presentar una propuesta
+
+La Conferencia SciPy Latam está siempre asombrada por el trabajo que se está realizando en la comunidad. Recibimos muchas propuestas interesantes y estimulantes, pero tenemos un número limitado de espacios. Lee los siguientes consejos para mejorar tus posibilidades de que la conferencia acepte tu charla o taller. En el desafortunado caso de que tu propuesta no sea aceptada, ten en cuenta que puedes dar una charla relámpago (5 minutos máximo).
+
+* ● Presenta tu propuesta con anticipación
+* ● En las notas de conversación, asegúrate de incluir respuestas a algunas preguntas básicas:
+* ● ¿A quién va dirigida la audiencia?
+* ● ¿Qué, específicamente, aprenderán los asistentes de tu charla?
+* ● Asegúrate de que tu tema sea relevante para una amplia gama de personas. Si tu charla o taller es sobre un paquete o pieza de software Python en particular, debería ser útil para más de un grupo en particular.
+* ● Incluye enlaces al código fuente, artículos, publicaciones de blogs u otros escritos que agreguen contexto a la presentación.
+* ● Si has dado una charla, tutorial u otra presentación anteriormente, incluye esa información, así como un enlace a las diapositivas o un video, si están disponibles.
+* ● Las charlas SciPy Latam son generalmente de 35 minutos con 2-3 minutos para preguntas. Por favor, ten en cuenta la cantidad de tiempo estipulada.
+* ● Tu charla no debe ser un comercial para el producto de tu empresa. Sin embargo, puede hablar sobre cómo tu empresa resolvió un problema o sobre proyectos notables de código abierto que pueden beneficiar a los asistentes.
+<br> <br>
+Muchos de estos consejos están adaptados de los recursos de la propuesta de PyCon. Gracias PSF!
+
+<h2>¿Cómo se revisan y seleccionan las propuestas?</h2>
+
+Las charlas y los talleres tienen un proceso similar que consiste en una revisión de dos pasos. Primero se hace una serie de revisiones cerradas (es decir, las identidades de los ponentes son privadas) para poder preseleccionar candidatos. A continuación se hace pasa a un conjunto de revisiones abiertas (es decir, las identidades del remitente y los revisores son públicas).
+<br> <br>
+Las presentaciones se asignan automáticamente a los revisores con experiencia en el tema específico del dominio. Cada presentación es revisada por 3 revisores y calificada en las siguientes categorías:
+
+* ● ¿Recomendarías aceptar esta propuesta (sí / no)?
+* ● ¿Cuál es la calificación de la propuesta? (puntaje numérico del 1 al 5)
+* ● ¿Qué tan seguro estás en tu revisión? (puntaje numérico del 1 al 5)
+* ● ¿Este resumen describe de manera concisa el software de interés para la comunidad de SciPy Latam, las herramientas o técnicas para una computación más efectiva, o cómo se aplicó el científico Python para resolver un problema de investigación? (puntaje numérico del 1 al 5)
+<br> <br>
+Las presentaciones y sus revisiones se proporcionan a los presidentes de revisión. Los presidentes revisan los resúmenes, las puntuaciones y los comentarios de todas las presentaciones y hacen recomendaciones a los evaluadores del Comité del Programa. Los evaluadores del Comité del Programa toman las recomendaciones y crean el calendario inicial de SciPy Latam.
+<br> <br>
+El Comité se pone en contacto con aquellos que enviaron las propuestas que fueron seleccionadas y se les pide que confirmen su asistencia a la Conferencia SciPy Latam. El Comité de Programa trabaja con los presidentes y evaluadores para identificar un segundo nivel de charlas y talleres que se agregarán al calendario en caso de que algunas de los seleccionados inicialmente no puedan asistir.
+<br> <br>
+Los evaluadores de tutoriales / talleres revisan las puntuaciones y los comentarios de todos los tutoriales y elaboran el calendario. Consideran los puntajes y equilibran el nivel de los tutoriales (principiante, intermedio, avanzado) y se esfuerzan por brindar una amplia variedad de temas.
+<br> <br>
+ Si tienes preguntas sobre el proceso, no dudes en contactarnos en [contact@scipyla.org](contact@scipyla.org)
+ 
+<h2>Licencia</h2>
+
+Este contenido se basó en las pautas de la [Conferencia SciPy 2019] (https://www.scipy2019.scipy.org/talk-poster-presentations).
+---
+display: yes
+---
+footer_menu: yes
+---
+menu_label: Guía ponentes
+---
+_slug: guia-ponentes
+---
+_template: code-conduct.html
+---
+order: 4

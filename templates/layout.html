@@ -127,7 +127,7 @@
   <footer class="footer">
     <div class="footer__links">
       <ul>
-        {% for page in site.get('/', alt=this.alt).children %}
+        {% for page in site.get('/', alt=this.alt).children.order_by('order') %}
           {% if page.display and page.footer_menu %}
           <li>
             <a href="{{ page|url }}">{{ page.menu_label }}</a>

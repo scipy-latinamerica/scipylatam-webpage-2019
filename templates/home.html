@@ -130,7 +130,7 @@ alt=this.alt) -%} {% block title %}{{ this.title }}{% endblock %} {% block body
 <script>
   // Set the date we're counting down to
   {% set start_date = site.get('/').date_start %}
-  var countDownDate = new Date("{{ start_date }}").getTime();
+  var countDownDate = new Date("2019/07/03").getTime();
 
   // Update the count down every 1 second
   var x = setInterval(function() {
