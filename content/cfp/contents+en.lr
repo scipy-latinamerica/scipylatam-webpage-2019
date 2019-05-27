@@ -1,9 +1,9 @@
 body:
 
 <br><br>
-# We are redirecting you to the application form!
-<br><br>
-Hold on tight!
+## We are redirecting you to the application form!
+<br>
+## Hold on tight!
 <br><br>
 ---
 description: Call for proposals
@@ -13,3 +13,5 @@ display: no
 redirect: https://docs.google.com/forms/d/e/1FAIpQLSd9HVivE4bJKMqfi1jAD8SPBn-ra8kECMNpngBo1mziXtV-Nw/viewform
 ---
 title: Call for proposals
+---
+_template: code-conduct.html
