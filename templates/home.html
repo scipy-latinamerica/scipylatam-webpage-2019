@@ -66,7 +66,7 @@ alt=this.alt) -%} {% block title %}{{ this.title }}{% endblock %} {% block body
   <div class="speakers-landing content">
     <h1>{{ t_keynotes|upper }}</h1>
     <div class="speakers-container">
-      {% for speaker in site.query('/speakers', alt=this.alt) %} {% if
+      {% for speaker in site.query('/speakers', alt=this.alt).order_by('+order') %} {% if
       speaker.keynote %}
       <div class="speaker__card">
         <div class="speaker__card-wrapper">

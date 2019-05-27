@@ -23,3 +23,9 @@ prefix: Dr.
 short_description: Founder of Quansight, Anaconda (Continuum), NumFOCUS and PyData. Creator of NumPy, SciPy, Conda, Numba and XND.
 ---
 twitter: teoliphant
+---
+github: teoliphant
+---
+order: 1
+---
+web: http://technicaldiscovery.blogspot.com

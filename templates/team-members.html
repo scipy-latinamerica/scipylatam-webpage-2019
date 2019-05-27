@@ -22,7 +22,7 @@ alt=this.alt) -%} {% block title %}{{ this.title }}{% endblock %} {% block body
           {% if member.image %}
           <img
             class="team-member__card-photo"
-            src="/equipo/{{ member._id }}/{{ member.image }}"
+            src="../equipo/{{ member._id }}/{{ member.image }}"
             alt="Member photo: {{ member.name + ' ' + member.last_name }}"
           />
           {% endif %}
