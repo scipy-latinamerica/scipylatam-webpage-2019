@@ -1,6 +1,6 @@
 .DS_Store
 
-assets/static/gen/
+# assets/static/gen/
 build/
 
 # Created by https://www.gitignore.io/api/node
