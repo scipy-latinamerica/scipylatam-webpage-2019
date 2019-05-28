@@ -7,6 +7,9 @@ transbag('translate', this.alt, 'date') -%}
 {%- set venue = site.get('/venue',
 alt=this.alt) -%} {% block title %}{{ this.title }}{% endblock %} {% block body
 %}
+<div class="container menu-background">
+  {{ render_background(background='general', content_background='true', alt=this.alt) }}
+</div>
 <div class="container">
   {{ render_background(background='color-cut', color='#FCD116') }}
   <div class="team-members content">
@@ -16,7 +19,7 @@ alt=this.alt) -%} {% block title %}{{ this.title }}{% endblock %} {% block body
     <h1>{{ transbag('translate', this.alt, role.lower())|upper }}</h1>
     <div class="team-members-container">
     {%     for member in role_query %}
-    {%       if member.publish %} 
+    {%       if member.publish %}
       <div class="team-member__card">
         <div class="team-member__card-wrapper">
           {% if member.image %}
@@ -37,7 +40,7 @@ alt=this.alt) -%} {% block title %}{{ this.title }}{% endblock %} {% block body
             {{ member.responsibility }}
         </span>
       </div>
-    {%       endif %}    
+    {%       endif %}
     {%     endfor %}
     </div>
     {%   endif %}
