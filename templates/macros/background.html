@@ -10,6 +10,29 @@ alt='es', color='#FFF') %} {% if background == 'landing' %}
   src="{{ '/static/images/scipy-bg2.svg' | asseturl }}"
   alt="Background 2"
 />
+{% elif background == 'landing-venue' %}
+<img
+  class="venue-background__top"
+  src="{{ '/static/images/scipy-venue-bg1.svg' | asseturl }}"
+  alt="Background 2"
+/>
+<img
+  class="venue-background__bottom"
+  src="{{ '/static/images/scipy-bg2.svg' | asseturl }}"
+  alt="Background 2"
+/>
+{% elif background == 'landing-subscribe' %}
+<div class="color-background" style="background-color: {{ color }}"></div>
+<img
+  class="subscribe-background__top"
+  src="{{ '/static/images/scipy-bg1.svg' | asseturl }}"
+  alt="Background 2"
+/>
+<img
+  class="subscribe-background__bottom"
+  src="{{ '/static/images/scipy-bg1.svg' | asseturl }}"
+  alt="Background 2"
+/>
 {% elif background == 'general' %}
 <img
   class="general__background"

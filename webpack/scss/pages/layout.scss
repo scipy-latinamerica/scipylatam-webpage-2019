@@ -75,6 +75,60 @@
   z-index: -1;
 }
 
+.venue-background__top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  z-index: -1;
+}
+
+.venue-background__bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  z-index: -1;
+}
+
+.subscribe-background__top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  z-index: -1;
+}
+
+.subscribe-background__bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  transform: rotate(180deg);
+  z-index: -1;
+}
+
+.button-red {
+  font-family: "Poppins", sans-serif;
+  background-color: $red;
+  font-size: 20px;
+  color: $white;
+  letter-spacing: 5px;
+  padding: 20px 30px;
+  border-radius: 80px;
+  font-weight: 500;
+  white-space: nowrap;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+
+  @include from(large) {
+    font-size: 18px;
+    padding: 20px 30px;
+  }
+}
+
 .general__menu-logo {
   position: fixed;
   top: 36px;

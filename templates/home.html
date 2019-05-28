@@ -5,6 +5,11 @@ from "macros/translation.html" import transbag -%} {%- set t_call_for_proposals
 transbag('translate', this.alt, 'date') -%}
 {%- set t_keynotes = transbag('translate', this.alt, 'keynotes') -%}
 {%- set t_sponsors = transbag('translate', this.alt, 'sponsors') -%}
+{%- set t_venue = transbag('translate', this.alt, 'venue') -%}
+{%- set t_subscribe = transbag('translate', this.alt, 't_subscribe') -%}
+{%- set t_subscribe_name = transbag('translate', this.alt, 't_subscribe_name') -%}
+{%- set t_subscribe_email = transbag('translate', this.alt, 't_subscribe_email') -%}
+{%- set t_subscribe_button = transbag('translate', this.alt, 't_subscribe_button') -%}
 {%- set venue = site.get('/venue',
 alt=this.alt) -%} {% block title %}{{ this.title }}{% endblock %} {% block body
 %}
@@ -43,24 +48,22 @@ alt=this.alt) -%} {% block title %}{{ this.title }}{% endblock %} {% block body
     {%- endif -%}
 
 
-  <div class="countdown">
-    <div class="countdown-number">
-      <span id="countdown-days"></span>
-      <span id="countdown-hours"></span>
-      <span id="countdown-minutes"></span>
-      <span id="countdown-seconds"></span>
+    <div class="countdown">
+      <div class="countdown-number">
+        <span id="countdown-days"></span>
+        <span id="countdown-hours"></span>
+        <span id="countdown-minutes"></span>
+        <span id="countdown-seconds"></span>
+      </div>
+      <div class="countdown-label">
+        <span>{{ t_days }}</span>
+        <span>{{ t_minutes }}</span>
+        <span>{{ t_hours }}</span>
+        <span>{{ t_seconds }}</span>
+      </div>
     </div>
-   <div class="countdown-label">
-    <span>{{ t_days }}</span>
-      <span>{{ t_minutes }}</span>
-      <span>{{ t_hours }}</span>
-      <span>{{ t_seconds }}</span>
-    </div>
-    </div>
-</div>
-
   </main>
-
+</div>
 <div class="container">
   {{ render_background(background='color', color='#2811CE') }}
   <div class="speakers-landing content">
@@ -95,6 +98,26 @@ alt=this.alt) -%} {% block title %}{{ this.title }}{% endblock %} {% block body
   </div>
 </div>
 <div class="container">
+  {{ render_background(background='landing-venue') }}
+  <div class="venue-landing content">
+    <h1>{{ t_venue|upper }}</h1>
+    <div class="venue-landing__map-container">
+      <div class="venue-landing__map"></div>
+      <div class="venue-landing__description">
+        <h2>{{ venue.name }}</h2>
+        <h3>{{ venue.location }}</h2>
+        <h4>{{ venue.address }}</h2>
+        <a
+          class="button-red google-button"
+          href="{{ venue.cta_link }}"
+        >
+          {{ venue.cta | upper }}
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
   {{ render_background(background='color', color='#FFF') }}
   <div class="sponsors-landing content">
     <h1>{{ t_sponsors|upper }}</h1>
@@ -120,6 +143,18 @@ alt=this.alt) -%} {% block title %}{{ this.title }}{% endblock %} {% block body
     </div>
   </div>
 </div>
+
+<div class="container">
+    {{ render_background(background='landing-subscribe', color='#FCD116') }}
+    <div class="subscribe-landing content">
+      <h1>{{ t_subscribe }}</h1>
+      <form>
+        <input type="text" placeholder="{{ t_subscribe_name }}">
+        <input type="email" placeholder="{{ t_subscribe_email }}">
+        <input type="submit" class="button-red" value="{{ t_subscribe_button }}">
+      </form>
+    </div>
+  </div>
 {% endblock %}
 
 {% block bottom_scripts %}
@@ -159,5 +194,19 @@ alt=this.alt) -%} {% block title %}{{ this.title }}{% endblock %} {% block body
   document.getElementById("countdown").innerHTML = "";
   }
   }, 1000);
+
+  function initMap() {
+    // The location of Uluru
+    var uluru = {lat: 4.6027, lng: -74.0649};
+    // The map, centered at Uluru
+    var map = new google.maps.Map(
+        document.querySelector('.venue-landing__map'),
+        {zoom: 17, center: uluru});
+    // The marker, positioned at Uluru
+    var marker = new google.maps.Marker({position: uluru, map: map});
+  }
+</script>
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAveCgjsAZGTPaV-q2XO60CFxJNsR0wlQM&callback=initMap">
 </script>
 {% endblock %}
