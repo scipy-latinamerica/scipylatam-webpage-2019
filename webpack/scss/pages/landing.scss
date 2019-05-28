@@ -295,6 +295,7 @@
     background-color: $yellow;
     border: 1px solid $black;
     margin-bottom: 20px;
+    text-align:center;
   }
 
   input[type=text]::-webkit-input-placeholder,
@@ -302,7 +303,8 @@
     font-family: "Monserrat", sans-serif;
     font-size: 14px;
     border-radius: 25px;
-    color: $black;
+    color: $dark-gray;
+    text-align:center;
   }
 
   input[type=submit]{
@@ -314,10 +316,11 @@
     line-height: 0;
     letter-spacing: 1px;
     margin-bottom: 10px;
+    text-align:center;
   }
 
   form {
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -402,4 +405,49 @@
 .sponsors__category-logo {
   max-width: 240px;
   max-height: 90px;
+}
+
+/* Mailchimp form */
+#mc_embed_signup_scipy {
+  margin-bottom: 50px;
+  min-height: 360px;
+
+  @include from(large) {
+    min-height: 100px;
+  }
+}
+
+.mc-field-group {
+  min-height: 80px;
+}
+
+#mc-input-group {
+  display: block;
+  min-height: 80px;
+}
+
+.mce_inline_error {
+  color: $red;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 0em;
+  margin:-6px
+}
+
+#mce-error-response {
+  color: $red;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  }
+
+#mce-success-response {
+  color: $dark-blue;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
 }

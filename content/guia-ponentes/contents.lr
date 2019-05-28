@@ -16,7 +16,14 @@ Tienes 300 caracteres para vender tu charla. Esto se conoce como el "paso del as
 
 El resumen que aparecerá en el programa en línea y le dará a los asistentes el contenido de tu tema de charla o taller. 
 <br><br>
-Tu ubicación en el programa se basará en las revisiones de tu resumen. Este debe ser un resumen de aproximadamente 500 palabras de tu charla o taller. Este esquema debe describir de manera concisa el software de interés para la comunidad de SciPy Latam, las herramientas o técnicas para una computación más efectivas, o cómo aplicaste Python científico para resolver un problema de investigación. Se alienta un fondo/motivación tradicional, métodos, resultados y estructura de conclusión, pero no es obligatorio presentar esto.
+Tu ubicación en el programa se basará en las revisiones de tu resumen. Este debe ser un resumen de aproximadamente 500 palabras de tu charla o taller. Este esquema debe describir de manera concisa el software de interés para la comunidad de SciPy Latam, las herramientas o técnicas para una computación más efectivas, o cómo aplicaste Python científico para resolver un problema de investigación. Se recomienda una estructura tradicional: 
+
+* ● Motivacion / Justificación del problema
+* ● Métodos
+* ● Resultados
+* ● Conclusiones
+<br>
+Sin embargo, no es obligatorio presentar esto si su charla o taller no se ajusta a este esquema.
 <br><br>
 Se recomiendan incluir enlaces a sitios web de proyectos, repositorios de código fuente, cifras, artículos completos y evidencia de la capacidad para hablar en público.
 

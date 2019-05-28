@@ -1,10 +1,10 @@
-company: The University of British Columbia
+company: UC Berkeley & Project Jupyter
 ---
 country_residence: us
 ---
 github: lheagy
 ---
-image: lindsey-heagy.jpeg
+image: lindsey.jpg
 ---
 instagram: 
 ---
@@ -18,8 +18,10 @@ name: Lindsey
 ---
 prefix: Dr.
 ---
-short_description: Researcher working on geophysical simulations and inversions with simpeg & Geoscience topic editor for the Journal of Open Source Software
+short_description: Researcher working on geophysics with Jupyter and SimPEG & Geoscience topic editor for the Journal of Open Source Software
 ---
 twitter: lindsey_jh
 ---
 web: http://lindseyjh.ca/
+---
+order: 2

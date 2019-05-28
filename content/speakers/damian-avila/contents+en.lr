@@ -1,4 +1,6 @@
-company: Anaconda, Inc
+company:
+
+ Project Jupyter
 ---
 country_residence: ar
 ---
@@ -6,7 +8,7 @@ email: info@oquanta.info
 ---
 github: damianavila
 ---
-image: damian.jpeg
+image: damian.jpg
 ---
 keynote: yes
 ---
@@ -23,3 +25,5 @@ short_description: Software Development Team Lead at Anaconda, Inc. & Open Sourc
 twitter: damian_avila
 ---
 web: 
+---
+order: 3

@@ -1,6 +1,8 @@
 name: Damián
 ---
-company: Anaconda, Inc
+company:
+
+ Project Jupyter
 ---
 country_residence: ar
 ---
@@ -8,17 +10,17 @@ email: info@oquanta.info
 ---
 keynote: yes
 ---
-last_name: Ávila
+last_name: Avila
 ---
 publish: yes
 ---
 web: 
 ---
-image: damian.jpeg
+image: damian.jpg
 ---
 github: damianavila
 ---
-short_description: Líder de desarrollo de Software en Anaconda, Inc. & Desarrollador de código abierto en el proyecto y ecositema Jupyter
+short_description: Desarrollador de Software Senior y Lider de Equipo centrado en desarrollo de Código Abierto, con especial énfasis, en el Proyecto Jupyter
 ---
 twitter: damian_avila
 ---

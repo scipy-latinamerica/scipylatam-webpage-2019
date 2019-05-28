@@ -50,8 +50,12 @@ At no time do we allow others outside of the organization committee to access yo
 ​
 ## Photography, Audio and Video Recording
 
-The SciPy Latam Conference is held in a private space, therefore we do prohibit participants, exhibitors, sponsors, or news organizations from photographing, video or audio-taping Conference activities. SciPy Latam reserves the right to use images and video taken at the Conference with your photograph and/or likeness on social media including YouTube and/or in future marketing materials. SciPy Latam is not responsible for individual attendee’s use of your image or likeness.
-
+The SciPy Latam Conference is held in a private space, therefore we do prohibit participants, exhibitors, sponsors, or news organizations from photographing, video or audio-taping Conference activities.
+<br><br>
+SciPy Latam reserves the right to use images and video taken at the Conference with your photograph and/or likeness on social media including YouTube and/or in future marketing materials.
+<br><br>
+SciPy Latam is not responsible for individual attendee’s use of your image or likeness.
+<br><br>
 For concerns about your image and likeness being used in this manner, please contact the conference organizers.
 
 ## Contacting Us
@@ -70,3 +74,5 @@ description:
 footer_menu: true
 ---
 main_menu: false
+---
+order: 3
