@@ -381,3 +381,21 @@
 .cut-background {
   margin-top: 245px;
 }
+
+.image-middle {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+  height: 50%;
+  object-fit: cover;
+}
+
+.image-full {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+  height: 100%;
+  object-fit: cover;
+}

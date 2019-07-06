@@ -1,16 +1,114 @@
 {%- extends "layout.html" -%}
 {%- from "macros/background.html" import render_background -%}
-{%- from "macros/translation.html" import transbag -%}
 
 {% block title %}{{ this.title }}{% endblock %}
-{% block background %}{{ render_background(background='general', content_background='true') }}{% endblock %}
-
 {% block body %}
-<div class="container">
-  <main class="content content-footer">
-    <div class="conduct-code">
-    {{ this.body }}
-    </div>
-  </main>
+<div class="container menu-background">
+  {{ render_background(background='general', content_background='true', alt=this.alt) }}
 </div>
+<div class="container">
+  {{ render_background(background='image-middle', image='city-background.png') }}
+  <div class="venue content">
+    <h1>{{ this.title | upper  }}</h1>
+    <div class="venue__map-container">
+      <div class="venue__map"></div>
+      <div class="venue__description">
+        <div class="venue__description-container">
+          <h2>{{ this.name }}</h2>
+          <h3>{{ this.location }}</h2>
+          <h4>{{ this.address }}</h2>
+          <a
+            class="button-red google-button"
+            href="{{ this.cta_link }}"
+          >
+            {{ this.cta | upper }}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container venue-instructions">
+  {{ render_background(background='color', color='#FCD116') }}
+  <div class="content">
+    <h1>{{ this.how_to }}</h1>
+    <div class="venue-instructions__boxes">
+      <div class="venue-instructions__box">
+        <div class="venue-instructions__box-container">
+          <div class="venue-instructions__box-image">
+            <img
+              class="venue-instructions__box-icon"
+              src="{{ '/static/images/plane.png' | asseturl }}"
+              alt="Image background"
+            />
+          </div>
+          <div class="venue-instructions__box-content">
+            {{ this.airport_instructions }}
+            <a
+              class="button-red venue-instructions__button"
+              href="{{ this.cta_link }}"
+            >
+              {{ this.cta | upper }}
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="venue-instructions__box">
+          <div class="venue-instructions__box-container">
+            <div class="venue-instructions__box-image">
+              <img
+                class="venue-instructions__box-icon"
+                src="{{ '/static/images/bus.png' | asseturl }}"
+                alt="Image background"
+              />
+            </div>
+            <div class="venue-instructions__box-content">
+              {{ this.bus_instructions }}
+              <a
+                class="button-red venue-instructions__button"
+                href="{{ this.cta_link }}"
+              >
+                {{ this.cta | upper }}
+              </a>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  {{ render_background(background='image-full', image='street-background.png') }}
+  <div class="content welcome-bogota">
+    <h1>{{ this.welcome }}</h1>
+    <br />
+    <h2>{{ this.short_description }}</h2>
+    <a
+      class="button-red"
+      href="{{ this.cta_link }}"
+    >
+      {{ this.what_to_do | upper }}
+    </a>
+  </div>
+</div>
+
+
+<script>
+  function initMap() {
+    // The location of Uluru
+    var uluru = {lat: 4.6027, lng: -74.0649};
+    // The map, centered at Uluru
+    var map = new google.maps.Map(
+        document.querySelector('.venue__map'),
+        {zoom: 17, center: uluru});
+    // The marker, positioned at Uluru
+    var marker = new google.maps.Marker({position: uluru, map: map});
+  }
+</script>
+
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAveCgjsAZGTPaV-q2XO60CFxJNsR0wlQM&callback=initMap">
+</script>
 {% endblock %}
