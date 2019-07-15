@@ -1,0 +1,68 @@
+_model: tickets
+---
+display: true
+---
+main_menu: true
+---
+menu_label: Entradas
+---
+title: Entradas
+---
+estudiantes_title: Estudiantes
+---
+estudiantes_inicial_title: ETAPA INICIAL
+---
+estudiantes_inicial_valor: $60
+---
+estudiantes_inicial_deadline: Antes del 8 de Agosto, 2019
+---
+estudiantes_segunda_title: SEGUNDA ETAPA
+---
+estudiantes_segunda_valor: $75
+---
+estudiantes_segunda_deadline: Antes del 8 de Septiembre, 2019
+---
+estudiantes_tercera_title: TERCERA ETAPA
+---
+estudiantes_tercera_valor: $90
+---
+estudiantes_comprar_label: COMPRAR ENTRADA
+---
+estudiantes_comprar_href: #
+---
+estudiantes_footnotes:
+  - <span>*&nbsp;&nbsp;Precios en USD Dólares americanos.</span>
+  - <span>** Solo válido para estudiantes con identificación universitaria vigente. </span>
+---
+profesionales_title: Profesionales
+---
+profesionales_inicial_title: ETAPA INICIAL
+---
+profesionales_inicial_valor: $80
+---
+profesionales_inicial_deadline: Antes del 8 de Agosto, 2019
+---
+profesionales_segunda_title: SEGUNDA ETAPA
+---
+profesionales_segunda_valor: $100
+---
+profesionales_segunda_deadline: Antes del 8 de Septiembre, 2019
+---
+profesionales_tercera_title: TERCERA ETAPA
+---
+profesionales_tercera_valor: $120
+---
+profesionales_comprar_label: COMPRAR ENTRADA
+---
+profesionales_comprar_href: #
+---
+profesionales_footnotes:
+  - <span>*&nbsp;&nbsp;Precios en USD Dólares americanos.</span>
+---
+scholarships_title: Solicita tu beca!
+---
+scholarships_subtitle: Estamos contentos de escuchar de ti, escribenos a scholarships@scipy.com
+---
+scholarships_button: SOLICITA YA!
+---
+scholarships_button_href: #

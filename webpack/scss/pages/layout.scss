@@ -399,3 +399,15 @@
   height: 100%;
   object-fit: cover;
 }
+
+.scholarships__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  z-index: -1;
+
+  @include from(large) {
+    width: 20%;
+  }
+}

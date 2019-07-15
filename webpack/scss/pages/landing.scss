@@ -464,3 +464,147 @@
   font-weight: 400;
   text-align: center;
 }
+
+
+
+.tickets {
+  min-height: 400px;
+
+  h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  &__boxes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @include from(large){
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__box {
+    background-color: $white;
+    min-height: 350px;
+    max-width: 500px;
+    min-width: 375px;
+    margin: 40px 0;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,0.25);
+
+    &:first-child {
+      @include from(large){
+        margin-right: 50px;
+      }
+    }
+
+    h1 {
+      font-family: "Poppins", sans-serif;
+      font-size: 25px;
+      font-weight: 700;
+      text-align: start;
+      line-height: 40px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    ol {
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+      list-style-type: decimal;
+      padding-left: 15px;
+      line-height: 20px;
+      margin-bottom: 20px;
+    }
+
+    &-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &-image {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+
+      @include from(large){
+        padding: 30px;
+      }
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+
+      ul {
+        margin: 15px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 10px;
+        font-weight: 500;
+      }
+
+      li {
+        max-width: 250px;
+        text-align: center;
+      }
+    }
+  }
+
+  &__button {
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 14px;
+    width: 235px;
+  }
+
+  &__ticket {
+    &-container {
+      background-color: #F4F4F4;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      padding: 15px;
+      margin-bottom: 30px;
+    }
+
+
+    &-container--yellow {
+      background-color: $yellow;
+    }
+
+    &-title {
+      font-family: "Poppins", sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    &-value {
+      font-family: "Poppins", sans-serif;
+      font-size: 21px;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    &-deadline {
+      font-family: "Montserrat", sans-serif;
+      font-size: 11px;
+      font-weight: 300;
+      margin-bottom: 5px;
+      min-height: 11px;
+    }
+  }
+}

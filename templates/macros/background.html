@@ -21,6 +21,19 @@ alt='es', color='#FFF', image='') %} {% if background == 'landing' %}
   src="{{ '/static/images/scipy-bg2.svg' | asseturl }}"
   alt="Background 2"
 />
+{% elif background == 'landing-tickets' %}
+<img
+  class="venue-background__bottom"
+  src="{{ '/static/images/scipy-bg2.svg' | asseturl }}"
+  alt="Background 2"
+/>
+
+{% elif background == 'scholarships' %}
+<img
+  class="scholarships__background"
+  src="{{ '/static/images/scipy-bg1.svg' | asseturl }}"
+  alt="Background 1"
+/>
 {% elif background == 'landing-subscribe' %}
 <div class="color-background" style="background-color: {{ color }}"></div>
 <img
