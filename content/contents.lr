@@ -14,7 +14,7 @@ body: Comparte experiencias sobre el uso de Python científico tanto académica 
 ---
 _slug: 
 ---
-sections: call_for_proposals
+sections: call_for_proposals, tickets
 ---
 description: Comparte experiencias sobre el uso de Python científico tanto académica como profesionalmente.
 ---
@@ -29,3 +29,7 @@ facebook: scipyla
 linkedin: https://www.linkedin.com/company/scipy-latin-america/about
 ---
 footer_menu: yes
+---
+cfp_due_date: 2019-08-08
+---
+tickets_link: https://forms.gle/5yx3sAGqTGgTsFAW7

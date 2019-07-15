@@ -1,6 +1,6 @@
 title: Tickets
 ---
-estudiantes_title: Students
+estudiantes_title: Students**
 ---
 estudiantes_inicial_title: EARLY BIRD
 ---
@@ -17,32 +17,34 @@ estudiantes_comprar_label: BUY TICKETS
 estudiantes_comprar_href: #
 ---
 estudiantes_footnotes:
+
   - <span>*&nbsp;&nbsp;Price in USD.</span>
   - <span>** Only valid for students with an active Student ID. </span>
 ---
-profesionales_title: Profesionales
+profesionales_title: Proffesional
 ---
 profesionales_inicial_title: EARLY BIRD
 ---
-profesionales_inicial_valor: $80
+profesionales_inicial_valor: $80*
 ---
 profesionales_inicial_deadline: Before August 8th, 2019
 ---
 profesionales_segunda_title: SECOND STAGE
 ---
-profesionales_segunda_valor: $100
+profesionales_segunda_valor: $100*
 ---
 profesionales_segunda_deadline: Before September 8th, 2019
 ---
 profesionales_tercera_title: THIRD STAGE
 ---
-profesionales_tercera_valor: $120
+profesionales_tercera_valor: $120*
 ---
 profesionales_comprar_label: BUY TICKETS
 ---
 profesionales_comprar_href: #
 ---
 profesionales_footnotes:
+
   - <span>*&nbsp;&nbsp;Price in USD.</span>
 ---
 scholarships_title: We are accepting Scholarchips!
@@ -52,3 +54,17 @@ scholarships_subtitle: We'll be glad to hear about you, email us at scholarships
 scholarships_button: APPLY NOW!
 ---
 scholarships_button_href: #
+---
+display: true
+---
+estudiantes_inicial_valor: $60*
+---
+estudiantes_segunda_valor: $75*
+---
+estudiantes_tercera_valor: $90*
+---
+main_menu: true
+---
+menu_label: Tickets
+---
+_slug: tickets

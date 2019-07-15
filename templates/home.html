@@ -13,6 +13,9 @@ transbag('translate', this.alt, 'date') -%}
 {%- set t_subscribe_button = transbag('translate', this.alt, 'subscribe_button') -%}
 {%- set t_form_required = transbag('translate', this.alt, 'form_required') -%}
 {%- set t_form_email = transbag('translate', this.alt, 'form_email') -%}
+{%- set t_buy_tickets = transbag('translate', this.alt, 'buy_tickets') -%}
+{%- set t_sponsor_event = transbag('translate', this.alt, 'sponsor_event') -%}
+
 {%- set venue = site.get('/venue', alt=this.alt) -%}
 {%- set tickets = site.get('/tickets', alt=this.alt) -%}
 {% block title %}{{ this.title }}{% endblock %} {% block body%}
@@ -45,12 +48,27 @@ transbag('translate', this.alt, 'date') -%}
       class="button-red cp-button"
       href="{{ this.call_for_proposals }}"
       aria-label="Application Form Link"
+      target='_blank'
     >
       {{ t_call_for_proposals | upper }}
     </a>
+    <p><b>Call for proposals open until:</b> {{ this.cfp_due_date }}</p>
     {%- endif -%}
 
+    {%- if 'tickets' in this.sections -%}
+    <a
+      class="button-red cp-button"
+      href="{{ this.tickets_link }}"
+      aria-label="Buy tickets!"
+      target='_blank'
+    >
+      {{ t_buy_tickets | upper }}
+    </a>
+    <br />
+    <br />
+    {%- endif -%}
 
+    {%- if 'countdown' in this.sections -%}
     <div class="countdown">
       <div class="countdown-number">
         <span id="countdown-days"></span>
@@ -64,7 +82,9 @@ transbag('translate', this.alt, 'date') -%}
         <span>{{ t_hours }}</span>
         <span>{{ t_seconds }}</span>
       </div>
+      {%- endif -%}
     </div>
+  
   </main>
 </div>
 <div class="container">
@@ -175,6 +195,7 @@ transbag('translate', this.alt, 'date') -%}
             <a
               class="button-red tickets__button"
               href="{{ this.estudiantes_comprar_href }}"
+              target='_blank'
             >
               {{ tickets.estudiantes_comprar_label | upper }}
             </a>
@@ -235,6 +256,7 @@ transbag('translate', this.alt, 'date') -%}
               <a
                 class="button-red tickets__button"
                 href="{{ this.profesionales_comprar_href }}"
+                target='_blank'
               >
                 {{ tickets.profesionales_comprar_label | upper }}
               </a>
@@ -254,24 +276,38 @@ transbag('translate', this.alt, 'date') -%}
   <div class="sponsors-landing content">
     <h1>{{ t_sponsors|upper }}</h1>
     <div class="sponsors-container">
-      {% for category in ['Platinum'] %}
+      {% for category in ['plan_venue', 'plan_exa', 'plan_tera', 'plan_giga', 'plan_support'] %}
       {%- set t_cat = transbag('translate', this.alt, category|lower) -%}
+      {%- set sponsors = site.query('/sponsors', alt=this.alt).filter(F.category == category) %}
+      {%- if sponsors.count() > 0 -%}
       <div class="sponsors__category-left">
         <h2 class="sponsors__category-name">{{ t_cat }}</h2>
       </div>
       <div class="sponsors__category-logos">
-        {% for sponsor in site.query('/sponsors', alt=this.alt) %} {%
-        if sponsor.category == category%}
+        {% for sponsor in  sponsors %}
         <div>
+          {%- if sponsor.logo -%}
           <img
             class="sponsors__category-logo"
-            src="{{ sponsor|url(alt='es')|replace('/en', '') + sponsor.logo }}"
+            src="{{ '/patrocinadores/' + sponsor._id + '/' + sponsor.logo }}"
             alt="{{ sponsor.name }} Logo"
           />
+          {% endif %}
         </div>
-        {% endif %} {% endfor %}
+        {% endfor %}
       </div>
+      {% endif %}
       {% endfor %}
+      <div>
+      <a
+      class="button-red cp-button"
+      href="{{ '/sponsors'|url(alt=this.alt) }}"
+      aria-label="Sponsors/Patrocinadores"
+    >
+      {{ t_sponsor_event | upper }}
+    </a>
+  </div>
+
     </div>
   </div>
 </div>

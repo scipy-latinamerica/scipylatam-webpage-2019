@@ -3,3 +3,9 @@ _model: sponsors
 title: Sponsors
 ---
 _slug: patrocinadores
+---
+display: yes
+---
+main_menu: yes
+---
+menu_label: Patrocinadores
