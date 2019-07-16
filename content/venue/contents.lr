@@ -21,6 +21,7 @@ cta_link: https://www.google.com/maps/place/Universidad+de+los+Andes/@4.6028694,
 how_to: Cómo llegar allí?
 ---
 airport_instructions:
+
 # Instrucciones desde el Aeropuerto
 ## Aprox. 1h, 30 min
 1. Airport
@@ -30,6 +31,7 @@ airport_instructions:
 cta_airport_instructions_link: https://www.google.com/maps/dir/Muelle+Internacional,+Bogot%C3%A1/Universidad+de+los+Andes,+Cra.+1+%2318a+12,+Bogot%C3%A1,+Cundinamarca/@4.6498396,-74.1389063,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x8e3f9cba0506a2c3:0xef1d9637a84dbdb!2m2!1d-74.140484!2d4.6972077!1m5!1m1!1s0x8e3f99a4a124b335:0x8e9f4683d1db9cb!2m2!1d-74.0661!2d4.601363!3e3
 ---
 bus_instructions:
+
 # Instrucciones desde el Transmilenio
 ## Aprox. 1h, 30 min
 1. Estación de Bus
@@ -45,3 +47,5 @@ short_description: Bogotá, es la capital y la ciudad más grande de Colombia, t
 what_to_do: Qué hacer en Bogotá?
 ---
 what_to_do_link: https://www.tripadvisor.co/Attractions-g294074-Activities-Bogota.html
+---
+_slug: lugar

@@ -287,9 +287,14 @@ transbag('translate', this.alt, 'date') -%}
         {% for sponsor in  sponsors %}
         <div>
           {%- if sponsor.logo -%}
+          {% if this.alt == 'es' %}
+          {%- set sponsor_img_link = './patrocinadores/' + sponsor._id + '/' + sponsor.logo -%}
+          {%- else -%}
+          {%- set sponsor_img_link = '../patrocinadores/' + sponsor._id + '/' + sponsor.logo -%}
+          {% endif %}
           <img
             class="sponsors__category-logo"
-            src="{{ './patrocinadores/' + sponsor._id + '/' + sponsor.logo }}"
+            src="{{ sponsor_img_link }}"
             alt="{{ sponsor.name }} Logo"
           />
           {% endif %}
