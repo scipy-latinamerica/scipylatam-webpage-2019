@@ -2,4 +2,6 @@ confirmed: yes
 ---
 name: Huge
 ---
-category: plan_exa
+category: plan_tera
+---
+logo: huge.jpg
