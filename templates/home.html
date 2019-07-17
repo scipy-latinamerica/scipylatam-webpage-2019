@@ -43,6 +43,20 @@ transbag('translate', this.alt, 'date') -%}
         {{ this.body }}
       </p>
     </div>
+
+    {%- if 'tickets' in this.sections -%}
+    <a
+      class="button-red cp-tickets"
+      href="{{ this.tickets_link }}"
+      aria-label="Buy tickets!"
+      target='_blank'
+    >
+      <div class="circle-left"></div>
+      <span>{{ t_buy_tickets | upper }}</span>
+      <div class="circle-right"></div>
+    </a>
+    {%- endif -%}
+
     {%- if 'call_for_proposals' in this.sections -%}
     <a
       class="button-red cp-button"
@@ -52,20 +66,7 @@ transbag('translate', this.alt, 'date') -%}
     >
       {{ t_call_for_proposals | upper }}
     </a>
-    <p><b>Call for proposals open until:</b> {{ this.cfp_due_date }}</p>
-    {%- endif -%}
-
-    {%- if 'tickets' in this.sections -%}
-    <a
-      class="button-red cp-button"
-      href="{{ this.tickets_link }}"
-      aria-label="Buy tickets!"
-      target='_blank'
-    >
-      {{ t_buy_tickets | upper }}
-    </a>
-    <br />
-    <br />
+    <span><b>Call for proposals open until:</b> {{ this.cfp_due_date }}</span>
     {%- endif -%}
 
     {%- if 'countdown' in this.sections -%}
@@ -84,7 +85,7 @@ transbag('translate', this.alt, 'date') -%}
       </div>
       {%- endif -%}
     </div>
-  
+
   </main>
 </div>
 <div class="container">
@@ -152,7 +153,7 @@ transbag('translate', this.alt, 'date') -%}
           <div class="tickets__box-image">
             <img
               class="tickets__box-icon"
-              src="{{ '/static/images/estudiantes_ticket.png' | asseturl }}"
+              src="{{ '/static/images/estudiantes_ticket.svg' | asseturl }}"
               alt="Image background"
             />
           </div>
@@ -213,7 +214,7 @@ transbag('translate', this.alt, 'date') -%}
             <div class="tickets__box-image">
               <img
                 class="tickets__box-icon"
-                src="{{ '/static/images/profesionales_ticket.png' | asseturl }}"
+                src="{{ '/static/images/profesionales_ticket.svg' | asseturl }}"
                 alt="Image background"
               />
             </div>
@@ -276,12 +277,49 @@ transbag('translate', this.alt, 'date') -%}
   <div class="sponsors-landing content">
     <h1>{{ t_sponsors|upper }}</h1>
     <div class="sponsors-container">
-      {% for category in ['plan_venue', 'plan_exa', 'plan_tera', 'plan_giga', 'plan_support'] %}
-      {%- set t_cat = transbag('translate', this.alt, category|lower) -%}
-      {%- set sponsors = site.query('/sponsors', alt=this.alt).filter(F.category == category) %}
+      {% for category in [
+        {
+          'label': 'plan_venue',
+          'color': '#E7132B',
+          'background': '#CA1126'
+        },
+        {
+          'label': 'plan_exa',
+          'color': '#3813FF',
+          'background': '#2811C8'
+        },
+        {
+          'label': 'plan_tera',
+          'color': '#F8CD16',
+          'background': '#F7BA0C'
+        },
+        {
+          'label': 'plan_giga',
+          'color': '#3813FF',
+          'background': '#2811C8'
+        },
+        {
+          'label': 'plan_support',
+          'color': '#E7132B',
+          'background': '#CA1126'
+        }
+      ] %}
+      {%- set t_cat = transbag('translate', this.alt, category.label|lower) -%}
+      {%- set sponsors = site.query('/sponsors', alt=this.alt).filter(F.category == category.label) %}
       {%- if sponsors.count() > 0 -%}
       <div class="sponsors__category-left">
-        <h2 class="sponsors__category-name">{{ t_cat }}</h2>
+        <div class="sponsors__name-container">
+          <div class="sponsors__category-circle"
+            style="background-color: {{category.color}};
+                   border-color: {{category.background}}">
+          </div>
+          <h3 class="sponsors__category-name"
+              style="background-color: {{category.color}}">
+                {{ t_cat }}
+          </h3>
+          <img class="sponsors__category-circle-logo"
+               src="{{ '/static/images/scipy-sponsors.svg' | asseturl }}">
+        </div>
       </div>
       <div class="sponsors__category-logos">
         {% for sponsor in  sponsors %}
@@ -303,15 +341,15 @@ transbag('translate', this.alt, 'date') -%}
       </div>
       {% endif %}
       {% endfor %}
-      <div>
-      <a
-      class="button-red cp-button"
-      href="{{ '/sponsors'|url(alt=this.alt) }}"
-      aria-label="Sponsors/Patrocinadores"
-    >
-      {{ t_sponsor_event | upper }}
-    </a>
-  </div>
+      <div class="sponsors__btn">
+        <a
+          class="button-red cp-button"
+          href="{{ '/sponsors'|url(alt=this.alt) }}"
+          aria-label="Sponsors/Patrocinadores"
+        >
+          {{ t_sponsor_event | upper }}
+        </a>
+      </div>
 
     </div>
   </div>

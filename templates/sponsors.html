@@ -1,16 +1,111 @@
-{%- extends "layout.html" -%}
-{%- from "macros/background.html" import render_background -%}
-{%- from "macros/translation.html" import transbag -%}
+{%- extends "layout.html" -%} {%- from "macros/background.html" import
+render_background -%} {%- from "macros/social.html" import render_social -%} {%-
+from "macros/translation.html" import transbag -%} {%- set t_call_for_proposals
+= transbag('translate', this.alt, 'call_for_proposals') -%} {%- set t_date =
+transbag('translate', this.alt, 'date') -%}
+{%- set t_keynotes = transbag('translate', this.alt, 'keynotes') -%}
+{%- set t_sponsors = transbag('translate', this.alt, 'sponsors') -%}
+{%- set t_venue = transbag('translate', this.alt, 'venue') -%}
+{%- set t_subscribe = transbag('translate', this.alt, 'subscribe') -%}
+{%- set t_subscribe_name = transbag('translate', this.alt, 'subscribe_name') -%}
+{%- set t_subscribe_last_name = transbag('translate', this.alt, 'subscribe_last_name') -%}
+{%- set t_subscribe_email = transbag('translate', this.alt, 'subscribe_email') -%}
+{%- set t_subscribe_button = transbag('translate', this.alt, 'subscribe_button') -%}
+{%- set t_form_required = transbag('translate', this.alt, 'form_required') -%}
+{%- set t_form_email = transbag('translate', this.alt, 'form_email') -%}
+{%- set t_buy_tickets = transbag('translate', this.alt, 'buy_tickets') -%}
+{%- set t_sponsor_event = transbag('translate', this.alt, 'sponsor_event') -%}
 
-{% block title %}{{ this.title }}{% endblock %}
-{% block background %}{{ render_background(background='general', content_background='true') }}{% endblock %}
+{%- set venue = site.get('/venue', alt=this.alt) -%}
+{%- set tickets = site.get('/tickets', alt=this.alt) -%}
+{% block title %}{{ this.title }}{% endblock %} {% block body%}
 
-{% block body %}
+{%- set t_days = transbag('translate', this.alt, 'days') -%}
+{%- set t_hours = transbag('translate', this.alt, 'hours') -%}
+{%- set t_minutes = transbag('translate', this.alt, 'minutes') -%}
+{%- set t_seconds = transbag('translate', this.alt, 'seconds') -%}
+
 <div class="container">
-  <main class="content content-footer">
-    <div class="conduct-code">
-    {{ this.body }}
+  {{ render_background(background='color', color='#FFF') }}
+  <div class="sponsors-page content">
+    <h1>{{ t_sponsors|upper }}</h1>
+    <div class="sponsors-container">
+      {% for category in [
+        {
+          'label': 'plan_venue',
+          'color': '#E7132B',
+          'background': '#CA1126'
+        },
+        {
+          'label': 'plan_exa',
+          'color': '#3813FF',
+          'background': '#2811C8'
+        },
+        {
+          'label': 'plan_tera',
+          'color': '#F8CD16',
+          'background': '#F7BA0C'
+        },
+        {
+          'label': 'plan_giga',
+          'color': '#3813FF',
+          'background': '#2811C8'
+        },
+        {
+          'label': 'plan_support',
+          'color': '#E7132B',
+          'background': '#CA1126'
+        }
+      ] %}
+      {%- set t_cat = transbag('translate', this.alt, category.label|lower) -%}
+      {%- set sponsors = site.query('/sponsors', alt=this.alt).filter(F.category == category.label) %}
+      {%- if sponsors.count() > 0 -%}
+      <div class="sponsors__category-left">
+        <div class="sponsors__name-container">
+          <div class="sponsors__category-circle"
+            style="background-color: {{category.color}};
+                   border-color: {{category.background}}">
+          </div>
+          <h3 class="sponsors__category-name"
+              style="background-color: {{category.color}}">
+                {{ t_cat }}
+          </h3>
+          <img class="sponsors__category-circle-logo"
+               src="{{ '/static/images/scipy-sponsors.svg' | asseturl }}">
+        </div>
+      </div>
+      <div class="sponsors__category-logos">
+        {% for sponsor in  sponsors %}
+        <div>
+          {%- if sponsor.logo -%}
+          {% if this.alt == 'es' %}
+          {%- set sponsor_img_link = '../patrocinadores/' + sponsor._id + '/' + sponsor.logo -%}
+          {%- else -%}
+          {%- set sponsor_img_link = '../../patrocinadores/' + sponsor._id + '/' + sponsor.logo -%}
+          {% endif %}
+          <img
+            class="sponsors__category-logo"
+            src="{{ sponsor_img_link }}"
+            alt="{{ sponsor.name }} Logo"
+          />
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+      {% endfor %}
+      <div class="sponsors__btn">
+        <a
+          class="button-red cp-button"
+          href="{{ '/sponsors'|url(alt=this.alt) }}"
+          aria-label="Sponsors/Patrocinadores"
+        >
+          {{ t_sponsor_event | upper }}
+        </a>
+      </div>
+
     </div>
-  </main>
+  </div>
 </div>
+
 {% endblock %}
