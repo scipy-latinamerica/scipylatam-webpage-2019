@@ -1,0 +1,19 @@
+_model: page
+---
+display: no
+---
+redirect: https://sire.uniandes.edu.co/pagos/login.xhtml?unidadCodigo=INGE&dependenciaId=423&productoId=4344
+---
+body:
+
+<br><br>
+## We will redirect you to the tickets portal
+<br><br>
+---
+description: Tickets purchase
+---
+title: Tickets purchase
+---
+_template: code-conduct.html
+---
+_slug: buy

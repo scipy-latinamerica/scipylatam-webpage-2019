@@ -1,0 +1,19 @@
+_model: page
+---
+display: no
+---
+redirect: https://sire.uniandes.edu.co/pagos/login.xhtml?unidadCodigo=INGE&dependenciaId=423&productoId=4345
+---
+body:
+
+<br><br>
+## Vamos a redirigirte a la plataforma de compra de entradas
+<br><br>
+---
+description: Compra de enntradas
+---
+title: Compra de entradas
+---
+_template: code-conduct.html
+---
+_slug: compras

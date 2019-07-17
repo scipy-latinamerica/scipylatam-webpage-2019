@@ -12,7 +12,7 @@ estudiantes_segunda_deadline: Before September 8th, 2019
 ---
 estudiantes_tercera_title: THIRD STAGE
 ---
-estudiantes_comprar_label: BUY TICKETS
+estudiantes_comprar_label: STUDENT TICKETS
 ---
 estudiantes_comprar_href: #
 ---
@@ -21,7 +21,7 @@ estudiantes_footnotes:
   - <span>*&nbsp;&nbsp;Price in USD.</span>
   - <span>** Only valid for students with an active Student ID. </span>
 ---
-profesionales_title: Proffesional
+profesionales_title: Professional
 ---
 profesionales_inicial_title: EARLY BIRD
 ---
@@ -39,7 +39,7 @@ profesionales_tercera_title: THIRD STAGE
 ---
 profesionales_tercera_valor: $120*
 ---
-profesionales_comprar_label: BUY TICKETS
+profesionales_comprar_label: PROFESSIONAL TICKETS
 ---
 profesionales_comprar_href: #
 ---
@@ -55,7 +55,7 @@ scholarships_button: APPLY NOW!
 ---
 scholarships_button_href: #
 ---
-display: true
+display: no
 ---
 estudiantes_inicial_valor: $60*
 ---
@@ -63,7 +63,7 @@ estudiantes_segunda_valor: $75*
 ---
 estudiantes_tercera_valor: $90*
 ---
-main_menu: true
+main_menu: no
 ---
 menu_label: Tickets
 ---

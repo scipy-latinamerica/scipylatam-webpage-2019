@@ -15,6 +15,8 @@ transbag('translate', this.alt, 'date') -%}
 {%- set t_form_email = transbag('translate', this.alt, 'form_email') -%}
 {%- set t_buy_tickets = transbag('translate', this.alt, 'buy_tickets') -%}
 {%- set t_sponsor_event = transbag('translate', this.alt, 'sponsor_event') -%}
+{%- set t_call_for_proposals_until = transbag('translate', this.alt, 'call_for_proposals_until') -%}
+{%- set t_we_want_to_sponsor = transbag('translate', this.alt, 'we_want_to_sponsor') -%}
 
 {%- set venue = site.get('/venue', alt=this.alt) -%}
 {%- set tickets = site.get('/tickets', alt=this.alt) -%}
@@ -47,9 +49,8 @@ transbag('translate', this.alt, 'date') -%}
     {%- if 'tickets' in this.sections -%}
     <a
       class="button-red cp-tickets"
-      href="{{ this.tickets_link }}"
+      href="{{this|url + '#tickets' }}"
       aria-label="Buy tickets!"
-      target='_blank'
     >
       <div class="circle-left"></div>
       <span>{{ t_buy_tickets | upper }}</span>
@@ -66,7 +67,7 @@ transbag('translate', this.alt, 'date') -%}
     >
       {{ t_call_for_proposals | upper }}
     </a>
-    <span><b>Call for proposals open until:</b> {{ this.cfp_due_date }}</span>
+    <span><b>{{ t_call_for_proposals_until }}:</b> {{ this.cfp_due_date }}</span>
     {%- endif -%}
 
     {%- if 'countdown' in this.sections -%}
@@ -142,6 +143,7 @@ transbag('translate', this.alt, 'date') -%}
   </div>
 </div>
 
+{%- if 'tickets' in this.sections -%}
 <div class="container">
   {{ render_background(background='color-cut', color='#2811CE') }}
   {{ render_background(background='landing-tickets') }}
@@ -209,6 +211,7 @@ transbag('translate', this.alt, 'date') -%}
       </div>
 
 
+      <a id="tickets"></a>
       <div class="tickets__box">
           <div class="tickets__box-container">
             <div class="tickets__box-image">
@@ -271,6 +274,7 @@ transbag('translate', this.alt, 'date') -%}
     </div>
   </div>
 </div>
+{%- endif -%}
 
 <div class="container">
   {{ render_background(background='color', color='#FFF') }}
@@ -344,7 +348,7 @@ transbag('translate', this.alt, 'date') -%}
       <div class="sponsors__btn">
         <a
           class="button-red cp-button"
-          href="{{ '/sponsors'|url(alt=this.alt) }}"
+          href="mailto:sponsor@scipyla.org?subject={{ t_we_want_to_sponsor }}"
           aria-label="Sponsors/Patrocinadores"
         >
           {{ t_sponsor_event | upper }}

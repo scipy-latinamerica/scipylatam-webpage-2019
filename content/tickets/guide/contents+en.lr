@@ -1,0 +1,17 @@
+_model: page
+---
+display: no
+---
+redirect: https://drive.google.com/open?id=1Ws8MO08oP48zcfZlIcakHA9gvpiLHIvz
+---
+body:
+
+<br><br>
+## We will redirect you to the tickets guide
+<br><br>
+---
+description: Tickets purchase guide
+---
+title: Tickets purchaseguide
+---
+_template: code-conduct.html

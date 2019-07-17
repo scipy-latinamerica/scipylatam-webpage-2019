@@ -1,8 +1,8 @@
 _model: tickets
 ---
-display: true
+display: no
 ---
-main_menu: true
+main_menu: no
 ---
 menu_label: Entradas
 ---
@@ -26,14 +26,14 @@ estudiantes_tercera_title: TERCERA ETAPA
 ---
 estudiantes_tercera_valor: $90*
 ---
-estudiantes_comprar_label: COMPRAR ENTRADA
+estudiantes_comprar_label: ENTRADA ESTUDIANTES
 ---
 estudiantes_comprar_href: https://forms.gle/5yx3sAGqTGgTsFAW7
 ---
 estudiantes_footnotes:
 
   - <span>*&nbsp;&nbsp;Precios en USD Dólares americanos.</span>
-  - <span>** Solo válido para estudiantes con identificación universitaria vigente. </span>
+  - <span>** Solo válido para personas que acrediten estado de estudiante vigente.</span>
 ---
 profesionales_title: Profesionales
 ---
@@ -53,7 +53,7 @@ profesionales_tercera_title: TERCERA ETAPA
 ---
 profesionales_tercera_valor: $120*
 ---
-profesionales_comprar_label: COMPRAR ENTRADA
+profesionales_comprar_label: ENTRADA PROFESIONALES
 ---
 profesionales_comprar_href: https://forms.gle/5yx3sAGqTGgTsFAW7
 ---
