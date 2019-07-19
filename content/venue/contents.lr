@@ -18,13 +18,15 @@ cta: MAPAS DE GOOGLE
 ---
 cta_link: https://www.google.com/maps/place/Universidad+de+los+Andes/@4.6028694,-74.0670972,18z/data=!4m8!1m2!2m1!1suniversidad+de+los+andes!3m4!1s0x8e3f99a4a124b335:0x8e9f4683d1db9cb!8m2!3d4.601363!4d-74.0661
 ---
-how_to: Cómo llegar allí?
+how_to:
+
+ ¿Cómo llegar allí?
 ---
 airport_instructions:
 
 # Instrucciones desde el Aeropuerto
 ## Aprox. 1h, 30 min
-1. Airport
+1. Aeropuerto
 2. Transmilenio
 3. Universidad
 ---
