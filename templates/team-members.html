@@ -34,7 +34,10 @@ alt=this.alt) -%} {% block title %}{{ this.title }}{% endblock %} {% block body
           {% endif %}
         </div>
         <span class="team-member__card-name">
-          {{ member.name + ' ' + member.last_name }}
+          {{ member.name }}
+        </span>
+        <span class="team-member__card-name">
+          {{ member.last_name }}
         </span>
         <span class="team-member__card-responsibility">
             {{ member.responsibility }}

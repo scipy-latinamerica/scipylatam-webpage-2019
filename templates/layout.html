@@ -8,6 +8,7 @@
 {%- from "macros/social.html" import render_social -%}
 
 <!DOCTYPE html>
+<html lang="{{ this.alt }}"">
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -24,6 +25,10 @@
     name="google-site-verification"
     content="tS192x5OfHOZKosOfhq39D1Wlk6EwH_gaSw8ZUVe_bs"
   />
+  {%- if this.redirect -%}
+  <meta http-equiv="refresh" content="1; url={{ this.redirect }}">
+  {%- endif -%}
+
 
   <meta property="og:site_name" content="{{ event.title }}" />
   <meta property="og:title" content="{{ this.title }}" />
@@ -153,11 +158,11 @@
   <!-- Scripts -->
   <script type=text/javascript src="{{ '/static/gen/app.js'|asseturl }}" charset="utf-8"></script>
 
-  {%- if this.redirect -%}
+  <!-- {%- if this.redirect -%}
   <script type=text/javascript charset="utf-8">
       window.location = "{{ this.redirect }}";
   </script>
-  {%- endif -%}
+  {%- endif -%} -->
 
   <!-- Scripts: Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138156801-1"></script>
@@ -179,3 +184,4 @@
   <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
   {% endblock %}
 </body>
+</html>
