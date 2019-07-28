@@ -284,7 +284,7 @@ transbag('translate', this.alt, 'date') -%}
       {% for category in [
         {
           'label': 'plan_venue',
-          'color': '#E7132B',
+          'color': '#8425d5',
           'background': '#CA1126'
         },
         {
@@ -304,7 +304,7 @@ transbag('translate', this.alt, 'date') -%}
         },
         {
           'label': 'plan_support',
-          'color': '#E7132B',
+          'color': '#08b463',
           'background': '#CA1126'
         }
       ] %}
@@ -313,16 +313,10 @@ transbag('translate', this.alt, 'date') -%}
       {%- if sponsors.count() > 0 -%}
       <div class="sponsors__category-left">
         <div class="sponsors__name-container">
-          <div class="sponsors__category-circle"
-            style="background-color: {{category.color}};
-                   border-color: {{category.background}}">
-          </div>
-          <h3 class="sponsors__category-name"
-              style="background-color: {{category.color}}">
-                {{ t_cat }}
+          <h3 class="sponsors__category-name">
+                {{ t_cat|upper }}
           </h3>
-          <img class="sponsors__category-circle-logo"
-               src="{{ '/static/images/scipy-sponsors.svg' | asseturl }}">
+          <div class="sponsors__category-line" style="border-color: {{category.color }};"></div>
         </div>
       </div>
       <div class="sponsors__category-logos">

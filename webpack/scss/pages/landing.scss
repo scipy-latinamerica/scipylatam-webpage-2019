@@ -465,11 +465,19 @@
   border-radius: 30px;
   min-width: 200px;
   padding: 10px;
-  padding-left: 45px;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 21px;
-  color: $white;
+  color: $black;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sponsors__category-line {
+  max-width: 100px;
+  min-width: 100px;
+  border: 1px solid $black;
+  margin: 0 auto;
 }
 
 .sponsors-container {
