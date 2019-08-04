@@ -1,0 +1,27 @@
+{%- from "macros/social.html" import render_social -%}
+
+{%- macro render_keynote(keynote, alt) -%}
+<div class="keynote__card">
+  <div class="keynote__card-wrapper">
+    <a href={{keynote|url(alt)}}><img
+       class="keynote__card-photo"
+       src="{{ keynote|url(alt='es')|replace('/en', '') + keynote.image }}"
+       alt="Speaker photo: {{ keynote.name + ' ' + keynote.last_name }}" />
+    </a>
+    <img class="keynote__card-background"
+         src="{{ '/static/images/speaker-background.svg' | asseturl }}"
+         alt="Speaker background" />
+  </div>
+  <span class="keynote__card-name">
+    {{ keynote.name | upper + " " + keynote.last_name | upper }}
+  </span>
+  <span class="keynote__card-description">
+    {{ keynote.short_description }}
+  </span>
+  <span class="keynote__card-company">
+    {{ keynote.company|upper }}
+  </span>
+  <br>
+  {{ render_social(keynote, 'light') }}
+</div>
+{%- endmacro -%}

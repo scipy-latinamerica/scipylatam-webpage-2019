@@ -1,15 +1,21 @@
-{%- extends "layout.html" -%}
-{%- from "macros/background.html" import render_background -%}
-{%- from "macros/translation.html" import transbag -%}
+{%- extends "layout.html" -%} {%- from "macros/background.html" import
+render_background -%} {%- from "macros/translation.html" import transbag -%} 
+{%- from "macros/speaker.html" import render_speaker -%}
 
-{% block title %}{{ this.title }}{% endblock %}
-{% block background %}{{ render_background(background='general', content_background='true') }}{% endblock %}
-
-{% block body %}
+{% block title %}
+{{ this.title }}
+{% endblock %} {% block body %}
 <div class="container">
-  <main class="content content-footer">
-    <div class="conduct-code">
-    {{ this.body }}
+  {{ render_background(background='general', content_background='true', alt=this.alt) }}
+
+  <div class="team-members content">
+      <div class="team-members-container">
+      {{ render_speaker(this, alt=this.alt) }}
+    </div>
+  </div>
+  <main class="speaker content">
+    <div class="speaker_text">
+    {{ this.information }}
     </div>
   </main>
 </div>

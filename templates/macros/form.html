@@ -1,0 +1,47 @@
+{%- from "macros/translation.html" import transbag -%}
+
+{%- macro render_subscribe(alt) -%}
+{%- set t_subscribe = transbag('translate', alt, 'subscribe') -%}
+{%- set t_subscribe_name = transbag('translate', alt, 'subscribe_name') -%}
+{%- set t_subscribe_last_name = transbag('translate', alt, 'subscribe_last_name') -%}
+{%- set t_subscribe_email = transbag('translate', alt, 'subscribe_email') -%}
+{%- set t_subscribe_button = transbag('translate', alt, 'subscribe_button') -%}
+{%- set t_form_required = transbag('translate', alt, 'form_required') -%}
+{%- set t_form_email = transbag('translate', alt, 'form_email') -%}
+
+<div class="subscribe-landing content">
+    <!-- Begin Mailchimp Signup Form -->
+        <!--End mc_embed_signup-->
+        <h1>{{ t_subscribe }}</h1>
+        <br />
+    
+        <!-- Begin Mailchimp Signup Form -->
+        <div id="mc_embed_signup_scipy">
+          <form action="https://scipyla.us20.list-manage.com/subscribe/post?u=b6a16023135b00123ea55db21&amp;id=7a081c4306" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <!-- <div id="mc_embed_signup_scroll"> -->
+    
+          <div class="mc-field-group">
+            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="{{ t_subscribe_email }}">
+          </div>
+          <div class="mc-field-group">
+            <input type="text" value="" name="FNAME" class="required" id="mce-FNAME" placeholder="{{ t_subscribe_name }}">
+          </div>
+          <div class="mc-field-group">
+            <input type="text" value="" name="LNAME" class="required" id="mce-LNAME" placeholder="{{ t_subscribe_last_name }}">
+          </div>
+          <div class="mc-field-group" id="mc-input-group">
+              <input type="submit" value="{{ t_subscribe_button }}" name="subscribe" id="mc-embedded-subscribe" class="button-red">
+    
+          </div>
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true">
+            <input type="text" name="b_b6a16023135b00123ea55db21_7a081c4306" tabindex="-1" value="">
+          </div>
+    </form>
+      <div id="mce-responses" class="">
+          <div class="response" id="mce-error-response"></div>
+              <div class="response" id="mce-success-response"></div>
+      </div>
+      </div>
+
+{%- endmacro -%}

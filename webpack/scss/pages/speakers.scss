@@ -1,4 +1,4 @@
-.speaker__card {
+.keynote__card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,4 +52,63 @@
     color: $white;
     margin-bottom: 15px;
   }
+}
+
+.speaker__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0 50px;
+  max-width: 270px;
+  margin: 0 60px;
+
+  &-wrapper {
+    margin-bottom: 25px;
+    width: 173px;
+    height: 173px;
+    border-radius: 50%;
+    border: 3px solid $speaker-border;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-photo {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 150px;
+    min-width: 150px;
+    min-height: 150px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  &-name {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    max-width: 170px;
+    text-align: center;
+  }
+
+  &-responsibility {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    max-width: 270px;
+    text-align: center;
+  }
+}
+
+.speaker_text {
+  max-width: 800px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0 auto;
 }

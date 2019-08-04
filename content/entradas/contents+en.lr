@@ -1,0 +1,78 @@
+title: Tickets
+---
+estudiantes_title: Students**
+---
+estudiantes_inicial_title: EARLY BIRD
+---
+estudiantes_inicial_deadline: Before August 8th, 2019
+---
+estudiantes_segunda_title: SECOND STAGE
+---
+estudiantes_segunda_deadline: Before September 8th, 2019
+---
+estudiantes_tercera_title: THIRD STAGE
+---
+estudiantes_comprar_label: STUDENT TICKETS
+---
+estudiantes_comprar_href: #
+---
+estudiantes_footnotes:
+
+  - <span>*&nbsp;&nbsp;Price in USD.</span>
+  - <span>** Only valid for students with an active Student ID. </span>
+---
+profesionales_title: Professional
+---
+profesionales_inicial_title: EARLY BIRD
+---
+profesionales_inicial_valor: $80*
+---
+profesionales_inicial_deadline: Before August 8th, 2019
+---
+profesionales_segunda_title: SECOND STAGE
+---
+profesionales_segunda_valor: $100*
+---
+profesionales_segunda_deadline: Before September 8th, 2019
+---
+profesionales_tercera_title: THIRD STAGE
+---
+profesionales_tercera_valor: $120*
+---
+profesionales_comprar_label: PROFESSIONAL TICKETS
+---
+profesionales_comprar_href: #
+---
+profesionales_footnotes:
+
+  - <span>*&nbsp;&nbsp;Price in USD.</span>
+---
+scholarships_title: We are accepting Scholarchips!
+---
+scholarships_subtitle: We'll be glad to hear about you, email us at scholarships@scipy.com
+---
+scholarships_button: APPLY NOW!
+---
+scholarships_button_href: #
+---
+display: yes
+---
+estudiantes_inicial_valor: $60*
+---
+estudiantes_segunda_valor: $75*
+---
+estudiantes_tercera_valor: $90*
+---
+main_menu: yes
+---
+menu_label: Tickets
+---
+_slug: tickets
+---
+body:
+
+### Why participate in SciPy Latam 2019?
+
+Because you can learn about the tools and libraries for scientific use developed by the community, exchange experiences and know the advantages of the Python language for use in scientific research. SciPy Latam promotes the creation of encounters, meetings, discussion forums for educational, academic and enterprise research projects and development using Python as the tool of choice.
+---
+order: 5

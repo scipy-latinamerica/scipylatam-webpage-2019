@@ -1,25 +1,24 @@
 {%- extends "layout.html" -%} {%- from "macros/background.html" import
-render_background -%} {%- from "macros/social.html" import render_social -%} {%-
+render_background -%} {%-
 from "macros/translation.html" import transbag -%} {%- set t_call_for_proposals
 = transbag('translate', this.alt, 'call_for_proposals') -%} {%- set t_date =
 transbag('translate', this.alt, 'date') -%}
+{%- from "macros/keynote.html" import render_keynote -%}
+{%- from "macros/tickets.html" import render_tickets -%}
+{%- from "macros/sponsors.html" import render_sponsors -%}
+{%- from "macros/form.html" import render_subscribe -%}
+
 {%- set t_keynotes = transbag('translate', this.alt, 'keynotes') -%}
 {%- set t_sponsors = transbag('translate', this.alt, 'sponsors') -%}
 {%- set t_venue = transbag('translate', this.alt, 'venue') -%}
-{%- set t_subscribe = transbag('translate', this.alt, 'subscribe') -%}
-{%- set t_subscribe_name = transbag('translate', this.alt, 'subscribe_name') -%}
-{%- set t_subscribe_last_name = transbag('translate', this.alt, 'subscribe_last_name') -%}
-{%- set t_subscribe_email = transbag('translate', this.alt, 'subscribe_email') -%}
-{%- set t_subscribe_button = transbag('translate', this.alt, 'subscribe_button') -%}
-{%- set t_form_required = transbag('translate', this.alt, 'form_required') -%}
-{%- set t_form_email = transbag('translate', this.alt, 'form_email') -%}
 {%- set t_buy_tickets = transbag('translate', this.alt, 'buy_tickets') -%}
-{%- set t_sponsor_event = transbag('translate', this.alt, 'sponsor_event') -%}
 {%- set t_call_for_proposals_until = transbag('translate', this.alt, 'call_for_proposals_until') -%}
 {%- set t_we_want_to_sponsor = transbag('translate', this.alt, 'we_want_to_sponsor') -%}
+{%- set t_home_text = transbag('translate', this.alt, 'home_text') -%}
+{%- set t_see_speakers = transbag('translate', this.alt, 'see_speakers') -%}
 
-{%- set venue = site.get('/venue', alt=this.alt) -%}
-{%- set tickets = site.get('/tickets', alt=this.alt) -%}
+{%- set venue = site.get('/lugar', alt=this.alt) -%}
+{%- set tickets = site.get('/entradas', alt=this.alt) -%}
 {% block title %}{{ this.title }}{% endblock %} {% block body%}
 
 {%- set t_days = transbag('translate', this.alt, 'days') -%}
@@ -38,9 +37,9 @@ transbag('translate', this.alt, 'date') -%}
       />
     </div>
     <div class="text">
-      <h1 class="header-1">{{ t_date }}</h1>
-      <h2 class="header-2">{{ venue.location }}</h2>
-      <h2 class="header-2">{{ venue.name }}</h2>
+      <h1 class="header-1">{{ t_home_text }}</h1>
+      <h2 class="header-2"><b>{{ t_date }}</b></h2>
+      <h2 class="header-2">{{ venue.location }}. {{ venue.name }}</h2>
       <p class="paragraph">
         {{ this.body }}
       </p>
@@ -91,37 +90,27 @@ transbag('translate', this.alt, 'date') -%}
 </div>
 <div class="container">
   {{ render_background(background='color', color='#2811CE') }}
-  <div class="speakers-landing content">
+  <div class="keynote-landing content">
     <h1>{{ t_keynotes|upper }}</h1>
-    <div class="speakers-container">
-      {% for speaker in site.query('/speakers', alt=this.alt).order_by('+order') %} {% if
-      speaker.keynote %}
-      <div class="speaker__card">
-        <div class="speaker__card-wrapper">
-          <img
-            class="speaker__card-photo"
-            src="{{ speaker|url(alt='es')|replace('/en', '') + speaker.image }}"
-            alt="Speaker photo: {{ speaker.name + ' ' + speaker.last_name }}"
-          />
-          <img
-            class="speaker__card-background"
-            src="{{ '/static/images/speaker-background.svg' | asseturl }}"
-            alt="Speaker background"
-          />
-        </div>
-        <span class="speaker__card-name">{{
-        speaker.name | upper + " " + speaker.last_name | upper
-        }}</span>
-        <span class="speaker__card-description">{{
-          speaker.short_description
-        }}</span>
-        <span class="speaker__card-company">{{ speaker.company }}</span>
-        {{ render_social(speaker) }}
-      </div>
+    <div class="keynote-container">
+      {% for keynote in site.query('/ponentes', alt=this.alt).order_by('+order') %} {% if
+        keynote.keynote %}
+        {{ render_keynote(keynote, alt=this.alt) }}
       {% endif %} {% endfor %}
+      <div class="keynote__btn">
+          <a
+            class="button-red cp-button"
+            href="{{ '/ponentes'|url(alt=this.alt)}}"
+            aria-label="Ponentes/Speakers"
+          >
+            {{ t_see_speakers | upper }}
+          </a>
+        </div>
+  
     </div>
   </div>
 </div>
+
 <div class="container">
   {{ render_background(background='landing-venue') }}
   <div class="venue-landing content">
@@ -149,249 +138,22 @@ transbag('translate', this.alt, 'date') -%}
   {{ render_background(background='landing-tickets') }}
   <div class="tickets content">
     <h1>{{ tickets.title|upper }}</h1>
-    <div class="tickets__boxes">
-      <div class="tickets__box">
-        <div class="tickets__box-container">
-          <div class="tickets__box-image">
-            <img
-              class="tickets__box-icon"
-              src="{{ '/static/images/estudiantes_ticket.svg' | asseturl }}"
-              alt="Image background"
-            />
-          </div>
-          <div class="tickets__box-content">
-            <h1>{{ tickets.estudiantes_title }}</h1>
-            <div class="tickets__ticket-container tickets__ticket-container--yellow">
-              <span class="tickets__ticket-title">
-                {{ tickets.estudiantes_inicial_title }}
-              </span>
-              <span class="tickets__ticket-value">
-                {{ tickets.estudiantes_inicial_valor }}
-              </span>
-              <span class="tickets__ticket-deadline">
-                {{ tickets.estudiantes_inicial_deadline }}
-              </span>
-            </div>
-
-            <div class="tickets__ticket-container">
-              <span class="tickets__ticket-title">
-                {{ tickets.estudiantes_segunda_title }}
-              </span>
-              <span class="tickets__ticket-value">
-                {{ tickets.estudiantes_segunda_valor }}
-              </span>
-              <span class="tickets__ticket-deadline">
-                {{ tickets.estudiantes_segunda_deadline }}
-              </span>
-            </div>
-
-            <div class="tickets__ticket-container">
-              <span class="tickets__ticket-title">
-                {{ tickets.estudiantes_tercera_title }}
-              </span>
-              <span class="tickets__ticket-value">
-                {{ tickets.estudiantes_tercera_valor }}
-              </span>
-              <span class="tickets__ticket-deadline">
-              </span>
-            </div>
-            <a
-              class="button-red tickets__button"
-              href="{{ tickets.estudiantes_comprar_href }}"
-              target='_blank'
-            >
-              {{ tickets.estudiantes_comprar_label | upper }}
-            </a>
-
-            <p>
-              {{ tickets.estudiantes_footnotes }}
-            </p>
-          </div>
-        </div>
-      </div>
-
-
-      <a id="tickets"></a>
-      <div class="tickets__box">
-          <div class="tickets__box-container">
-            <div class="tickets__box-image">
-              <img
-                class="tickets__box-icon"
-                src="{{ '/static/images/profesionales_ticket.svg' | asseturl }}"
-                alt="Image background"
-              />
-            </div>
-            <div class="tickets__box-content">
-              <h1>{{ tickets.profesionales_title }}</h1>
-              <div class="tickets__ticket-container tickets__ticket-container--yellow">
-                <span class="tickets__ticket-title">
-                  {{ tickets.profesionales_inicial_title }}
-                </span>
-                <span class="tickets__ticket-value">
-                  {{ tickets.profesionales_inicial_valor }}
-                </span>
-                <span class="tickets__ticket-deadline">
-                  {{ tickets.profesionales_inicial_deadline }}
-                </span>
-              </div>
-
-              <div class="tickets__ticket-container">
-                <span class="tickets__ticket-title">
-                  {{ tickets.profesionales_segunda_title }}
-                </span>
-                <span class="tickets__ticket-value">
-                  {{ tickets.profesionales_segunda_valor }}
-                </span>
-                <span class="tickets__ticket-deadline">
-                  {{ tickets.profesionales_segunda_deadline }}
-                </span>
-              </div>
-
-              <div class="tickets__ticket-container">
-                <span class="tickets__ticket-title">
-                  {{ tickets.profesionales_tercera_title }}
-                </span>
-                <span class="tickets__ticket-value">
-                  {{ tickets.profesionales_tercera_valor }}
-                </span>
-                <span class="tickets__ticket-deadline">
-                </span>
-              </div>
-              <a
-                class="button-red tickets__button"
-                href="{{ tickets.profesionales_comprar_href }}"
-                target='_blank'
-              >
-                {{ tickets.profesionales_comprar_label | upper }}
-              </a>
-
-              <p>
-                {{ tickets.profesionales_footnotes }}
-              </p>
-            </div>
-          </div>
-        </div>
-    </div>
+    {{ render_tickets(tickets) }}
   </div>
-</div>
 {%- endif -%}
 
 <div class="container">
   {{ render_background(background='color', color='#FFF') }}
   <div class="sponsors-landing content">
     <h1>{{ t_sponsors|upper }}</h1>
-    <div class="sponsors-container">
-      {% for category in [
-        {
-          'label': 'plan_venue',
-          'color': '#8425d5',
-          'background': '#CA1126'
-        },
-        {
-          'label': 'plan_exa',
-          'color': '#3813FF',
-          'background': '#2811C8'
-        },
-        {
-          'label': 'plan_tera',
-          'color': '#F8CD16',
-          'background': '#F7BA0C'
-        },
-        {
-          'label': 'plan_giga',
-          'color': '#3813FF',
-          'background': '#2811C8'
-        },
-        {
-          'label': 'plan_support',
-          'color': '#08b463',
-          'background': '#CA1126'
-        }
-      ] %}
-      {%- set t_cat = transbag('translate', this.alt, category.label|lower) -%}
-      {%- set sponsors = site.query('/sponsors', alt=this.alt).filter(F.category == category.label) %}
-      {%- if sponsors.count() > 0 -%}
-      <div class="sponsors__category-left">
-        <div class="sponsors__name-container">
-          <h3 class="sponsors__category-name">
-                {{ t_cat|upper }}
-          </h3>
-          <div class="sponsors__category-line" style="border-color: {{category.color }};"></div>
-        </div>
-      </div>
-      <div class="sponsors__category-logos">
-        {% for sponsor in  sponsors %}
-        <div>
-          {%- if sponsor.logo -%}
-          {% if this.alt == 'es' %}
-          {%- set sponsor_img_link = './patrocinadores/' + sponsor._id + '/' + sponsor.logo -%}
-          {%- else -%}
-          {%- set sponsor_img_link = '../patrocinadores/' + sponsor._id + '/' + sponsor.logo -%}
-          {% endif %}
-          <img
-            class="sponsors__category-logo"
-            src="{{ sponsor_img_link }}"
-            alt="{{ sponsor.name }} Logo"
-          />
-          {% endif %}
-        </div>
-        {% endfor %}
-      </div>
-      {% endif %}
-      {% endfor %}
-      <div class="sponsors__btn">
-        <a
-          class="button-red cp-button"
-          href="mailto:sponsor@scipyla.org?subject={{ t_we_want_to_sponsor }}"
-          aria-label="Sponsors/Patrocinadores"
-        >
-          {{ t_sponsor_event | upper }}
-        </a>
-      </div>
-
-    </div>
+    {{ render_sponsors(this.alt) }}
   </div>
 </div>
 
 <div class="container">
     {{ render_background(background='landing-subscribe', color='#FCD116') }}
-
-
-<!-- Begin Mailchimp Signup Form -->
-    <!--End mc_embed_signup-->
-    <div class="subscribe-landing content">
-    <h1>{{ t_subscribe }}</h1>
-    <br />
-
-    <!-- Begin Mailchimp Signup Form -->
-    <div id="mc_embed_signup_scipy">
-      <form action="https://scipyla.us20.list-manage.com/subscribe/post?u=b6a16023135b00123ea55db21&amp;id=7a081c4306" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <!-- <div id="mc_embed_signup_scroll"> -->
-
-      <div class="mc-field-group">
-        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="{{ t_subscribe_email }}">
-      </div>
-      <div class="mc-field-group">
-	      <input type="text" value="" name="FNAME" class="required" id="mce-FNAME" placeholder="{{ t_subscribe_name }}">
-      </div>
-      <div class="mc-field-group">
-        <input type="text" value="" name="LNAME" class="required" id="mce-LNAME" placeholder="{{ t_subscribe_last_name }}">
-      </div>
-      <div class="mc-field-group" id="mc-input-group">
-          <input type="submit" value="{{ t_subscribe_button }}" name="subscribe" id="mc-embedded-subscribe" class="button-red">
-
-      </div>
-      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-      <div style="position: absolute; left: -5000px;" aria-hidden="true">
-        <input type="text" name="b_b6a16023135b00123ea55db21_7a081c4306" tabindex="-1" value="">
-      </div>
-</form>
-  <div id="mce-responses" class="">
-      <div class="response" id="mce-error-response"></div>
-          <div class="response" id="mce-success-response"></div>
-      </div>
-  </div>
-  </div>
+    {{ render_subscribe(this.alt) }}
+</div>
 {% endblock %}
 
 {% block bottom_scripts %}

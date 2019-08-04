@@ -1,5 +1,10 @@
 {%- extends "layout.html" -%}
 {%- from "macros/background.html" import render_background -%}
+{%- from "macros/translation.html" import transbag -%}
+{%- from "macros/tickets.html" import render_tickets -%}
+{%- from "macros/form.html" import render_subscribe -%}
+
+{%- set t_categories = transbag('translate', this.alt, 'categories') -%}
 
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
@@ -10,169 +15,30 @@
 <div class="container">
   {{ render_background(background='color-cut', color='#2811CE') }}
   {{ render_background(background='landing-tickets') }}
-  <div class="tickets content">
+  <div class="venue content">
+    <br><br>
     <h1>{{ this.title|upper }}</h1>
-    <div class="tickets__boxes">
-      <div class="tickets__box">
-        <div class="tickets__box-container">
-          <div class="tickets__box-image">
-            <img
-              class="tickets__box-icon"
-              src="{{ '/static/images/estudiantes_ticket.svg' | asseturl }}"
-              alt="Image background"
-            />
-          </div>
-          <div class="tickets__box-content">
-            <h1>{{ this.estudiantes_title }}</h1>
-            <div class="tickets__ticket-container tickets__ticket-container--yellow">
-              <span class="tickets__ticket-title">
-                {{ this.estudiantes_inicial_title }}
-              </span>
-              <span class="tickets__ticket-value">
-                {{ this.estudiantes_inicial_valor }}
-              </span>
-              <span class="tickets__ticket-deadline">
-                {{ this.estudiantes_inicial_deadline }}
-              </span>
-            </div>
-
-            <div class="tickets__ticket-container">
-              <span class="tickets__ticket-title">
-                {{ this.estudiantes_segunda_title }}
-              </span>
-              <span class="tickets__ticket-value">
-                {{ this.estudiantes_segunda_valor }}
-              </span>
-              <span class="tickets__ticket-deadline">
-                {{ this.estudiantes_segunda_deadline }}
-              </span>
-            </div>
-
-            <div class="tickets__ticket-container">
-              <span class="tickets__ticket-title">
-                {{ this.estudiantes_tercera_title }}
-              </span>
-              <span class="tickets__ticket-value">
-                {{ this.estudiantes_tercera_valor }}
-              </span>
-              <span class="tickets__ticket-deadline">
-              </span>
-            </div>
-            <a
-              class="button-red tickets__button"
-              href="{{ this.estudiantes_comprar_href }}"
-              target='_blank'
-            >
-              {{ this.estudiantes_comprar_label | upper }}
-            </a>
-
-            <p>
-              {{ this.estudiantes_footnotes }}
-            </p>
-          </div>
+    <div class="tickets__image-container">
+        <img 
+          class="tickets__image"
+          src="{{ '/entradas/entradas.jpg' }}"
+          alt="Image background"
+        />
+      <div class="tickets__description">
+        <div class="tickets__description-container">
+          {{ this.body }}
         </div>
       </div>
-
-      <div class="tickets__box">
-          <div class="tickets__box-container">
-            <div class="tickets__box-image">
-              <img
-                class="tickets__box-icon"
-                src="{{ '/static/images/profesionales_ticket.svg' | asseturl }}"
-                alt="Image background"
-              />
-            </div>
-            <div class="tickets__box-content">
-              <h1>{{ this.profesionales_title }}</h1>
-              <div class="tickets__ticket-container tickets__ticket-container--yellow">
-                <span class="tickets__ticket-title">
-                  {{ this.profesionales_inicial_title }}
-                </span>
-                <span class="tickets__ticket-value">
-                  {{ this.profesionales_inicial_valor }}
-                </span>
-                <span class="tickets__ticket-deadline">
-                  {{ this.profesionales_inicial_deadline }}
-                </span>
-              </div>
-
-              <div class="tickets__ticket-container">
-                <span class="tickets__ticket-title">
-                  {{ this.profesionales_segunda_title }}
-                </span>
-                <span class="tickets__ticket-value">
-                  {{ this.profesionales_segunda_valor }}
-                </span>
-                <span class="tickets__ticket-deadline">
-                  {{ this.profesionales_segunda_deadline }}
-                </span>
-              </div>
-
-              <div class="tickets__ticket-container">
-                <span class="tickets__ticket-title">
-                  {{ this.profesionales_tercera_title }}
-                </span>
-                <span class="tickets__ticket-value">
-                  {{ this.profesionales_tercera_valor }}
-                </span>
-                <span class="tickets__ticket-deadline">
-                </span>
-              </div>
-              <a
-                class="button-red tickets__button"
-                href="{{ this.profesionales_comprar_href }}"
-                target='_blank'
-              >
-                {{ this.profesionales_comprar_label | upper }}
-              </a>
-
-              <p>
-                {{ this.profesionales_footnotes }}
-              </p>
-            </div>
-          </div>
-        </div>
     </div>
   </div>
-</div>
-
-<!-- <div class="container">
-
-  {{ render_background(background='scholarships') }}
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-   <div class="scholarships content">
-    <div class="scholarships__box-image">
-      <img
-        class="scholarships__box-icon"
-        src="{{ '/static/images/scholarships.png' | asseturl }}"
-        alt="Image background"
-      />
+  <div class="tickets content">
+      <h1 style="color:white;">{{ t_categories|upper }}</h1>
+      {{ render_tickets(this) }}
     </div>
-    <h1>{{ this.scholarships_title }}</h1>
-    <h2>{{ this.scholarships_subtitle }}</h2>
-    <a class="button-red scholarships__button"
-       href="{{ this.scholarships_button_href }}"
-    >
-      {{ this.scholarships_button | upper }}
-    </a>
-  </div>
 </div>
--->
 
-<script>
-  function initMap() {
-    // The location of Uluru
-    var uluru = {lat: 4.6027, lng: -74.0649};
-    // The map, centered at Uluru
-    var map = new google.maps.Map(
-        document.querySelector('.venue__map'),
-        {zoom: 17, center: uluru});
-    // The marker, positioned at Uluru
-    var marker = new google.maps.Marker({position: uluru, map: map});
-  }
-</script>
-
-<script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAveCgjsAZGTPaV-q2XO60CFxJNsR0wlQM&callback=initMap">
-</script>
+<div class="container">
+    {{ render_background(background='landing-subscribe', color='#FCD116') }}
+    {{ render_subscribe(this.alt) }}
+</div>
 {% endblock %}

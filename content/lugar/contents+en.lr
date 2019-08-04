@@ -1,0 +1,75 @@
+_slug: venue
+---
+menu_label: Venue
+---
+title: Conference venue
+---
+location: Bogotá, Colombia
+---
+name: University of Los Andes
+---
+address: <span>Address:</span> Cra. 1 #18a 12, Bogotá, Cundinamarca
+---
+cta: FIND ON GOOGLE MAPS
+---
+how_to: How to get there?
+---
+airport_instructions:
+
+# From el Aeropuerto
+## By transmilenio (1h y 30 min)
+
+<ol>
+<li>📍Airport Floor 1</li>
+<li> 🚌 Bus number 14-16</li>
+<li>📍 El Dorado Portal</li>
+<li>🚌 Bus number 1: Universidades</li>
+<li>📍 Universidades</li>
+<li>🚶🏻‍♂️ University of Los Andes</li>
+</ol>
+
+## By taxi (1h y 30 min)
+
+  1. 📍 Airport floor 1
+  2. 📍 Exits 2 y 3
+  3. 🚕 Taxi
+  4. 📍 University of Los Andes
+
+---
+cta_airport_instructions_link: https://www.google.com/maps/dir/Muelle+Internacional,+Bogot%C3%A1/Universidad+de+los+Andes,+Cra.+1+%2318a+12,+Bogot%C3%A1,+Cundinamarca/@4.6498396,-74.1389063,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x8e3f9cba0506a2c3:0xef1d9637a84dbdb!2m2!1d-74.140484!2d4.6972077!1m5!1m1!1s0x8e3f99a4a124b335:0x8e9f4683d1db9cb!2m2!1d-74.0661!2d4.601363!3e3
+---
+bus_instructions:
+
+# From the main bus terminal
+## By transmilenio (1h y 30 min)
+
+1. 📍 Terminal Salitre
+1. 🚶🏻‍♂️ El Tiempo-Maloka
+1. 🚌 1 Universidades
+1. 📍 Universidades
+1. 🚶🏻‍♂️ University of los Andes
+
+## By taxi (1h y 30 min)
+1. 📍 Salitre Terminal
+1. 📍 Taxis stop
+1. 🚕 Taxi
+1. 📍 University of los Andes
+
+---
+cta_bus_instructions_link: https://www.google.com/maps/dir/Aeropuerto+El+Dorado,+Bogota/Universidad+de+los+Andes,+Cra.+1+%2318a+12,+Bogot%C3%A1,+Cundinamarca/@4.6498396,-74.1389063,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x8e3f9cba0705077b:0xc0b7599bd3922a7f!2m2!1d-74.1405186!2d4.6971956!1m5!1m1!1s0x8e3f99a4a124b335:0x8e9f4683d1db9cb!2m2!1d-74.0661!2d4.601363!3e3
+---
+welcome: Welcome to Bogota
+---
+short_description: Bogotá is the capital and largest city in Colombia. A melting pot of people from around the country, it is diverse and multicultural, with a blend of modern and colonial architecture.
+---
+what_to_do: WHAT TO DO IN BOGOTA?
+---
+cta_link: https://www.google.com/maps/place/Universidad+de+los+Andes/@4.6028694,-74.0670972,18z/data=!4m8!1m2!2m1!1suniversidad+de+los+andes!3m4!1s0x8e3f99a4a124b335:0x8e9f4683d1db9cb!8m2!3d4.601363!4d-74.0661
+---
+display: true
+---
+main_menu: true
+---
+what_to_do_link: https://www.tripadvisor.co/Attractions-g294074-Activities-Bogota.html
+---
+order: 3

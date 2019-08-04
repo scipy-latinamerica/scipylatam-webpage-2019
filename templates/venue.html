@@ -45,12 +45,6 @@
           </div>
           <div class="venue-instructions__box-content">
             {{ this.airport_instructions }}
-            <a
-              class="button-red venue-instructions__button"
-              href="{{ this.cta_link }}"
-            >
-              {{ this.cta | upper }}
-            </a>
           </div>
         </div>
       </div>
@@ -65,16 +59,11 @@
             </div>
             <div class="venue-instructions__box-content">
               {{ this.bus_instructions }}
-              <a
-                class="button-red venue-instructions__button"
-                href="{{ this.cta_link }}"
-              >
-                {{ this.cta | upper }}
-              </a>
             </div>
           </div>
         </div>
-    </div>
+      </div>
+      <br>
   </div>
 </div>
 
@@ -87,12 +76,12 @@
     <h2>{{ this.short_description }}</h2>
     <br>
     <br>
-    <!-- <a
+    <a
       class="button-red"
-      href="{{ this.cta_link }}"
+      href="{{ '/lugar/turismo'|url(alt=this.alt) }}"
     >
       {{ this.what_to_do | upper }}
-    </a> -->
+    </a>
   </div>
 </div>
 

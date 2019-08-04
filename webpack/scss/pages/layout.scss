@@ -259,7 +259,7 @@
 
     @include from(large) {
       margin: 0;
-      padding: 20px;
+      padding: 10px;
     }
   }
 
@@ -271,7 +271,7 @@
     color: $white;
 
     @include from(large) {
-      font-size: 14px;
+      font-size: 13px;
       color: $black;
     }
 

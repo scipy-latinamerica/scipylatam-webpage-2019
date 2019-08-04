@@ -1,0 +1,17 @@
+_template: team-members.html
+---
+display: true
+---
+main_menu: true
+---
+menu_label: Equipo
+---
+_model: team-members
+---
+title: Equipo
+---
+description: Miembros del equipo organizador de SciPy Latam 2019
+---
+_slug: equipo
+---
+order: 6

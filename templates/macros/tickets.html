@@ -1,0 +1,124 @@
+{%- macro render_tickets(tickets_page) -%}
+    <div class="tickets__boxes">
+      <div class="tickets__box">
+        <div class="tickets__box-container">
+          <div class="tickets__box-image">
+            <img
+              class="tickets__box-icon"
+              src="{{ '/static/images/estudiantes_ticket.svg' | asseturl }}"
+              alt="Image background"
+            />
+          </div>
+          <div class="tickets__box-content">
+            <h1>{{ tickets_page.estudiantes_title }}</h1>
+            <div class="tickets__ticket-container tickets__ticket-container--yellow">
+              <span class="tickets__ticket-title">
+                {{ tickets_page.estudiantes_inicial_title }}
+              </span>
+              <span class="tickets__ticket-value">
+                {{ tickets_page.estudiantes_inicial_valor }}
+              </span>
+              <span class="tickets__ticket-deadline">
+                {{ tickets_page.estudiantes_inicial_deadline }}
+              </span>
+            </div>
+
+            <div class="tickets__ticket-container">
+              <span class="tickets__ticket-title">
+                {{ tickets_page.estudiantes_segunda_title }}
+              </span>
+              <span class="tickets__ticket-value">
+                {{ tickets_page.estudiantes_segunda_valor }}
+              </span>
+              <span class="tickets__ticket-deadline">
+                {{ tickets_page.estudiantes_segunda_deadline }}
+              </span>
+            </div>
+
+            <div class="tickets__ticket-container">
+              <span class="tickets__ticket-title">
+                {{ tickets_page.estudiantes_tercera_title }}
+              </span>
+              <span class="tickets__ticket-value">
+                {{ tickets_page.estudiantes_tercera_valor }}
+              </span>
+              <span class="tickets__ticket-deadline">
+              </span>
+            </div>
+            <a
+              class="button-red tickets__button"
+              href="{{ tickets_page.estudiantes_comprar_href }}"
+              target='_blank'
+            >
+              {{ tickets_page.estudiantes_comprar_label | upper }}
+            </a>
+
+            <p>
+              {{ tickets_page.estudiantes_footnotes }}
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tickets__box">
+          <div class="tickets__box-container">
+            <div class="tickets__box-image">
+              <img
+                class="tickets__box-icon"
+                src="{{ '/static/images/profesionales_ticket.svg' | asseturl }}"
+                alt="Image background"
+              />
+            </div>
+            <div class="tickets__box-content">
+              <h1>{{ tickets_page.profesionales_title }}</h1>
+              <div class="tickets__ticket-container tickets__ticket-container--yellow">
+                <span class="tickets__ticket-title">
+                  {{ tickets_page.profesionales_inicial_title }}
+                </span>
+                <span class="tickets__ticket-value">
+                  {{ tickets_page.profesionales_inicial_valor }}
+                </span>
+                <span class="tickets__ticket-deadline">
+                  {{ tickets_page.profesionales_inicial_deadline }}
+                </span>
+              </div>
+
+              <div class="tickets__ticket-container">
+                <span class="tickets__ticket-title">
+                  {{ tickets_page.profesionales_segunda_title }}
+                </span>
+                <span class="tickets__ticket-value">
+                  {{ tickets_page.profesionales_segunda_valor }}
+                </span>
+                <span class="tickets__ticket-deadline">
+                  {{ tickets_page.profesionales_segunda_deadline }}
+                </span>
+              </div>
+
+              <div class="tickets__ticket-container">
+                <span class="tickets__ticket-title">
+                  {{ tickets_page.profesionales_tercera_title }}
+                </span>
+                <span class="tickets__ticket-value">
+                  {{ tickets_page.profesionales_tercera_valor }}
+                </span>
+                <span class="tickets__ticket-deadline">
+                </span>
+              </div>
+              <a
+                class="button-red tickets__button"
+                href="{{ tickets_page.profesionales_comprar_href }}"
+                target='_blank'
+              >
+                {{ tickets_page.profesionales_comprar_label | upper }}
+              </a>
+
+              <p>
+                {{ tickets_page.profesionales_footnotes }}
+              </p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <br><br>
+{%- endmacro -%}

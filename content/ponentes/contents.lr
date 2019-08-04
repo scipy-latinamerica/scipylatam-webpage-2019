@@ -1,0 +1,13 @@
+_model: speakers
+---
+title: Ponentes
+---
+_slug: ponentes
+---
+display: yes
+---
+main_menu: yes
+---
+menu_label: Ponentes
+---
+order: 2

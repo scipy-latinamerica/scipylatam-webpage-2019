@@ -1,0 +1,40 @@
+_model: page
+---
+body:
+
+# Preguntas frecuentes
+
+En esta sección damos respuesta a diversas preguntas que hemos recibido durante los últimos meses.
+
+## 1. ¿Se van a entregar certificados de asistencia?
+
+Si. Vamos a entregar certificados digitales a los asistentes y un certificado que acredite a los ponentes que dieron charlas o talleres.
+
+## 2. ¿Hay posibilidad de aplicar a becas?
+
+La disponibilidad de becas está sujeta a la disponibilidad presupuestal para las mismas. En este momento no se tiene contemplada la posibilidad de brindar becas de apoyo.
+
+## 3. ¿Es posible acceder a las memorias o presentaciones de los ponentes?
+
+Una vez el evento haya concluido, cargaremos todas las presentaciones y resúmenes de las charlas al sitio web. También agregaremos un botón de descarga para poder descargar todo el material de las charlas y talleres.
+
+## 4. ¿Va a haber transmisión en vivo de la conferencia?
+
+Las charlas de nuestros ponentes internacionales se transmitirán en vivo. El evento no tiene contemplado la transmición en vivo de las charlas y talleres de los demás ponentes
+
+## 5. ¿Van a estar las charlas disponibles en video?
+
+Estamos haciendo todo lo posible para que las charlas de todos nuestros ponentes (exceptuando talleres) estén disponibles en video y en nuestro canal de YouTube unos meses después del cierre del evento.
+
+---
+title: Preguntas frecuentes
+---
+display: yes
+---
+main_menu: yes
+---
+menu_label: Preguntas
+---
+order: 20
+---
+_template: code-conduct.html

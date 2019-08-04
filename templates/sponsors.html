@@ -1,111 +1,68 @@
-{%- extends "layout.html" -%} {%- from "macros/background.html" import
-render_background -%} {%- from "macros/social.html" import render_social -%} {%-
-from "macros/translation.html" import transbag -%} {%- set t_call_for_proposals
-= transbag('translate', this.alt, 'call_for_proposals') -%} {%- set t_date =
-transbag('translate', this.alt, 'date') -%}
-{%- set t_keynotes = transbag('translate', this.alt, 'keynotes') -%}
+{%- extends "layout.html" -%}
+{%- from "macros/background.html" import render_background -%} 
+{%- from "macros/sponsors.html" import render_sponsors -%} 
+{%- from "macros/translation.html" import transbag -%}
+
 {%- set t_sponsors = transbag('translate', this.alt, 'sponsors') -%}
-{%- set t_venue = transbag('translate', this.alt, 'venue') -%}
-{%- set t_subscribe = transbag('translate', this.alt, 'subscribe') -%}
-{%- set t_subscribe_name = transbag('translate', this.alt, 'subscribe_name') -%}
-{%- set t_subscribe_last_name = transbag('translate', this.alt, 'subscribe_last_name') -%}
-{%- set t_subscribe_email = transbag('translate', this.alt, 'subscribe_email') -%}
-{%- set t_subscribe_button = transbag('translate', this.alt, 'subscribe_button') -%}
-{%- set t_form_required = transbag('translate', this.alt, 'form_required') -%}
-{%- set t_form_email = transbag('translate', this.alt, 'form_email') -%}
-{%- set t_buy_tickets = transbag('translate', this.alt, 'buy_tickets') -%}
-{%- set t_sponsor_event = transbag('translate', this.alt, 'sponsor_event') -%}
+{%- set t_our_sponsors = transbag('translate', this.alt, 'our_sponsors') -%}
+{%- set t_want_to_sponsor_title = transbag('translate', this.alt, 'want_to_sponsor_title') -%}
+{%- set t_want_to_sponsor_text = transbag('translate', this.alt, 'want_to_sponsor_text') -%}
+{%- set t_sponsor_event = transbag('translate', alt, 'sponsor_event') -%}
 
-{%- set venue = site.get('/venue', alt=this.alt) -%}
-{%- set tickets = site.get('/tickets', alt=this.alt) -%}
-{% block title %}{{ this.title }}{% endblock %} {% block body%}
-
-{%- set t_days = transbag('translate', this.alt, 'days') -%}
-{%- set t_hours = transbag('translate', this.alt, 'hours') -%}
-{%- set t_minutes = transbag('translate', this.alt, 'minutes') -%}
-{%- set t_seconds = transbag('translate', this.alt, 'seconds') -%}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body%}
+<br><br><br>
 
 <div class="container">
-  {{ render_background(background='color', color='#FFF') }}
-  <div class="sponsors-page content">
-    <h1>{{ t_sponsors|upper }}</h1>
-    <div class="sponsors-container">
-      {% for category in [
-        {
-          'label': 'plan_venue',
-          'color': '#E7132B',
-          'background': '#CA1126'
-        },
-        {
-          'label': 'plan_exa',
-          'color': '#3813FF',
-          'background': '#2811C8'
-        },
-        {
-          'label': 'plan_tera',
-          'color': '#F8CD16',
-          'background': '#F7BA0C'
-        },
-        {
-          'label': 'plan_giga',
-          'color': '#3813FF',
-          'background': '#2811C8'
-        },
-        {
-          'label': 'plan_support',
-          'color': '#E7132B',
-          'background': '#CA1126'
-        }
-      ] %}
-      {%- set t_cat = transbag('translate', this.alt, category.label|lower) -%}
-      {%- set sponsors = site.query('/sponsors', alt=this.alt).filter(F.category == category.label) %}
-      {%- if sponsors.count() > 0 -%}
-      <div class="sponsors__category-left">
-        <div class="sponsors__name-container">
-          <div class="sponsors__category-circle"
-            style="background-color: {{category.color}};
-                   border-color: {{category.background}}">
-          </div>
-          <h3 class="sponsors__category-name"
-              style="background-color: {{category.color}}">
-                {{ t_cat }}
-          </h3>
-          <img class="sponsors__category-circle-logo"
-               src="{{ '/static/images/scipy-sponsors.svg' | asseturl }}">
+  {{ render_background(background='color-cut', color='#2811CE') }}
+  <div class="venue content">
+    <br><br>
+    <h1>{{ this.title|upper }}</h1>
+    <div class="tickets__image-container">
+      <img 
+        class="tickets__image"
+        src="{{ '/entradas/entradas.jpg' }}"
+        alt="Image background"
+      />
+      <div class="tickets__description">
+        <div class="tickets__description-container">
+        {{ this.body }}
         </div>
       </div>
-      <div class="sponsors__category-logos">
-        {% for sponsor in  sponsors %}
-        <div>
-          {%- if sponsor.logo -%}
-          {% if this.alt == 'es' %}
-          {%- set sponsor_img_link = '../patrocinadores/' + sponsor._id + '/' + sponsor.logo -%}
-          {%- else -%}
-          {%- set sponsor_img_link = '../../patrocinadores/' + sponsor._id + '/' + sponsor.logo -%}
-          {% endif %}
-          <img
-            class="sponsors__category-logo"
-            src="{{ sponsor_img_link }}"
-            alt="{{ sponsor.name }} Logo"
-          />
-          {% endif %}
-        </div>
-        {% endfor %}
-      </div>
-      {% endif %}
-      {% endfor %}
-      <div class="sponsors__btn">
-        <a
-          class="button-red cp-button"
-          href="{{ '/sponsors'|url(alt=this.alt) }}"
-          aria-label="Sponsors/Patrocinadores"
-        >
-          {{ t_sponsor_event | upper }}
-        </a>
-      </div>
-
     </div>
+    {{ render_background(background='landing-tickets') }}
+    <br><br><br><br>
   </div>
+</div>
+
+<div class="container">
+    {{ render_background(background='color', color='#FFF') }}
+    <div class="sponsors-landing content">
+      <h1>{{ t_our_sponsors|upper }}</h1>
+      {{ render_sponsors(this.alt, button=0) }}
+    </div>
+</div>
+
+<div class="container">
+    {{ render_background(background='color', color='#f4f4f4') }}
+    {{ render_background(background='landing-tickets') }}
+    <div class="sponsors-landing content">
+      <h1>{{ t_want_to_sponsor_title }}</h1>
+      <p class="sponsor_text">{{t_want_to_sponsor_text }}<a href="mailto:sponsor@scipyla.org"> sponsor@scipyla.org</a>.</p>
+      <div class="sponsors__btn">
+          <a
+            class="button-red cp-button"
+            href="mailto:sponsor@scipyla.org?subject={{ t_we_want_to_sponsor }}"
+            aria-label="Sponsors/Patrocinadores"
+          >
+            {{ t_sponsor_event | upper }}
+          </a>
+        </div>
+        <br><br><br><br><br>
+    </div>
+
+  
+
 </div>
 
 {% endblock %}

@@ -1,0 +1,79 @@
+{%- from "macros/translation.html" import transbag -%}
+
+{%- set t_sponsor_event = transbag('translate', alt, 'sponsor_event') -%}
+
+{%- macro render_sponsors(alt, button=True) -%}
+
+<div class="sponsors-container">
+    {% for category in [
+      {
+        'label': 'plan_venue',
+        'color': '#8425d5',
+        'background': '#CA1126'
+      },
+      {
+        'label': 'plan_exa',
+        'color': '#3813FF',
+        'background': '#2811C8'
+      },
+      {
+        'label': 'plan_tera',
+        'color': '#F8CD16',
+        'background': '#F7BA0C'
+      },
+      {
+        'label': 'plan_giga',
+        'color': '#3813FF',
+        'background': '#2811C8'
+      },
+      {
+        'label': 'plan_support',
+        'color': '#08b463',
+        'background': '#CA1126'
+      }
+    ] %}
+    {%- set t_cat = transbag('translate', alt, category.label|lower) -%}
+    {%- set sponsors = site.query('/patrocinadores', alt=alt).filter(F.category == category.label) %}
+    {%- if sponsors.count() > 0 -%}
+    <div class="sponsors__category-left">
+      <div class="sponsors__name-container">
+        <h3 class="sponsors__category-name">
+              {{ t_cat|upper }}
+        </h3>
+        <div class="sponsors__category-line" style="border-color: {{category.color }};"></div>
+      </div>
+    </div>
+    <div class="sponsors__category-logos">
+      {% for sponsor in  sponsors %}
+      <div>
+        {%- if sponsor.logo -%}
+        {% if alt == 'es' %}
+        {%- set sponsor_img_link = '/./patrocinadores/' + sponsor._id + '/' + sponsor.logo -%}
+        {%- else -%}
+        {%- set sponsor_img_link = '/../patrocinadores/' + sponsor._id + '/' + sponsor.logo -%}
+        {% endif %}
+        <img
+          class="sponsors__category-logo"
+          src="{{ sponsor_img_link }}"
+          alt="{{ sponsor.name }} Logo"
+        />
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+    {% endfor %}
+   {% if button %}
+    <div class="sponsors__btn">
+      <a
+        class="button-red cp-button"
+        href="mailto:sponsor@scipyla.org?subject={{ t_we_want_to_sponsor }}"
+        aria-label="Sponsors/Patrocinadores"
+      >
+        {{ t_sponsor_event | upper }}
+      </a>
+    </div>
+    {% endif %}
+
+  </div>
+{%- endmacro -%}

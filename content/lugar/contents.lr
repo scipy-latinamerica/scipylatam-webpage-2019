@@ -1,0 +1,79 @@
+_model: venue
+---
+display: true
+---
+main_menu: true
+---
+menu_label: Lugar
+---
+title: Lugar
+---
+location: Bogotá, Colombia
+---
+name: Universidad de Los Andes
+---
+address: <span>Dirección:</span> Cra. 1 #18a 12, Bogotá, Cundinamarca
+---
+cta: MAPAS DE GOOGLE
+---
+cta_link: https://www.google.com/maps/place/Universidad+de+los+Andes/@4.6028694,-74.0670972,18z/data=!4m8!1m2!2m1!1suniversidad+de+los+andes!3m4!1s0x8e3f99a4a124b335:0x8e9f4683d1db9cb!8m2!3d4.601363!4d-74.0661
+---
+how_to:
+
+ ¿Cómo llegar allí?
+---
+airport_instructions:
+
+# Desde el Aeropuerto
+## En transmilenio (1h y 30 min)
+
+<ol>
+<li>📍Aeropuerto Piso 1</li>
+<li> 🚌 Alimentador 14-16</li>
+<li>📍 Portal El Dorado</li>
+<li>🚌 1 Universidades</li>
+<li>📍 Universidades</li>
+<li>🚶🏻‍♂️ Universidad de los Andes</li>
+</ol>
+
+## En taxi (1h y 30 min)
+
+  1. 📍 Aeropuerto Piso 1
+  2. 📍 Salidas 2 y 3
+  3. 🚕 Taxi
+  4. 📍 Universidad de los Andes
+
+---
+cta_airport_instructions_link: https://www.google.com/maps/dir/Muelle+Internacional,+Bogot%C3%A1/Universidad+de+los+Andes,+Cra.+1+%2318a+12,+Bogot%C3%A1,+Cundinamarca/@4.6498396,-74.1389063,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x8e3f9cba0506a2c3:0xef1d9637a84dbdb!2m2!1d-74.140484!2d4.6972077!1m5!1m1!1s0x8e3f99a4a124b335:0x8e9f4683d1db9cb!2m2!1d-74.0661!2d4.601363!3e3
+---
+bus_instructions:
+
+# Desde el terminal de buses
+## En transmilenio (1h y 30 min)
+
+1. 📍 Terminal Salitre
+1. 🚶🏻‍♂️ El Tiempo-Maloka
+1. 🚌 1 Universidades
+1. 📍 Universidades
+1. 🚶🏻‍♂️ Universidad de los Andes
+
+## En taxi (1h y 30 min)
+1. 📍 Terminal Salitre
+1. 📍 Kiosco de Taxis
+1. 🚕 Taxi
+1. 📍 Universidad de los Andes
+
+---
+cta_bus_instructions_link: https://www.google.com/maps/dir/Aeropuerto+El+Dorado,+Bogota/Universidad+de+los+Andes,+Cra.+1+%2318a+12,+Bogot%C3%A1,+Cundinamarca/@4.6498396,-74.1389063,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x8e3f9cba0705077b:0xc0b7599bd3922a7f!2m2!1d-74.1405186!2d4.6971956!1m5!1m1!1s0x8e3f99a4a124b335:0x8e9f4683d1db9cb!2m2!1d-74.0661!2d4.601363!3e3
+---
+welcome: Bienvenido a Bogotá
+---
+short_description: Bogotá, es la capital y la ciudad más grande de Colombia, tiene alrededor de 8 millones de habitantes. Constituye el centro político, económico, financiero y cultural del país, por lo tanto, es el punto de encuentro de personas de todas las regiones, lo que la hace diversa y multicultural.
+---
+what_to_do: ¿Qué hacer en Bogotá?
+---
+what_to_do_link: https://www.tripadvisor.co/Attractions-g294074-Activities-Bogota.html
+---
+_slug: lugar
+---
+order: 3

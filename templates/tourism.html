@@ -1,0 +1,30 @@
+{%- extends "layout.html" -%}
+{%- from "macros/background.html" import render_background -%}
+{%- from "macros/translation.html" import transbag -%}
+{%- from "macros/tickets.html" import render_tickets -%}
+{%- from "macros/form.html" import render_subscribe -%}
+
+{%- set t_categories = transbag('translate', this.alt, 'categories') -%}
+
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+<div class="container menu-background">
+  {{ render_background(background='general', content_background='true', alt=this.alt) }}
+</div>
+
+<div class="container">
+  {{ render_background(background='color-cut', color='#FCD116') }}
+  {{ render_background(background='landing-tickets') }}
+  <div class="venue content">
+    <br><br>
+    <h1>{{ this.title|upper }}</h1>
+    {{ this.body }}
+  </div>
+</div>
+
+<div class="container">
+    {{ render_background(background='landing-subscribe', color='#FCD116') }}
+    {{ render_subscribe(this.alt) }}
+</div>
+
+{% endblock %}

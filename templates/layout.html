@@ -80,16 +80,11 @@
         src="{{ '/static/images/close.svg' | asseturl }}" alt="Close menu">
       </button>
       <ul class="general__menu-list">
-        <li class="general__menu-item">
-          <a class="general__menu-link {% if this == site.get('/', alt=this.alt) %} general__menu-link--active {% endif%}"
-            href="{{ site.get('/', alt=this.alt)|url }}">
-              {{ site.get('/', alt=this.alt).menu_label | upper }}
-            </a>
-        </li>
-        {% for page in site.get('/', alt=this.alt).children %}
+        {% for page in site.get('/', alt=this.alt).children.order_by('order') %}
           {% if page.display and page.main_menu %}
           <li class="general__menu-item">
-            <a class="general__menu-link {% if this == page %} general__menu-link--active {% endif%}"
+            {%- set this_is_child = this.is_child_of(page) -%}
+            <a class="general__menu-link {% if this_is_child %} general__menu-link--active {% endif %}"
               href="{{ page|url }}">
                 {{ page.menu_label | upper }}
               </a>
@@ -125,7 +120,7 @@
       <a class="general__menu-code" href="{{ './code-of-conduct'|url(alt=this.alt) }}">
         {{ t_code_of_conduct }}
       </a>
-      {{ render_social(site.get('/')) }}
+      {{ render_social(site.get('/', 'light')) }}
     </nav>
     {% block body %} {% endblock %}
   </div>
@@ -140,7 +135,7 @@
           {% endif %}
         {% endfor %}
       </ul>
-      {{ render_social(site.get('/')) }}
+      {{ render_social(site.get('/'), 'light') }}
     </div>
     <div class="footer__copyright">
       <span class="footer__copyright-copy">{{ t_footer_message }}</span>

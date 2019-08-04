@@ -1,16 +1,46 @@
 {%- extends "layout.html" -%}
 {%- from "macros/background.html" import render_background -%}
 {%- from "macros/translation.html" import transbag -%}
+{%- from "macros/keynote.html" import render_keynote -%}
+{%- from "macros/speaker.html" import render_speaker -%}
+
+{%- set t_keynotes = transbag('translate', this.alt, 'keynotes') -%}
+{%- set t_speakers = transbag('translate', this.alt, 'speakers') -%}
 
 {% block title %}{{ this.title }}{% endblock %}
-{% block background %}{{ render_background(background='general', content_background='true') }}{% endblock %}
-
 {% block body %}
+{{ render_background(background='general', content_background='true', alt=this.alt) }}
+
+<br><br><br>
+
 <div class="container">
-  <main class="content content-footer">
-    <div class="conduct-code">
-    {{ this.body }}
+    <div class="keynote-landing content">
+      <h1 style="color:black;">{{ t_keynotes|upper }}</h1><br>
+        {{ render_background(background='color-cut', color='#2811CE') }}
+        <div class="keynote-container">
+          {% for keynote in site.query('/ponentes', alt=this.alt).order_by('+order') %} {% if
+            keynote.keynote %}
+            {{ render_keynote(keynote, alt=this.alt) }}
+          {% endif %} {% endfor %}
+    
+        </div>
+  
+      </div>
     </div>
-  </main>
-</div>
-{% endblock %}
+  </div>
+
+  <div class="container">
+      <div class="keynote-landing content">
+          <!-- <h1 style="color:black;">{{ t_speakers|upper }}</h1><br> -->
+          <div class="keynote-container">
+        {% for speaker in site.query('/ponentes', alt=this.alt).order_by('+order') %}
+              {% if not speaker.keynote and speaker.publish %}
+              {{ render_speaker(speaker, alt=this.alt) }}
+            {% endif %} {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  {% endblock %}
+  

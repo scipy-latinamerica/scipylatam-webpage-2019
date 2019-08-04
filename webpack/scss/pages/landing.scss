@@ -208,7 +208,7 @@
   }
 }
 
-.speakers-landing {
+.keynote-landing {
   h1 {
     font-family: "Poppins", sans-serif;
     font-size: 25px;
@@ -224,7 +224,7 @@
   }
 }
 
-.speakers-container {
+.keynote-container {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -508,7 +508,15 @@
 
 .sponsors__btn {
   margin-top: 85px;
+  text-align: center;
 }
+
+.keynote__btn {
+  
+  margin-top: 40px;
+  margin-bottom: 140px;
+}
+
 
 .sponsors__category-logos {
   display: flex;
@@ -522,7 +530,7 @@
 
   @include from(large) {
     width: 70%;
-    justify-content: space-between;
+    justify-content: left;
   }
 
   div {

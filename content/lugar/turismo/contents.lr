@@ -1,0 +1,54 @@
+_model: tourism
+---
+body:
+
+#### attraction ####
+description:
+
+### Cerro de Monserrate
+
+El cerro de Monserrate es el más conocido de los cerros Orientales de Bogotá. Junto a Guadalupe es uno de los cerros tutelares de la ciudad. Monserrate tiene una altitud de 3152 m y se ubica sobre la cordillera oriental. La basílica del Señor de Monserrate ha sido lugar de peregrinación religiosa desde la época colonial y se constituye en un atractivo natural, religioso, gastronómico de la ciudad. A las estaciones del funicular y teleférico para ascender al cerro se puede llegar fácilmente a pie desde la Universidad de los Andes.
+----
+image: monserrate.jpg
+----
+url: 
+#### attraction ####
+description:
+
+### La Candelaria y el Centro Histórico
+
+En La Candelaria queda el sitio de la fundación formal de la ciudad, la plaza mayor conocida hoy como Plaza de Bolívar. A su alrededor se encuentran el Capitolio Nacional (sede de Congreso de la República de Colombia), el Palacio de Justicia (sede de la Corte Suprema de Justicia), el Palacio Liévano (sede de la Alcaldía Mayor de Bogotá), la Catedral Primada de Bogotá, la Capilla del Sagrario y el Palacio Arzobispal (sede del Arzobispo "sede Cardinalicia").
+
+Entre los museos se destacan los Museos y Colecciones del Banco de la República (Casa de Moneda, Museo Botero y Museo de Arte del Banco de la República), Casa del Florero, el Museo de Arte Colonial, el Museo Arqueológico Casa del Marqués de San Jorge, el Museo Militar, el Museo de Trajes Regionales (casa de Manuelita Sáenz), el Museo de Bogotá, el Museo de la Policía Nacional.
+----
+image: centro.jpg
+----
+url: 
+#### attraction ####
+description:
+
+### Museo del Oro
+
+El museo del Oro del banco de la República de Colombia es una institución abierta al público cuyo fin es la adquisición, conservación y exposición de piezas de orfebrería y alfarería de culturas indígenas del periodo precolombino de la actual Colombia. Está ubicado en la esquina de la calle 16 con carrera 5,cuenta con más de 34,000 piezas hechas en oro, 20.000 de objetos líticos, cerámicos, piedras preciosas, y textiles pertenecientes a las culturas Quimbaya, Calima, Tayrona, Zenú, Muisca, Tolima, Tumaco y Magdalena entre otros.
+----
+image: museo-del-oro.jpg
+----
+url: 
+#### attraction ####
+description:
+
+### Mirador Torre Colpatria
+
+La Torre Colpatria es un rascacielos situado en Bogotá, en la zona norte del barrio Las Nieves. Su zona comercial constituye una prolongación del Centro Internacional de la ciudad. Con sus 50 pisos, es el segundo edificio más alto de la ciudad así como uno de sus iconos. Fue terminada en 1979 y tiene una altura de 196 metros En ella se encuentran las oficinas de diversas compañías, entre las cuales están las empresas del Grupo Colpatria, propietario de la torre. 
+ 
+En su azotea hay un mirador para apreciar gran parte de la ciudad y de la sabana de Bogotá. En 1998 se instalaron treinta y seis luces de xenón, que a finales de 2012 se reemplazaron con luces de tecnología LED.
+----
+image: torre-colpatria.jpg
+----
+url: 
+---
+display: yes
+---
+title: ¿Qué hacer en Bogotá?
+---
+description: Turismo en Bogotá
