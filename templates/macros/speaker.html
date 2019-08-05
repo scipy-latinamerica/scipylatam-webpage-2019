@@ -4,14 +4,14 @@
 <div class="speaker__card">
   <div class="speaker__card-wrapper">
     {% if speaker.image %}
-    <img
+      {% for img in speaker.attachments.images %}
+      {% if speaker.image in img|url%}
+      <img
       class="speaker__card-photo"
-      {%- if alt == 'es' -%}
-      src="/ponentes/{{ speaker._id }}/{{ speaker.image }}"
-      {%- else -%}
-      src="../../ponentes/{{ speaker._id }}/{{ speaker.image }}"
-      {%- endif -%}
+      src="{{ img|url }}"
       alt="Member photo: {{ speaker.name + ' ' + speaker.last_name }}" />
+      {% endif  %}
+      {% endfor  %}
     {% endif %}
   </div>
   <span class="speaker__card-name">{{ speaker.name }} {{ speaker.last_name }}</span>

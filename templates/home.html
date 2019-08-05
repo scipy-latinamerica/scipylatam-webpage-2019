@@ -48,7 +48,7 @@ transbag('translate', this.alt, 'date') -%}
     {%- if 'tickets' in this.sections -%}
     <a
       class="button-red cp-tickets"
-      href="{{this|url + '#tickets' }}"
+      href="{{ this|url + '#tickets' }}"
       aria-label="Buy tickets!"
     >
       <div class="circle-left"></div>
@@ -138,6 +138,7 @@ transbag('translate', this.alt, 'date') -%}
   {{ render_background(background='landing-tickets') }}
   <div class="tickets content">
     <h1>{{ tickets.title|upper }}</h1>
+    <a id="tickets"></a>
     {{ render_tickets(tickets) }}
   </div>
 {%- endif -%}

@@ -3,10 +3,15 @@
 {%- macro render_keynote(keynote, alt) -%}
 <div class="keynote__card">
   <div class="keynote__card-wrapper">
-    <a href={{keynote|url(alt)}}><img
+    <a href={{keynote|url(alt)}}>
+      {% for img in keynote.attachments.images %}
+        {% if keynote.image in img|url %}
+      <img
        class="keynote__card-photo"
-       src="{{ keynote|url(alt='es')|replace('/en', '') + keynote.image }}"
+       src="{{ img|url }}"
        alt="Speaker photo: {{ keynote.name + ' ' + keynote.last_name }}" />
+        {% endif %}
+      {% endfor %} 
     </a>
     <img class="keynote__card-background"
          src="{{ '/static/images/speaker-background.svg' | asseturl }}"

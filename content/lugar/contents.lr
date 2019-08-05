@@ -20,12 +20,12 @@ cta_link: https://www.google.com/maps/place/Universidad+de+los+Andes/@4.6028694,
 ---
 how_to:
 
- ¿Cómo llegar allí?
+ ¿Cómo llegar?
 ---
 airport_instructions:
 
 # Desde el Aeropuerto
-## En transmilenio (1h y 30 min)
+## En transmilenio
 
 <ol>
 <li>📍Aeropuerto Piso 1</li>
@@ -36,7 +36,7 @@ airport_instructions:
 <li>🚶🏻‍♂️ Universidad de los Andes</li>
 </ol>
 
-## En taxi (1h y 30 min)
+## En taxi
 
   1. 📍 Aeropuerto Piso 1
   2. 📍 Salidas 2 y 3
@@ -49,7 +49,7 @@ cta_airport_instructions_link: https://www.google.com/maps/dir/Muelle+Internacio
 bus_instructions:
 
 # Desde el terminal de buses
-## En transmilenio (1h y 30 min)
+## En transmilenio
 
 1. 📍 Terminal Salitre
 1. 🚶🏻‍♂️ El Tiempo-Maloka
@@ -57,7 +57,7 @@ bus_instructions:
 1. 📍 Universidades
 1. 🚶🏻‍♂️ Universidad de los Andes
 
-## En taxi (1h y 30 min)
+## En taxi
 1. 📍 Terminal Salitre
 1. 📍 Kiosco de Taxis
 1. 🚕 Taxi

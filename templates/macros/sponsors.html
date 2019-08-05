@@ -47,16 +47,15 @@
       {% for sponsor in  sponsors %}
       <div>
         {%- if sponsor.logo -%}
-        {% if alt == 'es' %}
-        {%- set sponsor_img_link = '/./patrocinadores/' + sponsor._id + '/' + sponsor.logo -%}
-        {%- else -%}
-        {%- set sponsor_img_link = '/../patrocinadores/' + sponsor._id + '/' + sponsor.logo -%}
-        {% endif %}
-        <img
-          class="sponsors__category-logo"
-          src="{{ sponsor_img_link }}"
-          alt="{{ sponsor.name }} Logo"
-        />
+          {% for img in sponsor.attachments.images %}
+          {% if sponsor.logo in img|url %}
+          <img
+            class="sponsors__category-logo"
+            src="{{ img|url }}"
+            alt="{{ sponsor.name }} Logo"
+          />
+          {% endif %}
+          {% endfor %}
         {% endif %}
       </div>
       {% endfor %}

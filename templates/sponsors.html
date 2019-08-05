@@ -14,16 +14,19 @@
 <br><br><br>
 
 <div class="container">
-  {{ render_background(background='color-cut', color='#2811CE') }}
+  {{ render_background(background='general', content_background='true', alt=this.alt) }}
   <div class="venue content">
+    {{ render_background(background='color-cut', color='#2811CE') }}
     <br><br>
     <h1>{{ this.title|upper }}</h1>
     <div class="tickets__image-container">
+        {% for img in this.attachments.images %}
       <img 
         class="tickets__image"
-        src="{{ '/entradas/entradas.jpg' }}"
+        src="{{ img|url }}"
         alt="Image background"
       />
+      {% endfor %}
       <div class="tickets__description">
         <div class="tickets__description-container">
         {{ this.body }}

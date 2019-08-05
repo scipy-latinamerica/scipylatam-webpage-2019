@@ -1,9 +1,15 @@
 <div class="tickets__image-container">  
+    {%- if this.image -%}
+      {% for img in this.record.attachments.images %}
+        {% if this.image in img|url %}
     <img 
       class="tickets__image"
-      src="{{ '/lugar/turismo/' + this.image }}"
+      src="{{ img|url }}"
       alt="Image background"
     />
+        {% endif %}
+      {% endfor %}
+    {% endif %}
   <div class="tickets__description">
     <div class="tickets__description-container">
       {{ this.description }}

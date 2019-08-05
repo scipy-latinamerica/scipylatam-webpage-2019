@@ -19,11 +19,13 @@
     <br><br>
     <h1>{{ this.title|upper }}</h1>
     <div class="tickets__image-container">
+        {% for img in this.attachments.images %}
         <img 
           class="tickets__image"
-          src="{{ '/entradas/entradas.jpg' }}"
+          src="{{ img|url }}"
           alt="Image background"
         />
+        {% endfor %}
       <div class="tickets__description">
         <div class="tickets__description-container">
           {{ this.body }}

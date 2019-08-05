@@ -90,7 +90,7 @@
 
   h4 {
     font-family: "Monserrat", sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 500;
     margin-bottom: 30px;
     text-align: center;
@@ -135,7 +135,7 @@
   &__box {
     background-color: $dark-yellow;
     min-height: 370px;
-    max-width: 490px;
+    min-width: 400px;
     margin: 40px 0;
 
     &:first-child {
@@ -148,16 +148,27 @@
       font-family: "Poppins", sans-serif;
       font-size: 25px;
       font-weight: 700;
-      text-align: start;
+      text-align: center;
       line-height: 40px;
       margin-bottom: 10px;
+
+      @include from(large){
+        text-align: start;
+      }
+
     }
 
     h2 {
       font-family: "Montserrat", sans-serif;
       font-size: 14px;
       font-weight: 700;
+      text-align: center;
       margin-bottom: 10px;
+
+      @include from(large){
+        text-align: start;
+      }
+
     }
 
     ol {
@@ -173,6 +184,15 @@
       padding:20px;
       display: flex;
       height: 100%;
+      max-width: 500px;
+      flex-direction: column;
+      align-items: center;
+
+      @include from(large){
+        flex-direction: row;
+        padding: 40px;
+      }
+
     }
 
     &-image {
@@ -189,7 +209,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      width: 55%;
+      width: 90%;
     }
   }
 
