@@ -15,32 +15,29 @@
 
 <div class="container">
     <div class="keynote-landing content">
+      {% set keynotes = site.query('/ponentes', alt=this.alt).filter(F.keynote == True).order_by('+order') %}
       <h1 style="color:black;">{{ t_keynotes|upper }}</h1><br>
         {{ render_background(background='color-cut', color='#2811CE') }}
         <div class="keynote-container">
-          {% for keynote in site.query('/ponentes', alt=this.alt).order_by('+order') %} {% if
-            keynote.keynote %}
+          {% for keynote in keynotes %}
             {{ render_keynote(keynote, alt=this.alt) }}
-          {% endif %} {% endfor %}
-    
+          {% endfor %}
         </div>
-  
       </div>
     </div>
   </div>
 
   <div class="container">
-      <div class="keynote-landing content">
-          <!-- <h1 style="color:black;">{{ t_speakers|upper }}</h1><br> -->
-          <div class="keynote-container">
-        {% for speaker in site.query('/ponentes', alt=this.alt).order_by('+order') %}
-              {% if not speaker.keynote and speaker.publish %}
-              {{ render_speaker(speaker, alt=this.alt) }}
-            {% endif %} {% endfor %}
-          </div>
-        </div>
+    <div class="keynote-landing content">
+      {% set speakers = site.query('/ponentes', alt=this.alt).filter(F.keynote == False).order_by('+name', '+last_name') %}
+      {% if speakers.count() %}
+      <h1 style="color:black;">{{ t_speakers|upper }}</h1><br>
+      {% endif %}
+      <div class="team-members-container">
+          {% for speaker in speakers %}
+          {{ render_speaker(speaker, alt=this.alt, compact=true) }}
+          {% endfor %}
       </div>
     </div>
-    </div>
-  {% endblock %}
-  
+</div>
+{% endblock %}

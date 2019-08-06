@@ -1,23 +1,44 @@
 {%- from "macros/social.html" import render_social -%}
+{%- from "macros/translation.html" import transbag -%}
 
-{%- macro render_speaker(speaker, alt) -%}
+{% macro sentence_case(text) %}
+    {{ text[0]|upper }}{{ text[1:]|lower }}
+{% endmacro %}
+
+{%- macro render_speaker(speaker, alt, compact=false) -%}
 <div class="speaker__card">
   <div class="speaker__card-wrapper">
     {% if speaker.image %}
       {% for img in speaker.attachments.images %}
       {% if speaker.image in img|url%}
+      <div class="speaker__card-photo-wrapper">
+      <a class="speaker__card-link" href="{{ speaker|url(alt=alt)}}">
       <img
       class="speaker__card-photo"
-      src="{{ img|url }}"
-      alt="Member photo: {{ speaker.name + ' ' + speaker.last_name }}" />
+      src='{{ img.thumbnail(300, 300, crop=True)|url }}'
+      alt="Member photo: {{ speaker.name + ' ' + speaker.last_name }}" /></a>
+    </div>
       {% endif  %}
       {% endfor  %}
     {% endif %}
   </div>
-  <span class="speaker__card-name">{{ speaker.name }} {{ speaker.last_name }}</span>
+  {%- set name = speaker.name.split(' ')[0] -%}
+  {%- set last_name = speaker.last_name.split(' ')[0] -%}
+  <span class="speaker__card-name">{{ sentence_case(name) }}</span>
+  <span class="speaker__card-name">{{ sentence_case(last_name) }}</span>
+  {% if compact %}
+  {%- set talks = site.query('/charlas').filter(F.authors.contains(speaker._id)) -%}
+    {%- for talk in talks -%}
+      {% if loop.index == 1 %}
+      <span class="speaker__card-responsibility">{{ talk.name }}</span>
+      <span class="speaker__card-responsibility">({{ transbag('translate', alt, talk.language) }})</span>
+      {% endif %}
+    {% endfor %}
+  {% else  %}
   <span class="speaker__card-responsibility">{{ speaker.position|upper }}</span>
   <span class="speaker__card-responsibility">{{ speaker.position_company }}</span>
   <br>
   {{ render_social(speaker, 'dark') }}
+  {% endif %}
 </div>
 {%- endmacro -%}

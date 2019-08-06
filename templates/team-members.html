@@ -27,7 +27,7 @@ alt=this.alt) -%} {% block title %}{{ this.title }}{% endblock %} {% block body
               {% if member.image in img|url %}
           <img
             class="team-member__card-photo"
-            src="{{ img|url }}"
+            src="{{ img.thumbnail(300, 300, crop=True)|url }}"
             alt="Member photo: {{ member.name + ' ' + member.last_name }}" />
               {% endif %}
             {% endfor %}

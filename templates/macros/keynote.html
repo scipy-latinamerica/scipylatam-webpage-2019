@@ -8,7 +8,7 @@
         {% if keynote.image in img|url %}
       <img
        class="keynote__card-photo"
-       src="{{ img|url }}"
+       src="{{ img.thumbnail(480, 480, crop=True)|url }}"
        alt="Speaker photo: {{ keynote.name + ' ' + keynote.last_name }}" />
         {% endif %}
       {% endfor %} 
