@@ -99,3 +99,5 @@ lektor_scipyla_plugin.egg-info
 __pycache__
 
 package-lock.json
+assets/static/gen/app.js.map
+assets/static/gen/styles.css

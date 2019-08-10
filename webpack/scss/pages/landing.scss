@@ -104,7 +104,8 @@
     }
   }
 
-  .circle-left, .circle-right {
+  .circle-left,
+  .circle-right {
     width: 30px;
     height: 30px;
     background-color: $white;
@@ -129,10 +130,11 @@
     position: relative;
     margin-bottom: 10px;
     margin-top: 30px;
-    width: 325px;
+    width: 280px;
     text-align: center;
     border-radius: 0;
     line-height: 20px;
+    padding: 15px 30px;
 
     @include from(medium) {
       width: 400px;
@@ -192,7 +194,6 @@
       display: inline-block;
       font-size: 24px;
       font-weight: 700;
-
     }
 
     &-label {
@@ -252,7 +253,7 @@
     flex-direction: column;
     margin-bottom: 100px;
 
-    @include from(medium){
+    @include from(medium) {
       flex-direction: row;
     }
   }
@@ -261,11 +262,10 @@
     width: 100%;
     height: 300px;
 
-    @include from(medium){
+    @include from(medium) {
       width: 50%;
       height: 400px;
     }
-
   }
 
   &__description-container {
@@ -273,7 +273,7 @@
     flex-direction: column;
     align-items: center;
 
-    @include from(medium){
+    @include from(medium) {
       align-items: flex-start;
     }
   }
@@ -287,7 +287,7 @@
     align-items: center;
     padding: 30px;
 
-    @include from(medium){
+    @include from(medium) {
       width: 50%;
       padding: 0;
       justify-content: center;
@@ -301,7 +301,7 @@
     margin-bottom: 20px;
     text-align: center;
 
-    @include from(medium){
+    @include from(medium) {
       text-align: start;
     }
   }
@@ -313,7 +313,7 @@
     margin-bottom: 20px;
     text-align: center;
 
-    @include from(medium){
+    @include from(medium) {
       text-align: start;
     }
   }
@@ -325,7 +325,7 @@
     margin-bottom: 30px;
     text-align: center;
 
-    @include from(medium){
+    @include from(medium) {
       text-align: start;
     }
 
@@ -361,7 +361,8 @@
     }
   }
 
-  input[type=text], input[type=email] {
+  input[type="text"],
+  input[type="email"] {
     font-family: "Monserrat", sans-serif;
     font-size: 14px;
     height: 20px;
@@ -371,19 +372,19 @@
     background-color: $yellow;
     border: 1px solid $black;
     margin-bottom: 20px;
-    text-align:center;
+    text-align: center;
   }
 
-  input[type=text]::-webkit-input-placeholder,
-  input[type=email]::-webkit-input-placeholder {
+  input[type="text"]::-webkit-input-placeholder,
+  input[type="email"]::-webkit-input-placeholder {
     font-family: "Monserrat", sans-serif;
     font-size: 14px;
     border-radius: 25px;
     color: $dark-gray;
-    text-align:center;
+    text-align: center;
   }
 
-  input[type=submit]{
+  input[type="submit"] {
     height: 20px;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
@@ -392,7 +393,7 @@
     line-height: 0;
     letter-spacing: 1px;
     margin-bottom: 10px;
-    text-align:center;
+    text-align: center;
   }
 
   form {
@@ -498,7 +499,7 @@
   align-items: center;
   border-width: 0 0 1px 0;
   border-style: solid;
-  border-color: rgba(0,0,0,0.25);
+  border-color: rgba(0, 0, 0, 0.25);
   height: 200px;
 
   @include from(large) {
@@ -512,11 +513,9 @@
 }
 
 .keynote__btn {
-  
   margin-top: 40px;
   margin-bottom: 140px;
 }
-
 
 .sponsors__category-logos {
   display: flex;
@@ -525,7 +524,7 @@
   align-items: center;
   border-width: 0 0 1px 0;
   border-style: solid;
-  border-color: rgba(0,0,0,0.25);
+  border-color: rgba(0, 0, 0, 0.25);
   height: 200px;
 
   @include from(large) {
@@ -576,7 +575,7 @@
   font-weight: 400;
   text-align: center;
   line-height: 0em;
-  margin:-6px
+  margin: -6px;
 }
 
 #mce-error-response {
@@ -585,7 +584,7 @@
   font-size: 14px;
   font-weight: 400;
   text-align: center;
-  }
+}
 
 #mce-success-response {
   color: $dark-blue;
@@ -594,8 +593,6 @@
   font-weight: 400;
   text-align: center;
 }
-
-
 
 .tickets {
   min-height: 400px;
@@ -609,11 +606,11 @@
 
   &__boxes {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
 
-    @include from(large){
+    @include from(large) {
       flex-wrap: nowrap;
+      justify-content: center;
     }
   }
 
@@ -621,12 +618,16 @@
     background-color: $white;
     min-height: 350px;
     max-width: 500px;
-    min-width: 375px;
+    min-width: 290px;
     margin: 40px 0;
-    box-shadow: 0 0 4px 0 rgba(0,0,0,0.25);
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+
+    @include from(large) {
+      min-width: 375px;
+    }
 
     &:first-child {
-      @include from(large){
+      @include from(large) {
         margin-right: 50px;
       }
     }
@@ -668,7 +669,7 @@
       padding: 20px;
       min-height: 120px;
 
-      @include from(large){
+      @include from(large) {
         min-height: 120px;
         padding: 30px;
       }
@@ -703,7 +704,7 @@
 
   &__ticket {
     &-container {
-      background-color: #F4F4F4;
+      background-color: #f4f4f4;
       display: flex;
       flex-direction: column;
       width: 100%;
@@ -711,7 +712,6 @@
       padding: 15px;
       margin-bottom: 30px;
     }
-
 
     &-container--yellow {
       background-color: $yellow;

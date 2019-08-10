@@ -42,7 +42,7 @@
     font-weight: 700;
     color: $white;
     margin-bottom: 5px;
-    line-height: 17px;
+    line-height: 20px;
   }
 
   &-company {
@@ -51,6 +51,13 @@
     font-weight: 400;
     color: $white;
     margin-bottom: 15px;
+    text-align: center;
+  }
+
+  &-button {
+    font-size: 14px;
+    letter-spacing: 3px;
+    padding: 10px 30px;
   }
 }
 

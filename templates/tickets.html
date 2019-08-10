@@ -1,46 +1,44 @@
-{%- extends "layout.html" -%}
-{%- from "macros/background.html" import render_background -%}
-{%- from "macros/translation.html" import transbag -%}
-{%- from "macros/tickets.html" import render_tickets -%}
-{%- from "macros/form.html" import render_subscribe -%}
-
-{%- set t_categories = transbag('translate', this.alt, 'categories') -%}
-
-{% block title %}{{ this.title }}{% endblock %}
-{% block body %}
+{%- extends "layout.html" -%} {%- from "macros/background.html" import
+render_background -%} {%- from "macros/translation.html" import transbag -%} {%-
+from "macros/tickets.html" import render_tickets -%} {%- from "macros/form.html"
+import render_subscribe -%} {%- set t_categories = transbag('translate',
+this.alt, 'categories') -%} {% block title %}{{ this.title }}{% endblock %} {%
+block body %}
 <div class="container menu-background">
   {{ render_background(background='general', content_background='true', alt=this.alt) }}
 </div>
 
-<div class="container">
-  {{ render_background(background='color-cut', color='#2811CE') }}
-  {{ render_background(background='landing-tickets') }}
-  <div class="venue content">
-    <br><br>
-    <h1>{{ this.title|upper }}</h1>
-    <div class="tickets__image-container">
-        {% for img in this.attachments.images %}
-        <img 
-          class="tickets__image"
-          src="{{ img|url }}"
-          alt="Image background"
-        />
-        {% endfor %}
-      <div class="tickets__description">
-        <div class="tickets__description-container">
-          {{ this.body }}
+<div class="sponsors-page container">
+  {{ render_background(background='general', content_background='true', alt=this.alt) }}
+  <div class="sponsors-hero content">
+    {{ render_background(background='color-cut', color='#2811CE') }}
+    <br /><br />
+    <h1>{{ this.title | upper }}</h1>
+    <div class="sponsors-hero__container">
+      {% for img in this.attachments.images %}
+      <img
+        class="sponsors-hero__image"
+        src="{{ img | url }}"
+        alt="Image background"
+      />
+      {% endfor %}
+      <div class="sponsors-hero__description-container">
+        <div class="sponsors-hero__description">
+          {{ this.hero_description }}
         </div>
       </div>
     </div>
+    {{ render_background(background='landing-tickets') }}
+    <br /><br /><br /><br />
   </div>
   <div class="tickets content">
-      <h1 style="color:white;">{{ t_categories|upper }}</h1>
-      {{ render_tickets(this) }}
-    </div>
+    <h1 style="color:white;">{{ t_categories | upper }}</h1>
+    {{ render_tickets(this) }}
+  </div>
 </div>
 
 <div class="container">
-    {{ render_background(background='landing-subscribe', color='#FCD116') }}
-    {{ render_subscribe(this.alt) }}
+  {{ render_background(background='landing-subscribe', color='#FCD116') }}
+  {{ render_subscribe(this.alt) }}
 </div>
 {% endblock %}
