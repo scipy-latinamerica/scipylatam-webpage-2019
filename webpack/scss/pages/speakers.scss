@@ -116,18 +116,26 @@
     font-family: "Poppins", sans-serif;
     font-size: 14px;
     font-weight: 500;
+    line-height: 1.3em;
     margin-top: 3px;
     margin-bottom: 5px;
     max-width: 270px;
     text-align: center;
   }
+
+  &-type {
+    font-weight: 800;
+  }
+
 }
 
 .speaker_text {
   max-width: 800px;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
-  font-weight: 500;
+  line-height: 1.3em;
+  font-weight: 300;
   text-align: center;
   margin: 0 auto;
+  max-width: 600px;
 }

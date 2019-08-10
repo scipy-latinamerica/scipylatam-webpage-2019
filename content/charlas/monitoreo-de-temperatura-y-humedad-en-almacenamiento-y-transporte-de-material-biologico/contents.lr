@@ -1,0 +1,15 @@
+authors: daniel-pena
+---
+description: La vacunación dentro del contexto de la sanidad militar y teniendo en cuenta  a los cambios que están expuestos los miembros de la fuerza  se toma como una medida preventiva más eficaz para evitar la aparición y propagación de determinadas enfermedades transmisibles, tanto en el individuo como en la colectividad. Así mismo las vacunas Tienen la facultad de proteger individualmente a la persona que se vacuna, pero además, cuando las coberturas son altas o se vacuna a más del 95 % de una comunidad, se puede solo para algunas lo que se conoce como “vacunación de rebaño”, en la que los vacunados, protegen también a la colectividad evitando o disminuyendo el riesgo de epidemias, protegiendo indirectamente también a los no vacunados, y contribuyendo a la erradicación de enfermedades.  Surge el interés  por generar un sistema de fácil acceso,  económico, programable en hardware open source, de acuerdo a  diferentes variables, que genere información  en tiempo real y de alertas tempranas que permita al personal encargado de custodiar dicho material biológico  y puede actuar de forma pronta y oportuna en la implementación de mecanismos que generen temperatura que garantice la conservación de estas. En el presente proyecto tiene como propósito el desarrollo de un sistema informático empleado como herramienta para almacenar, consultar datos en tiempo real de las variables de temperatura y humedad para el monitoreo de las cadenas de frio en el transporte, conservación y manipulación de vacunas que emplean las misiones médicas en diferentes lugares del territorio colombiano.
+---
+language: es
+---
+language_slides: es
+---
+level: intermediate
+---
+name: Monitoreo de temperatura y humedad en almacenamiento y transporte de material biológico
+---
+summary: Monitoreo de temperatura y humedad en almacenamiento y transporte de material biológico a partir de la utilización de tecnología IOT  
+---
+type: talk

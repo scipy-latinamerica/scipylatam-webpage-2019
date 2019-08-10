@@ -23,14 +23,20 @@
     {% endif %}
   </div>
   {%- set name = speaker.name.split(' ')[0] -%}
-  {%- set last_name = speaker.last_name.split(' ')[0] -%}
+  {% if speaker.last_name.startswith('del ') %}
+  {%- set last_name = speaker.last_name.split(' ') -%}
+  {%- set last_name = ' '.join([last_name[0], sentence_case(last_name[1])]) -%}
+  {% else %}
+  {%- set last_name = sentence_case(speaker.last_name.split(' ')[0]) -%}
+  {% endif %}
   <span class="speaker__card-name">{{ sentence_case(name) }}</span>
-  <span class="speaker__card-name">{{ sentence_case(last_name) }}</span>
+  <span class="speaker__card-name">{{ last_name }}</span>
+  <span class="speaker__card-responsibility">{{ transbag('country', alt, speaker.country_origin) }}</span>
   {% if compact %}
   {%- set talks = site.query('/charlas').filter(F.authors.contains(speaker._id)) -%}
     {%- for talk in talks -%}
       {% if loop.index == 1 %}
-      <span class="speaker__card-responsibility">{{ talk.name }}</span>
+      <span class="speaker__card-responsibility"><b class="speaker__card-type">{{ sentence_case(transbag('translate', alt, talk.type)) }}: </b>{{ talk.name }}</span>
       <span class="speaker__card-responsibility">({{ transbag('translate', alt, talk.language) }})</span>
       {% endif %}
     {% endfor %}

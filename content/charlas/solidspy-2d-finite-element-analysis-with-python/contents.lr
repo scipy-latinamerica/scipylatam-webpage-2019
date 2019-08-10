@@ -1,0 +1,15 @@
+authors: nicolas-guarin
+---
+description: The Finite Element Method is a numerical method for the solution of  problems in engineering and physics. These problems are commonly written as boundary value problems and involve partial differential equations.  ``SolidsPy`` is a simple finite element analysis code for 2D elasticity problems and was designed to be used by researchers in computational mechanics and by students in courses on Computational modeling and Introduction to Continuum Mechanics. It has also been used in graduate courses on Introduction to the Finite Element Method. It uses as input simple-to-create text files defining a model in terms of nodal, element, material and load data. The code, which is available as a GitHub repository, is open-source and can be used as a stand-alone platform or through its independent functions. There is also a second GitHub repository with several models  which are continuously updated.   Some features of ``SolidsPy`` are:  - It is based on an open-source environment.  - It is easy to use.  - The code allows to find displacement, strain and stress solutions for - arbitrary two-dimensional domains discretized into finite elements and - subject to point loads.  - The code is organized in independent modules for pre-processing, assembly   and post-processing allowing the user to easily modify it or add features   like new elements or analyses pipelines.  ``SolidsPy`` uses SciPy for matrix (sparse/dense) storage and solution of systems of equations. For the creation of complex meshes it is suggested to utilize ``Gmsh``  and then take advantage of ``meshio`` as interface to Gmsh.
+---
+language: en
+---
+language_slides: en
+---
+level: intermediate
+---
+name: SolidsPy: 2D-Finite Element Analysis with Python
+---
+summary: SolidsPy is a simple finite element code for 2D problems. It uses as input simple-to-create files defining a model. The purpose of the talk is to describe the capabilities of SolidsPy. We will also show some use cases in undergraduate and teaching and research on design of periodic materials.
+---
+type: talk

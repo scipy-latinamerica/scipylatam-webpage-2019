@@ -1,0 +1,15 @@
+authors: diego-pena
+---
+description: Soy ingeniero mecatrónico egresado de la Universidad Militar Nueva Granada y Magister en automatización industrial egresado de la Universidad Nacional de Colombia. Tengo experiencia de 2 años en docencia en la Universidad Nacional de Colombia. Llevo más de 10 años trabajando en Python orientado a fines académicos y docencia (numpy, matplotlib, ipython etc...) y de más de 2 años en proyectos de investigación orientados a internet de las cosas y manufactura aditiva, durante mi etapa de docencia fui el primero en introducir la enseñanza de Python en la Universidad Nacional en la asignatura de métodos numéricos, donde se enseñó a diversos estudiantes, desde estudiantes con un conocimiento minimo en programación hasta estudiantes con conocimientos avanzados en programación, como aprovechar en sus respectivas carreras herramientas cientificas de Python como lo son Numpy y matplotlib para visualización de datos. Tambien llevo varios ejemplos para mostrar a la audiencia.
+---
+language: es
+---
+language_slides: es
+---
+level: beginner
+---
+name: Visualización de datos y desarrollo de aplicaciones amigables con Python
+---
+summary: Visualización de datos y desarrollo de aplicaciones amigables con Python
+---
+type: talk

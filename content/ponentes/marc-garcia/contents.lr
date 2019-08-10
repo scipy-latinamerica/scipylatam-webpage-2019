@@ -1,0 +1,27 @@
+_discoverable: yes
+---
+_hidden: no
+---
+country_origin: es
+---
+country_residence: gb
+---
+dob: 1979-03-11
+---
+email: garcia.marc@gmail.com
+---
+image: marc-garcia.jpeg
+---
+information: pandas core developer, Python Software Foundation fellow, and co-organizer of EuroSciPy.  13 years of experience in Python, and Master in AI from the Technical University of Catalonia. Worked for companies like Bank of America, Tesco, Unilever and Badoo.  datapythonista on the Internet.
+---
+keynote: no
+---
+last_name: Garcia
+---
+linkedin: https://www.linkedin.com/in/datapythonista/
+---
+name: Marc
+---
+position_company: Quantitative Mining
+---
+twitter: datapythonista

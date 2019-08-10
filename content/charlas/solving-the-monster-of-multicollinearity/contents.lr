@@ -1,0 +1,15 @@
+authors: alejandro-mahecha
+---
+description: Multicollinearity has been an obstacle to the interpretability of index decomposition and business drivers analysis. It usually leads to wrong sign coefficients, which  is seen as opposite effects of causal(explanatory) variables on the target variable. In business, the first approach to understand the sales, is a linear regression of other factors, so collinearity will be  a factor that contaminate the results with insights like if price increases, sales volume increases significantly.   Shrinkage or regularization methods as Ridge and Lasso have been developed to mitigate collinearity effects. Since 1970, these methods have evolved from Ridge, to Elastic-Net as a combination of Ridge-Lasso, and Bayesian approach(S. McKay Curtis & Sujit K. Ghosh (2011), Journal of Statistical Theory and Practice). The union of the above methodologies, helps to have an idea of the influences of each explanatory(not independent) variable, as graph of causal effects until target using a Bayesian network.  Using Numpy, Pandas and Stadsmodels I generate test data to show in a notebook the negative effects of collinearity in linear regression, then mitigate it with Ridge, Lasso and Elastic-Net. Finally, taking into account that predictors are not independent, create plot a Bayesian network to understand how variables relate to the target. 
+---
+language: en
+---
+language_slides: en
+---
+level: intermediate
+---
+name: Solving The monster of multicollinearity
+---
+summary: Solving The monster of multicollinearity: from shrinkage methods to Bayes networks 
+---
+type: talk

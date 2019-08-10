@@ -1,0 +1,15 @@
+authors: edgar-margffoy
+---
+description: On this workshop we aim to introduce the new Spyder 4 release with the novel features and awesome characteristics such as intelligent and robust completion, enhancement of the debbuger, support for new programming languages and a brand new dark theme.  The main objective for this workshop is to present our new Spyder plugin API for creating third party plugins. By giving this talk, the Spyder development team invites our users to extend and enrich the Spyder ecosystem by introducing new features without any hassle. We will walkthrough the basic plugin architecture and its deployment into Spyder 4 IDE. This includes download and installation of Spyder 4 and the plugin API template, implementation of the API and finally, plugin distribution. At the end of this workshop, attendants will be able to develop their own plugin that may have GUI components or not. As well, they will acquire the basic tools in order to contribute and being an active member of the Spyder Open Source community. 
+---
+language: en
+---
+language_slides: en
+---
+level: intermediate
+---
+name: Creating third party Spyder plugins
+---
+summary: Creating third party Spyder plugins
+---
+type: workshop
