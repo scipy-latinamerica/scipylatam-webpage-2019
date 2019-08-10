@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es"">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"
+  />
+  <meta name="format-detection" content="telephone=no" />
+  <meta
+    name="description"
+    content="SciPy Latam 2019 | <p>Abstract --------  In this talk I will present the packages "invlin" and "coseismic", which I implemented in Python, making intensive use of Scipy and Numpy for numerical computation. The "invlin" package is dedicated to solve linear inverse problems, which is useful in many scientific contexts. I will show some usage examples and results. The package "coseismic" depends on "invlin" and uses it for the estimation of the slip distribution of earthquakes using GNSS coordinates as input. I will show the results obtained for earthquakes that occurred during the past decade.  Methodology -----------  In several fields of science and engineering we face inverse problems: we want to infer little known or unknown parameters from observations and a predictive model. The "invlin" package contains functions that tackle this task for linear inverse problems, for example using a probabilistic approach (Tarantola and Valette [1], Tarantola [2]). The numerical computations call functions of the scipy.linalg and scipy.optimize modules, and operates on numpy.ndarray objects. In the case of "coseismic", the observations are GNSS coordinates of stations, and the parameters are quantities describing an earthquake. The predictive model is based on linear elasticity (Okada [3])  Results -------  The "coseismic" package, and therefore also "invlin", has been used to make reports at the Centro Sismológico Nacional of Universidad de Chile, for instance for the April 2017 earthquake near Valparaiso (see link [i]). It was also used in several scientific papers (see link [ii]) in journals of Seismology and Earth Sciences, in a MSc in Geophysics thesis at Universidad de Chile, and in postgraduate courses at the same University.  Note about GNSS ----------------  Global Navigation Satelite Systems (GNSS) allow to obtain the absolute position of a receptor with a precision of a few centimeters in real time and a few millimeters after several days. These results have had a profound effect on Geodesy and have many applications in science and technology, for example in the characterization of the movement of tectonic plates, to monitor vehicles and whole transport systems, crop harvesting, etc.  Bibliography ------------  [1]  Tarantola, A. and Valette, B., Inverse Problems = Quest for Information, Journal of Geophysics, 50 (1982), pp. 159–170.  [2]  Tarantola, A. , Inverse Problem Theory and Methods for Model Parameter Estimation, SIAM, 2005.  [3]  Okada, Y., Surface deformation due to shear and tensile faults in a half-space, Bulletin of the Seismological Society of America, 75 (1985), pp. 1135–1154.  Links -----  [i]  Report on the Valparaíso April 2017 earthquake:     <a href="http://www.csn.uchile.cl/informe-sobre-la-secuencia-sismica-en-reg-de-valparaiso-abril-de-2017/">http://www.csn.uchile.cl/informe-sobre-la-secuencia-sismica-en-reg-de-valparaiso-abril-de-2017/</a> [ii] Scientific papers:     <a href="http://srl.geoscienceworld.org/content/87/4/789">http://srl.geoscienceworld.org/content/87/4/789</a>     <a href="http://onlinelibrary.wiley.com/doi/10.1002/2017GL074133/abstract">http://onlinelibrary.wiley.com/doi/10.1002/2017GL074133/abstract</a>     <a href="http://onlinelibrary.wiley.com/doi/10.1002/2017GL075675/full">http://onlinelibrary.wiley.com/doi/10.1002/2017GL075675/full</a>     <a href="https://doi.org/10.1785/0220180011">https://doi.org/10.1785/0220180011</a> [iii] MSc in Geophysics thesis:     <a href="http://repositorio.uchile.cl/handle/2250/168339">http://repositorio.uchile.cl/handle/2250/168339</a></p>
+"
+  />
+  <meta
+    name="google-site-verification"
+    content="tS192x5OfHOZKosOfhq39D1Wlk6EwH_gaSw8ZUVe_bs"
+  /><meta property="og:site_name" content="SciPy Latam 2019" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="<p>Abstract --------  In this talk I will present the packages "invlin" and "coseismic", which I implemented in Python, making intensive use of Scipy and Numpy for numerical computation. The "invlin" package is dedicated to solve linear inverse problems, which is useful in many scientific contexts. I will show some usage examples and results. The package "coseismic" depends on "invlin" and uses it for the estimation of the slip distribution of earthquakes using GNSS coordinates as input. I will show the results obtained for earthquakes that occurred during the past decade.  Methodology -----------  In several fields of science and engineering we face inverse problems: we want to infer little known or unknown parameters from observations and a predictive model. The "invlin" package contains functions that tackle this task for linear inverse problems, for example using a probabilistic approach (Tarantola and Valette [1], Tarantola [2]). The numerical computations call functions of the scipy.linalg and scipy.optimize modules, and operates on numpy.ndarray objects. In the case of "coseismic", the observations are GNSS coordinates of stations, and the parameters are quantities describing an earthquake. The predictive model is based on linear elasticity (Okada [3])  Results -------  The "coseismic" package, and therefore also "invlin", has been used to make reports at the Centro Sismológico Nacional of Universidad de Chile, for instance for the April 2017 earthquake near Valparaiso (see link [i]). It was also used in several scientific papers (see link [ii]) in journals of Seismology and Earth Sciences, in a MSc in Geophysics thesis at Universidad de Chile, and in postgraduate courses at the same University.  Note about GNSS ----------------  Global Navigation Satelite Systems (GNSS) allow to obtain the absolute position of a receptor with a precision of a few centimeters in real time and a few millimeters after several days. These results have had a profound effect on Geodesy and have many applications in science and technology, for example in the characterization of the movement of tectonic plates, to monitor vehicles and whole transport systems, crop harvesting, etc.  Bibliography ------------  [1]  Tarantola, A. and Valette, B., Inverse Problems = Quest for Information, Journal of Geophysics, 50 (1982), pp. 159–170.  [2]  Tarantola, A. , Inverse Problem Theory and Methods for Model Parameter Estimation, SIAM, 2005.  [3]  Okada, Y., Surface deformation due to shear and tensile faults in a half-space, Bulletin of the Seismological Society of America, 75 (1985), pp. 1135–1154.  Links -----  [i]  Report on the Valparaíso April 2017 earthquake:     <a href="http://www.csn.uchile.cl/informe-sobre-la-secuencia-sismica-en-reg-de-valparaiso-abril-de-2017/">http://www.csn.uchile.cl/informe-sobre-la-secuencia-sismica-en-reg-de-valparaiso-abril-de-2017/</a> [ii] Scientific papers:     <a href="http://srl.geoscienceworld.org/content/87/4/789">http://srl.geoscienceworld.org/content/87/4/789</a>     <a href="http://onlinelibrary.wiley.com/doi/10.1002/2017GL074133/abstract">http://onlinelibrary.wiley.com/doi/10.1002/2017GL074133/abstract</a>     <a href="http://onlinelibrary.wiley.com/doi/10.1002/2017GL075675/full">http://onlinelibrary.wiley.com/doi/10.1002/2017GL075675/full</a>     <a href="https://doi.org/10.1785/0220180011">https://doi.org/10.1785/0220180011</a> [iii] MSc in Geophysics thesis:     <a href="http://repositorio.uchile.cl/handle/2250/168339">http://repositorio.uchile.cl/handle/2250/168339</a></p>
+" />
+  <meta property="og:image" content="../../static/images/opimage.jpg?h=315d7125" />
+  <meta property="og:url" content="http://scipyla.org/conf/2019" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@scipyla" />
+  <meta name="twitter:creator" content="@isaquinva" />
+  <meta name="twitter:title" content="SciPy Latam 2019 | " />
+  <meta name="twitter:description" content="<p>Abstract --------  In this talk I will present the packages "invlin" and "coseismic", which I implemented in Python, making intensive use of Scipy and Numpy for numerical computation. The "invlin" package is dedicated to solve linear inverse problems, which is useful in many scientific contexts. I will show some usage examples and results. The package "coseismic" depends on "invlin" and uses it for the estimation of the slip distribution of earthquakes using GNSS coordinates as input. I will show the results obtained for earthquakes that occurred during the past decade.  Methodology -----------  In several fields of science and engineering we face inverse problems: we want to infer little known or unknown parameters from observations and a predictive model. The "invlin" package contains functions that tackle this task for linear inverse problems, for example using a probabilistic approach (Tarantola and Valette [1], Tarantola [2]). The numerical computations call functions of the scipy.linalg and scipy.optimize modules, and operates on numpy.ndarray objects. In the case of "coseismic", the observations are GNSS coordinates of stations, and the parameters are quantities describing an earthquake. The predictive model is based on linear elasticity (Okada [3])  Results -------  The "coseismic" package, and therefore also "invlin", has been used to make reports at the Centro Sismológico Nacional of Universidad de Chile, for instance for the April 2017 earthquake near Valparaiso (see link [i]). It was also used in several scientific papers (see link [ii]) in journals of Seismology and Earth Sciences, in a MSc in Geophysics thesis at Universidad de Chile, and in postgraduate courses at the same University.  Note about GNSS ----------------  Global Navigation Satelite Systems (GNSS) allow to obtain the absolute position of a receptor with a precision of a few centimeters in real time and a few millimeters after several days. These results have had a profound effect on Geodesy and have many applications in science and technology, for example in the characterization of the movement of tectonic plates, to monitor vehicles and whole transport systems, crop harvesting, etc.  Bibliography ------------  [1]  Tarantola, A. and Valette, B., Inverse Problems = Quest for Information, Journal of Geophysics, 50 (1982), pp. 159–170.  [2]  Tarantola, A. , Inverse Problem Theory and Methods for Model Parameter Estimation, SIAM, 2005.  [3]  Okada, Y., Surface deformation due to shear and tensile faults in a half-space, Bulletin of the Seismological Society of America, 75 (1985), pp. 1135–1154.  Links -----  [i]  Report on the Valparaíso April 2017 earthquake:     <a href="http://www.csn.uchile.cl/informe-sobre-la-secuencia-sismica-en-reg-de-valparaiso-abril-de-2017/">http://www.csn.uchile.cl/informe-sobre-la-secuencia-sismica-en-reg-de-valparaiso-abril-de-2017/</a> [ii] Scientific papers:     <a href="http://srl.geoscienceworld.org/content/87/4/789">http://srl.geoscienceworld.org/content/87/4/789</a>     <a href="http://onlinelibrary.wiley.com/doi/10.1002/2017GL074133/abstract">http://onlinelibrary.wiley.com/doi/10.1002/2017GL074133/abstract</a>     <a href="http://onlinelibrary.wiley.com/doi/10.1002/2017GL075675/full">http://onlinelibrary.wiley.com/doi/10.1002/2017GL075675/full</a>     <a href="https://doi.org/10.1785/0220180011">https://doi.org/10.1785/0220180011</a> [iii] MSc in Geophysics thesis:     <a href="http://repositorio.uchile.cl/handle/2250/168339">http://repositorio.uchile.cl/handle/2250/168339</a></p>
+" />
+  <meta name="twitter:image" content="../../static/images/opimage.jpg?h=315d7125" />
+
+  <!-- Favicon -->
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../static/favicon/apple-touch-icon.png?h=ac032284">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../static/favicon/favicon-32x32.png?h=a4abd457">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../static/favicon/favicon-16x16.png?h=30175b39">
+  <link rel="mask-icon" href="" color="#5bbad5">
+
+  <title>SciPy Latam 2019 - </title>
+
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Poppins:300,500,700"
+    rel="stylesheet"
+  />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../../static/gen/styles.css?h=0c729277" />
+</head>
+
+<body>
+  <div class="global-container">
+    <div class="wrapper-hamburger">
+      <button class="general__hamburger">
+        <img
+          src="../../static/images/hamburger.svg?h=61b89864"
+          alt="Hamburger menu"
+        />
+      </button>
+    </div>
+    <nav class="general__menu">
+      <button class="general__close-button">
+        <img
+        src="../../static/images/close.svg?h=f9b7536d" alt="Close menu">
+      </button>
+      <ul class="general__menu-list">
+        
+          
+        
+          
+        
+          
+        
+          
+          <li class="general__menu-item"><a class="general__menu-link "
+              href="../../ponentes/">
+                PONENTES
+              </a>
+          </li>
+          
+        
+          
+        
+          
+        
+          
+          <li class="general__menu-item"><a class="general__menu-link "
+              href="../../lugar/">
+                LUGAR
+              </a>
+          </li>
+          
+        
+          
+        
+          
+          <li class="general__menu-item"><a class="general__menu-link "
+              href="../../entradas/">
+                ENTRADAS
+              </a>
+          </li>
+          
+        
+          
+        
+          
+          <li class="general__menu-item"><a class="general__menu-link "
+              href="../../equipo/">
+                EQUIPO
+              </a>
+          </li>
+          
+        
+          
+          <li class="general__menu-item"><a class="general__menu-link "
+              href="../../patrocinadores/">
+                PATROCINADORES
+              </a>
+          </li>
+          
+        
+          
+          <li class="general__menu-item"><a class="general__menu-link "
+              href="../../preguntas-frecuentes/">
+                PREGUNTAS
+              </a>
+          </li>
+          
+        
+        <li class="general__menu-language"><a class="general__menu-language-button"
+          href="../../en/charlas/solving-inverse-problems-with-scipy-and-numpy-from-satellite-geodesy-gnss-to-earthquakes/">EN</a></li>
+      </ul>
+      <div class="general__menu-line"></div>
+      <ul class="general__language-menu"><li class="general__language-item">
+          <a class="general__language-link" href="../../en/charlas/solving-inverse-problems-with-scipy-and-numpy-from-satellite-geodesy-gnss-to-earthquakes/"
+            >ENGLISH</a
+          >
+        </li></ul>
+      <a class="general__menu-code" href="../../charlas/solving-inverse-problems-with-scipy-and-numpy-from-satellite-geodesy-gnss-to-earthquakes/code-of-conduct">
+        Código de conducta
+      </a>
+      
+<ul class="general__menu-logos">
+  
+  <li>
+    <a href="https://www.instagram.com/scipyla" aria-label="Go to Instagram profile">
+      <img
+        src="../../static/images/icon-instagram-dark.svg?h=e37852ec"
+        alt="Instagram Logo"
+      />
+    </a>
+  </li>
+   
+  <li>
+    <a href="https://www.twitter.com/scipyla" aria-label="Go to Twitter profile">
+      <img
+      
+        src="../../static/images/icon-twitter-dark.svg?h=805d66ed"
+        alt="Twitter Logo"
+      />
+    </a>
+  </li>
+   
+  <li>
+    <a href="https://www.facebook.com/scipyla" aria-label="Go to Facebook profile">
+      <img
+        src="../../static/images/icon-facebook-dark.svg?h=52c25c51"
+        alt="Facebook Logo"
+      />
+    </a>
+  </li>
+   
+  <li>
+    <a href="https://www.linkedin.com/company/scipy-latin-america/about" aria-label="Go to LinkedIn profile">
+      <img
+        src="../../static/images/icon-linkedin-dark.svg?h=a90a2ff1"
+        alt="LinkedIn Logo"
+      />
+    </a>
+  </li>
+    
+</ul>
+
+    </nav>
+    
+<div class="container">
+  <main class="content content-footer">
+    <div class="conduct-code">
+    
+    </div>
+  </main>
+</div>
+
+  </div>
+  <footer class="footer">
+    <div class="footer__links">
+      <ul>
+        
+          
+        
+          
+        
+          
+          <li>
+            <a href="../../codigo-de-conducta/">Código de Conducta</a>
+          </li>
+          
+        
+          
+        
+          
+          <li>
+            <a href="../../diversidad/">Diversidad</a>
+          </li>
+          
+        
+          
+          <li>
+            <a href="../../politica-de-datos/">Política de datos</a>
+          </li>
+          
+        
+          
+        
+          
+          <li>
+            <a href="../../guia-ponentes/">Guía ponentes</a>
+          </li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </ul>
+      
+<ul class="general__menu-logos">
+  
+  <li>
+    <a href="https://www.instagram.com/scipyla" aria-label="Go to Instagram profile">
+      <img
+        src="../../static/images/icon-instagram-light.svg?h=cfc017e7"
+        alt="Instagram Logo"
+      />
+    </a>
+  </li>
+   
+  <li>
+    <a href="https://www.twitter.com/scipyla" aria-label="Go to Twitter profile">
+      <img
+      
+        src="../../static/images/icon-twitter-light.svg?h=97d78698"
+        alt="Twitter Logo"
+      />
+    </a>
+  </li>
+   
+  <li>
+    <a href="https://www.facebook.com/scipyla" aria-label="Go to Facebook profile">
+      <img
+        src="../../static/images/icon-facebook-light.svg?h=88dd626a"
+        alt="Facebook Logo"
+      />
+    </a>
+  </li>
+   
+  <li>
+    <a href="https://www.linkedin.com/company/scipy-latin-america/about" aria-label="Go to LinkedIn profile">
+      <img
+        src="../../static/images/icon-linkedin-light.svg?h=b1d8640f"
+        alt="LinkedIn Logo"
+      />
+    </a>
+  </li>
+    
+</ul>
+
+    </div>
+    <div class="footer__copyright">
+      <span class="footer__copyright-copy">Hecho con amor en Colombia. Derechos de autor, Python Colombia 2019. Todos los derechos reservados.</span>
+    </div>
+  </footer>
+  <div class="wrapper-gitter">
+    <div class="container-gitter">
+      <button class="js-gitter-toggle-chat-button gitter-custom-button">
+        Abrir chat
+      </button>
+    </div>
+  </div>
+
+  
+  <!-- Scripts -->
+  <script type=text/javascript src="../../static/gen/app.js?h=ced4b94d" charset="utf-8"></script>
+
+  <!---->
+
+  <!-- Scripts: Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138156801-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-138156801-1');
+  </script>
+
+  <!-- Scripts: Gitter chat -->
+  <script>
+    ((window.gitter = {}).chat = {}).options = {
+      room: 'scipy-latinamerica/lobby',
+      activationElement: '.gitter-button'
+    };
+  </script>
+  <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+  
+</body>
+</html>
