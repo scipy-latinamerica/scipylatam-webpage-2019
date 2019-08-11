@@ -7,7 +7,7 @@ t_want_to_sponsor_title = transbag('translate', this.alt,
 'want_to_sponsor_title') -%} {%- set t_want_to_sponsor_text =
 transbag('translate', this.alt, 'want_to_sponsor_text') -%} {%- set
 t_sponsor_event = transbag('translate', alt, 'sponsor_event') -%} {% block title
-%}{{ this.title }}{% endblock %} {% block body%} <br /><br /><br />
+%}{{ this.title }}{% endblock %} {% block body%}
 
 <div class="sponsors-page container">
   {{ render_background(background='general', content_background='true', alt=this.alt) }}
@@ -15,6 +15,7 @@ t_sponsor_event = transbag('translate', alt, 'sponsor_event') -%} {% block title
     {{ render_background(background='color-cut', color='#2811CE') }}
     <br /><br />
     <h1>{{ this.title | upper }}</h1>
+    <br />
     <div class="sponsors-hero__container">
       {% for img in this.attachments.images %}
       <img
@@ -26,9 +27,9 @@ t_sponsor_event = transbag('translate', alt, 'sponsor_event') -%} {% block title
       <div class="sponsors-hero__description-container">
         <div class="sponsors-hero__description">
           {{ this.hero_description }}
-          <a class="button-red" aria-label="Buy tickets!">
+          <!-- <a class="button-red" aria-label="Buy tickets!">
             <span>{{ this.become_sponsor | upper }}</span>
-          </a>
+          </a> -->
         </div>
       </div>
     </div>

@@ -12,11 +12,13 @@ alt=this.alt) -%} {% block title %}{{ this.title }}{% endblock %} {% block body
 </div>
 <div class="container">
   {{ render_background(background='color-cut', color='#FCD116') }}
+  <br><br>
   <div class="team-members content">
     {% for role in ['Co-Organizer', 'Collaborator', 'Reviewer', 'Volunteer', 'Ambassador'] %}
-    {%   set role_query = site.query('/equipo', alt=this.alt).filter(F.category == role) %}
+    {%   set role_query = site.query('/equipo', alt=this.alt).filter(F.category == role).order_by('+sort_key') %}
     {%   if role_query.count() %}
     <h1>{{ transbag('translate', this.alt, role.lower())|upper }}</h1>
+    <br>
     <div class="team-members-container">
     {%     for member in role_query %}
     {%       if member.publish %}
