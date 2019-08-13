@@ -33,7 +33,7 @@
   <meta property="og:site_name" content="{{ event.title }}" />
   <meta property="og:title" content="{{ this.title }}" />
   <meta property="og:description" content="{{ this.description }}" />
-  <meta property="og:image" content="{{ l_opimage }}" />
+  <meta property="og:image" content="{% block ogimage %}{{ l_opimage }}{% endblock %}" />
   <meta property="og:url" content="http://scipyla.org/conf/2019" />
   <meta property="og:type" content="website" />
 
@@ -42,7 +42,7 @@
   <meta name="twitter:creator" content="@isaquinva" />
   <meta name="twitter:title" content="{{ event.title }} | {{ this.title }}" />
   <meta name="twitter:description" content="{{ this.description }}" />
-  <meta name="twitter:image" content="{{ l_opimage }}" />
+  <meta name="twitter:image" content="{% block ogimage_twitter %}{{ l_opimage }}{% endblock %}" />
 
   <!-- Favicon -->
   <meta name="msapplication-TileColor" content="#ffffff">

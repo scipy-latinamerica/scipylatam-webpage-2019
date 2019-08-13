@@ -35,3 +35,9 @@ order: 1
 position: CEO
 ---
 position_company: Quansight, Inc
+---
+country_origin: us
+---
+image_open_graph: travis-opengraph.jpg
+---
+information: Fundador de Quansight, Anaconda (Continuum), NumFOCUS y PyData. Creador de NumPy, SciPy, Conda, Numba y XND.

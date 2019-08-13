@@ -6,6 +6,26 @@ render_background -%} {%- from "macros/translation.html" import transbag -%}
     {{ text[0]|upper }}{{ text[1:]|lower }}
 {% endmacro %}
 
+{%- block ogimage -%}
+{%- if this.image_open_graph -%}
+{%-   for img in this.attachments.images -%}
+{%-     if this.image_open_graph in img|url -%}
+{{ img|url }}
+{%-     endif  -%}
+{%-   endfor -%}
+{%- endif -%}
+{%- endblock -%}
+
+{%- block ogimage_twitter -%}
+{%- if this.image_open_graph -%}
+{%-   for img in this.attachments.images -%}
+{%-     if this.image_open_graph in img|url -%}
+{{ img|url }}
+{%-     endif  -%}
+{%-   endfor -%}
+{%- endif -%}
+{%- endblock -%}
+
 {% block title %}
 {{ this.title }}
 {% endblock %} {% block body %}
