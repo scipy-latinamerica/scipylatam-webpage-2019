@@ -10,7 +10,7 @@ render_background -%} {%- from "macros/translation.html" import transbag -%}
 {%- if this.image_open_graph -%}
 {%-   for img in this.attachments.images -%}
 {%-     if this.image_open_graph in img|url -%}
-{{ img|url }}
+{{ img|url(external=True) }}
 {%-     endif  -%}
 {%-   endfor -%}
 {%- endif -%}
@@ -20,7 +20,7 @@ render_background -%} {%- from "macros/translation.html" import transbag -%}
 {%- if this.image_open_graph -%}
 {%-   for img in this.attachments.images -%}
 {%-     if this.image_open_graph in img|url -%}
-{{ img|url }}
+{{ img|url(external=True) }}
 {%-     endif  -%}
 {%-   endfor -%}
 {%- endif -%}

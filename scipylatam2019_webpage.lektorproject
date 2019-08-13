@@ -1,5 +1,6 @@
 [project]
 name = scipyala2019_webpage2
+url = http://conf.scipyla.org
 
 [packages]
 lektor-webpack-support = 0.5
