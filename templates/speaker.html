@@ -27,7 +27,7 @@ render_background -%} {%- from "macros/translation.html" import transbag -%}
 {%- endblock -%}
 
 {% block title %}
-{{ this.title }}
+{{ this.parent.title }} - {{ this.name }} {{ this.last_name }}
 {% endblock %} {% block body %}
 <div class="container">
   {{ render_background(background='general', content_background='true', alt=this.alt) }}

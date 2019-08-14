@@ -1,6 +1,6 @@
 {%- from "macros/translation.html" import transbag -%}
 {%- set event = site.get('/', alt=this.alt) -%}
-{%- set l_opimage = ('/static/images/opimage.jpg')|asseturl -%}
+{%- set l_opimage = ('/static/images/opimage.jpg')|url(external=True) -%}
 {%- set t_home = transbag('menu', this.alt, 'home') -%}
 {%- set t_code_of_conduct = transbag('menu', this.alt, 'code_of_conduct') -%}
 {%- set t_footer_message = transbag('translate', this.alt, 'footer_message') -%}
@@ -29,20 +29,18 @@
   <meta http-equiv="refresh" content="1; url={{ this.redirect }}">
   {%- endif -%}
 
-
-  <meta property="og:site_name" content="{{ event.title }}" />
+  <link rel="canonical" href="{{ this|url(external=True) }}" />
+  <meta property="og:locale" content="{{ this.lang }}" />
+  <meta property="og:type" content="webpage" />
   <meta property="og:title" content="{{ this.title }}" />
   <meta property="og:description" content="{{ this.description }}" />
+  <meta property="og:url" content="{{ this|url(external=True) }}" />
+  <meta property="og:site_name" content="SciPy Latam 2019" />
+  <meta property="og:updated_time" content="2019-08-13T17:51:00+00:00" />
   <meta property="og:image" content="{% block ogimage %}{{ l_opimage }}{% endblock %}" />
-  <meta property="og:url" content="http://scipyla.org/conf/2019" />
-  <meta property="og:type" content="website" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@scipyla" />
-  <meta name="twitter:creator" content="@isaquinva" />
-  <meta name="twitter:title" content="{{ event.title }} | {{ this.title }}" />
-  <meta name="twitter:description" content="{{ this.description }}" />
-  <meta name="twitter:image" content="{% block ogimage_twitter %}{{ l_opimage }}{% endblock %}" />
+  <!-- <meta property="og:image:secure_url" content="" />
+  <meta property="og:image:width" content="1470" />
+  <meta property="og:image:height" content="955" /> -->
 
   <!-- Favicon -->
   <meta name="msapplication-TileColor" content="#ffffff">
