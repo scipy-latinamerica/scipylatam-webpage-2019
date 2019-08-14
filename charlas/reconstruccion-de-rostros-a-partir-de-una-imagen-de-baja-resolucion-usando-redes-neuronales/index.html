@@ -3,20 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"
-  />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
   <meta name="format-detection" content="telephone=no" />
-  <meta
-    name="description"
-    content="SciPy Latam 2019 | <p>Una Red Generativa antagónica, conocida también como GAN, es un tipo de red neuronal que recientemente se ha destacado en el mundo del machine learning debido a sus notables resultados y aplicaciones. Básicamente es un sistema compuesto de dos redes neuronales que compiten entre sí, una se dedica a generar muestras de aquello que queramos crear, y la otra se encarga de corroborar que la muestra producida tenga las características deseadas. El propósito de este sistema dual es que la red generadora produzca datos lo suficientemente convincentes para que la red supervisora los considere como auténticos.   Las aplicaciones más recientementes conocidas que se le han dado a las redes GAN son la creación de rostros humanos ficticios con una alta fidelidad, asi como tambien genera imágenes de animales y objetos inanimados. Muchos han afirmado que esta tecnología también puede ser aplicada en el campo de la animación de películas y videojuegos, ya que ayudarían a recrear ambientes con un tono más realista. Una de las aplicaciones más interesantes de este tipo de herramientas es la recuperación de información perdida, en la cual, este tipo red es capaz de detectar características y a partir de éstas generar otras en segmentos donde la información se ha perdido.   Debido a la capacidad de estas redes para generar datos, se ha diseñado una red enfocada a la reconstrucción de rostros a partir a de una imagen de entrada la cual presenta una resolución baja. En la siguiente charla se plantea explicar cómo fue desarrollado este  método para poder generar imágenes de rostros de alta resolución. Se expondrá las herramientas y la metodología que han sido utilizadas a la hora de desarrollar este sistema, especialmente, en lo que respecta a arquitectura de la red neuronal, selección de los datos de entrenamiento, tipo de entrenamiento, comparación y evaluación de este método de este método con otros ya existentes para aumentar la resolución de imágenes. Se busca que los asistentes puedan apreciar las etapas del proceso y que pueda ser de guía a la hora de desarrollar sistemas con características similares, y en caso de tener alguna inquietud o sugerencia, recibir una retroalimentación por parte del interlocutor.  Introducción del sistema: 10 minutos. Herramientas y Metodología: 5 minutos.  Pasos y procedimientos: 10 minutos.  Evaluación y comparación: 10 minutos. Preguntas, sugerencias y comentarios: 5 minutos.</p>
-"
-  />
-  <meta
-    name="google-site-verification"
-    content="tS192x5OfHOZKosOfhq39D1Wlk6EwH_gaSw8ZUVe_bs"
-  /><link rel="canonical" href="http://conf.scipyla.org/charlas/reconstruccion-de-rostros-a-partir-de-una-imagen-de-baja-resolucion-usando-redes-neuronales/" />
+  <meta name="description" content="SciPy Latam 2019 | <p>Una Red Generativa antagónica, conocida también como GAN, es un tipo de red neuronal que recientemente se ha destacado en el mundo del machine learning debido a sus notables resultados y aplicaciones. Básicamente es un sistema compuesto de dos redes neuronales que compiten entre sí, una se dedica a generar muestras de aquello que queramos crear, y la otra se encarga de corroborar que la muestra producida tenga las características deseadas. El propósito de este sistema dual es que la red generadora produzca datos lo suficientemente convincentes para que la red supervisora los considere como auténticos.   Las aplicaciones más recientementes conocidas que se le han dado a las redes GAN son la creación de rostros humanos ficticios con una alta fidelidad, asi como tambien genera imágenes de animales y objetos inanimados. Muchos han afirmado que esta tecnología también puede ser aplicada en el campo de la animación de películas y videojuegos, ya que ayudarían a recrear ambientes con un tono más realista. Una de las aplicaciones más interesantes de este tipo de herramientas es la recuperación de información perdida, en la cual, este tipo red es capaz de detectar características y a partir de éstas generar otras en segmentos donde la información se ha perdido.   Debido a la capacidad de estas redes para generar datos, se ha diseñado una red enfocada a la reconstrucción de rostros a partir a de una imagen de entrada la cual presenta una resolución baja. En la siguiente charla se plantea explicar cómo fue desarrollado este  método para poder generar imágenes de rostros de alta resolución. Se expondrá las herramientas y la metodología que han sido utilizadas a la hora de desarrollar este sistema, especialmente, en lo que respecta a arquitectura de la red neuronal, selección de los datos de entrenamiento, tipo de entrenamiento, comparación y evaluación de este método de este método con otros ya existentes para aumentar la resolución de imágenes. Se busca que los asistentes puedan apreciar las etapas del proceso y que pueda ser de guía a la hora de desarrollar sistemas con características similares, y en caso de tener alguna inquietud o sugerencia, recibir una retroalimentación por parte del interlocutor.  Introducción del sistema: 10 minutos. Herramientas y Metodología: 5 minutos.  Pasos y procedimientos: 10 minutos.  Evaluación y comparación: 10 minutos. Preguntas, sugerencias y comentarios: 5 minutos.</p>
+" />
+  <meta name="google-site-verification" content="tS192x5OfHOZKosOfhq39D1Wlk6EwH_gaSw8ZUVe_bs" />
+
+  <link rel="canonical" href="http://conf.scipyla.org/charlas/reconstruccion-de-rostros-a-partir-de-una-imagen-de-baja-resolucion-usando-redes-neuronales/" />
   <meta property="og:locale" content="" />
   <meta property="og:type" content="webpage" />
   <meta property="og:title" content="" />
@@ -24,11 +17,10 @@
 " />
   <meta property="og:url" content="http://conf.scipyla.org/charlas/reconstruccion-de-rostros-a-partir-de-una-imagen-de-baja-resolucion-usando-redes-neuronales/" />
   <meta property="og:site_name" content="SciPy Latam 2019" />
-  <meta property="og:updated_time" content="2019-08-13T17:51:00+00:00" />
-  <meta property="og:image" content="http://conf.scipyla.org/static/images/opimage.jpg" />
-  <!-- <meta property="og:image:secure_url" content="" />
-  <meta property="og:image:width" content="1470" />
-  <meta property="og:image:height" content="955" /> -->
+  <meta property="og:updated_time" content="2019-08-13T17:51:00+00:00" /><meta property="og:image" content="http://conf.scipyla.org/static/images/ogimage.jpg" />
+  <meta property="og:image:secure_url" content="http://conf.scipyla.org/static/images/ogimage.jpg" />
+  <meta property="og:image:width" content="2400" />
+  <meta property="og:image:height" content="1260" />
 
   <!-- Favicon -->
   <meta name="msapplication-TileColor" content="#ffffff">
@@ -38,7 +30,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="../../static/favicon/favicon-16x16.png?h=30175b39">
   <link rel="mask-icon" href="" color="#5bbad5">
 
-  <title>SciPy Latam 2019 - </title>
+  <title></title>
 
   <!-- Fonts -->
   <link
