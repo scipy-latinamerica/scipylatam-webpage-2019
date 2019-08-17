@@ -20,7 +20,7 @@
 
   <link rel="canonical" href="{{ this|url(external=True) }}" />
   <meta property="og:locale" content="{{ this.lang }}" />
-  <meta property="og:type" content="webpage" />
+  <meta property="og:type" content="website" />
   <meta property="og:title" content="{{ this.title }}" />
   <meta property="og:description" content="{{ this.description }}" />
   <meta property="og:url" content="{{ this|url(alt=this.alt, external=True) }}" />
@@ -42,7 +42,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="{{ '/static/favicon/favicon-16x16.png'|asseturl }}">
   <link rel="mask-icon" href="{{ '/static/favicon/safari-pinned-tab.svg'|asseturl }}" color="#5bbad5">
 
-  <title>{% block title %}{% endblock %}</title>
+  <title>{% block title %}{{ this.title }}{% endblock %}</title>
 
   <!-- Fonts -->
   <link
