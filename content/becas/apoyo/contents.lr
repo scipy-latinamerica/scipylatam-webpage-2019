@@ -1,0 +1,17 @@
+_model: page
+---
+display: no
+---
+redirect: https://forms.gle/JYqgccjmxPV1TmXQ8
+---
+body:
+
+<br><br>
+## Vamos a redirigirte al formulario de aplicación de becas de apoyo.
+<br><br>
+---
+description: Convocatoria de becas de apoyo
+---
+title: Convocatoria de becas de apoyo
+---
+_template: code-conduct.html

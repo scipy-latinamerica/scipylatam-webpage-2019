@@ -70,6 +70,8 @@ transbag('translate', this.alt, 'date') -%}
     {%- endif -%}
 
     {%- if 'countdown' in this.sections -%}
+    <br>
+    <br>
     <div class="countdown">
       <div class="countdown-number">
         <span id="countdown-days"></span>
@@ -83,8 +85,12 @@ transbag('translate', this.alt, 'date') -%}
         <span>{{ t_hours }}</span>
         <span>{{ t_seconds }}</span>
       </div>
-      {%- endif -%}
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    {%- endif -%}
 
   </main>
 </div>
@@ -97,17 +103,18 @@ transbag('translate', this.alt, 'date') -%}
         keynote.keynote %}
         {{ render_keynote(keynote, alt=this.alt) }}
       {% endif %} {% endfor %}
-      <div class="keynote__btn">
-          <a
-            class="button-red cp-button keynote__card-button"
-            href="{{ '/ponentes'|url(alt=this.alt)}}"
-            aria-label="Ponentes/Speakers"
-          >
-            {{ t_see_speakers | upper }}
-          </a>
-        </div>
   
     </div>
+    <div class="keynote__btn">
+      <a
+        class="button-red cp-button keynote__card-button"
+        href="{{ '/ponentes'|url(alt=this.alt)}}"
+        aria-label="Ponentes/Speakers"
+      >
+        {{ t_see_speakers | upper }}
+      </a>
+    </div>
+
   </div>
 </div>
 
@@ -141,6 +148,7 @@ transbag('translate', this.alt, 'date') -%}
     <a id="tickets"></a>
     {{ render_tickets(tickets) }}
   </div>
+</div>
 {%- endif -%}
 
 <div class="container">

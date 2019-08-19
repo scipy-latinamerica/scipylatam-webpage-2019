@@ -1,4 +1,4 @@
-_discoverable: no
+_discoverable: yes
 ---
 _hidden: no
 ---
@@ -12,7 +12,7 @@ email: jorge.m.gomez@hotosm.org
 ---
 facebook: jorge.martinezgomez.12
 ---
-github: JorgeMartinezG
+github: jorgemartinezg
 ---
 image: jorge-martinez.jpeg
 ---

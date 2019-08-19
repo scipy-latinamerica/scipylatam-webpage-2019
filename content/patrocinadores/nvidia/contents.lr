@@ -1,7 +1,7 @@
 name: NVidia
 ---
-category: Bronze
+category: plan_giga
 ---
-logo: nvidia.png
+logo: nvidia_logo.svg
 ---
-confirmed: no
+confirmed: yes

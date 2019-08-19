@@ -1,19 +1,26 @@
-<div class="tickets__image-container">  
+<div class="tourism__image-container">  
     {%- if this.image -%}
       {% for img in this.record.attachments.images %}
         {% if this.image in img|url %}
     <img 
-      class="tickets__image"
+      class="tourism__image"
       src="{{ img|url }}"
       alt="Image background"
     />
         {% endif %}
       {% endfor %}
     {% endif %}
-  <div class="tickets__description">
-    <div class="tickets__description-container">
+  <div class="tourism__description">
+    <div class="tourism__description-container">
       {{ this.description }}
     </div>
+    <a
+      class="button-red cp-button turism-button"
+      href="{{this.cta_href}}"
+      aria-label="Ponentes/Speakers"
+    >
+      {{ this.cta | upper }}
+    </a>
   </div>
 </div>
 <br><br>

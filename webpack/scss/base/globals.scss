@@ -1,5 +1,5 @@
 .footer {
-  border-top: 5px solid red;
+  border-top: 5px solid $red;
   max-width: 2100px;
   margin: 0 auto;
 
@@ -11,6 +11,10 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+
+    a:hover {
+      color: $yellow;
+    }
 
     @include from(large) {
       justify-content: space-between;
@@ -98,4 +102,8 @@
   li {
     margin: 0;
   }
+}
+
+.soft-red {
+  color: $soft-red;
 }

@@ -251,3 +251,81 @@
     margin-bottom: 40px;
   }
 }
+
+
+.tourism {
+  min-height: 530px;
+  margin-bottom: 150px;
+
+  &__image-container {
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    @include from(medium){
+      flex-direction: row;
+      padding-top: 20px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+
+    @include from(medium){
+      width: 50%;
+      height: 500px;
+    }
+  }
+
+  &__description-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include from(medium){
+      align-items: flex-start;
+    }
+  }
+
+  &__description {
+    width: 100%;
+    background-color: $soft-gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    min-height: 300px;
+
+    @include from(medium){
+      height: 500px;
+      width: 50%;
+      padding: 60px;
+      justify-content: center;
+    }
+
+    h3 {
+      font-family: "Poppins", sans-serif;
+      font-size: 30px;
+      font-weight: 700;
+    }
+
+    p {
+      font-family: "Montserrat", sans-serif;
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 15px;
+    }
+  }
+}
+
+.turism-button {
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}

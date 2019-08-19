@@ -1,0 +1,280 @@
+.schedule-content {
+  margin: 100px 0px;
+  margin-bottom: 200px;
+  
+  @include from(large) {
+    text-align: center;
+  }
+
+  h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    letter-spacing: 5px;
+    text-align: center;
+  }
+
+  h2 {
+    text-align:left;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 30px;
+  }
+
+}
+
+/* Component Needs */
+.pc-tab > input,
+.pc-tab section > div {
+  display: none;
+}
+
+#tab1:checked ~ section .tab1,
+#tab2:checked ~ section .tab2,
+#tab3:checked ~ section .tab3,
+#tab4:checked ~ section .tab4,
+#tab5:checked ~ section .tab5 {
+  display: block;
+}
+
+#tab1:checked ~ nav .tab1,
+#tab2:checked ~ nav .tab2,
+#tab3:checked ~ nav .tab3,
+#tab4:checked ~ nav .tab4,
+#tab5:checked ~ nav .tab5 {
+  color: $soft-red;
+  background: $soft-red;
+}
+
+.pc-tab { 
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+
+  ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+
+    li {
+      &:active {
+        background: $blue;
+      }
+
+      label {
+        min-width: 150px;
+        color: $black;
+        font-family: "Poppins", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        float: left;
+        padding: 15px 25px;
+        border: 2px solid transparent;
+        border-bottom: 0;
+        color: $black;
+        background: transparent;
+        &:hover {
+          background: $white;
+          border: 2px solid $soft-red;
+          border-bottom: 0px;
+        }
+
+        &:active {
+          background: $white;
+        }
+      }
+
+      &:not(:last-child) label {
+         border-right-width: 2px;
+      }
+    }
+  }
+
+  section {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    clear: both;
+    border-top: 2px solid $soft-red;
+    padding: 0px;
+  }
+}
+
+#tab1:checked ~ nav .tab1,
+#tab2:checked ~ nav .tab2,
+#tab3:checked ~ nav .tab3,
+#tab4:checked ~ nav .tab4,
+#tab5:checked ~ nav .tab5 {
+  label {
+    background: $soft-red;
+    color: $white;
+    position: relative;
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      background: $soft-red;
+      left: 0;
+      bottom: -1px;
+    }
+  }
+}
+
+/* List */
+.tab {
+  margin: 40px 30px 0px 25px;
+
+  @include from(large) {
+    margin: 40px 0px 0px 0px;
+  }
+
+
+  .list-wrapper {
+    padding: 0px;
+    margin:0px;
+    position: relative;
+  }
+
+  .list-item-wrapper {
+    padding: 0px;
+    margin-top: 2px;
+    position: relative;
+    width: 100%;
+  }
+
+  .list-bullet {
+    padding: 0px;
+    float:left;
+    margin-right: 0px;
+    background: $soft-red;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+  }
+
+  .list-item {
+
+  }
+
+  .list-title {
+      font-weight:700;
+      text-align: left;
+      margin: 0px 40px;
+      padding: 0px;
+  }
+
+  .list-text {
+    text-align: left;
+      margin: 20px 0px 40px 40px;
+      padding: 20px 30px;
+      background: $soft-gray;
+      position: relative;
+      font-weight: 300;
+      font-size: 16px;
+      display: block;
+      border: 1px solid $light-gray;
+      box-shadow: 1px 2px 5px 0px $light-gray;
+
+      .schedule__authors-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      .schedule__authors {
+        flex-direction: row;
+        min-width: 180px;
+        max-width: 180px;
+        margin-bottom: 10px;
+      }
+
+      .schedule__wrapper {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        border: 1px solid $speaker-border;
+    
+        // center image
+        justify-content: center;
+        align-items: center;
+        display: inline-flex;
+        vertical-align: middle;
+      }
+      
+      .schedule__photo-wrapper {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 0px solid $speaker-border;
+        overflow: hidden;
+      }
+
+      .talk-topic {
+        font-size: 10px;
+        font-weight: 800;
+        color: $soft-red;
+        min-width: 150px;
+        display: inline-block;
+      }
+
+      .talk-room {
+        font-size: 12px;
+        font-weight: 400;
+        padding-left: 40px;
+        color: $black;
+        i {
+          color: $soft-red;
+        }
+      }
+
+      .talk-title {
+        font-size: 13px;
+        font-weight: 800;
+        line-height: 1.5em;
+        margin: 10px 0px;
+        display: block;
+
+        a {
+          text-decoration: none;
+          color: $black;
+
+          &:hover {
+            color: $soft-red;
+          }
+        }
+      }
+
+      .talk__name {
+        font-size: 10px;
+        font-weight: 800;
+        line-height: 1.5em;
+        margin-top: 10px;
+      }
+
+    }
+
+  .red-line {
+    padding: 0px;
+    background: $light-gray;
+    z-index: -1;
+    width: 2px;
+    height: 100%;
+    position:absolute;
+    left: 4px;
+  }
+  .white-line {
+    padding: 0px;
+    margin: 0px;
+    background:$white;
+    z-index:-1;
+    top:0px;
+    width:2px;
+    height:100%;
+    position:absolute;
+    left:4px;
+  }
+}

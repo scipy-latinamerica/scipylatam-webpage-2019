@@ -29,13 +29,3 @@ github: teoliphant
 order: 1
 ---
 web: http://technicaldiscovery.blogspot.com
----
-country_origin: us
----
-image_open_graph: travis-opengraph.jpg
----
-information: Founder of Quansight, Anaconda (Continuum), NumFOCUS and PyData. Creator of NumPy, SciPy, Conda, Numba and XND.
----
-position: CEO
----
-position_company: Quansight, Inc

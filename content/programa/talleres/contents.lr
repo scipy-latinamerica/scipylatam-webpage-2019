@@ -1,0 +1,11 @@
+_model: page
+---
+_template: talks.html
+---
+display: yes
+---
+main_menu: yes
+---
+menu_label: Talleres
+---
+title: Talleres

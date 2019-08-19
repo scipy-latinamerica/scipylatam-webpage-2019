@@ -1,4 +1,4 @@
-_discoverable: no
+_discoverable: yes
 ---
 _hidden: no
 ---
@@ -18,6 +18,10 @@ keynote: no
 ---
 last_name: Arango
 ---
+linkedin: https://www.linkedin.com/in/sebastian-arango-dev/?locale=en_US
+---
 name: Sebastian
 ---
 position_company: Experimentality
+---
+twitter: charangostation

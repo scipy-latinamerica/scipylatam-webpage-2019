@@ -1,0 +1,27 @@
+_discoverable: yes
+---
+_hidden: no
+---
+country_origin: co
+---
+country_residence: nl
+---
+dob: 1976-06-27
+---
+email: ccordoba12@gmail.com
+---
+github: ccordoba12
+---
+image: carlos-cordoba.jpeg
+---
+information: I have a Bachelors degree in Physics from Universidad del Valle (Colombia) and a Masters degree in Physics from Universidad Nacional de Colombia. Currently, I'm doing a PhD in Industrial Engineering at Universidad de Los Andes (Colombia) and I'm working part time with Quansight. I've been programming with Python since 2006, I became involved with Spyder since 2010, and I'm its current maintainer since 2013.  I was attracted to Spyder after working with Mathematica (from Wolfram Research) for four years. I've made my undergraduate thesis with it, in which I developed a graphical way to simulate some kinds of cellular automata. Then I created a package called MathEditor to add syntax highlighting to its notebook. This was three years before Mathematica 6 improved the situation in this area significantly.  Looking for alternatives, I learned about Python through Professor Langtangen's book: "Python scripting for the computational sciences". After I mastered the basics, I used it to run in parallel the C++ programs I developed to study the micro-structure of cement paste, the topic of my Masters thesis.  In spite of Python simplicity and ease of use, I was pretty dissatisfied with the way scientific programs had to be developed with it in those years. I tried several alternatives (e.g. TeXmacs, Sage, SPE, and even other languages, like Ocaml and F#) but no one seemed to be up to par with Mathematica.  Then in February 2010 I had the great opportunity of meeting Professor Fernando Perez during a workshop he gave at Universidad de Los Andes. It was only then that I learned how to effectively use the Python scientific stack and why IPython is the gateway to access its power. I consider this a turning point in my career because through him I came to realize that the best opportunity at having a free scientific computing platform is with Python and that there was a vibrant developer community working hard to reach that goal.  A couple of months later I found Spyder and I liked better than IPython because it was more graphically oriented and had a well integrated set of components working all together under the same application.
+---
+keynote: no
+---
+last_name: Cordoba
+---
+name: Carlos
+---
+position_company: Quansight
+---
+twitter: ccordoba12

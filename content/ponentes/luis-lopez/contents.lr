@@ -1,10 +1,10 @@
-_discoverable: no
+_discoverable: yes
 ---
 _hidden: no
 ---
 country_origin: mx
 ---
-country_residence: (The) United States of America
+country_residence: us
 ---
 dob: 1981-01-06
 ---

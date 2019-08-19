@@ -23,11 +23,16 @@ alt='es', color='#FFF', image='') %} {% if background == 'landing' %}
 />
 {% elif background == 'landing-tickets' %}
 <img
-  class="venue-background__bottom"
-  src="{{ '/static/images/scipy-bg2.svg' | asseturl }}"
-  alt="Background 2"
+  class="tickets-background__bottom"
+  src="{{ '/static/images/tickets-bg.svg' | asseturl }}"
+  alt="Background tickets"
 />
-
+{% elif background == 'tickets-categories' %}
+<img
+  class="tickets-categories-background__bottom"
+  src="{{ '/static/images/tickets-categories-bg.svg' | asseturl }}"
+  alt="Background tickets"
+/>
 {% elif background == 'scholarships' %}
 <img
   class="scholarships__background"
@@ -75,8 +80,28 @@ alt='es', color='#FFF', image='') %} {% if background == 'landing' %}
 />
 {% endif %} {% if background == 'color' %}
 <div class="color-background" style="background-color: {{ color }}"></div>
-{% endif %} {% if background == 'color-cut' %}
-<div class="color-background cut-background" style="background-color: {{ color }}"></div>
+{% endif %}
+
+{% if background == 'color-cut' %}
+<div
+  class="color-background cut-background"
+  style="background-color: {{ color }}"
+>
+</div>
+{% endif %}
+{% if background == 'color-cut-2' %}
+<div
+  class="color-background cut-background"
+  style="background-color: {{ color }}"
+>
+<div>
+<img
+  style="width:50%;height:50%;"
+  src="{{ '/static/images/scipy-bg1.svg' | asseturl }}"
+  alt="Background 2"
+/>
+</div>
+</div>
 {% endif %}
 {% if background == 'image-middle' %}
 <img
@@ -84,13 +109,10 @@ alt='es', color='#FFF', image='') %} {% if background == 'landing' %}
   src="{{ ('/static/images/' + image) | asseturl }}"
   alt="Image background"
 />
-{% endif %}
-{% if background == 'image-full' %}
+{% endif %} {% if background == 'image-full' %}
 <img
   class="image-full"
   src="{{ ('/static/images/' + image) | asseturl }}"
   alt="Image background"
 />
-{% endif %}
-
-{% endmacro %}
+{% endif %} {% endmacro %}

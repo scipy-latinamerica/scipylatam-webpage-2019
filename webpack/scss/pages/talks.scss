@@ -1,0 +1,341 @@
+.talks {
+  h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    color: $black;
+    margin-bottom: 25px;
+    letter-spacing: 5px;
+
+    @include from(large) {
+      font-size: 40px;
+    }
+  }
+}
+
+.talks-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0px auto;
+  margin-bottom: 40px;
+}
+
+.talk__card {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 40px 50px;
+  max-width: 530px;
+  min-width: 530px;
+  margin: 10px 10px;
+  background: $soft-gray;
+
+  &-wrapper {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid $speaker-border;
+
+    // center image
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    vertical-align: middle;
+  }
+  
+  &-photo-wrapper {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 0px solid $speaker-border;
+    overflow: hidden;
+  }
+
+  &-name {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    padding-left: 10px;
+    margin-right: 20px;
+
+    a {
+      color: $black;
+      text-decoration:none;
+      &:hover {
+        color: $soft-red;
+      }
+    }
+  }
+
+  &-title {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    text-align: left;
+    min-height: 1.5em * 2;
+    max-height: 1.5em * 2;
+    overflow: hidden;
+
+    a {
+      color: $black;
+      text-decoration:none;
+      &:hover {
+        color: $soft-red;
+      }
+    }
+  }
+
+  &-topic {
+    font-family: "Poppins", sans-serif;
+    color: $soft-red;
+    font-size: 10px;
+    font-weight: 800;
+    margin: 10px 0px;
+    text-align: left;
+  }
+
+  &-summary {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    line-height: 1.5em;
+    font-weight: 400;
+    max-height: 1.5em * 3;
+    min-height: 1.5em * 3;
+    text-align: justify;
+  }
+
+  &-summary-ellipsis {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    line-height: 1.5em;
+    font-weight: 400;
+    position: relative;
+    max-height: 1.5em * 3;
+    min-height: 1.5em * 3;
+    overflow: hidden;
+    text-align: justify;
+    padding-right: 1rem; /* space for ellipsis */
+
+    &::before {
+      position: absolute;
+      content: "...";
+      bottom: 0;
+      right: 0px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      width: 1rem;
+      height: 1rem;
+      background: white;
+    }
+  }
+
+  &-language {
+    font-family: "Poppins", sans-serif;
+    font-size: 11px;
+    line-height: 1.5em;
+    font-weight: 300;
+    display: inline;
+    margin: 14px 0px;
+
+    i {
+      color: $soft-red;
+    }
+    b {
+      font-weight: 800;
+    }
+  }
+}
+
+.speaker_text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: 1.3em;
+  font-weight: 300;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+
+.workshop-footer {
+  color: $white;
+  margin: 40px auto; 
+  text-align:center;
+
+  span {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    padding: 25px;
+    font-weight: 300;
+    line-height: 5em;
+
+    @include from(large) {
+        line-height: 1.5em;
+    }
+  }
+}
+
+.button-white {
+  line-height: 5em;
+  font-family: "Poppins", sans-serif;
+  background-color: $white;
+  font-size: 14px;
+  color: $soft-red;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  border-radius: 60px;
+  font-weight: 800;
+  white-space: nowrap;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+
+  @include from(large) {
+    line-height: 1.5em;
+    font-size: 14px;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+    font-weight: 800;
+  }
+}
+
+/* Talk page*/
+.talk-container {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.talk__ {
+  &type {
+    font-family: "Poppins", sans-serif;
+    color: $black;
+    font-size: 20px;
+    font-weight: 200;
+    margin: 10px 0px;
+    text-align: center;
+    display: block;
+    letter-spacing: 3px;
+    margin: 40px 0px;
+  }
+
+  &title {
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 25px;
+    max-width: 600px;
+    text-align: left;
+    line-height: 1.5em;
+    text-align: center;
+
+    @include from(large) {
+      font-size: 40px;
+    }
+
+  }
+
+  &topic {
+    font-family: "Poppins", sans-serif;
+    color: $soft-red;
+    font-size: 16 px;
+    font-weight: 800;
+    margin: 30px 0px;
+    text-align: center;
+    display: block;
+  }
+
+  &language {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    font-weight: 300;
+    display: block;
+
+    &-item {
+      display: block;
+      padding: 0 20px;
+
+      @include from(large) {
+        display: inline;
+      }
+    }
+
+
+    i {
+      color: $soft-red;
+    }
+    b {
+      font-weight: 800;
+    }
+  }
+
+  &description {
+    display: block; 
+    margin-top: 40px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    line-height: 1.7em;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  &subtitle {
+    display: block; 
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    line-height: 1.5em;
+    font-weight: 800;
+    text-align: center;
+  }
+
+  &wrapper {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid $speaker-border;
+
+    // center image
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    vertical-align: middle;
+  }
+  
+  &photo-wrapper {
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+    border: 0px solid $speaker-border;
+    overflow: hidden;
+  }
+
+  &name {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    padding-left: 10px;
+    margin-right: 20px;
+
+    a {
+      color: $black;
+      text-decoration:none;
+      &:hover {
+        color: $soft-red;
+      }
+    }
+  }
+}

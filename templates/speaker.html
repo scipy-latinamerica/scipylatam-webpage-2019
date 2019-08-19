@@ -10,18 +10,11 @@ render_background -%} {%- from "macros/translation.html" import transbag -%}
 {%- if this.image_open_graph -%}
 {%-   for img in this.attachments.images -%}
 {%-     if this.image_open_graph in img|url -%}
-{{ img|url(external=True) }}
-{%-     endif  -%}
-{%-   endfor -%}
-{%- endif -%}
-{%- endblock -%}
-
-{%- block ogimage_twitter -%}
-{%- if this.image_open_graph -%}
-{%-   for img in this.attachments.images -%}
-{%-     if this.image_open_graph in img|url -%}
-{{ img|url(external=True) }}
-{%-     endif  -%}
+<meta property="og:image" content="{{ img|url(external=True) }}" />
+<meta property="og:image:secure_url" content="{{ img|url(external=True) }}" />
+<meta property="og:image:width" content="1067" />
+<meta property="og:image:height" content="637" />
+  {%-     endif  -%}
 {%-   endfor -%}
 {%- endif -%}
 {%- endblock -%}
@@ -43,9 +36,8 @@ render_background -%} {%- from "macros/translation.html" import transbag -%}
     <div class="speaker_text">
       {%- set talks = site.query('/charlas').filter(F.authors.contains(this._id)) -%}
       {%- for talk in talks -%}
-      <h2 style="font-weight:800;">{{ sentence_case(transbag('translate', alt, talk.type)).strip() }}:</h2>
-      <span class="speaker_text">{{ talk.name }}</span>
-      <span class="speaker_text">({{ transbag('translate', alt, talk.language) }})</span>
+      <h2 style="font-weight:800;">{{ sentence_case(transbag('translate', alt, talk.type)).strip()|upper }}:</h2>
+      <a href="{{ talk|url(alt=this.alt) }}"><span class="speaker_text">{{ talk.name }}</span></a>
     {% endfor %}
   
     </div>

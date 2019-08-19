@@ -1,0 +1,110 @@
+{%- extends "layout.html" -%} {%- from "macros/background.html" import
+render_background -%} {%- from "macros/translation.html" import transbag -%} {%
+block title %}
+{{ this.title }}
+{% endblock %} {% block body %}
+<div class="container">
+  {{ render_background(background='general', content_background='true', alt=this.alt) }}
+
+  {% set dates = [] %}
+  {% set talks = site.query('/charlas/') %}
+  {% for talk in talks %}
+    {% set date = talk.datetime.date() %}
+    {% if date not in dates %}
+    {% set __ = dates.append(date) %}
+    {% endif %}
+  {% endfor %}
+  {% set __ = dates.sort() %}
+  
+  <main class="schedule-content">
+    <br><br>
+    <h1>{{ this.title|upper }}</h1>
+    <div class="pc-tab">
+      {% for date in dates %}
+      <input {% if loop.first %}checked="checked"{% endif %} id="tab{{ loop.index }}" type="radio" name="pct" />
+      {% endfor %}
+        <nav>
+          <ul>
+            {% for date in dates %}
+            <li class="tab{{ loop.index }}">
+              <label for="tab{{ loop.index }}">{{ date.strftime('%A %d')|upper }}</label>
+            </li>
+            {% endfor %}
+          </ul>
+        </nav>
+        <section>
+          {% for date in dates %}
+          <div class="tab{{ loop.index }} tab">
+            <h2>{{ date.strftime('%A, %d %b') }}</h2>
+            <div class="list-wrapper">
+              <div class="red-line"></div>
+
+              {%- set talks = site.query('/charlas', alt=this.alt).order_by('+datetime') -%}
+              {%- set filtered_talks = OrderedDict() -%}
+              {%- for talk in talks -%}
+                {%- if talk.datetime.date() == date -%}
+                   {% set time = talk.datetime.strftime('%H:%M') %}
+                   {%- if time not in filtered_talks -%}
+                     {%- set __ = filtered_talks.setdefault(time, [talk]) -%}
+                   {% else %}
+                     {%- set __ = filtered_talks[time].append(talk) -%}
+                   {% endif %}
+                 {%- endif -%}
+              {%- endfor -%}
+
+              {% for time, talks in filtered_talks.items() %}
+              <div class="list-item-wrapper">
+                  <div class="list-bullet"></div>
+                  {% for talk in talks %}
+                  <div class="list-item">
+                      {% if loop.first %}
+                      <div class="list-title">{{ talk.datetime.strftime('%H:%M') }} - {{ talk.datetime_end.strftime('%H:%M') }}</div>
+                      {% endif %}
+                      <div class="list-text">
+                        {% if talk.type in ['talk', 'workshop', 'keynote'] %}
+                        <span class="talk-topic">{{ transbag('translate', this.alt, talk.topic)|upper }}</span>
+                        <span class="talk-room"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;&nbsp;Test{{ talk.room }}</span><br>
+                        <span class="talk-title"><a href="{{ talk|url(alt=alt) }}">{{ talk.name }}</a></span>
+                        {% else %}
+                        <span class="talk-title"><a href="{{ talk|url(alt=alt) }}">{{ talk.name }}</a></span>
+                        {% endif %}
+                        <div class="schedule__authors-container">
+                          {% set authors = talk.authors %}
+                          {% set __ = authors.sort() %}
+                          {% for author_id in authors %}
+                          <div class="schedule__authors">
+                            <div class="schedule__wrapper">
+                              {% set author = site.get('/ponentes/' + author_id, alt=alt) %}
+                              {% if author.image %}
+                                {% for img in author.attachments.images %}
+                                  {% if author.image in img|url%}
+                                  <a href="{{ author|url(alt=alt) }}" style="line-height:0px;">
+                                    <img class="schedule__photo-wrapper"
+                                        src='{{ img.thumbnail(80, 80, crop=True)|url }}'
+                                        alt="Member photo: {{ author.name + ' ' + author.last_name }}" /></a>
+                                  {% endif  %}
+                                {% endfor  %}
+                              {% endif %}
+                            </div>
+                            {% if author.last_name %}
+                            <span class="talk__name"><a href="{{ author|url(alt=alt) }}">{{ author.name.split(' ')[0] }} {{ author.last_name.split(' ')[0] }}</a></span>
+                            {% endif %}
+                          </div>        
+                            {% endfor %}
+                        </div>
+                      </div>
+                    </div>
+                    {% endfor %}
+                  {% if loop.last %}
+                  <div class="white-line"></div>
+                  {% endif %}
+              </div>
+              {% endfor %}              
+            </div>
+          </div>
+          {% endfor %}
+        </section>
+      </div>
+  </main>
+</div>
+{% endblock %}

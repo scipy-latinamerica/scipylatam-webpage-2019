@@ -1,78 +1,74 @@
-{%- from "macros/translation.html" import transbag -%}
-
-{%- set t_sponsor_event = transbag('translate', alt, 'sponsor_event') -%}
-
-{%- macro render_sponsors(alt, button=True) -%}
+{%- from "macros/translation.html" import transbag -%} {%- set t_sponsor_event =
+transbag('translate', alt, 'sponsor_event') -%} {%- macro render_sponsors(alt,
+button=True) -%}
 
 <div class="sponsors-container">
-    {% for category in [
-      {
-        'label': 'plan_venue',
-        'color': '#8425d5',
-        'background': '#CA1126'
-      },
-      {
-        'label': 'plan_exa',
-        'color': '#3813FF',
-        'background': '#2811C8'
-      },
-      {
-        'label': 'plan_tera',
-        'color': '#F8CD16',
-        'background': '#F7BA0C'
-      },
-      {
-        'label': 'plan_giga',
-        'color': '#3813FF',
-        'background': '#2811C8'
-      },
-      {
-        'label': 'plan_support',
-        'color': '#08b463',
-        'background': '#CA1126'
-      }
-    ] %}
-    {%- set t_cat = transbag('translate', alt, category.label|lower) -%}
-    {%- set sponsors = site.query('/patrocinadores', alt=alt).filter(F.category == category.label) %}
-    {%- if sponsors.count() > 0 -%}
-    <div class="sponsors__category-left">
-      <div class="sponsors__name-container">
-        <h3 class="sponsors__category-name">
-              {{ t_cat|upper }}
-        </h3>
-        <div class="sponsors__category-line" style="border-color: {{category.color }};"></div>
-      </div>
+  {% for category in [ { 'label': 'plan_venue', 'color': '#8425d5',
+  'background': '#CA1126' }, { 'label': 'plan_exa', 'color': '#3813FF',
+  'background': '#2811C8' }, { 'label': 'plan_tera', 'color': '#F8CD16',
+  'background': '#F7BA0C' }, { 'label': 'plan_giga', 'color': '#3813FF',
+  'background': '#2811C8' }, { 'label': 'plan_support', 'color': '#08b463',
+  'background': '#CA1126' } ] %} {%- set t_cat = transbag('translate', alt,
+  category.label|lower) -%} {%- set sponsors = site.query('/patrocinadores',
+  alt=alt).filter(F.category == category.label) %} {%- if sponsors.count() > 0
+  -%}
+  <div class="sponsors__category-left">
+    <div class="sponsors__name-container">
+      <h3 class="sponsors__category-name">
+        {{ t_cat | upper }}
+      </h3>
+      <div
+        class="sponsors__category-line"
+        style="border-color: {{ category.color }}; background-color: {{
+          category.color
+        }};"
+      ></div>
     </div>
-    <div class="sponsors__category-logos">
-      {% for sponsor in  sponsors %}
-      <div>
-        {%- if sponsor.logo -%}
-          {% for img in sponsor.attachments.images %}
-          {% if sponsor.logo in img|url %}
-          <img
-            class="sponsors__category-logo"
-            src="{{ img|url }}"
-            alt="{{ sponsor.name }} Logo"
-          />
-          {% endif %}
-          {% endfor %}
-        {% endif %}
-      </div>
-      {% endfor %}
-    </div>
-    {% endif %}
-    {% endfor %}
-   {% if button %}
-    <div class="sponsors__btn">
-      <a
-        class="button-red cp-button"
-        href="mailto:sponsor@scipyla.org?subject={{ t_we_want_to_sponsor }}"
-        aria-label="Sponsors/Patrocinadores"
-      >
-        {{ t_sponsor_event | upper }}
-      </a>
-    </div>
-    {% endif %}
-
   </div>
+  <div class="sponsors__category-logos">
+    {% for sponsor in sponsors %}
+    <div>
+      {%- if sponsor.logo -%} {% for img in sponsor.attachments.images %} {% if
+      sponsor.logo in img|url %}
+      <img
+        class="sponsors__category-logo"
+        src="{{ img | url }}"
+        alt="{{ sponsor.name }} Logo"
+      />
+      {% endif %} {% endfor %} {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %} {% endfor %} {% if button %}
+  <div class="sponsors__btn">
+    <a
+      class="button-red cp-button"
+      href="mailto:sponsor@scipyla.org?subject={{ t_we_want_to_sponsor }}"
+      aria-label="Sponsors/Patrocinadores"
+    >
+      {{ t_sponsor_event | upper }}
+    </a>
+  </div>
+  {% endif %}
+</div>
+{%- endmacro -%} {%- macro render_category_header(category) -%}
+<div class="sponsors__category-container">
+  <div class="sponsors__name-wrapper">
+    <div
+      class="sponsors__category-circle"
+      style="background-color: {{ category.color }};
+             border-color: {{ category.background }}"
+    ></div>
+    <h3
+      class="sponsors__category-text"
+      style="background-color: {{ category.color }}"
+    >
+      {{ category.label }}
+    </h3>
+    <img
+      class="sponsors__category-circle-logo"
+      src="{{ '/static/images/scipy-sponsors.svg' | asseturl }}"
+    />
+  </div>
+</div>
 {%- endmacro -%}

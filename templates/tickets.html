@@ -9,13 +9,13 @@ block body %}
 </div>
 
 <div class="sponsors-page container">
-  {{ render_background(background='general', content_background='true', alt=this.alt) }}
-  <br>
+  <br />
   <div class="sponsors-hero content">
+    {{ render_background(background='landing-tickets') }}
     {{ render_background(background='color-cut', color='#2811CE') }}
     <br /><br />
     <h1>{{ this.title | upper }}</h1>
-    <br>
+    <br />
     <div class="sponsors-hero__container">
       {% for img in this.attachments.images %}
       <img
@@ -30,12 +30,19 @@ block body %}
         </div>
       </div>
     </div>
-    {{ render_background(background='landing-tickets') }}
     <br /><br /><br /><br />
   </div>
-  <div class="tickets content">
-    <h1 style="color:white;">{{ t_categories | upper }}</h1>
-    {{ render_tickets(this) }}
+</div>
+
+<div class="sponsors-page container">
+  <br />
+  <div class="sponsors-hero content">
+    {{ render_background(background='tickets-categories') }}
+    {{ render_background(background='color', color='#2811CE') }}
+    <div class="tickets">
+      <h1 style="color:white;">{{ t_categories | upper }}</h1>
+      {{ render_tickets(this) }}
+    </div>
   </div>
 </div>
 

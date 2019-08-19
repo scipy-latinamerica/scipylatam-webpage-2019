@@ -1,16 +1,74 @@
-{%- extends "layout.html" -%}
-{%- from "macros/background.html" import render_background -%}
-{%- from "macros/translation.html" import transbag -%}
+{%- extends "layout.html" -%} {%- from "macros/background.html" import
+render_background -%} {%- from "macros/translation.html" import transbag -%} 
+{%- from "macros/speaker.html" import render_speaker -%}
 
-{% block title %}{{ this.title }}{% endblock %}
-{% block background %}{{ render_background(background='general', content_background='true') }}{% endblock %}
+{% macro sentence_case(text) %}
+    {{ text[0]|upper }}{{ text[1:]|lower }}
+{% endmacro %}
 
-{% block body %}
+{% block title %}
+{{ this.parent.title }} - {{ this.name }} {{ this.last_name }}
+{% endblock %} {% block body %}
 <div class="container">
-  <main class="content content-footer">
-    <div class="conduct-code">
-    {{ this.body }}
+  {{ render_background(background='general', content_background='true', alt=this.alt) }}
+
+  <div class="content">
+      <div class="talk-container">
+          <span class="talk__type">{{ transbag('translate', alt, this.type)|upper }}</span>
+          <span class="talk__title">{{ this.name }}</span>
+          <span class="talk__topic">{{ transbag('translate', alt, this.topic)|upper }}</span>
+          <div class="talk__language">
+            <span class="talk__language-item">
+              <i class="fa fa-globe"></i>
+              &nbsp;&nbsp;&nbsp;<b>{{ transbag('translate', alt, 'language') }}:</b>
+              &nbsp;&nbsp;{{ transbag('translate', alt, this.language) }}
+            </span>
+            <span class="talk__language-item">
+              <i class="fa fa-clock-o"></i>
+              &nbsp;&nbsp;&nbsp;<b>{{ transbag('translate', alt, 'duration') }}:</b>
+              &nbsp;&nbsp;
+              {% if this.type == 'talk' %}
+              {{ transbag('translate', alt, 'duration_talk') }}
+              {% else %}
+              {{ transbag('translate', alt, 'duration_workshop') }}
+              {% endif %}
+            </span>
+            <span class="talk__language-item"></span>
+              <i class="fa fa-star-o"></i>
+              &nbsp;&nbsp;&nbsp;<b>{{ transbag('translate', alt, 'level') }}:</b>
+              &nbsp;&nbsp;{{ transbag('translate', alt, this.level) }}
+            </span>
+          </div>
+          <span class="talk__description">{{ this.description }}</span>
+          {% if this.authors|count > 1 %}
+          {% set word = 'speakers' %}
+          {% else %}
+          {% set word = 'speaker' %}
+          {% endif %}
+          <span class="talk__subtitle">{{ transbag('translate', this.alt, word)|upper }}:</span>
+          <div>
+              {% for author_id in this.authors %}
+              <div class="talk__wrapper">
+                {% set author = site.get('/ponentes/' + author_id, alt=alt) %}
+                {% if author.image %}
+                  {% for img in author.attachments.images %}
+                    {% if author.image in img|url%}
+                    <a href="{{ author|url(alt=alt) }}" style="line-height:0px;">
+                      <img class="talk__photo-wrapper"
+                          src='{{ img.thumbnail(172, 172, crop=True)|url }}'
+                          alt="Member photo: {{ author.name + ' ' + author.last_name }}" /></a>
+                    {% endif  %}
+                  {% endfor  %}
+                {% endif %}
+              </div>
+              {% if author.last_name %}
+              <span class="talk__name"><a href="{{ author|url(alt=alt) }}">{{ author.name.split(' ')[0] }} {{ author.last_name.split(' ')[0] }}</a></span>
+              {% endif %}
+              {% endfor %}
+          </div>
+          <br><br><br><br><br><br><br><br>
+      </div>
     </div>
-  </main>
+  </div>
 </div>
 {% endblock %}

@@ -1,0 +1,17 @@
+_model: page
+---
+display: no
+---
+redirect: https://forms.gle/YDKjiJ85uKxgporc9
+---
+body:
+
+<br><br>
+## Vamos a redirigirte al formulario de aplicación de becas uniandes.
+<br><br>
+---
+description: Convocatoria de becas uniandes
+---
+title: Convocatoria de becas uniandes
+---
+_template: code-conduct.html

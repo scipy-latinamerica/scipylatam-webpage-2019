@@ -75,4 +75,10 @@ body:
 
 Because you can learn about the tools and libraries for scientific use developed by the community, exchange experiences and know the advantages of the Python language for use in scientific research. SciPy Latam promotes the creation of encounters, meetings, discussion forums for educational, academic and enterprise research projects and development using Python as the tool of choice.
 ---
-order: 5
+order: 1
+---
+hero_description:
+
+### ¿Por qué participar en la SciPy Latam 2019?
+
+Porque puede aprender sobre las herramientas y bibliotecas para uso científico desarrolladas por la comunidad, intercambiar experiencias y conocer las ventajas del lenguaje Python para su uso en la investigación científica. SciPy Latam promueve la creación de encuentros, reuniones, foros de discusión para proyectos y desarrollo de investigación educativa, académica y empresarial utilizando Python como herramienta de elección.

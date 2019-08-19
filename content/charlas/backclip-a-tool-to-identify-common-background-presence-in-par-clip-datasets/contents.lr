@@ -1,0 +1,23 @@
+_model: talk
+---
+authors: carlos-sierra
+---
+datetime: 2019-10-09 10:00:00 -0500
+---
+datetime_end: 2019-10-09 12:00:00 -0500
+---
+description: PAR-CLIP, a CLIP-seq protocol, derives a transcriptome wide set of binding sites for RNA-binding proteins. Even though the protocol uses stringent washing to remove experimental noise, some of it remains. A recent study measured three sets of non-specific RNA backgrounds which are present in several PAR-CLIP datasets. However, a tool to identify the presence of common background in PAR-CLIP datasets is not yet available. In this talk I will introduce a tool that uses this score to identify the amount of common backgrounds present in a PAR-CLIP dataset, and we provide the user the option to use or remove it. My team used the proposed strategy in 30 PAR-CLIP datasets from nine proteins. It is possible to identify the presence of common backgrounds in a dataset and identify differences in datasets for the same protein. This method is the first step in the process of completely removing such backgrounds.
+---
+language: es
+---
+language_slides: en
+---
+level: intermediate
+---
+name: BackCLIP: a tool to identify common background presence in PAR-CLIP datasets
+---
+summary:  We used the measured sets of non-specific RNA backgrounds to build a common background set. Each element from the common background set has a score that reflects its presence in several PAR-CLIP datasets. We present a tool that uses this score to identify the amount of common backgrounds. 
+---
+topic: bioinformatics
+---
+type: talk

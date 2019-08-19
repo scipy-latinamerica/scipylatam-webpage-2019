@@ -25,10 +25,12 @@ title: Preguntas frecuentes
 ---
 display: yes
 ---
-main_menu: yes
+main_menu: no
 ---
 menu_label: Preguntas
 ---
 order: 20
 ---
 _template: code-conduct.html
+---
+footer_menu: yes

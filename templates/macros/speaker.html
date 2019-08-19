@@ -29,23 +29,19 @@
   {% else %}
   {%- set last_name = sentence_case(speaker.last_name.split(' ')[0]) -%}
   {% endif %}
-  <span class="speaker__card-name">{{ sentence_case(name) }}</span>
-  <span class="speaker__card-name">{{ last_name }}</span>
   {% if speaker.country_origin != speaker.country_residence %}
-  <span class="speaker__card-responsibility">
-  {{ transbag('country', alt, speaker.country_origin) }} / {{ transbag('country', alt, speaker.country_residence) }}
+  <span class="speaker__card-country">
+  {{ transbag('country', alt, speaker.country_origin)|upper }} / {{ transbag('country', alt, speaker.country_residence)|upper }}
   </span>
   {% else %}
-  <span class="speaker__card-responsibility">{{ transbag('country', alt, speaker.country_origin) }}</span>
+  <span class="speaker__card-country">{{ transbag('country', alt, speaker.country_origin)|upper }}</span>
   {% endif %}
+  <span class="speaker__card-name">{{ sentence_case(name) }} {{ last_name }}</span>
   {% if compact %}
   {%- set talks = site.query('/charlas').filter(F.authors.contains(speaker._id)) -%}
-    {%- for talk in talks -%}
-      {% if loop.index == 1 %}
-      <span class="speaker__card-responsibility"><b class="speaker__card-type">{{ sentence_case(transbag('translate', alt, talk.type)) }}: </b>{{ talk.name }}</span>
-      <span class="speaker__card-responsibility">({{ transbag('translate', alt, talk.language) }})</span>
-      {% endif %}
-    {% endfor %}
+    <span class="speaker__card-responsibility">{{ speaker.position_company }}</span>
+    <br>
+    {{ render_social(speaker, 'dark') }}
   {% else  %}
   <span class="speaker__card-responsibility">{{ speaker.position|upper }}</span>
   <span class="speaker__card-responsibility">{{ speaker.position_company }}</span>

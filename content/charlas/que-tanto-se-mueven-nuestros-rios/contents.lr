@@ -1,4 +1,10 @@
+_model: talk
+---
 authors: alexander-montalvo
+---
+datetime: 2019-10-09 10:00:00 -0500
+---
+datetime_end: 2019-10-09 12:00:00 -0500
 ---
 description: A través de esta charla se podrán descubrir cuáles han sido los patrones que el río más importante de Colombia, el río Magdalena, ha tenido en su migración lateral a través del análisis de más de 40 años de imágenes satelitales.  Para descifrar lo que el río tiene por decirnos en este ámbito, se utilizó un enfoque distinto a los estudios convencionales que tratan sobre el tema. Mediante la aplicación de la técnica de Random Forest y la visualización de datos interactivos, se llegó a la conclusión que el río ha presentado en la ventana de tiempo analizada, tasas máximas anuales de movimiento lateral cercanas a los 220 m/año de erosión y de 273 m/año de sedimentación. Además, se tiene la posibilidad de observar cuales han sido los comportamientos año a año del tramo de estudio y se comprueba la eficacia de nuevas técnicas en la clasificación y predicción de fenómenos fluviales. 
 ---
@@ -11,5 +17,7 @@ level: intermediate
 name: ¿Qué tanto se mueven nuestros ríos?
 ---
 summary: ¿Qué tanto se mueven nuestros ríos?
+---
+topic: geosciences
 ---
 type: talk

@@ -1,17 +1,19 @@
 {%- extends "layout.html" -%} {%- from "macros/background.html" import
-render_background -%} {%- from "macros/sponsors.html" import render_sponsors -%}
-{%- from "macros/translation.html" import transbag -%} {%- set t_sponsors =
-transbag('translate', this.alt, 'sponsors') -%} {%- set t_our_sponsors =
-transbag('translate', this.alt, 'our_sponsors') -%} {%- set
+render_background -%} {%- from "macros/sponsors.html" import
+render_category_header -%} {%- from "macros/sponsors.html" import
+render_sponsors -%} {%- from "macros/translation.html" import transbag -%} {%-
+set t_sponsors = transbag('translate', this.alt, 'sponsors') -%} {%- set
+t_our_sponsors = transbag('translate', this.alt, 'our_sponsors') -%} {%- set
 t_want_to_sponsor_title = transbag('translate', this.alt,
 'want_to_sponsor_title') -%} {%- set t_want_to_sponsor_text =
 transbag('translate', this.alt, 'want_to_sponsor_text') -%} {%- set
 t_sponsor_event = transbag('translate', alt, 'sponsor_event') -%} {% block title
 %}{{ this.title }}{% endblock %} {% block body%}
+{{ render_background(background='general', content_background='true', alt=this.alt) }}
 
 <div class="sponsors-page container">
-  {{ render_background(background='general', content_background='true', alt=this.alt) }}
   <div class="sponsors-hero content">
+    {{ render_background(background='landing-tickets') }}
     {{ render_background(background='color-cut', color='#2811CE') }}
     <br /><br />
     <h1>{{ this.title | upper }}</h1>
@@ -33,8 +35,98 @@ t_sponsor_event = transbag('translate', alt, 'sponsor_event') -%} {% block title
         </div>
       </div>
     </div>
-    {{ render_background(background='landing-tickets') }}
     <br /><br /><br /><br />
+  </div>
+</div>
+
+<div class="container">
+  {{ render_background(background='tickets-categories') }}
+  {{ render_background(background='color', color='#2811CE') }}
+  <div class="sponsors-plans content">
+    <h1>{{ "SPONSORSHIP PLANS" | upper }}</h1>
+    <div class="sponsors-table__container">
+      <table>
+        <tr>
+          <th class="sponsors-table__description"></th>
+          <th class="sponsors-table__offer">
+            {{ render_category_header(category={
+                  'label': 'Exa',
+                  'color': '#E7132B',
+                  'background': '#CA1126'
+                })
+            }}
+          </th>
+          <th class="sponsors-table__offer">
+            {{ render_category_header(category={
+                  'label': 'Tera',
+                  'color': '#3813FF',
+                  'background': '#2811C8'
+                })
+            }}
+          </th>
+          <th class="sponsors-table__offer">
+            {{ render_category_header(category={
+                  'label': 'Giga',
+                  'color': '#F8CD16',
+                  'background': '#F7BA0C'
+                })
+            }}
+          </th>
+        </tr>
+        {% for row in [
+          { 
+            'description': this.table_stand,
+            'offers': this.stand_offers  
+          },
+          { 
+            'description': this.table_tickets,
+            'offers': this.tickets_offers
+          },
+          { 
+            'description': this.table_participation,
+            'offers': this.participation_offers
+          },
+          { 
+            'description': this.table_acknowledgments,
+            'offers': this.acknowledgments_offers
+          },
+          { 
+            'description': this.table_socialn,
+            'offers': this.socialn_offers
+          },
+          { 
+            'description': this.table_coffeeb,
+            'offers': this.coffeeb_offers
+          },
+          { 
+            'description': this.table_brand,
+            'offers': this.brand_offers
+          },
+          { 
+            'description': this.table_handbag,
+            'offers': this.handbag_offers
+          }
+        ] %}
+        <tr>
+          <td class="sponsors-table__cell sponsors-table__cell-description">{{row.description}}</td>
+          {% for offer in row.offers.split(',') %}
+            {% if offer != 'check' %}
+              <td class="sponsors-table__cell sponsors-table__cell-offer"><span>{{offer}}</span></td>
+            {% else %}
+              <td class="sponsors-table__cell sponsors-table__cell-offer">
+                <span>
+                  <img
+                    src="{{ '/static/images/checkmark.svg' | asseturl }}"
+                    alt="Checkmark icon"
+                  />
+                </span>
+              </td>
+            {% endif %}
+          {% endfor %}
+        </tr>
+        {% endfor %}
+      </table>
+    </div>
   </div>
 </div>
 

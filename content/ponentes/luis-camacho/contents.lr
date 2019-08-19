@@ -1,4 +1,4 @@
-_discoverable: no
+_discoverable: yes
 ---
 _hidden: no
 ---
@@ -10,7 +10,7 @@ dob: 1986-03-29
 ---
 email: luis.camacho@cyxtera.com
 ---
-github: LuisDavidCamacho
+github: luisdavidcamacho
 ---
 image: luis-camacho.jpeg
 ---

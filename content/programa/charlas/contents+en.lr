@@ -1,0 +1,11 @@
+_template: talks.html
+---
+menu_label: Talks
+---
+title: Talks
+---
+_slug: talks
+---
+display: yes
+---
+main_menu: yes

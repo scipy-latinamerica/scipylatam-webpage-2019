@@ -1,0 +1,27 @@
+_discoverable: yes
+---
+_hidden: no
+---
+country_origin: co
+---
+country_residence: co
+---
+dob: 1992-02-01
+---
+email: id.alfonso@uniandes.edu.co
+---
+github: ivan-alfonso
+---
+image: ivan-alfonso.jpeg
+---
+information: I'm a doctoral student in engineering at the Universidad de los Andes. I am an electronic engineer and have a master's degree in software engineering. I am passionate about software development and research. My doctoral thesis addresses challenges in IoT system design. I am currently a professor of architecture and software development at the Universidad de los Andes.   I think SciPy Latam 2019 is a great opportunity to meet and exchange ideas with leading individuals about the use of Python scientifically both academically and professionally.
+---
+keynote: no
+---
+last_name: Alfonso Díaz
+---
+name: Iván David
+---
+position_company: Universidad de los Andes
+---
+twitter: ivandaalf

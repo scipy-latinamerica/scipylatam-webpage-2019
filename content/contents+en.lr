@@ -22,7 +22,7 @@ instagram: https://www.instagram.com/scipyla/
 ---
 linkedin: https://www.linkedin.com/company/scipy-latin-america/about/
 ---
-sections: call_for_proposals, tickets
+sections: tickets, countdown
 ---
 twitter: https://twitter.com/ScipyLA
 ---
@@ -31,3 +31,5 @@ cfp_due_date: 2019-08-08
 footer_menu: yes
 ---
 tickets_link: https://forms.gle/5yx3sAGqTGgTsFAW7
+---
+order: 5

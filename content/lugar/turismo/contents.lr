@@ -11,7 +11,9 @@ El cerro de Monserrate es el más conocido de los cerros Orientales de Bogotá. 
 ----
 image: monserrate.jpg
 ----
-url: 
+cta: Encuentralo en Google Maps
+----
+cta_href: https://www.google.com/maps/place/Monserrate/@4.6056725,-74.0730351,14z/data=!3m1!4b1!4m5!3m4!1s0x8e3f99bfd2a459a9:0x352a5134b65e607b!8m2!3d4.6056728!4d-74.0555255 
 #### attraction ####
 description:
 
@@ -21,7 +23,10 @@ En La Candelaria queda el sitio de la fundación formal de la ciudad y la plaza 
 ----
 image: centro.jpg
 ----
-url: 
+----
+cta: Encuentralo en Google Maps
+----
+cta_href: https://www.google.com/maps/place/La+Candelaria,+Bogot%C3%A1/@4.5964203,-74.0797888,15z/data=!3m1!4b1!4m8!1m2!2m1!1sLa+Candelaria+y+el+Centro+Hist%C3%B3rico!3m4!1s0x8e3f99a844cf79cb:0xa58d1864daa71331!8m2!3d4.597014!4d-74.0728759
 #### attraction ####
 description:
 
@@ -31,7 +36,10 @@ Con sus 196 metros de altura la Torre Colpatria es uno de los rascacielos situad
 ----
 image: museo-del-oro.jpg
 ----
-url: 
+----
+cta: Encuentralo en Google Maps
+----
+cta_href: https://www.google.com/maps/place/Museo+del+Oro/@4.6018542,-74.0718284,15z/data=!4m2!3m1!1s0x0:0xc18fcd6091a051ed?sa=X&ved=2ahUKEwj12cyyoY_kAhUQjVkKHSddCMcQ_BIwIXoECA0QCA
 #### attraction ####
 description:
 
@@ -43,7 +51,9 @@ En su azotea hay un mirador para apreciar gran parte de la ciudad y de la sabana
 ----
 image: torre-colpatria.jpg
 ----
-url: 
+cta: Encuentralo en Google Maps
+----
+cta_href: https://www.google.com/maps/place/Torre+Colpatria/@4.6108932,-74.0701535,15z/data=!4m2!3m1!1s0x0:0x3e0c4601240b54b1?sa=X&ved=2ahUKEwiC_ZfEoY_kAhVBw1kKHUKyCC8Q_BIwDnoECA0QCA
 ---
 display: yes
 ---

@@ -1,0 +1,13 @@
+_model: page
+---
+display: yes
+---
+main_menu: yes
+---
+menu_label: Programa
+---
+title: Programa
+---
+order: 4
+---
+main_sub_menu: yes

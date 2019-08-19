@@ -1,0 +1,9 @@
+menu_label: Schedule
+---
+title: Conference Schedule
+---
+_template: schedule.html
+---
+display: yes
+---
+main_menu: yes

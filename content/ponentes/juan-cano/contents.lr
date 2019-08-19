@@ -1,0 +1,27 @@
+_discoverable: yes
+---
+_hidden: no
+---
+country_origin: es
+---
+country_residence: es
+---
+dob: 1991-02-09
+---
+email: hello@juanlu.space
+---
+image: juan-cano.jpeg
+---
+information: Juan Luis Cano is an Aerospace Engineer based in Barcelona, Spain working as a Software Engineer at Satellogic, where he develops Python tools for geospatial data processing and scheduling algorithms for satellite operations. He also freelances for R&D Aerospace companies and Business schools, and in his spare time he contributes to open source, chairs Python España non-profit, rides his bicycle, listens to '70s British Hard Rock, and pursues impossible dreams.
+---
+keynote: no
+---
+last_name: Cano Rodríguez
+---
+linkedin: https://www.linkedin.com/in/juanluiscanor/
+---
+name: Juan Luis
+---
+position_company: Satellogic
+---
+twitter: poliastro_py

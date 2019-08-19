@@ -1,0 +1,19 @@
+_model: talk
+---
+datetime: 2019-10-10 14:00:00 -0500
+---
+datetime_end: 2019-10-10 14:45:00 -0500
+---
+name: Ponencia magistral
+---
+type: keynote
+---
+authors: damian-avila
+---
+language: en
+---
+language_slides: en
+---
+level: all
+---
+topic: data_science

@@ -14,7 +14,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
   <meta name="format-detection" content="telephone=no" />
-  <meta name="description" content="{{ event.title }} | {{ this.description }}" />
+  <meta name="description" content="{{ event.title }}" />
   <meta name="google-site-verification" content="tS192x5OfHOZKosOfhq39D1Wlk6EwH_gaSw8ZUVe_bs" />
   {%- if this.redirect -%}<meta http-equiv="refresh" content="1; url={{ this.redirect }}">{%- endif %}
 
@@ -22,7 +22,7 @@
   <meta property="og:locale" content="{{ this.lang }}" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="{{ this.title }}" />
-  <meta property="og:description" content="{{ this.description }}" />
+  <meta property="og:description" content="{{ this }}" />
   <meta property="og:url" content="{{ this|url(alt=this.alt, external=True) }}" />
   <meta property="og:site_name" content="SciPy Latam 2019" />
   <meta property="og:updated_time" content="2019-08-13T17:51:00+00:00" />
@@ -49,6 +49,7 @@
     href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Poppins:300,500,700"
     rel="stylesheet"
   />
+  <script src="https://use.fontawesome.com/53338901d9.js"></script>
 
   <!-- CSS -->
   <link rel="stylesheet" href="{{ '/static/gen/styles.css' | asseturl }}" />
@@ -74,10 +75,24 @@
           {% if page.display and page.main_menu %}
           <li class="general__menu-item">
             {%- set this_is_child = this.is_child_of(page) -%}
-            <a class="general__menu-link {% if this_is_child %} general__menu-link--active {% endif %}"
-              href="{{ page|url }}">
-                {{ page.menu_label | upper }}
+              {% if page.main_sub_menu %}
+              <a class="general__menu-link {% if this_is_child %} general__menu-link--active {% endif %}"
+              href="#">
+               {{ page.menu_label | upper }}&nbsp;&nbsp;<i class="fa fa-caret-down soft-red"></i>
+             </a>
+             <ul class="general__menu-sublist">
+                  {% for subpage in site.query(page._id, alt=this.alt).order_by('order') %}
+                  {% if subpage.display and subpage.main_menu %}
+                  {%- set this_is_subchild = this.is_child_of(subpage) -%}
+                  <li class="general__menu-subitem {% if this_is_subchild %} active {% endif %}"><a href="{{ subpage|url(alt=this.alt) }}">{{ subpage.menu_label }}</a></li>
+                  {% endif %}        
+                  {% endfor %}
+              </ul>
+              {% else %}
+              <a class="general__menu-link {% if this_is_child %} general__menu-link--active {% endif %}"
+                 href="{{ page|url }}">{{ page.menu_label | upper }}
               </a>
+              {% endif %}        
           </li>
           {% endif %}
         {% endfor %}

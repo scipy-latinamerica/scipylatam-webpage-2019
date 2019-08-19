@@ -23,6 +23,13 @@
 }
 
 .sponsors-hero {
+  min-height: auto;
+  margin-bottom: 80px;
+
+  @include from(large) {
+    margin-bottom: 100px;
+  }
+
   &__image {
     width: 100%;
     height: 240px;
@@ -99,5 +106,102 @@
       letter-spacing: 0;
       margin-top: 20px;
     }
+  }
+}
+
+.sponsors-plans {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    color: $white;
+    letter-spacing: 5px;
+    margin-bottom: 40px;
+
+    @include from(large) {
+      font-size: 40px;
+    }
+  }
+}
+
+.sponsors-table {
+  &__container {
+    width: 90%;
+    background-color: white;
+    min-height: 400px;
+    margin-bottom: 100px;
+    padding: 20px;
+    overflow: scroll;
+
+    @include from(large) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  table {
+    margin: 0 auto;
+  }
+
+  &__description {
+    min-width: 200px;
+
+    @include from(large) {
+      min-width: 300px;
+    }
+  }
+
+  &__offer {
+    padding: 20px 10px;
+    min-width: 150px;
+  }
+
+  &__cell {
+    padding: 10px 0;
+    border-width: 0 0 1px;
+    border-style: solid;
+    border-color: rgba(0,0,0,.25);
+    vertical-align: middle;
+  }
+
+  &__cell-description {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+
+    h1 {
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      font-size: 13px;
+      text-align: left;
+      color: $black;
+      letter-spacing: 0;
+      margin-bottom: 5px;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul li::before {
+      content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+      color: red; /* Change the color */
+      font-weight: bold; /* If you want it to be bold */
+      display: inline-block; /* Needed to add space between the bullet and the text */ 
+      width: 1em; /* Also needed for space (tweak if needed) */
+      margin-left: 0; /* Also needed for space (tweak if needed) */
+    }
+  }
+
+  &__cell-offer {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
   }
 }

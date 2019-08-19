@@ -19,3 +19,52 @@ hero_description:
 Porque puede aprender sobre las herramientas y bibliotecas para uso científico desarrolladas por la comunidad, intercambiar experiencias y conocer las ventajas del lenguaje Python para su uso en la investigación científica. SciPy Latam promueve la creación de encuentros, reuniones, foros de discusión para proyectos y desarrollo de investigación educativa, académica y empresarial utilizando Python como herramienta de elección.
 ---
 become_sponsor: Patrocina el evento
+---
+table_stand: 
+# Stand at the event
+---
+stand_offers: 2 Tables,1 Table,
+---
+table_tickets: 
+# Tickets
+---
+tickets_offers: 15,10,5
+---
+table_participation:
+# Special participation
+* VIP Lunch
+* Expert panel forum
+---
+participation_offers: check,check,check
+---
+table_acknowledgments:
+# Acknowledgments
+* Opening ceremony
+* Workshops
+---
+acknowledgments_offers: check,check,check
+---
+table_socialn:
+# Mention in social networks
+---
+socialn_offers: check,check,
+---
+table_coffeeb:
+# Banner on coffee break
+---
+coffeeb_offers: check,check,
+---
+table_brand:
+# Brand placing:
+* Website 
+* Printed advertisement 
+* Schedule and video intermissions 
+* Banner 
+---
+brand_offers: check,check,check
+---
+table_handbag:
+# Handbag
+With logo and business brief inside
+---
+handbag_offers: check,check,

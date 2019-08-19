@@ -1,0 +1,23 @@
+_model: talk
+---
+authors: steven-pineda
+---
+datetime: 2019-10-09 10:00:00 -0500
+---
+datetime_end: 2019-10-09 12:00:00 -0500
+---
+description: Decidir cómo combinar la ropa es un problema que afrontamos día a día, pocos tenemos la hablidad de saber qué va bien con qué pero a todos nos interesa vernos bien.  Para enfrentar este problema común, con ayuda de una diseñadora de modas se validaron miles de combinaciones de prendas. Se construyó un framework utilizando GrabCut y FloodFill para segmentar las prendas, de esta se extrajeron diferentes features cómo el color, las dimensiones, HOG y LPB. Finalmente se entrenaron diferentes modelos, incluyendo Random Forest, SVM y Redes Neuronales. Estos pueden predecir qué tan bien combinan dos prendas dadas.  El proyecto se desarolló 100% en Python, utilizando librerías como numpy, opencv, skimage y sklearn. Se desarrolló adicionalmente una plataforma en Django en la cual se pueden cargar imágenes y obtener para cualquier prenda aquellas que mejor combinan.  Se logró una precisión en las recomendaciones entre el 76% y el 88% para los diferentes tipos de prendas, sentando así un precedente para sistemas de recomendación de outfits usando el closet propio. 
+---
+language: es
+---
+language_slides: en
+---
+level: intermediate
+---
+name: What to Wear? Recomendación de outfits usando visión por computador y aprendizaje de máquinas
+---
+summary: Decidir cómo combinar la ropa es un problema que afrontamos día a día. Con el objetivo de facilitar esta tarea y la ayuda de una diseñadora de modas se desarolló una herramienta 100% en python para encontrar las mejores combinaciones entre las prendas de tu closet.
+---
+topic: computer_vision
+---
+type: talk

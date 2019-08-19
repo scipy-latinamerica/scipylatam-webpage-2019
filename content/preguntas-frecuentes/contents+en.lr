@@ -26,7 +26,7 @@ We are doing everything possible to make the talks of all our speakers (except w
 ---
 display: yes
 ---
-main_menu: yes
+main_menu: no
 ---
 menu_label: FAQ
 ---
@@ -35,3 +35,5 @@ order: 20
 title: Frequently asked questions
 ---
 _template: code-conduct.html
+---
+footer_menu: yes

@@ -1,10 +1,10 @@
-_discoverable: no
+_discoverable: yes
 ---
 _hidden: no
 ---
 country_origin: br
 ---
-country_residence: Bolivia
+country_residence: bo
 ---
 dob: 1985-02-14
 ---
@@ -14,7 +14,7 @@ github: xmnlab
 ---
 image: ivan-ogasawara.jpeg
 ---
-information: Soy un miembro activo de la comunidad scipyla, trabajo en Quansight y en los últimos meses he trabajado en librerías como Ibis, PyTorch, Jupyter, etc.
+information: Soy un miembro activo de la comunidad SciPy Latinoamérica, actualmente trabajo en Quansight y en los últimos meses he trabajado en librerías como Ibis, PyTorch, Jupyter, etc.
 ---
 keynote: no
 ---

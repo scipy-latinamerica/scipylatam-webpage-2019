@@ -1,0 +1,13 @@
+_model: page
+---
+menu_label: Cronograma
+---
+title: Cronograma de la conferencia
+---
+display: yes
+---
+main_menu: yes
+---
+_template: schedule.html
+---
+order: 3

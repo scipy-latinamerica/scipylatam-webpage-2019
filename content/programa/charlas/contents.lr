@@ -1,0 +1,13 @@
+_model: page
+---
+_template: talks.html
+---
+menu_label: Charlas
+---
+title: Charlas
+---
+display: yes
+---
+main_menu: yes
+---
+order: 1

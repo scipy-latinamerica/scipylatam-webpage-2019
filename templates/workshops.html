@@ -1,0 +1,34 @@
+{%- extends "layout.html" -%}
+{%- from "macros/background.html" import render_background -%}
+{%- from "macros/translation.html" import transbag -%}
+{%- from "macros/talk.html" import render_talk -%}
+
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+<div class="container menu-background">
+  {{ render_background(background='general', content_background='true', alt=this.alt) }}
+  <div class="container">
+  {{ render_background(background='color-cut-2', color='#fcd116') }}
+    <div class="talks content">
+     <br><br>
+      <h1>{{ this.title|upper }}</h1>
+      <p>{{ this.body}}</p>
+      <br>
+      <div class="talks-container">
+      {% set workshops = site.query('/charlas', alt=this.alt).filter(F.type == 'workshop') %}
+      {% for workshop in workshops %}
+        {{ render_talk(workshop, alt=this.alt) }}
+      {% endfor %}
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    {{ render_background(background='color', color='#eb132b') }}
+    <div class="workshop-footer">
+      <span>{{ transbag('translate', this.alt, 'join_us_bogota') }}</span>
+      <a class="button-white"
+         href="{{ '/entradas'|url(alt=this.alt) }}">{{ transbag('translate', this.alt, 'buy_tickets') }}</a>
+    </div>
+  </div>
+</div>
+{% endblock %}
