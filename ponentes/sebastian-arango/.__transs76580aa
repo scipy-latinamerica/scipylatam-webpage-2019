@@ -3,22 +3,31 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"
+  />
   <meta name="format-detection" content="telephone=no" />
-  <meta name="description" content="SciPy Latam 2019 | " />
-  <meta name="google-site-verification" content="tS192x5OfHOZKosOfhq39D1Wlk6EwH_gaSw8ZUVe_bs" />
-
-  <link rel="canonical" href="http://conf.scipyla.org/equipo/jaime-forero/" />
-  <meta property="og:locale" content="" />
-  <meta property="og:type" content="website" />
+  <meta
+    name="description"
+    content="SciPy Latam 2019 | "
+  />
+  <meta
+    name="google-site-verification"
+    content="tS192x5OfHOZKosOfhq39D1Wlk6EwH_gaSw8ZUVe_bs"
+  /><meta property="og:site_name" content="SciPy Latam 2019" />
   <meta property="og:title" content="" />
   <meta property="og:description" content="" />
-  <meta property="og:url" content="http://conf.scipyla.org/equipo/jaime-forero/" />
-  <meta property="og:site_name" content="SciPy Latam 2019" />
-  <meta property="og:updated_time" content="2019-08-13T17:51:00+00:00" /><meta property="og:image" content="http://conf.scipyla.org/static/images/ogimage.jpg" />
-  <meta property="og:image:secure_url" content="http://conf.scipyla.org/static/images/ogimage.jpg" />
-  <meta property="og:image:width" content="2400" />
-  <meta property="og:image:height" content="1260" />
+  <meta property="og:image" content="../../static/images/opimage.jpg?h=315d7125" />
+  <meta property="og:url" content="http://scipyla.org/conf/2019" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@scipyla" />
+  <meta name="twitter:creator" content="@isaquinva" />
+  <meta name="twitter:title" content="SciPy Latam 2019 | " />
+  <meta name="twitter:description" content="" />
+  <meta name="twitter:image" content="../../static/images/opimage.jpg?h=315d7125" />
 
   <!-- Favicon -->
   <meta name="msapplication-TileColor" content="#ffffff">
@@ -28,7 +37,9 @@
   <link rel="icon" type="image/png" sizes="16x16" href="../../static/favicon/favicon-16x16.png?h=30175b39">
   <link rel="mask-icon" href="" color="#5bbad5">
 
-  <title></title>
+  <title>SciPy Latam 2019 - 
+
+</title>
 
   <!-- Fonts -->
   <link
@@ -37,7 +48,7 @@
   />
 
   <!-- CSS -->
-  <link rel="stylesheet" href="../../static/gen/styles.css?h=efa9f6cb" />
+  <link rel="stylesheet" href="../../static/gen/styles.css?h=0c729277" />
 </head>
 
 <body>
@@ -64,9 +75,7 @@
           
         
           
-        
-          
-          <li class="general__menu-item"><a class="general__menu-link "
+          <li class="general__menu-item"><a class="general__menu-link  general__menu-link--active "
               href="../../ponentes/">
                 PONENTES
               </a>
@@ -98,14 +107,6 @@
           
         
           
-          <li class="general__menu-item"><a class="general__menu-link  general__menu-link--active "
-              href="../../equipo/">
-                EQUIPO
-              </a>
-          </li>
-          
-        
-          
           <li class="general__menu-item"><a class="general__menu-link "
               href="../../patrocinadores/">
                 PATROCINADORES
@@ -114,17 +115,31 @@
           
         
           
+          <li class="general__menu-item"><a class="general__menu-link "
+              href="../../equipo/">
+                EQUIPO
+              </a>
+          </li>
+          
+        
+          
+          <li class="general__menu-item"><a class="general__menu-link "
+              href="../../preguntas-frecuentes/">
+                PREGUNTAS
+              </a>
+          </li>
+          
         
         <li class="general__menu-language"><a class="general__menu-language-button"
-          href="../../en/equipo/jaime-forero/">EN</a></li>
+          href="../../en/ponentes/sebastian-arango/">EN</a></li>
       </ul>
       <div class="general__menu-line"></div>
       <ul class="general__language-menu"><li class="general__language-item">
-          <a class="general__language-link" href="../../en/equipo/jaime-forero/"
+          <a class="general__language-link" href="../../en/ponentes/sebastian-arango/"
             >ENGLISH</a
           >
         </li></ul>
-      <a class="general__menu-code" href="../../equipo/jaime-forero/code-of-conduct">
+      <a class="general__menu-code" href="../../ponentes/sebastian-arango/code-of-conduct">
         Código de conducta
       </a>
       
@@ -172,19 +187,97 @@
     </nav>
     
 <div class="container">
-  <main class="content content-footer">
-    <div class="conduct-code">
+   
+<img
+  class="general__background"
+  src="../../static/images/scipy-bg1.svg?h=fb01fdd9"
+  alt="Background 1"
+/>
+<a
+  href="../../"
+  aria-label="SciPy Latam 2019"
+>
+  <img
+    class="general__menu-logo"
+    src="../../static/images/logo-menu.svg?h=8aaed2a3"
+    alt="Logo"
+  />
+</a>
+ 
+<img
+  class="content_background__top"
+  src="../../static/images/scipy-bg2.svg?h=1091fcb1"
+  alt="Background 2"
+/>
+<img
+  class="content_background__bottom"
+  src="../../static/images/scipy-bg2.svg?h=1091fcb1"
+  alt="Background 2"
+/>
+  
+
+
+
+
+
+  <div class="team-members content">
+      <div class="team-members-container">
+      <div class="speaker__card">
+  <div class="speaker__card-wrapper">
     
+      
+      
+      <div class="speaker__card-photo-wrapper">
+      <a class="speaker__card-link" href="../../ponentes/sebastian-arango/">
+      <img
+      class="speaker__card-photo"
+      src='../../ponentes/sebastian-arango/sebastian-arango@300x300_crop.jpeg'
+      alt="Member photo: Sebastian Arango" /></a>
     </div>
-  </main>
+      
+      
+    
+  </div>
+  <span class="speaker__card-name">
+    Sebastian
+</span>
+  <span class="speaker__card-name">
+    Arango
+</span>
+  
+  <span class="speaker__card-responsibility">Colombia</span>
+  
+  
+  <span class="speaker__card-responsibility"></span>
+  <span class="speaker__card-responsibility">Experimentality</span>
+  <br>
+  
+<ul class="general__menu-logos">
+       
+</ul>
+
+  
+</div>
+    </div>
+    <div class="speaker_text">
+      <p>Passionate lover of Machine Learning &amp; Pattern Recognition, Internet of Things, Software Development, Applied Statistics and Telecommunication Systems. I hold a BSc. in Electronics Engineering from UdeA, and work as a Data Scientist &amp; Software Developer for industry applications. Moreover, I have had the chance to work as a Lecturer at University of Antioquia in several fields of Physics.</p>
+
+    </div>
+    <br><br>
+    <div class="speaker_text"><h2 style="font-weight:800;">Charla:</h2>
+      <span class="speaker_text">Fundamentals of Bayesian Analysis with PyMC3 and TFP</span>
+      <span class="speaker_text">(Español)</span>
+    
+  
+    </div>
+    <br><br><br><br><br><br>
+  </div>
 </div>
 
   </div>
   <footer class="footer">
     <div class="footer__links">
       <ul>
-        
-          
         
           
         
@@ -226,10 +319,6 @@
         
           
         
-          
-          <li>
-            <a href="../../preguntas-frecuentes/">Preguntas</a>
-          </li>
           
         
       </ul>
