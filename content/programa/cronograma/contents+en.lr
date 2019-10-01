@@ -11,3 +11,5 @@ main_menu: no
 _hidden: no
 ---
 order: 3
+---
+_slug: schedule

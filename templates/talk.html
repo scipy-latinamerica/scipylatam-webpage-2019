@@ -48,7 +48,6 @@ render_background -%} {%- from "macros/translation.html" import transbag -%}
           {% set word = 'speaker' %}
           {% endif %}
           <span class="talk__subtitle">{{ transbag('translate', this.alt, word)|upper }}:</span>
-          <p>BLOOM</p>
           <div class="talk__container">
               {% for author_id in this.authors %}
               <div class="talk__item">
