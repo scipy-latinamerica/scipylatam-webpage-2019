@@ -34,16 +34,26 @@
     {% else %}
     <span class="talk__card-summary">{{ talk.summary }}</span>
     {% endif %}
-    <div class="talk__card-language"><i class="fa fa-globe"></i>&nbsp;&nbsp;&nbsp;<b>{{ transbag('translate', alt, 'language') }}:</b>&nbsp;&nbsp;{{ transbag('translate', alt, talk.language) }}
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <i class="fa fa-clock-o"></i>&nbsp;&nbsp;&nbsp;<b>{{ transbag('translate', alt, 'duration') }}:</b>&nbsp;&nbsp;
+    <div class="talk__card-language">
+      <span>
+        <i class="fa fa-globe left"></i>
+        <b>{{ transbag('translate', alt, 'language') }}:</b>
+        {{ transbag('translate', alt, talk.language) }}
+      </span>
+      <span>
+        <i class="fa fa-clock-o"></i>
+        <b>{{ transbag('translate', alt, 'duration') }}:</b>
       {% if talk.type == 'talk' %}
       {{ transbag('translate', alt, 'duration_talk') }}
       {% else %}
       {{ transbag('translate', alt, 'duration_workshop') }}
       {% endif %}
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <i class="fa fa-star-o"></i>&nbsp;&nbsp;&nbsp;<b>{{ transbag('translate', alt, 'level') }}:</b>&nbsp;&nbsp;{{ transbag('translate', alt, talk.level) }}
+      </span>
+      <span>
+        <i class="fa fa-star-o"></i>
+        <b>{{ transbag('translate', alt, 'level') }}:</b>
+        {{ transbag('translate', alt, talk.level) }}
+      </span>
     </div>
   </div>
 {%- endmacro -%}

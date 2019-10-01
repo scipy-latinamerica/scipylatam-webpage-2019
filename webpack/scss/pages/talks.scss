@@ -26,12 +26,28 @@
 .talk__card {
   display: flex;
   flex-direction: column;
+  padding: 40px 40px;
   align-items: left;
-  padding: 40px 50px;
-  max-width: 530px;
-  min-width: 530px;
-  margin: 10px 10px;
+  margin: 10px 20px;
   background: $soft-gray;
+
+  @include from(small) {
+    padding: 10px 15px;
+    margin: 10px 0px;
+  }
+
+  @include from(medium) {
+    padding: 40px 50px;
+    margin: 10px 10px;
+    width: 100%;
+  }
+
+  @include from(large) {
+    padding: 40px 50px;
+    margin: 10px 10px;
+    max-width: 530px;
+    min-width: 530px;
+  }
 
   &-wrapper {
     width: 70px;
@@ -56,10 +72,15 @@
 
   &-name {
     font-family: "Poppins", sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 800;
     padding-left: 10px;
     margin-right: 20px;
+
+    @include from(large) {
+      font-size: 14px;
+    }
+  
 
     a {
       color: $black;
@@ -108,6 +129,7 @@
     max-height: 1.5em * 3;
     min-height: 1.5em * 3;
     text-align: justify;
+    margin-bottom: 10px;
   }
 
   &-summary-ellipsis {
@@ -121,6 +143,7 @@
     overflow: hidden;
     text-align: justify;
     padding-right: 1rem; /* space for ellipsis */
+
 
     &::before {
       position: absolute;
@@ -144,14 +167,37 @@
     font-size: 11px;
     line-height: 1.5em;
     font-weight: 300;
-    display: inline;
     margin: 14px 0px;
 
-    i {
-      color: $soft-red;
-    }
-    b {
-      font-weight: 800;
+    @include from(large) {
+      margin: 14px 0px;
+    }  
+
+    span {
+      display: block;
+
+      @include from(large) {
+        display: inline-block;
+      }  
+  
+      .left {
+        padding: 0px 0px;
+      }
+
+      i {
+        padding: 4px 0px;
+        color: $soft-red;
+        
+        @include from(large) {
+          padding-left: 10px;
+        }  
+  
+      }
+
+      b {
+        padding: 0px 4px;
+        font-weight: 800;
+      }
     }
   }
 }
@@ -176,11 +222,13 @@
     font-family: "Poppins", sans-serif;
     font-size: 20px;
     padding: 25px;
+    display: block;
     font-weight: 300;
-    line-height: 5em;
+    line-height: 2em;
 
     @include from(large) {
-        line-height: 1.5em;
+      display: inline;
+      line-height: 1.5em;
     }
   }
 }
