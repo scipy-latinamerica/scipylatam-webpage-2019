@@ -38,7 +38,7 @@
   <script src="https://use.fontawesome.com/53338901d9.js"></script>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="./static/gen/styles.css?h=3b7f79d7" />
+  <link rel="stylesheet" href="./static/gen/styles.css?h=1eff6b2e" />
 </head>
 
 <body>
@@ -57,6 +57,10 @@
         src="./static/images/close.svg?h=f9b7536d" alt="Close menu">
       </button>
       <ul class="general__menu-list">
+        
+          
+        
+          
         
           
         
@@ -85,8 +89,6 @@
           
         
           
-        
-          
           <li class="general__menu-item">
               <a class="general__menu-link "
                  href="./ponentes/">PONENTES
@@ -102,7 +104,7 @@
           
           <li class="general__menu-item">
               <a class="general__menu-link "
-              href="#">
+              href="">
                PROGRAMA&nbsp;&nbsp;<i class="fa fa-caret-down soft-red"></i>
              </a>
              <ul class="general__menu-sublist">
@@ -125,7 +127,7 @@
           
           <li class="general__menu-item">
               <a class="general__menu-link "
-                 href="./equipo/">EQUIPO
+                 href="./patrocinadores/">PATROCINADORES
               </a>
                       
           </li>
@@ -134,10 +136,12 @@
           
           <li class="general__menu-item">
               <a class="general__menu-link "
-                 href="./patrocinadores/">PATROCINADORES
+                 href="./equipo/">EQUIPO
               </a>
                       
           </li>
+          
+        
           
         
           
@@ -234,12 +238,12 @@
       </div>
       <div class="countdown-item">
         <span id="countdown-hours"></span>
-        <span>Minutos</span>
-      </div>      
-      <div class="countdown-item">
-        <span id="countdown-minutes"></span>
         <span>Horas</span>
       </div>
+      <div class="countdown-item">
+        <span id="countdown-minutes"></span>
+          <span>Minutos</span>
+        </div>      
       <div class="countdown-item">
         <span id="countdown-seconds"></span>
         <span>Segundos</span>
@@ -261,7 +265,7 @@
   <div class="keynote-landing content">
     <h1>PONENTES INVITADOS</h1>
     <div class="keynote-container">
-                                                                                     
+                                                                                       
         <div class="keynote__card">
   <div class="keynote__card-wrapper">
     <a href=./ponentes/travis-oliphant/>
@@ -908,6 +912,8 @@
           
         
           
+        
+          
           <li>
             <a href="./politica-de-datos/">Política de datos</a>
           </li>
@@ -925,6 +931,12 @@
         
           
         
+          
+        
+          
+          <li>
+            <a href="./convence-a-tu-jefe/">Convence a tu jefe</a>
+          </li>
           
         
           
@@ -1008,7 +1020,9 @@
 <script>
   // Set the date we're counting down to
   
-  var countDownDate = new Date("2019-10-08").getTime();
+  
+  // To take into account that the event starts at 9:00 am
+  var countDownDate = new Date("2019-10-08" + " 09:00").getTime();
 
   // Update the count down every 1 second
   var x = setInterval(function() {
