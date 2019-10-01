@@ -1,0 +1,94 @@
+.convince {
+  max-width: 1000px;
+
+  h1 {
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+
+    @include from(large) {
+      font-size: 40px;
+      font-weight: 800;
+      line-height: 1.5em;
+      max-width: 60%;
+      }  
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+    margin-top: 25px;
+  }
+
+  h3 {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5em;
+    letter-spacing: 2px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 60%;
+  }
+
+  .cover-wrapper {
+    text-align: center;
+
+    .cover {
+      width: 60%;
+      height: 60%;
+
+      @include from(large) {
+        width: 40%;
+        height: 40%;
+          }    
+    }
+  }
+
+  .intro {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5em;
+    margin: 0 auto;
+    display: inline-block;
+    text-align:center;
+    margin-bottom: 20px;
+  }
+
+}
+
+.footer-convince {
+  text-align: center;
+  margin: 0 auto;
+  min-height: 240px;
+
+  @include from(large) {
+    min-height: 280px;
+  }
+
+  span {
+    display: block;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    margin-top: 80px;
+    margin-bottom: 40px;
+
+    @include from(large) {
+      font-size: 36px;
+      margin-top: 80px;
+      margin-bottom: 60px;
+      }
+  }
+}
+
+.tickets {
+  min-height: 0px;
+  height: 120px;
+  width: 120px;
+  display: block;
+  margin: -60px auto;
+}

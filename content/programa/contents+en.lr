@@ -11,3 +11,5 @@ order: 4
 _slug: program
 ---
 main_sub_menu: yes
+---
+redirect: https://conf.scipyla.org/en/program/schedule

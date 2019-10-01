@@ -185,9 +185,9 @@
     border-radius: 20px;
 
     @include from(large) {
-      margin-bottom: 10px;
-    }  
-
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
 
     &-item {
       flex-direction: row;

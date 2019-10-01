@@ -1,0 +1,26 @@
+{%- extends "layout.html" -%} {%- from "macros/background.html" import
+render_background -%} {%- from "macros/translation.html" import transbag -%} {%
+block title %}
+{{ this.title }}
+{% endblock %} {% block body %}
+<div class="container">
+  {{ render_background(background='general', content_background='true', alt=this.alt) }}
+  <main class="content convince">
+    <h3>7A CONFERENCIA DE PYTHON CIENTÍFICO</h3>
+    <h1>{{ this.title }}</h1>
+    <div class="cover-wrapper">
+      <img class="cover" src="{{ '/static/images/convince.svg'|asseturl }}" />
+    </div>
+    <span class="intro">{{ this.description }}</span>
+    
+    {{ this.body }}
+  </main>
+</div>
+<img class="tickets" src="{{ '/static/images/tickets.svg'|asseturl }}" />
+<div class="container footer-convince">
+    {{ render_background(background='color', color='#f4f4f4') }}
+    <span>{{ transbag('translate', this.alt, 'join_us_bogota') }}</span>
+    <a class="button-red"
+       href="{{ '/entradas'|url(alt=this.alt) }}">{{ transbag('translate', this.alt, 'buy_tickets') }}</a>
+</div>
+{% endblock %}

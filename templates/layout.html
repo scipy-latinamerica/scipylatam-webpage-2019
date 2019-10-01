@@ -77,7 +77,7 @@
             {%- set this_is_child = this.is_child_of(page) -%}
               {% if page.main_sub_menu %}
               <a class="general__menu-link {% if this_is_child %} general__menu-link--active {% endif %}"
-              href="#">
+              href="">
                {{ page.menu_label | upper }}&nbsp;&nbsp;<i class="fa fa-caret-down soft-red"></i>
              </a>
              <ul class="general__menu-sublist">

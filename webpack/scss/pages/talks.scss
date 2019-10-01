@@ -30,6 +30,7 @@
   align-items: left;
   margin: 10px 20px;
   background: $soft-gray;
+  width: 100%;
 
   @include from(small) {
     padding: 10px 15px;
@@ -126,10 +127,13 @@
     font-size: 12px;
     line-height: 1.5em;
     font-weight: 400;
-    max-height: 1.5em * 3;
-    min-height: 1.5em * 3;
     text-align: justify;
     margin-bottom: 10px;
+
+    @include from(large) {
+      max-height: 1.5em * 3;
+      min-height: 1.5em * 3;
+    }
   }
 
   &-summary-ellipsis {
@@ -189,7 +193,7 @@
         color: $soft-red;
         
         @include from(large) {
-          padding-left: 10px;
+          padding-left: 15px;
         }  
   
       }

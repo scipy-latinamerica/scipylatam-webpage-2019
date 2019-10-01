@@ -19,6 +19,21 @@
   width: 80%;
   min-height: calc(100vh - 380px);
   margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+
+  h1 {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1.5em;
+    padding: 20px 0;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5em;
+    margin-bottom: 20px
+  }
 }
 
 .content-footer {

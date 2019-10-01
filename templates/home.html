@@ -78,11 +78,11 @@ transbag('translate', this.alt, 'date') -%}
         <span>{{ t_days }}</span>
       </div>
       <div class="countdown-item">
-        <span id="countdown-minutes"></span>
+        <span id="countdown-hours"></span>
         <span>{{ t_hours }}</span>
       </div>
       <div class="countdown-item">
-          <span id="countdown-hours"></span>
+        <span id="countdown-minutes"></span>
           <span>{{ t_minutes }}</span>
         </div>      
       <div class="countdown-item">
@@ -177,7 +177,9 @@ transbag('translate', this.alt, 'date') -%}
 <script>
   // Set the date we're counting down to
   {% set start_date = site.get('/').date_start %}
-  var countDownDate = new Date("{{ start_date }}").getTime();
+  
+  // To take into account that the event starts at 9:00 am
+  var countDownDate = new Date("{{ start_date }}" + " 09:00").getTime();
 
   // Update the count down every 1 second
   var x = setInterval(function() {

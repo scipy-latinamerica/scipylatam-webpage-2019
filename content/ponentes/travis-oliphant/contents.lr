@@ -37,3 +37,22 @@ order: 1
 position: CEO
 ---
 position_company: Quansight, Inc
+---
+information:
+
+Travis E. Oliphant is Founder and CEO/CTO of Quansight, a company that grows talent, builds
+technology, and discovers new products while sustaining open-source communities by helping
+companies gain actionable, quantitative insights from their data.
+<br><br>
+
+Since 1997, Travis has worked with Python for numerical and scientific programming, notably as
+the primary developer of the NumPy package and as a founding contributor of the SciPy
+package. He is also the author of the definitive &quot;Guide to NumPy&quot;. Mr. Oliphant was an assistant
+professor of Electrical and Computer Engineering at BYU from 2001-2007, where he taught
+courses in probability theory, electro-magnetism, inverse problems and signal processing. He
+also served as Director of the Biomedical Imaging Lab. From 2007-2011, He was the President
+at Enthought, Inc. In 2012, Travis co-founded NumFOCUS, and Anaconda Inc. where he
+continues as a Director.
+<br><br>
+Travis has a Ph.D. from the Mayo Clinic and B.S. and M.S. degrees in Mathematics and
+Electrical Engineering from Brigham Young University.
