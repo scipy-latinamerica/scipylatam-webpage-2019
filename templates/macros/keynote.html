@@ -19,8 +19,9 @@
          alt="Speaker background" />
   </div>
   <span class="keynote__card-country">{{ transbag('country', alt, keynote.country_origin)|upper }}</span>
-  <span class="keynote__card-name">
+  <span class="keynote__card-name"><a href="{{ keynote|url(alt=alt) }}">
     {{ keynote.name | upper + " " + keynote.last_name | upper }}
+  </a>
   </span>
   <span class="keynote__card-description">
     {{ keynote.short_description }}

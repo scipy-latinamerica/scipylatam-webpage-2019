@@ -2,6 +2,8 @@ name: Travis
 ---
 country_residence: us
 ---
+country_origin: us
+---
 email: travis@quansight.com
 ---
 keynote: yes
@@ -35,5 +37,3 @@ order: 1
 position: CEO
 ---
 position_company: Quansight, Inc
----
-country_origin: us

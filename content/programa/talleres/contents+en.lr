@@ -1,0 +1,9 @@
+_template: workshops.html
+---
+display: yes
+---
+main_menu: yes
+---
+menu_label: Workshops
+---
+title: Workshops

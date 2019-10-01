@@ -1,6 +1,6 @@
 _model: page
 ---
-_template: talks.html
+_template: workshops.html
 ---
 display: yes
 ---

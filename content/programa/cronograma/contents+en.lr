@@ -6,4 +6,8 @@ _template: schedule.html
 ---
 display: yes
 ---
-main_menu: yes
+main_menu: no
+---
+_hidden: no
+---
+order: 3

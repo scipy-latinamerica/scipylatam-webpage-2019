@@ -74,10 +74,12 @@
         border-bottom: 0;
         color: $black;
         background: transparent;
+
         &:hover {
           background: $white;
           border: 2px solid $soft-red;
           border-bottom: 0px;
+          cursor: pointer;
         }
 
         &:active {
@@ -232,7 +234,7 @@
       }
 
       .talk-title {
-        font-size: 13px;
+        font-size: 16px;
         font-weight: 800;
         line-height: 1.5em;
         margin: 10px 0px;

@@ -66,7 +66,7 @@ block title %}
                         <span class="talk-room"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;&nbsp;Test{{ talk.room }}</span><br>
                         <span class="talk-title"><a href="{{ talk|url(alt=alt) }}">{{ talk.name }}</a></span>
                         {% else %}
-                        <span class="talk-title"><a href="{{ talk|url(alt=alt) }}">{{ talk.name }}</a></span>
+                        <span class="talk-title">{{ talk.name }}</span>
                         {% endif %}
                         <div class="schedule__authors-container">
                           {% set authors = talk.authors %}

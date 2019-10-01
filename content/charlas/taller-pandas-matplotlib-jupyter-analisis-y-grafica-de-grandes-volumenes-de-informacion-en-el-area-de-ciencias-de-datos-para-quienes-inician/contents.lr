@@ -1,0 +1,23 @@
+_model: talk
+---
+authors: ariel-ramos
+---
+datetime: 2019-10-08 10:00:00 -0500
+---
+datetime_end: 2019-10-08 12:00:00 -0500
+---
+description: El Taller es formativo en conceptos y fundamentos importantes, necesarios para quienes se inician en el analisis de grandes volumenes de datos cientificos para su interpretacion y graficas, de esa manera inician el camino de un Cientifico de Datos o DataScience. Entender programacion no es dificil. Por ese motivo veremos como es la filosofia de trabajo de un lenguaje de programacion como Python y las librerias que ayudan llevar adelante estas acciones de analizar y visualizar informacion. Veremos conceptos importantes de Programacion Orientada a Objetos y conceptos de Bases de Datos como DataFrame o el porque de los formatos de Archivos en TSV. La idea aportar con la experiencia que tuve con los distintos grupos de trabajo en ciencias de distintas disciplinas que no estan relacionadas a la informatica pero era necesario analizar y graficar grandes volumenes de informacion. Tambien veremos los ambientes de instalacion que existen (CONDA y Proyecto PIP) para las librerias o modulos del Python y los repositorios al respecto. Tambien las distintas formas de instalar las librerias dentro de cada ambiente de instalacion, sobretodo con el ambiente del Proyecto PIP. Recomendaciones de los sitios webs que tienen ejercicios para hacer practicas de aprendizaje como corresponde y el material de guia con los conceptos, tambien los libros online de los principales desarrolladores. En definitva, es mostrar todo el material y recurso disponible en la web y no en la web para iniciarse en programacion y llegar iniciar el camino de un Cientifico de Datos. Como dije al principio, me baso en la experiencia de la gente con la cual trabaje en este sentido y espero poder aportar en la formacion de los nuevos investigadores y tal vez futuros cientificos de datos.
+---
+language: es
+---
+language_slides: es
+---
+level: beginner
+---
+name: Taller PANDAS MATPLOTLIB Jupyter. Analisis y grafica de grandes volumenes de informacion en el area de Ciencias de Datos para quienes inician.
+---
+summary: El Taller es formativo en conceptos y fundamentos importantes, necesarios para quienes se inician en el analisis de grandes volumenes de datos cientificos para su interpretacion y graficas, de esa manera inician el camino de un Cientifico de Datos o DataScience. Entender programacion no es dificil.
+---
+topic: tools
+---
+type: workshop

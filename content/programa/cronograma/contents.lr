@@ -6,8 +6,10 @@ title: Cronograma de la conferencia
 ---
 display: yes
 ---
-main_menu: yes
+main_menu: no
 ---
 _template: schedule.html
 ---
 order: 3
+---
+_hidden: no

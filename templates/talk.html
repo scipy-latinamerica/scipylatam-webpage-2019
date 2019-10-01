@@ -16,7 +16,9 @@ render_background -%} {%- from "macros/translation.html" import transbag -%}
       <div class="talk-container">
           <span class="talk__type">{{ transbag('translate', alt, this.type)|upper }}</span>
           <span class="talk__title">{{ this.name }}</span>
+          {% if this.topic %}
           <span class="talk__topic">{{ transbag('translate', alt, this.topic)|upper }}</span>
+          {% endif %}
           <div class="talk__language">
             <span class="talk__language-item">
               <i class="fa fa-globe"></i>
@@ -46,8 +48,10 @@ render_background -%} {%- from "macros/translation.html" import transbag -%}
           {% set word = 'speaker' %}
           {% endif %}
           <span class="talk__subtitle">{{ transbag('translate', this.alt, word)|upper }}:</span>
-          <div>
+          <p>BLOOM</p>
+          <div class="talk__container">
               {% for author_id in this.authors %}
+              <div class="talk__item">
               <div class="talk__wrapper">
                 {% set author = site.get('/ponentes/' + author_id, alt=alt) %}
                 {% if author.image %}
@@ -64,6 +68,7 @@ render_background -%} {%- from "macros/translation.html" import transbag -%}
               {% if author.last_name %}
               <span class="talk__name"><a href="{{ author|url(alt=alt) }}">{{ author.name.split(' ')[0] }} {{ author.last_name.split(' ')[0] }}</a></span>
               {% endif %}
+             </div>
               {% endfor %}
           </div>
           <br><br><br><br><br><br><br><br>

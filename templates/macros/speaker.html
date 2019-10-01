@@ -36,7 +36,7 @@
   {% else %}
   <span class="speaker__card-country">{{ transbag('country', alt, speaker.country_origin)|upper }}</span>
   {% endif %}
-  <span class="speaker__card-name">{{ sentence_case(name) }} {{ last_name }}</span>
+  <span class="speaker__card-name"><a href="{{ speaker|url(alt=alt) }}">{{ sentence_case(name) }} {{ last_name }}</a></span>
   {% if compact %}
   {%- set talks = site.query('/charlas').filter(F.authors.contains(speaker._id)) -%}
     <span class="speaker__card-responsibility">{{ speaker.position_company }}</span>

@@ -15,7 +15,7 @@
       <p>{{ this.body}}</p>
       <br>
       <div class="talks-container">
-      {% set talks = site.query('/charlas', alt=this.alt).filter(F.type == 'talk') %}
+      {% set talks = site.query('/charlas', alt=this.alt).filter(F.type == 'talk').order_by('topic', 'name') %}
       {% for talk in talks %}
         {{ render_talk(talk, alt=this.alt) }}
       {% endfor %}

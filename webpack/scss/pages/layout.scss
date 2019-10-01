@@ -231,6 +231,10 @@
   padding-left: 64px;
   margin-bottom: 20px;
 
+  &:hover {
+    color: $yellow
+  }
+
   @include from(large) {
     display: none;
   }
@@ -319,6 +323,10 @@
       display: block;
       padding: 30px 40px 0px 20px;
       color: $white;
+
+      &:hover{
+        color: $yellow;
+      }
     }
 
     @include from(large) {
@@ -327,7 +335,7 @@
       font-size: 14px;
       text-decoration:  none;
       display: block;
-      padding: 10px 40px 10px 20px;
+      padding: 15px 40px 15px 20px;
       color: $black;
 
       &:hover {
@@ -347,12 +355,16 @@
     color: $white;
 
     &:hover{
-      color: $soft-red;
+      border-bottom: 3px solid $soft-red;
     }
 
     @include from(large) {
       font-size: 13px;
       color: $black;
+
+      &:hover{
+        color: $soft-red;
+      }
     }
 
     &--active {
@@ -447,6 +459,10 @@
     padding-left: 64px;
     color: $white;
     text-decoration: none;
+
+      &:hover {
+        color: $yellow
+      }
 
     @include from(large) {
       display: none;
