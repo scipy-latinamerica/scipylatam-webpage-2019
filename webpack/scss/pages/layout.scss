@@ -148,7 +148,6 @@
 
 .button-red {
   font-family: "Poppins", sans-serif;
-  background-color: $red;
   font-size: 14px;
   color: $white;
   letter-spacing: 2px;
@@ -160,6 +159,12 @@
   text-decoration: none;
   text-align: center;
   border: none;
+  background-color: $soft-red;
+  transition: background-color .25s;
+
+  &:hover {
+    background-color: $red;
+  }
 
   @include from(large) {
     font-size: 18px;

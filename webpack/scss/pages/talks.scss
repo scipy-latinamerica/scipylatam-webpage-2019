@@ -253,6 +253,14 @@
   text-align: center;
   border: none;
 
+  background-color: $white;
+  transition: background-color 0.25s;
+
+  &:hover {
+    background-color: #F4F4F4;
+  }
+
+
   @include from(large) {
     line-height: 1.5em;
     font-size: 14px;
