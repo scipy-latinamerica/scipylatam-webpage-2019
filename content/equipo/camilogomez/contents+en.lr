@@ -6,6 +6,8 @@ name: Camilo
 ---
 publish: yes
 ---
-responsibility: Venue, Sponsors, Speakers
+responsibility: Venue
 ---
 image: camilo-gomez.png
+---
+sort_key: 3

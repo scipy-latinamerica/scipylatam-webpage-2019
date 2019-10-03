@@ -94,13 +94,15 @@ alt='es', color='#FFF', image='') %} {% if background == 'landing' %}
   class="color-background cut-background"
   style="background-color: {{ color }}"
 >
-<div>
-<img
-  style="width:50%;height:50%;"
+{% for back in [1]*80 %}
+<div style="{{ loop.cycle('', 'text-align:right;', 'text-align:right;', '') }}">
+<img  
+  style="width:50%;height:50%;{{ loop.cycle('', '-webkit-transform:rotate(180deg);transform:rotate(180deg);', 'transform:scaleY(-1);transform:scaleX(-1);', 'transform:scaleY(-1);') }}"
   src="{{ '/static/images/scipy-bg1.svg' | asseturl }}"
   alt="Background 2"
 />
 </div>
+{% endfor %}
 </div>
 {% endif %}
 {% if background == 'image-middle' %}

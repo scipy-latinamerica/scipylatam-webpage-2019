@@ -250,6 +250,7 @@
   color: $white;
   padding-left: 64px;
   margin-bottom: 20px;
+  transition: color 0.5;
 
   &:hover {
     color: $yellow
@@ -343,6 +344,7 @@
       display: block;
       padding: 30px 40px 0px 20px;
       color: $white;
+      transition: color 0.5;
 
       &:hover{
         color: $yellow;
@@ -357,6 +359,7 @@
       display: block;
       padding: 15px 40px 15px 20px;
       color: $black;
+      transition: color 0.5;
 
       &:hover {
         color: $white;
@@ -373,6 +376,7 @@
     font-weight: 700;
     text-decoration: none;
     color: $white;
+    transition: border 0.5, color 0.5;
 
     &:hover{
       border-bottom: 3px solid $soft-red;
@@ -394,7 +398,7 @@
 
   &-language {
     display: none;
-    border: 1px solid red;
+    border: 1px solid $soft-red;
     border-radius: 15px;
     margin-right: 20px;
 
