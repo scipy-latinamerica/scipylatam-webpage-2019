@@ -63,23 +63,22 @@ block title %}
                       <div class="list-text">
                         
                         {% if talk.type %}
-                        {% if talk.type in ['talk', 'workshop', 'keynote'] %}
+                        {% if talk.type in ['talk', 'workshop', 'keynote', 'scipy_tools'] %}
                         <span class="talk-type">{{ transbag('translate', alt, talk.type)|upper }}</span>
                           {% endif %}
                         {% if talk.room %}
                         {% set room = site.get('/auditorios/' + talk.room, alt=this.alt) %}
                         <span class="talk-room"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;&nbsp;Edificio {{ room.building }} - {{ room.room }}</span><br>
                         {% endif %}
-
+                        {% if talk.topic is defined %}
+                        <span class="talk-topic">{{ transbag('translate', this.alt, talk.topic)|upper }}</span>
+                        <span class="talk-language">
+                          <i class="fa fa-globe left"></i>
+                            <b>{{ transbag('translate', alt, 'language') }}:</b>
+                            {{ transbag('translate', alt, talk.language) }}
+                          </span>
+                        {% endif %}
                         <span class="talk-title"><a href="{{ talk|url(alt=alt) }}">{{ talk.name }}</a></span>
-                          {% if talk.topic is defined %}
-                          <span class="talk-topic">{{ transbag('translate', this.alt, talk.topic)|upper }}</span>
-                          <span class="talk-language">
-                            <i class="fa fa-globe left"></i>
-                              <b>{{ transbag('translate', alt, 'language') }}:</b>
-                              {{ transbag('translate', alt, talk.language) }}
-                            </span>
-                          {% endif %}
                         {% else %}
                         <span class="talk-title">{{ talk.name }}</span>
                         {% endif %}
