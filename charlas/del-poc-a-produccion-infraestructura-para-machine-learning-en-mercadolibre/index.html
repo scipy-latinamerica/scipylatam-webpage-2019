@@ -8,12 +8,12 @@
   <meta name="description" content="" />
   <meta name="google-site-verification" content="tS192x5OfHOZKosOfhq39D1Wlk6EwH_gaSw8ZUVe_bs" />
 
-  <link rel="canonical" href="http://conf.scipyla.org/charlas/representaciones-de-datos-geograficos-con-python/" />
+  <link rel="canonical" href="http://conf.scipyla.org/charlas/del-poc-a-produccion-infraestructura-para-machine-learning-en-mercadolibre/" />
   <meta property="og:locale" content="" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="" />
   <meta property="og:description" content="" />
-  <meta property="og:url" content="http://conf.scipyla.org/charlas/representaciones-de-datos-geograficos-con-python/" />
+  <meta property="og:url" content="http://conf.scipyla.org/charlas/del-poc-a-produccion-infraestructura-para-machine-learning-en-mercadolibre/" />
   <meta property="og:site_name" content="SciPy Latam 2019" />
   <meta property="og:updated_time" content="2019-08-13T17:51:00+00:00" /><meta property="og:image" content="http://conf.scipyla.org/static/images/ogimage.jpg" />
   <meta property="og:image:secure_url" content="http://conf.scipyla.org/static/images/ogimage.jpg" />
@@ -29,7 +29,7 @@
   <link rel="mask-icon" href="" color="#5bbad5">
 
   <title>
- - Representaciones de datos geográficos con Python 
+ - Del POC a producción - Infraestructura para machine-learning en Mercadolibre 
 </title>
 
   <!-- Fonts -->
@@ -40,7 +40,7 @@
   <script src="https://use.fontawesome.com/53338901d9.js"></script>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="../../static/gen/styles.css?h=9c843a61" />
+  <link rel="stylesheet" href="../../static/gen/styles.css?h=40466ec9" />
 </head>
 
 <body>
@@ -59,6 +59,8 @@
         src="../../static/images/close.svg?h=f9b7536d" alt="Close menu">
       </button>
       <ul class="general__menu-list">
+        
+          
         
           
         
@@ -89,8 +91,6 @@
           
         
           
-        
-          
           <li class="general__menu-item">
               <a class="general__menu-link "
                  href="../../ponentes/">PONENTES
@@ -117,6 +117,7 @@
                   <li class="general__menu-subitem "><a href="../../programa/charlas/">Charlas</a></li>
                           
                   
+                  <li class="general__menu-subitem "><a href="../../programa/cronograma/">Cronograma</a></li>
                           
                   
               </ul>
@@ -129,7 +130,7 @@
           
           <li class="general__menu-item">
               <a class="general__menu-link "
-                 href="../../equipo/">EQUIPO
+                 href="../../patrocinadores/">PATROCINADORES
               </a>
                       
           </li>
@@ -138,7 +139,7 @@
           
           <li class="general__menu-item">
               <a class="general__menu-link "
-                 href="../../patrocinadores/">PATROCINADORES
+                 href="../../equipo/">EQUIPO
               </a>
                       
           </li>
@@ -149,15 +150,15 @@
           
         
         <li class="general__menu-language"><a class="general__menu-language-button"
-          href="../../en/charlas/representaciones-de-datos-geograficos-con-python/">EN</a></li>
+          href="../../en/charlas/del-poc-a-produccion-infraestructura-para-machine-learning-en-mercadolibre/">EN</a></li>
       </ul>
       <div class="general__menu-line"></div>
       <ul class="general__language-menu"><li class="general__language-item">
-          <a class="general__language-link" href="../../en/charlas/representaciones-de-datos-geograficos-con-python/"
+          <a class="general__language-link" href="../../en/charlas/del-poc-a-produccion-infraestructura-para-machine-learning-en-mercadolibre/"
             >ENGLISH</a
           >
         </li></ul>
-      <a class="general__menu-code" href="../../charlas/representaciones-de-datos-geograficos-con-python/code-of-conduct">
+      <a class="general__menu-code" href="../../charlas/del-poc-a-produccion-infraestructura-para-machine-learning-en-mercadolibre/code-of-conduct">
         Código de conducta
       </a>
       
@@ -227,10 +228,12 @@
 
   <div class="content">
       <div class="talk-container">
-          <span class="talk__type">CHARLA</span>
-          <span class="talk__title">Representaciones de datos geográficos con Python</span>
           
-          <span class="talk__topic">GEOCIENCIAS</span>
+          <span class="talk__type">CHARLA</span>
+          
+          <span class="talk__title">Del POC a producción - Infraestructura para machine-learning en Mercadolibre</span>
+          
+          <span class="talk__topic">APRENDIZAJE AUTOMÁTICO</span>
           
           <div class="talk__language">
             <span class="talk__language-item">
@@ -238,6 +241,7 @@
               &nbsp;&nbsp;&nbsp;<b>Idioma:</b>
               &nbsp;&nbsp;Español
             </span>
+            
             <span class="talk__language-item">
               <i class="fa fa-clock-o"></i>
               &nbsp;&nbsp;&nbsp;<b>Duración:</b>
@@ -246,13 +250,25 @@
               25 min
               
             </span>
+            
+            
             <span class="talk__language-item"></span>
               <i class="fa fa-star-o"></i>
               &nbsp;&nbsp;&nbsp;<b>Nivel:</b>
-              &nbsp;&nbsp;Principiante
+              &nbsp;&nbsp;Intermedio
             </span>
+            
           </div>
-          <span class="talk__description"><p>Un sistema de información geográfica es un entorno de múltiples componentes utilizados para crear, gestionar, visualizar y analizar datos geoespaciales. Entre estos datos, podemos mencionar imágenes satelitales, puntos geográficos y mapas. Sin embargo, no resulta sencillo el almacenamiento y ordenamiento de esta información. Por ejemplo, los cartógrafos han tenido la problemática de retratar la tierra en dos dimensiones.  Como mapeador, es importante: Una imagen vale más que mil palabras. Históricamente, los creadores de mapas han desarrollado cientos de proyecciones, que consisten en métodos matemáticos para dibujar la tierra esférica en una superficie plana. Sin embargo, a pesar de una gran cantidad existente y el número infinito que son teóricamente posibles, ninguna representación es perfectamente exacta. Cómo plasmar la superficie esférica de la Tierra en un plano (papel, pantalla ...) para tener un mapa utilizable, es un tema de controversia en aspectos prácticos, por ejemplo navegación; y aquellos científico-matemáticos, que involucran geometría o incluso álgebra abstracta.  No existe una solución universal para este problema: cualquier proyección de mapa 2D siempre distorsionará de una manera la naturaleza esférica del mundo. Múltiples propuestas han sido creadas, cada una con la intención de minimizar las distorsiones para usos específicos (para la navegación náutica, para la navegación aérea, para las comparaciones de tamaño de la masa terrestre, etc.) pero con inconvenientes desde otros puntos de vista. Algunos de ellos se utilizan con más frecuencia que otros en los medios de comunicación y, por lo tanto, son más conocidos. Otros se encuentran en desuso por su complejidad y dificultad de conversión de los datos. También sencillamente por ser puramente históricos  El objetivo de esta charla consiste en explicar métodos para capturar, codificar, organizar y, finalmente, analizar datos geográficos con Python. Se mencionan técnicas actuales para representar latitudes y longitudes en coordenadas cartesianas (geohash y quadtree) mediante proyecciones, como polares (esféricas - GoogleS2). Finalmente, se explicarán métodos de indexado para optimizar búsquedas, técnicas de renderizado y obtención de mapas o teselas en sistemas actuales como Google o Bing Maps. De esta forma, los asistentes comprenderán ciertos aspectos útiles al momento de desarrollar algoritmos de análisis que envuelven datos geográficos, como enrutamiento y búsquedas, machine learning, entre otros.  El orden de la presentación es la siguiente: Introducción, 5 min Representación de datos geográficos, 10 min Organización mediante árboles de búsqueda, 10 min Sistemas de teselado y teselas vectoriales, 5 min Ejemplo de algoritmo de machine learning basado en localización, 5 min</p>
+          <span class="talk__description"><p>"Para tratar el tema de la distancia entre el desarrollo experimental de un modelo de machine-learning y los desafíos de servirlo como un servicio production-ready, voy a aprovechar una experiencia de la vida real.</p>
+<p>En Mercadolibre existe Fury: una plataforma de infraestructura y desarrollo, para el despliegue de microservicios. La misma provee features para build, deploy, gestión de entornos de desarrollo, automatización de la creación de infraestructura, monitoreo, métricas, servicios, etc. Es uno de los principales factores que permitió crecer de 400 desarrolladores a los ~3000 que somos ahora, en pocos años.</p>
+<p>El problema es que dicha infraestructura no fue diseñada para lidiar con las particularidades asociadas a los sistemas de machine-learning: entornos de experimentación para data-scientists, procesos de ETL, entrenamiento de modelos, acceso a infraestructura específica como GPU, etc.</p>
+<p>Entonces, en un esfuerzo transversal a la organización, con la colaboración de varios equipos, desarrollamos Fury Data Apps: una extensión a Fury que provee herramientas y servicios para que cualquiera pueda diseñar, experimentar, desarrollar y desplegar sistemas basados en machine-learning, a la escala que Mercadolibre necesita.</p>
+<p>En esta charla voy a presentar:</p>
+<p>las características principales de la plataforma
+los problemas que soluciona
+el stack tecnológico que la soporta
+en general, cómo cubre el gap entre un POC y un sistema production-ready
+"</p>
 </span>
           
           
@@ -266,16 +282,16 @@
                 
                   
                     
-                    <a href="../../ponentes/jorge-martinez/" style="line-height:0px;">
+                    <a href="../../ponentes/carlos-de-la-torre/" style="line-height:0px;">
                       <img class="talk__photo-wrapper"
-                          src='../../ponentes/jorge-martinez/jorge-martinez@172x172_crop.jpeg'
-                          alt="Member photo: Jorge Martínez Gómez" /></a>
+                          src='../../ponentes/carlos-de-la-torre/carlos-de-la-torre@172x172_crop.jpeg'
+                          alt="Member photo: Carlos Torre" /></a>
                     
                   
                 
               </div>
               
-              <span class="talk__name"><a href="../../ponentes/jorge-martinez/">Jorge Martínez</a></span>
+              <span class="talk__name"><a href="../../ponentes/carlos-de-la-torre/">Carlos Torre</a></span>
               
              </div>
               
@@ -300,8 +316,6 @@
           
         
           
-        
-          
           <li>
             <a href="../../codigo-de-conducta/">Código de Conducta</a>
           </li>
@@ -313,6 +327,8 @@
           <li>
             <a href="../../diversidad/">Diversidad</a>
           </li>
+          
+        
           
         
           
