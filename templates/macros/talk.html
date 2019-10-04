@@ -23,7 +23,11 @@
         {% endif %}
       </div>
       {% if author.last_name %}
-      <span class="talk__card-name"><a href="{{ author|url(alt=alt) }}">{{ author.name.split(' ')[0] }} {{ author.last_name.split(' ')[0] }}</a></span>
+        {% if author.last_name_prefix is defined %}
+        <span class="talk__card-name"><a href="{{ author|url(alt=alt) }}">{{ author.name.split(' ')[0] }} {{ author.last_name_prefix|lower }} {{ author.last_name.split(' ')[0] }}</a></span>
+        {% else %}
+        <span class="talk__card-name"><a href="{{ author|url(alt=alt) }}">{{ author.name.split(' ')[0] }} {{ author.last_name.split(' ')[0] }}</a></span>
+        {% endif %}
       {% endif %}
       {% endfor %}
     </div>

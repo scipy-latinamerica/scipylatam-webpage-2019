@@ -31,7 +31,7 @@
     <div class="keynote-landing content">
       {% set speakers = site.query('/ponentes', alt=this.alt).filter(F.keynote == False).order_by('+name', '+last_name') %}
       {% if speakers.count() %}
-      <h1 style="color:black;">{{ t_speakers|upper }}</h1><br>
+      <h1 style="color:black;">{{ t_speakers|upper }} ({{ speakers.count() }})</h1><br>
       {% endif %}
       <div class="team-members-container">
           {% for speaker in speakers %}

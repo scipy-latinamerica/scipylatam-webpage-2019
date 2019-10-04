@@ -188,8 +188,8 @@
 
       .schedule__authors {
         flex-direction: row;
-        min-width: 180px;
-        max-width: 180px;
+        min-width: 190px;
+        max-width: 190px;
         margin-bottom: 10px;
       }
 
@@ -229,14 +229,29 @@
         font-size: 10px;
         font-weight: 800;
         color: $soft-red;
-        min-width: 150px;
+        min-width: 180px;
         display: inline-block;
+        margin-bottom: 10px;
+      }
+
+      .talk-language {
+        font-size: 10px;
+        font-weight: 800;
+        // color: $soft-red;
+        min-width: 100px;
+        display: inline-block;
+        margin-bottom: 15px;
+
+        i {
+          padding-right: 5px;
+          color: $soft-red;
+        }
       }
 
       .talk-room {
         font-size: 12px;
         font-weight: 400;
-        padding-left: 40px;
+        padding-left: 0px;
         color: $black;
         i {
           color: $soft-red;

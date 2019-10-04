@@ -9,13 +9,13 @@
   {{ render_background(background='general', content_background='true', alt=this.alt) }}
   <div class="container">
     {{ render_background(background='color-cut-2', color='#fcd116') }}
+    {% set talks = site.query('/charlas', alt=this.alt).filter(F.type == 'talk').order_by('topic', 'name') %}
     <div class="talks content">
       <br><br>
-      <h1>{{ this.title|upper }}</h1>
+      <h1>{{ this.title|upper }} ({{ talks.count() }})</h1>
       <p>{{ this.body}}</p>
       <br>
       <div class="talks-container">
-      {% set talks = site.query('/charlas', alt=this.alt).filter(F.type == 'talk').order_by('topic', 'name') %}
       {% for talk in talks %}
         {{ render_talk(talk, alt=this.alt) }}
       {% endfor %}

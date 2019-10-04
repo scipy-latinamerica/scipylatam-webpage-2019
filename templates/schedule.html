@@ -65,7 +65,6 @@ block title %}
                         {% if talk.type %}
                         {% if talk.type in ['talk', 'workshop', 'keynote'] %}
                         <span class="talk-type">{{ transbag('translate', alt, talk.type)|upper }}</span>
-                        <span class="talk-topic">{{ transbag('translate', this.alt, talk.topic)|upper }}</span>
                           {% endif %}
                         {% if talk.room %}
                         {% set room = site.get('/auditorios/' + talk.room, alt=this.alt) %}
@@ -73,6 +72,14 @@ block title %}
                         {% endif %}
 
                         <span class="talk-title"><a href="{{ talk|url(alt=alt) }}">{{ talk.name }}</a></span>
+                          {% if talk.topic is defined %}
+                          <span class="talk-topic">{{ transbag('translate', this.alt, talk.topic)|upper }}</span>
+                          <span class="talk-language">
+                            <i class="fa fa-globe left"></i>
+                              <b>{{ transbag('translate', alt, 'language') }}:</b>
+                              {{ transbag('translate', alt, talk.language) }}
+                            </span>
+                          {% endif %}
                         {% else %}
                         <span class="talk-title">{{ talk.name }}</span>
                         {% endif %}
@@ -89,13 +96,21 @@ block title %}
                                   <a href="{{ author|url(alt=alt) }}" style="line-height:0px;">
                                     <img class="schedule__photo-wrapper"
                                         src='{{ img.thumbnail(80, 80, crop=True)|url }}'
+                                        {% if author.last_name_prefix is defined %}
+                                        alt="Member photo: {{ author.name + ' ' + author.last_name_prefix|lower + ' ' + author.last_name }}" /></a>
+                                        {% else %}
                                         alt="Member photo: {{ author.name + ' ' + author.last_name }}" /></a>
+                                        {% endif %}
                                   {% endif  %}
                                 {% endfor  %}
                               {% endif %}
                             </div>
                             {% if author.last_name %}
-                            <span class="talk__name"><a href="{{ author|url(alt=alt) }}">{{ author.name.split(' ')[0] }} {{ author.last_name.split(' ')[0] }}</a></span>
+                              {% if author.last_name_prefix is defined %}
+                              <span class="talk__name"><a href="{{ author|url(alt=alt) }}">{{ author.name.split(' ')[0] }} {{ author.last_name_prefix|lower }} {{ author.last_name.split(' ')[0] }}</a></span>
+                              {% else %}
+                              <span class="talk__name"><a href="{{ author|url(alt=alt) }}">{{ author.name.split(' ')[0] }} {{ author.last_name.split(' ')[0] }}</a></span>
+                              {% endif %}
                             {% endif %}
                           </div>        
                             {% endfor %}

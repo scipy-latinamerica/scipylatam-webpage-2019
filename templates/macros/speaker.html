@@ -36,7 +36,12 @@
   {% else %}
   <span class="speaker__card-country">{{ transbag('country', alt, speaker.country_origin)|upper }}</span>
   {% endif %}
-  <span class="speaker__card-name"><a href="{{ speaker|url(alt=alt) }}">{{ sentence_case(name) }} {{ last_name }}</a></span>
+
+  {% if speaker.last_name_prefix is defined %}
+  <span class="speaker__card-name"><a href="{{ speaker|url(alt=alt) }}">{{ speaker.name.split(' ')[0] }} {{ speaker.last_name_prefix|lower }} {{ speaker.last_name.split(' ')[0] }}</a></span>
+  {% else %}
+  <span class="speaker__card-name"><a href="{{ speaker|url(alt=alt) }}">{{ speaker.name.split(' ')[0] }} {{ speaker.last_name.split(' ')[0] }}</a></span>
+  {% endif %}
   {% if compact %}
   {%- set talks = site.query('/charlas').filter(F.authors.contains(speaker._id)) -%}
     <span class="speaker__card-responsibility">{{ speaker.position_company }}</span>
