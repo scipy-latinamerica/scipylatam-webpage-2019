@@ -2,9 +2,9 @@ _model: talk
 ---
 authors: maria-remolina
 ---
-datetime: 2019-10-09 10:00:00 -0500
+datetime: 2019-10-09 16:00:00 -0500
 ---
-datetime_end: 2019-10-09 12:00:00 -0500
+datetime_end: 2019-10-09 16:30:00 -0500
 ---
 description: In this talk I would like to tackle the problem of hyperparameter tuning in Machine Learning (ML). In particular, I would like to show how SciPy and its optimization tools can help in determining the best combination of parameters for our particular ML model. The idea is to perform an optimization routine over the hyperparameter space, where the objective function is a metric that evaluates the model's results. As an example, I will analyze text data from different sources (press, books, tweets, ...) and perform a Part-Of-Speech Tagging implemented with an Averaged Perceptron. I will then tune the hyperparameters of the algorithm by optimizing over different metrics and comparing the prediction results. In conclusion, the goal of this talk is to show the outstanding capabilities of the SciPy optimization modules, as well as to exemplify the multidisciplinarity of this scientific python library by extending its reach to artificial intelligence applications.
 ---
@@ -21,3 +21,5 @@ summary: Get your hyperparameters right! How to tune your machine learning model
 topic: machine_learning
 ---
 type: talk
+---
+room: sd-1003

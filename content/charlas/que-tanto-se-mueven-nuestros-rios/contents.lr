@@ -2,7 +2,7 @@ _model: talk
 ---
 authors: alexander-montalvo
 ---
-datetime: 2019-10-09 10:00:00 -0500
+datetime: 2019-10-09 11:30:00 -0500
 ---
 datetime_end: 2019-10-09 12:00:00 -0500
 ---
@@ -21,3 +21,5 @@ summary: ¿Qué tanto se mueven nuestros ríos?
 topic: geosciences
 ---
 type: talk
+---
+room: sd-1

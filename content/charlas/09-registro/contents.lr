@@ -7,3 +7,5 @@ datetime_end: 2019-10-09 09:00:00 -0500
 name: Resgistro
 ---
 type: inscription
+---
+room: ml-pasarela

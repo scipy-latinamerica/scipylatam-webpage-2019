@@ -2,9 +2,9 @@ _model: talk
 ---
 authors: juan-cano
 ---
-datetime: 2019-10-09 10:00:00 -0500
+datetime: 2019-10-09 13:45:00 -0500
 ---
-datetime_end: 2019-10-09 12:00:00 -0500
+datetime_end: 2019-10-09 14:30:00 -0500
 ---
 description: In this talk we present poliastro, an Astrodynamics library written in pure Python dedicated to interplanetary trajectory analysis with a focus on interactive visualization, user friendliness and performance. poliastro features core Astrodynamics algorithms (such as resolution of the Kepler and Lambert problems), properly handles physical units, time scales and reference frames, works natively in the Jupyter notebook and is released under the MIT license, which allows commercial applications. We briefly comment its capabilities and mention the progress that has been made during the summer thanks to the SOCIS programme of the European Space Agency. Python is a fast-growing language both for astronomic applications and for educational purposes, and has been highlighted in several rankings, polls and benchmarks throughout the year. However, it is often critizised for its suboptimal performance and lack of type enforcement. poliastro uses numba, a modern just-in-time Python-to-LLVM compiler that brings their performance close to the reference Fortran implementation, with negligible impact in the legibility of the Python source. We analyse the effects of ahead-of-time and just-in-time compilers and optional type declarations in the interpreted and dynamic nature of the language. The most difficult challenge in poliastro has always been validation and verification of the algorithms. Most of them are checked against scientific articles, textbook examples, and other software such as NASA SPICE. We argue that this is step is often performed incorrectly (if at all), partly because of lack of awareness and partly because the literature does not always offer good practices regarding results sharing, and we do an overview of our own findings and strategy.
 ---
@@ -21,3 +21,5 @@ summary: poliastro features core Astrodynamics algorithms (such as resolution of
 topic: tools
 ---
 type: talk
+---
+room: w-lleras

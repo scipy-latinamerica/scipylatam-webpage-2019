@@ -2,9 +2,9 @@ _model: talk
 ---
 authors: ramiro-caro
 ---
-datetime: 2019-10-08 10:00:00 -0500
+datetime: 2019-10-08 14:00:00 -0500
 ---
-datetime_end: 2019-10-08 12:00:00 -0500
+datetime_end: 2019-10-08 17:30:00 -0500
 ---
 description: Existen varias librerías para visualización de datos, sin embargo existen muy pocas que proporcionen las herramientas para poder compartir estas visualizaciones de manera abierta, fácil y sin tener que utilizar otros lenguajes. En este presentación se muestra como podemos realizar una visualización interactiva y publicarla fácilmente como una webapp en un par de líneas y 100% en python. Crearemos una aplicación para visualizar los consumos de energia de distintas distribuidoras brasileras utilizando Dash una extension de Plotly para crear webapps. Tambien haremos referencia al Desarrollo del Visor Ambiental de Biodiversidad en el Norte de Argentina, el cual consta de un mapa interactivo en que podremos visualizar diferentes estudios científicos realizados en la provincia de Jujuy con mucho tiempo atras y actual, con visualizaciones que se adaptan al tipo de dato automaticamente, como pdfs, imagen, streming de datos, etc. También al estar basado en Flask veremos como podemos extender  las capacidades de la librería integrandola a una aplicación de este tipo.
 ---
@@ -21,3 +21,5 @@ summary: Haremos una aplicación web usando Dash, mostrando información georefe
 topic: tools
 ---
 type: workshop
+---
+room: ml-508

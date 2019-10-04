@@ -2,9 +2,9 @@ _model: talk
 ---
 authors: daniel-cuellar
 ---
-datetime: 2019-10-09 10:00:00 -0500
+datetime: 2019-10-09 10:30:00 -0500
 ---
-datetime_end: 2019-10-09 12:00:00 -0500
+datetime_end: 2019-10-09 11:00:00 -0500
 ---
 description: El posicionamiento previo de los suministros de emergencia es un mecanismo para aumentar la preparación ante desastres naturales. Para ello es de gran importancia la selección de proveedores en logística humanitaria y la planeación de la posible distribución de estos artículos después de que ocurra el suceso. En este trabajo se implementa un modelo de optimización estocástica de dos etapas que proporciona una estrategia de pre-posicionamiento de respuesta de emergencia para terremotos en la ciudad de Bogotá y un algoritmo heurístico para resolver instancias del problema a gran escala, ambos métodos utilizando los paquetes Pandas y Gurobi de Python. El desarrollo del proyecto permite ver la flexibilidad que ofrece Python para replicar rápidamente modelos complejos de la literatura para evaluar y comparar su desempeño. Se presenta un caso de estudio para la ciudad de Bogotá en donde se tienen escenarios estadísticamente distribuidos, evidenciando el impacto que genera el modelo y proporcionando insumos para la toma de decisiones. El objetivo de la charla es brindar a la audiencia el contexto necesario sobre problemas operativos en el manejo de riesgo de desastres, así como algunas nociones de optimización para desarrollar las ideas y modelos utilizados en la investigación. Posteriormente se discutirá la implementación computacional en Python, los resultados del proyecto. Particularmente, se discutirá el potencial de los paquetes de Python (e.g., Gurobi) para facilitar y agilizar el desarrollo de prototipos de modelos de optimización, simulación, entre otros.
 ---
@@ -21,3 +21,5 @@ summary: El desarrollo de modelos de optimizacion para el posicionamiento previo
 topic: computational_math
 ---
 type: talk
+---
+room: w-lleras

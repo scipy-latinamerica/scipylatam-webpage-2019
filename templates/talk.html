@@ -14,7 +14,9 @@ render_background -%} {%- from "macros/translation.html" import transbag -%}
 
   <div class="content">
       <div class="talk-container">
+          {% if this.type in ['talk', 'workshop'] %}
           <span class="talk__type">{{ transbag('translate', alt, this.type)|upper }}</span>
+          {% endif %}
           <span class="talk__title">{{ this.name }}</span>
           {% if this.topic %}
           <span class="talk__topic">{{ transbag('translate', alt, this.topic)|upper }}</span>
@@ -25,21 +27,26 @@ render_background -%} {%- from "macros/translation.html" import transbag -%}
               &nbsp;&nbsp;&nbsp;<b>{{ transbag('translate', alt, 'language') }}:</b>
               &nbsp;&nbsp;{{ transbag('translate', alt, this.language) }}
             </span>
+            {% if this.type in ['talk', 'workshop'] %}
             <span class="talk__language-item">
               <i class="fa fa-clock-o"></i>
               &nbsp;&nbsp;&nbsp;<b>{{ transbag('translate', alt, 'duration') }}:</b>
               &nbsp;&nbsp;
               {% if this.type == 'talk' %}
               {{ transbag('translate', alt, 'duration_talk') }}
-              {% else %}
+              {% elif this.type == 'workshop' %}
               {{ transbag('translate', alt, 'duration_workshop') }}
+              {% else %}
               {% endif %}
             </span>
+            {% endif %}
+            {% if this.level is defined %}
             <span class="talk__language-item"></span>
               <i class="fa fa-star-o"></i>
               &nbsp;&nbsp;&nbsp;<b>{{ transbag('translate', alt, 'level') }}:</b>
               &nbsp;&nbsp;{{ transbag('translate', alt, this.level) }}
             </span>
+            {% endif %}
           </div>
           <span class="talk__description">{{ this.description }}</span>
           {% if this.authors|count > 1 %}

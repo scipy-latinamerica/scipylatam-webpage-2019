@@ -39,7 +39,7 @@ block title %}
             <div class="list-wrapper">
               <div class="red-line"></div>
 
-              {%- set talks = site.query('/charlas', alt=this.alt).order_by('+datetime') -%}
+              {%- set talks = site.query('/charlas', alt=this.alt).order_by('+datetime', 'room', 'author',) -%}
               {%- set filtered_talks = OrderedDict() -%}
               {%- for talk in talks -%}
                 {%- if talk.datetime.date() == date -%}
@@ -61,9 +61,17 @@ block title %}
                       <div class="list-title">{{ talk.datetime.strftime('%H:%M') }} - {{ talk.datetime_end.strftime('%H:%M') }}</div>
                       {% endif %}
                       <div class="list-text">
+                        
+                        {% if talk.type %}
                         {% if talk.type in ['talk', 'workshop', 'keynote'] %}
+                        <span class="talk-type">{{ transbag('translate', alt, talk.type)|upper }}</span>
                         <span class="talk-topic">{{ transbag('translate', this.alt, talk.topic)|upper }}</span>
-                        <span class="talk-room"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;&nbsp;Test{{ talk.room }}</span><br>
+                          {% endif %}
+                        {% if talk.room %}
+                        {% set room = site.get('/auditorios/' + talk.room, alt=this.alt) %}
+                        <span class="talk-room"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;&nbsp;Edificio {{ room.building }} - {{ room.room }}</span><br>
+                        {% endif %}
+
                         <span class="talk-title"><a href="{{ talk|url(alt=alt) }}">{{ talk.name }}</a></span>
                         {% else %}
                         <span class="talk-title">{{ talk.name }}</span>

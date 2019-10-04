@@ -45,15 +45,19 @@
         <b>{{ transbag('translate', alt, 'duration') }}:</b>
       {% if talk.type == 'talk' %}
       {{ transbag('translate', alt, 'duration_talk') }}
-      {% else %}
+      {% elif talk.type == 'workshop' %}
       {{ transbag('translate', alt, 'duration_workshop') }}
+      {% else %}
+      90
       {% endif %}
       </span>
+      {% if talk.level is defined %}
       <span>
         <i class="fa fa-star-o"></i>
         <b>{{ transbag('translate', alt, 'level') }}:</b>
         {{ transbag('translate', alt, talk.level) }}
       </span>
+      {% endif %} 
     </div>
   </div>
 {%- endmacro -%}

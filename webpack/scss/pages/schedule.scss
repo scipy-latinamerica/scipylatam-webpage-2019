@@ -183,7 +183,6 @@
 
       .schedule__authors-container {
         display: flex;
-        justify-content: space-between;
         flex-wrap: wrap;
       }
 
@@ -213,6 +212,17 @@
         border-radius: 50%;
         border: 0px solid $speaker-border;
         overflow: hidden;
+      }
+
+      .talk-type {
+        font-family: "Monserrat", sans-serif;
+        float: right;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        border-top: 3px solid $soft-red;
+        padding: 5px 15px;
+        margin: -20px -15px;
       }
 
       .talk-topic {

@@ -2,9 +2,9 @@ _model: talk
 ---
 authors: ivan-ogasawara
 ---
-datetime: 2019-10-09 10:00:00 -0500
+datetime: 2019-10-09 13:45:00 -0500
 ---
-datetime_end: 2019-10-09 12:00:00 -0500
+datetime_end: 2019-10-09 14:30:00 -0500
 ---
 description: Ibis es una biblioteca que facilita las tareas de análisis de datos. Le permite trabajar localmente sobre un esquema creando filtros, agregando columnas, aplicando operaciones matemáticas, etc. y cuando desee obtener el resultado de la expresión que creó, Ibis la compila y realiza una solicitud al servidor de datos. Su objetivo es simplificar los flujos de trabajo analíticos y hacer que sea más productivo.  Tal vez se esté preguntando: "¿Por qué debería usar Ibis?". Vamos a considerar algunas razones por las cuales deberías usar Ibis:  - necesitas obtener datos de una base de datos SQL pero no sabe mucho sobre SQL - creas extensas declaraciones SQL manualmente en el código y es bastante difícil de hacer cualquier mantenimiento.  - necesitas manejar grandes volúmenes de datos  Ibis es una herramienta para análise de datos que puede ser usada en muchas áreas del conocimiento como: Financias, Economía, Estadística, Ciencia Sociales, Comercio, etc.  En este taller vamos aprender conceptos básicos de esta  librería y sacar provecho de sus recursos para tener un flujo de trabajo de análisis de datos más productivo. Al final,  los asistentes van aplicar sus conocimientos para analisar datos económicos y generar gráficos para visualizar los resultados.
 ---
@@ -21,3 +21,5 @@ summary: Este taller de Ibis guiará los asistentes por los conceptos básicos d
 topic: tools
 ---
 type: talk
+---
+room: w-lleras

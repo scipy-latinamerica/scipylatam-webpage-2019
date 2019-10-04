@@ -6,7 +6,7 @@ _template: schedule.html
 ---
 display: yes
 ---
-main_menu: no
+main_menu: yes
 ---
 _hidden: no
 ---

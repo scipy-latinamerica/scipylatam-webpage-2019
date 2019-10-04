@@ -8,12 +8,14 @@ name: Ponencia magistral
 ---
 type: keynote
 ---
-authors: lindsey-heagy
+authors: damian-avila
 ---
-language: en
+language: es
 ---
-language_slides: en
+language_slides: es
 ---
 level: all
 ---
 topic: data_science
+---
+room: w-lleras

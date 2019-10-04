@@ -2,9 +2,9 @@ _model: talk
 ---
 authors: nestor-suat
 ---
-datetime: 2019-10-09 10:00:00 -0500
+datetime: 2019-10-09 10:30:00 -0500
 ---
-datetime_end: 2019-10-09 12:00:00 -0500
+datetime_end: 2019-10-09 11:00:00 -0500
 ---
 description: La detección de accidentes de tránsito es una estrategia importante para que los gobiernos implementen políticas que reduzcan este fenómeno. Existen diferentes técnicas para detectar accidentes de tráfico, como el procesamiento de imágenes, dispositivos RFID, redes sociales y otros. Sin embargo, algunas estrategias tecnológicas pueden ser difíciles y costosas de implementar. Por esta razón, el análisis de datos de redes sociales es una técnica importante a tener en cuenta en los sistemas inteligentes de transporte. Sin embargo, los datos de redes sociales relevantes para accidentes de tráfico pueden ser difíciles de filtrar y caracterizar a partir de otros datos. El lenguaje, el estilo de escritura, la ortografía son algunos factores que deben considerarse al analizar los datos de las redes sociales.  Esta presentación propone un método para clasificar datos relacionados con accidentes de tránsito de twitter. Tres etapas componen el método. La primera etapa establece la forma en que se pueden obtener los datos de la red social. El segundo propone dos técnicas basadas en TF-IDF y Doc2vec para limpiar y normalizar los datos. Finalmente, la tercera etapa presenta un modelo de clasificación para obtener datos relacionados con accidentes de tránsito. 
 ---
@@ -21,3 +21,5 @@ summary: La presentación explica un método de clasificar datos relacionados co
 topic: machine_learning
 ---
 type: talk
+---
+room: sd-1003

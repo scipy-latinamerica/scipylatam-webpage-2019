@@ -4,6 +4,6 @@ datetime: 2019-10-10 12:00:00 -0500
 ---
 datetime_end: 2019-10-10 14:00:00 -0500
 ---
-name: Almuerzo
+name: Tiempo libre para almuerzo (no incluido)
 ---
 type: lunch_break

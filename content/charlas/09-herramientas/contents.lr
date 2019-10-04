@@ -1,8 +1,8 @@
 _model: talk
 ---
-datetime: 2019-10-09 14:00:00 -0500
+datetime: 2019-10-09 13:45:00 -0500
 ---
-datetime_end: 2019-10-09 14:40:00 -0500
+datetime_end: 2019-10-09 14:30:00 -0500
 ---
 name: Plenaria de Herramientas de SciPy
 ---
@@ -17,3 +17,5 @@ language_slides: en
 authors: carlos-cordoba, damian-avila, marc-garcia, juan-cano, ivan-ogasawara, travis-oliphant, lindsey-heagy
 ---
 level: all
+---
+room: w-lleras

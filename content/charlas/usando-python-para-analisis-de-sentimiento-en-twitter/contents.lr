@@ -4,7 +4,7 @@ authors: isabel-yepes
 ---
 datetime: 2019-10-08 10:00:00 -0500
 ---
-datetime_end: 2019-10-08 12:00:00 -0500
+datetime_end: 2019-10-08 12:30:00 -0500
 ---
 description: Python es un lenguaje que permite realizar una gran cantidad de aplicaciones prácticas, con librerías que ya tienen compilada información típica del lenguaje que facilita el procesamiento de información real. En este workshop tendrás la oportunidad de tomar información del timeline de twitter, realizar un proceso de limpieza básica de datos, que te permita extraer la información como es requerida por las librerías. Una vez en este punto podrás analizarla de forma visual por medio de un Word Cloud que te permita identificar las temáticas principales de las cuales se habla y posteriormente aplicar una librería de análisis de sentimiento que te permita identificar si es positivo o negativo. Este análisis es práctico en estos momentos donde las opiniones en redes sociales nos bombardean y somos vulnerables a todo tipo de mensajes sin ser muy conscientes si existe una tendencia con algún propósito específico en ello.
 ---
@@ -21,3 +21,5 @@ summary: Analiza datos reales de Twitter con Python, para saber de qué te habla
 topic: data_science
 ---
 type: workshop
+---
+room: au-101
