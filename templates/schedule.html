@@ -26,16 +26,22 @@ block title %}
         <nav>
           <ul>
             {% for date in dates %}
-            <li class="tab{{ loop.index }}">
-              <label for="tab{{ loop.index }}">{{ date.strftime('%A %d')|upper }}</label>
+              {% set weekday = transbag('translate', alt, date.strftime('%A').lower()) %}
+              {% set month = transbag('translate', alt, date.strftime('%B').lower()) %}
+              {% set day = date.strftime('%d') %}
+              <li class="tab{{ loop.index }}">
+              <label for="tab{{ loop.index }}">{{ weekday|upper }} {{ day }}</label>
             </li>
             {% endfor %}
           </ul>
         </nav>
         <section>
           {% for date in dates %}
+            {% set weekday = transbag('translate', alt, date.strftime('%A').lower()) %}
+            {% set month = transbag('translate', alt, date.strftime('%B').lower()) %}
+            {% set day = date.strftime('%d') %}
           <div class="tab{{ loop.index }} tab">
-            <h2>{{ date.strftime('%A, %d %b') }}</h2>
+            <h2>{{ weekday }} {{ day }} {{ month }} </h2>
             <div class="list-wrapper">
               <div class="red-line"></div>
 
@@ -63,7 +69,7 @@ block title %}
                       <div class="list-text">
                         
                         {% if talk.type %}
-                        {% if talk.type in ['talk', 'workshop', 'keynote', 'scipy_tools'] %}
+                        {% if talk.type in ['talk', 'workshop', 'keynote', 'scipy_tools', 'lightning'] %}
                         <span class="talk-type">{{ transbag('translate', alt, talk.type)|upper }}</span>
                           {% endif %}
                         {% if talk.room %}
