@@ -84,6 +84,13 @@ block title %}
                             {{ transbag('translate', alt, talk.language) }}
                           </span>
                         {% endif %}
+                        {% if talk.level is defined %}
+                        <span class="talk-language">
+                            <i class="fa fa-star-o"></i>
+                            <b>{{ transbag('translate', alt, 'level') }}:</b>
+                            {{ transbag('translate', alt, talk.level) }}
+                          </span>
+                        {% endif %}
                         <span class="talk-title"><a href="{{ talk|url(alt=alt) }}">{{ talk.name }}</a></span>
                         {% else %}
                         <span class="talk-title">{{ talk.name }}</span>

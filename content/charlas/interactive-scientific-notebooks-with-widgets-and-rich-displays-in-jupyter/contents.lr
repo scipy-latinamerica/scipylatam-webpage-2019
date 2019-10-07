@@ -14,7 +14,7 @@ language: en
 ---
 language_slides: en
 ---
-level: intermediate
+level: beginner
 ---
 name: Interactive scientific notebooks with widgets and rich displays in Jupyter
 ---

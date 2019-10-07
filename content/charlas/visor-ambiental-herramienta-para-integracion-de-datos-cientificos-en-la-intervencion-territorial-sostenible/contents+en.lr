@@ -1,5 +1,3 @@
-_model: talk
----
 authors: marcos-vaira
 ---
 datetime: 2019-10-09 16:00:00 -0500
@@ -16,10 +14,10 @@ level: intermediate
 ---
 name: Visor Ambiental. Herramienta para integración de datos científicos en la intervención territorial sostenible.
 ---
+room: w-lleras
+---
 summary: Gran cantidad de datos científicos son de difícil acceso. Nuevas tecnologías web permiten desarrollar aplicaciones exploratorias. Creamos un Visor para consultar datos de manera interactiva y dinámica para quienes necesiten datos confiables para intervención territorial en un contexto sostenible.
 ---
 topic: science_visualization
 ---
 type: talk
----
-room: ml-507

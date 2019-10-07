@@ -7,3 +7,5 @@ main_menu: yes
 menu_label: Workshops
 ---
 title: Workshops
+---
+_slug: workshops

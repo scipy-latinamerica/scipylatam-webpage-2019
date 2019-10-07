@@ -8,12 +8,8 @@ language: es
 ---
 language_slides: es
 ---
-level: all
+name: Keynote: "La R[*]volución de Jupyter"
 ---
-name: Keynote:
----
-room: ml-a
----
-topic: data_science
+room: w-lleras
 ---
 type: keynote

@@ -6,8 +6,6 @@ language: es
 ---
 language_slides: es
 ---
-level: all
----
 name: Resgistration
 ---
 room: ml-pasarela

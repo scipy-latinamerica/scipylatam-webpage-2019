@@ -8,12 +8,8 @@ language: en
 ---
 language_slides: en
 ---
-level: all
----
-name: Keynote:
+name: Keynote: "Capturing knowledge in code"
 ---
 room: w-lleras
----
-topic: data_science
 ---
 type: keynote

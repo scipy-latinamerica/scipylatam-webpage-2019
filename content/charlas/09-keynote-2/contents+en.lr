@@ -8,12 +8,8 @@ language: en
 ---
 language_slides: en
 ---
-level: all
----
 name: Keynote:
 ---
 room: w-lleras
----
-topic: data_science
 ---
 type: keynote

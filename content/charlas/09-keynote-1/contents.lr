@@ -4,7 +4,7 @@ datetime: 2019-10-10 16:45:00 -0500
 ---
 datetime_end: 2019-10-10 17:30:00 -0500
 ---
-name: Ponencia magistral
+name: Ponencia magistral: La R[*]volución de Jupyter
 ---
 type: keynote
 ---
@@ -14,8 +14,4 @@ language: es
 ---
 language_slides: es
 ---
-level: all
----
-topic: data_science
----
-room: ml-a
+room: w-lleras

@@ -16,10 +16,12 @@ level: intermediate
 ---
 name: Julia: a next generation language
 ---
-summary: Julia a next generation language for easiness of Neural Network and Differential Equations expressiveness. 
+summary:
+
+Julia a next generation language for easiness of Neural Network and Differential Equations expressiveness. 
 ---
 topic: communities
 ---
 type: talk
 ---
-room: sd-1
+room: ml-507
