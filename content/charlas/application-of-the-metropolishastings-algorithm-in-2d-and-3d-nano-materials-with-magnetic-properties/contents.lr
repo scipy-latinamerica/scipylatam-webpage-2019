@@ -14,7 +14,9 @@ language_slides: en
 ---
 level: intermediate
 ---
-name: Application of the Metropolis–Hastings algorithm in 2D and 3D nano-materials with magnetic properties. 
+name:
+
+Application of the Metropolis–Hastings algorithm in 2D and 3D nano-materials with magnetic properties. 
 ---
 summary: Along this talk it will be reviewed the implemantion of the metropolis hasting algorithm in order to recover magnetic properties of nano-materials. starting from 2D materials and then scalate it to the 3D model. Then it will be discussed how to implement standard measures as it's IRM, DCD and FORC.
 ---
@@ -22,4 +24,4 @@ topic: computational_physics
 ---
 type: talk
 ---
-room: w-lleras
+room: ml-507
