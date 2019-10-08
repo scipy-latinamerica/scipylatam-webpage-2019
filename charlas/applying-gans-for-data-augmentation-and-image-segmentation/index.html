@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="es"">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="description" content="" />
+  <meta name="google-site-verification" content="tS192x5OfHOZKosOfhq39D1Wlk6EwH_gaSw8ZUVe_bs" />
+
+  <link rel="canonical" href="http://conf.scipyla.org/charlas/applying-gans-for-data-augmentation-and-image-segmentation/" />
+  <meta property="og:locale" content="" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:url" content="http://conf.scipyla.org/charlas/applying-gans-for-data-augmentation-and-image-segmentation/" />
+  <meta property="og:site_name" content="SciPy Latam 2019" />
+  <meta property="og:updated_time" content="2019-08-13T17:51:00+00:00" /><meta property="og:image" content="http://conf.scipyla.org/static/images/ogimage.jpg" />
+  <meta property="og:image:secure_url" content="http://conf.scipyla.org/static/images/ogimage.jpg" />
+  <meta property="og:image:width" content="2400" />
+  <meta property="og:image:height" content="1260" />
+
+  <!-- Favicon -->
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../static/favicon/apple-touch-icon.png?h=ac032284">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../static/favicon/favicon-32x32.png?h=a4abd457">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../static/favicon/favicon-16x16.png?h=30175b39">
+  <link rel="mask-icon" href="" color="#5bbad5">
+
+  <title>
+ - Applying GANs for data augmentation and image segmentation for brain MRI 
+</title>
+
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Poppins:300,500,700"
+    rel="stylesheet"
+  />
+  <script src="https://use.fontawesome.com/53338901d9.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../../static/gen/styles.css?h=842a4f1b" />
+</head>
+
+<body>
+  <div class="global-container">
+    <div class="wrapper-hamburger">
+      <button class="general__hamburger">
+        <img
+          src="../../static/images/hamburger.svg?h=61b89864"
+          alt="Hamburger menu"
+        />
+      </button>
+    </div>
+    <nav class="general__menu">
+      <button class="general__close-button">
+        <img
+        src="../../static/images/close.svg?h=f9b7536d" alt="Close menu">
+      </button>
+      <ul class="general__menu-list">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <li class="general__menu-item">
+              <a class="general__menu-link "
+                 href="../../entradas/">ENTRADAS
+              </a>
+                      
+          </li>
+          
+        
+          
+        
+          
+          <li class="general__menu-item">
+              <a class="general__menu-link "
+                 href="../../lugar/">LUGAR
+              </a>
+                      
+          </li>
+          
+        
+          
+          <li class="general__menu-item">
+              <a class="general__menu-link "
+                 href="../../ponentes/">PONENTES
+              </a>
+                      
+          </li>
+          
+        
+          
+        
+          
+        
+          
+          <li class="general__menu-item">
+              <a class="general__menu-link "
+              href="">
+               PROGRAMA&nbsp;&nbsp;<i class="fa fa-caret-down soft-red"></i>
+             </a>
+             <ul class="general__menu-sublist">
+                  
+                  <li class="general__menu-subitem "><a href="../../programa/talleres/">Talleres</a></li>
+                          
+                  
+                  <li class="general__menu-subitem "><a href="../../programa/charlas/">Charlas</a></li>
+                          
+                  
+                  <li class="general__menu-subitem "><a href="../../programa/cronograma/">Cronograma</a></li>
+                          
+                  
+              </ul>
+                      
+          </li>
+          
+        
+          
+        
+          
+          <li class="general__menu-item">
+              <a class="general__menu-link "
+                 href="../../patrocinadores/">PATROCINADORES
+              </a>
+                      
+          </li>
+          
+        
+          
+          <li class="general__menu-item">
+              <a class="general__menu-link "
+                 href="../../equipo/">EQUIPO
+              </a>
+                      
+          </li>
+          
+        
+          
+        
+          
+        
+        <li class="general__menu-language"><a class="general__menu-language-button"
+          href="../../en/charlas/applying-gans-for-data-augmentation-and-image-segmentation/">EN</a></li>
+      </ul>
+      <div class="general__menu-line"></div>
+      <ul class="general__language-menu"><li class="general__language-item">
+          <a class="general__language-link" href="../../en/charlas/applying-gans-for-data-augmentation-and-image-segmentation/"
+            >ENGLISH</a
+          >
+        </li></ul>
+      <a class="general__menu-code" href="../../charlas/applying-gans-for-data-augmentation-and-image-segmentation/code-of-conduct">
+        Código de conducta
+      </a>
+      
+<ul class="general__menu-logos">
+  
+  <li>
+    <a href="https://www.instagram.com/scipyla" aria-label="Go to Instagram profile">
+      <i class="fa fa-instagram"></i>
+    </a>
+  </li>
+   
+  <li>
+    <a href="https://www.twitter.com/scipyla" aria-label="Go to Twitter profile">
+      <i class="fa fa-twitter"></i>
+    </a>
+  </li>
+   
+  <li>
+    <a href="https://www.facebook.com/scipyla" aria-label="Go to Facebook profile">
+      <i class="fa fa-facebook"></i>
+    </a>
+  </li>
+   
+  <li>
+    <a href="https://www.linkedin.com/company/scipy-latin-america/about" aria-label="Go to LinkedIn profile">
+      <i class="fa fa-linkedin"></i>
+    </a>
+  </li>
+    
+</ul>
+
+    </nav>
+    
+<div class="container">
+   
+<img
+  class="general__background"
+  src="../../static/images/scipy-bg1.svg?h=fb01fdd9"
+  alt="Background 1"
+/>
+<a
+  href="../../"
+  aria-label="SciPy Latam 2019"
+>
+  <img
+    class="general__menu-logo"
+    src="../../static/images/logo-menu.svg?h=8aaed2a3"
+    alt="Logo"
+  />
+</a>
+ 
+<img
+  class="content_background__top"
+  src="../../static/images/scipy-bg2.svg?h=1091fcb1"
+  alt="Background 2"
+/>
+<img
+  class="content_background__bottom"
+  src="../../static/images/scipy-bg2.svg?h=1091fcb1"
+  alt="Background 2"
+/>
+ 
+
+
+
+  
+
+  <div class="content">
+      <div class="talk-container">
+          
+          <span class="talk__type">CHARLA</span>
+          
+          <span class="talk__title">Applying GANs for data augmentation and image segmentation for brain MRI</span>
+          
+          <span class="talk__topic">PROCESAMIENTO DE IMÁGENES</span>
+          
+          <div class="talk__language">
+            <span class="talk__language-item">
+              <i class="fa fa-globe"></i>
+              &nbsp;&nbsp;&nbsp;<b>Idioma:</b>
+              &nbsp;&nbsp;Inglés
+            </span>
+            
+            <span class="talk__language-item">
+              <i class="fa fa-clock-o"></i>
+              &nbsp;&nbsp;&nbsp;<b>Duración:</b>
+              &nbsp;&nbsp;
+              
+              25 min
+              
+            </span>
+            
+            
+            <span class="talk__language-item"></span>
+              <i class="fa fa-star-o"></i>
+              &nbsp;&nbsp;&nbsp;<b>Nivel:</b>
+              &nbsp;&nbsp;Intermedio
+            </span>
+            
+          </div>
+          <span class="talk__description"><p>Using GANs for different steps in medical image analysis:  1) Image generation for data augmentation, this is an important step since neural network algorithms require huge amounts of data to help them generalize in an optimal solution. In the other hand, anonymization of data has became lately a very sensitive field, retrieving information from the dataset that could compromise the privacy of a patient is dangerous and by generating artificial samples that would look like the original from patients we can avoid thisproblem  2) Image segmentation for magnetic resonance image: image to image translation are often used to generate neural style transfer in order to make a picture look more like a famous painting but in this case I would like to provide important information for a physician, that includes the location of tumors in the brain, gray matter, white matter and cerebrospinal fluid. Valuable information to automate diagnostics and decision making when time is key element.</p>
+</span>
+          
+          
+          
+          <span class="talk__subtitle">PONENTE:</span>
+          <div class="talk__container">
+              
+              <div class="talk__item">
+              <div class="talk__wrapper">
+                
+                
+                  
+                    
+                    <a href="../../ponentes/arturo-polanco/" style="line-height:0px;">
+                      <img class="talk__photo-wrapper"
+                          src='../../ponentes/arturo-polanco/arturo-polanco@172x172_crop.jpeg'
+                          alt="Member photo: Arturo Polanco Lozano" /></a>
+                    
+                  
+                
+              </div>
+              
+              <span class="talk__name"><a href="../../ponentes/arturo-polanco/">Arturo Polanco</a></span>
+              
+             </div>
+              
+          </div>
+          <br><br><br><br><br><br><br><br>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+  <footer class="footer">
+    <div class="footer__links">
+      <ul>
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <li>
+            <a href="../../codigo-de-conducta/">Código de Conducta</a>
+          </li>
+          
+        
+          
+        
+          
+          <li>
+            <a href="../../diversidad/">Diversidad</a>
+          </li>
+          
+        
+          
+        
+          
+        
+          
+          <li>
+            <a href="../../politica-de-datos/">Política de datos</a>
+          </li>
+          
+        
+          
+          <li>
+            <a href="../../guia-ponentes/">Guía ponentes</a>
+          </li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <li>
+            <a href="../../convence-a-tu-jefe/">Convence a tu jefe</a>
+          </li>
+          
+        
+          
+          <li>
+            <a href="../../preguntas-frecuentes/">Preguntas</a>
+          </li>
+          
+        
+      </ul>
+      
+<ul class="general__menu-logos">
+  
+  <li>
+    <a href="https://www.instagram.com/scipyla" aria-label="Go to Instagram profile">
+      <i class="fa fa-instagram"></i>
+    </a>
+  </li>
+   
+  <li>
+    <a href="https://www.twitter.com/scipyla" aria-label="Go to Twitter profile">
+      <i class="fa fa-twitter"></i>
+    </a>
+  </li>
+   
+  <li>
+    <a href="https://www.facebook.com/scipyla" aria-label="Go to Facebook profile">
+      <i class="fa fa-facebook"></i>
+    </a>
+  </li>
+   
+  <li>
+    <a href="https://www.linkedin.com/company/scipy-latin-america/about" aria-label="Go to LinkedIn profile">
+      <i class="fa fa-linkedin"></i>
+    </a>
+  </li>
+    
+</ul>
+
+    </div>
+    <div class="footer__copyright">
+      <span class="footer__copyright-copy">Hecho con amor en Colombia. Derechos de autor, Python Colombia 2019. Todos los derechos reservados.</span>
+    </div>
+  </footer>
+  <div class="wrapper-gitter">
+    <div class="container-gitter">
+      <button class="js-gitter-toggle-chat-button gitter-custom-button">
+        Abrir chat
+      </button>
+    </div>
+  </div>
+
+  
+  <!-- Scripts -->
+  <script type=text/javascript src="../../static/gen/app.js?h=ced4b94d" charset="utf-8"></script>
+
+  <!---->
+
+  <!-- Scripts: Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138156801-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-138156801-1');
+  </script>
+
+  <!-- Scripts: Gitter chat -->
+  <script>
+    ((window.gitter = {}).chat = {}).options = {
+      room: 'scipy-latinamerica/lobby',
+      activationElement: '.gitter-button'
+    };
+  </script>
+  <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+  
+</body>
+</html>
