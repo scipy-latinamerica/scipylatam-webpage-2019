@@ -16,6 +16,7 @@ transbag('translate', this.alt, 'date') -%}
 {%- set t_we_want_to_sponsor = transbag('translate', this.alt, 'we_want_to_sponsor') -%}
 {%- set t_home_text = transbag('translate', this.alt, 'home_text') -%}
 {%- set t_see_speakers = transbag('translate', this.alt, 'see_speakers') -%}
+{%- set t_schedule = transbag('translate', this.alt, 'schedule') -%}
 
 {%- set venue = site.get('/lugar', alt=this.alt) -%}
 {%- set tickets = site.get('/entradas', alt=this.alt) -%}
@@ -92,6 +93,16 @@ transbag('translate', this.alt, 'date') -%}
     </div>
     <br>
     <br>
+    <a
+    class="button-red"
+    style="margin: 0 auto;"
+    href="{{ '/programa/cronograma'|url(alt=this.alt) }}"
+    aria-label="Cronograma / Schedule"
+    >
+    {{ t_schedule | upper }}
+  </a>
+  <br>
+  <br>
     <br>
     <br>
     {%- endif -%}

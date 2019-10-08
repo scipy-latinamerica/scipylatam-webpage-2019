@@ -8,10 +8,14 @@ language: en
 ---
 language_slides: en
 ---
-name:
-
-Keynote: 
+name: Keynote: SciPy and NumFOCUS communities: past, present, and future
 ---
 room: w-lleras
 ---
 type: keynote
+---
+duration: 40 min
+---
+level: all
+---
+topic: data_science

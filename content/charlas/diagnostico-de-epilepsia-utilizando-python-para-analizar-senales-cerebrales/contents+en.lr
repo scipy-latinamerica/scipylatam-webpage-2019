@@ -1,5 +1,3 @@
-_model: talk
----
 authors: juan-parada
 ---
 datetime: 2019-10-10 14:45:00 -0500
@@ -14,12 +12,12 @@ language_slides: es
 ---
 level: intermediate
 ---
-name: Diagnostico de Eplepsia: Utilizando Python para analizar señales cerebrales
+name: Diagnóstico de epilepsia: Utilizando Python para analizar señales cerebrales
+---
+room: sd-1003
 ---
 summary: Las neuronas se conectan entre sí a través de impulsos eléctricos. Estos, se convierten en señales, que a su vez conforman datos que podemos analizar para diagnosticar si una persona sufre o no de epilepsia. A través del análisis de señales y algoritmos de ML, descubriremos como salvar vidas.
 ---
 topic: bioinformatics
 ---
 type: talk
----
-room: sd-1003

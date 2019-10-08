@@ -47,13 +47,7 @@
       <span>
         <i class="fa fa-clock-o"></i>
         <b>{{ transbag('translate', alt, 'duration') }}:</b>
-      {% if talk.type == 'talk' %}
-      {{ transbag('translate', alt, 'duration_talk') }}
-      {% elif talk.type == 'workshop' %}
-      {{ transbag('translate', alt, 'duration_workshop') }}
-      {% else %}
-      90
-      {% endif %}
+      {{ talk.duration }}
       </span>
       {% if talk.level is defined %}
       <span>

@@ -14,7 +14,7 @@ language_slides: es
 ---
 level: beginner
 ---
-name: Taller PANDAS MATPLOTLIB Jupyter. Analisis y grafica de grandes volumenes de informacion en el area de Ciencias de Datos para quienes inician.
+name: Taller Pandas, Matplotlib Jupyter. Análisis y gráficas de grandes volúmenes de informacion en el area de Ciencias de Datos para quienes inician
 ---
 summary: El Taller es formativo en conceptos y fundamentos importantes, necesarios para quienes se inician en el analisis de grandes volumenes de datos cientificos para su interpretacion y graficas, de esa manera inician el camino de un Cientifico de Datos o DataScience. Entender programacion no es dificil.
 ---
@@ -23,3 +23,5 @@ topic: tools
 type: workshop
 ---
 room: au-102
+---
+duration: 4 h

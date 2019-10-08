@@ -19,6 +19,12 @@ block title %}
   <main class="schedule-content">
     <br><br>
     <h1>{{ this.title|upper }}</h1>
+    <div class="schedule-map">
+      <img class="schedule-map-image"
+           src="{{ '/static/images/map.jpg'|asseturl }}"
+           alt="Mapa / Map"
+      />
+    </div>
     <div class="pc-tab">
       {% for date in dates %}
       <input {% if loop.first %}checked="checked"{% endif %} id="tab{{ loop.index }}" type="radio" name="pct" />

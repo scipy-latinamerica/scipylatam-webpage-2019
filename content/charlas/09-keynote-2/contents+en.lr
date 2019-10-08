@@ -8,8 +8,12 @@ language: en
 ---
 language_slides: en
 ---
-name: Keynote:
+name: Keynote: Accelerating Python Data Science with NVIDIA RAPIDS
 ---
 room: w-lleras
 ---
 type: keynote
+---
+duration: 40 min
+---
+level: all

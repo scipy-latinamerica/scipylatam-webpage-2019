@@ -15,3 +15,9 @@ language: en
 language_slides: en
 ---
 room: w-lleras
+---
+level: all
+---
+duration: 40 min
+---
+topic: geosciences

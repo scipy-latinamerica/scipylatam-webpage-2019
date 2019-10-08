@@ -306,3 +306,21 @@
     left:4px;
   }
 }
+
+.schedule-map {
+  padding: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+
+  .schedule-map-image {
+    width: 100%;
+    height: 100%;
+
+    @include from(large) {
+        width: 60%;
+        height: 60%;
+      }
+
+  }
+}
+

@@ -1,0 +1,51 @@
+{%- extends "layout.html" -%}
+{%- from "macros/background.html" import render_background -%}
+{%- from "macros/translation.html" import transbag -%}
+{%- from "macros/talk.html" import render_talk -%}
+
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+{% set dates = [] %}
+  {% set talks = site.query('/charlas/') %}
+  {% for talk in talks %}
+    {% set date = talk.datetime.date() %}
+    {% if date not in dates %}
+    {% set __ = dates.append(date) %}
+    {% endif %}
+  {% endfor %}
+  {% set __ = dates.sort() %}
+
+<div class="container menu-background">
+  {{ render_background(background='general', content_background='true', alt=this.alt) }}
+  {% set rooms = site.query('/auditorios', alt=this.alt) %}
+  <div class="container">
+      <br><br><br><br><br><br>
+  {% for room in rooms %}
+  <h1>{{ room.building }} - {{ room.room }}</h1>
+    {% for date in dates %}
+      {%- set talks = site.query('/charlas', alt=this.alt).filter(F.room == room._id).order_by('+datetime', 'room') -%}
+      {%- for talk in talks -%}
+        {% if loop.first == 1%}
+        <br>
+        <h2>&nbsp;&nbsp;{{ date }}</h2>
+        <br>
+        {% endif %}
+        {%- if talk.datetime.date() == date %}
+        &nbsp;&nbsp;&nbsp;&nbsp;{{ talk.datetime.time() }} - {{ talk.datetime_end.time() }} - {{ talk.name }}<br>
+        {%- endif -%}
+      {% endfor %}
+    {% endfor %}
+    <br>
+  {% endfor %}
+  <br><br><br><br>
+  <div>
+  <div class="container">
+    {{ render_background(background='color', color='#eb132b') }}
+    <div class="workshop-footer">
+      <span>{{ transbag('translate', this.alt, 'join_us_bogota') }}</span>
+      <a class="button-white"
+         href="{{ '/entradas'|url(alt=this.alt) }}">{{ transbag('translate', this.alt, 'buy_tickets') }}</a>
+    </div>
+  </div>
+</div>
+{% endblock %}

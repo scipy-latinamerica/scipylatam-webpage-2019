@@ -14,7 +14,7 @@ language_slides: es
 ---
 level: intermediate
 ---
-name: Máquinas de aprendizaje para analis de datos geoespaciales en procesos de clasificación de cobertura terrestre e indeces.
+name: Máquinas de aprendizaje para análisis de datos geoespaciales en procesos de clasificación de cobertura terrestre
 ---
 summary: Implementación de máquinas de aprendizaje para analis de datos geoespaciales en procesos de clasificación de cobertura terrestre permitiendo una caracterización con mayor exactitud temática empleando librerías de numpy, gdal, matplotlib, xarray y sklearn.
 ---

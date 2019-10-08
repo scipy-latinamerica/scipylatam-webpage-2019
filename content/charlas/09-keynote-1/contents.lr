@@ -15,3 +15,9 @@ language: es
 language_slides: es
 ---
 room: w-lleras
+---
+level: all
+---
+topic: communities
+---
+duration: 40 min
