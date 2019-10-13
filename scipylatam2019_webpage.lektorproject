@@ -17,7 +17,7 @@ locale = en
 
 [servers.develop]
 name = Develop
-target = ghpages+https://scipy-latinamerica/scipylatam-webpage-2019-develop?cname=develop.scipyla.org
+target = ghpages+https://scipy-latinamerica/scipylatam-webpage-2019-develop?cname=2019.scipyla.org
 
 [servers.production]
 name = Production
