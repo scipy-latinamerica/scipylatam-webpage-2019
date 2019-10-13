@@ -25,3 +25,5 @@ type: workshop
 room: au-102
 ---
 duration: 2:30 h
+---
+file: material.zip

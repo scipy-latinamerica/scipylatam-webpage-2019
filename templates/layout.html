@@ -146,14 +146,7 @@
       <span class="footer__copyright-copy">{{ t_footer_message }}</span>
     </div>
   </footer>
-  <div class="wrapper-gitter">
-    <div class="container-gitter">
-      <button class="js-gitter-toggle-chat-button gitter-custom-button">
-        {{ t_open_chat }}
-      </button>
-    </div>
-  </div>
-
+  
   {% block bottom_scripts %}
   <!-- Scripts -->
   <script type=text/javascript src="{{ '/static/gen/app.js'|asseturl }}" charset="utf-8"></script>
@@ -173,15 +166,6 @@
 
     gtag('config', 'UA-138156801-1');
   </script>
-
-  <!-- Scripts: Gitter chat -->
-  <script>
-    ((window.gitter = {}).chat = {}).options = {
-      room: 'scipy-latinamerica/lobby',
-      activationElement: '.gitter-button'
-    };
-  </script>
-  <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
   {% endblock %}
 </body>
 </html>

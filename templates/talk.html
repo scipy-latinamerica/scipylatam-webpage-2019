@@ -54,6 +54,15 @@ render_background -%} {%- from "macros/translation.html" import transbag -%}
           {% else %}
           {% set word = 'speaker' %}
           {% endif %}
+          {% if this.file %}
+          {% for file in this.attachments %}
+            {% if this.file in file|url %} 
+          <br>
+          <span class="talk__name"><a href="{{ this.file|url }}">{{ transbag('translate', this.alt, 'download') }}</a></span>
+          <br><br><br><br>
+            {% endif %}
+          {% endfor %}
+          {% endif %}
           <span class="talk__subtitle">{{ transbag('translate', this.alt, word)|upper }}:</span>
           <div class="talk__container">
               {% for author_id in this.authors %}

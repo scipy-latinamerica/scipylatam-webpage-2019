@@ -25,3 +25,5 @@ topic: image_processing
 type: talk
 ---
 room: ml-a
+---
+file: material.pdf
