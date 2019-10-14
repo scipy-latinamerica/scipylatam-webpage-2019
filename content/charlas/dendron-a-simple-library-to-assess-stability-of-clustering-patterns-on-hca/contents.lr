@@ -25,3 +25,14 @@ type: talk
 room: w-101
 ---
 file: material.pdf
+---
+duration: 25 min
+---
+video: https://youtu.be/F49_HLytpik
+---
+material:
+
+#### file ####
+description: Dendron: a simple library to assess stability of clustering patterns on HCA
+----
+attachment: dendron-a-simple-library-to-assess-stability-of-clustering-patterns-on-hca.pdf

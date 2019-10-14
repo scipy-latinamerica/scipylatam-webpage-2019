@@ -39,3 +39,5 @@ publish: yes
 short_description: El foco de la charla está en las diferencias entre el desarrollo de un prototipo o POC de machine-learning y un servicio productivo, a escala. Para eso, voy a contar sobre el desarrollo que hicimos, en Mercadolibre, de una plataforma para agilizar el desarrollo y despliegue de modelos entrenados.
 ---
 twitter: py_litox
+---
+is_speaker: yes

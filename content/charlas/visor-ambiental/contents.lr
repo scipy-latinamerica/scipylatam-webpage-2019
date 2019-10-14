@@ -1,0 +1,29 @@
+_model: talk
+---
+authors: marcos-vaira
+---
+datetime: 2019-10-09 16:00:00 -0500
+---
+datetime_end: 2019-10-09 16:30:00 -0500
+---
+description: Hoy en día la enorme cantidad de datos científicos y documentación específica a menudo resulta inaccesible. Estos grandes volúmenes de información producida por investigadores y consultores, abren oportunidades para que operadores, empresas y entes fiscalizadores compartan, integren y transfieran información valiosa a una base de datos común y dinámica, ayudando y fortaleciendo al desarrollo de intervenciones territoriales que consideren la conservación del ambiente. Los actuales desarrollos en tecnologías web (software) facilitan crear aplicaciones web exploratorias, vinculando datos científicos dentro de una herramienta interactiva logrando la accesibilidad de la información, garantizando la exploración y difusión de datos científicos apropiadamente. Los Visores de datos geográficos y ambientales pueden ser herramientas útiles para investigaciones, estudios de impacto ambiental y ordenamiento del territorio. El objetivo del Visor Web Ambiental es No depender de software complejo como las plataformas SIG. Pensamos en su diseño práctico, así cualquier persona maneja e investiga sus contenidos, sin conocimiento previo de geoinformática. El usuario accede intuitivamente e interactúa de  manera simple, obteniendo información geográfica y ambiental fiable. Desarrollamos una plataforma de datos para condensar y sistematizar información geográfica y ambiental. Nuestro enfoque está destinado a fortalecer la consulta y transferencia de información de manera interactiva, dinámica y atractiva, destinada a investigadores y organismos que necesiten integrar datos confiables para desarrollar o fiscalizar intervenciones territoriales en un contexto de sostenibilidad ambiental promoviendo además la interacción de los sectores público y privado. Concomitantemente, establecimos procedimientos de actualización y verificación continua del Visor de datos proporcionando a los usuarios un mejor respaldo en sus intervenciones o toma de decisiones en la planificación e implementación de proyectos.
+---
+language: es
+---
+language_slides: es
+---
+level: intermediate
+---
+name: Visor Ambiental. Herramienta para integración de datos científicos en la intervención territorial sostenible.
+---
+summary: Gran cantidad de datos científicos son de difícil acceso. Nuevas tecnologías web permiten desarrollar aplicaciones exploratorias. Creamos un Visor para consultar datos de manera interactiva y dinámica para quienes necesiten datos confiables para intervención territorial en un contexto sostenible.
+---
+topic: science_visualization
+---
+type: talk
+---
+room: w-lleras
+---
+duration: 25 min
+---
+video: https://youtu.be/dCWZLEdQf3Q

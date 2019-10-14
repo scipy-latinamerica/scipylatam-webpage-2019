@@ -7,7 +7,7 @@ render_background -%} {%- from "macros/translation.html" import transbag -%}
 {% endmacro %}
 
 {% block title %}
-{{ this.parent.title }} - {{ this.name }} {{ this.last_name }}
+{{ this.name }} | SciPyLA 2019
 {% endblock %} {% block body %}
 <div class="container">
   {{ render_background(background='general', content_background='true', alt=this.alt) }}
@@ -86,6 +86,36 @@ render_background -%} {%- from "macros/translation.html" import transbag -%}
              </div>
               {% endfor %}
           </div>
+          {% if this.material is defined %}
+          <div>
+          <br><br>
+          <span class="talk__name">MATERIAL:</span>
+          <br><br>
+          <ul class="talk-material">
+          {% for blk in this.material.blocks %}
+            {% if blk._flowblock == 'file' %}
+              {% for attachment in this.attachments %}
+                {% if blk.attachment in attachment|url %}
+                <li class="talk-material-item"><a href="{{ attachment|url }}">{{ blk.attachment }}</a></li>
+                {% endif %}
+              {% endfor %}
+            {% else %}
+            <li class="talk-material-item"><a href="{{ blk.uri }}">{{ blk.uri }}</a></li>
+            {% endif %}  
+          {% endfor %}
+          </ul>
+          <br>
+          </div>
+          {% endif %}
+          {% if this.video is defined %}
+          <br><br>
+          <span class="talk__name">VIDEO:</span>
+          <br><br>
+          <div style="position:relative;padding-top:56.25%;">
+            <iframe src="https://www.youtube.com/embed/{{ this.video.split('/')[-1] }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" allowfullscreen >
+            </iframe>
+          </div>
+          {% endif %}
           <br><br><br><br><br><br><br><br>
       </div>
     </div>

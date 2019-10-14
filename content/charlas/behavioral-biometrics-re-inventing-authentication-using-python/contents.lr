@@ -23,3 +23,14 @@ topic: machine_learning
 type: talk
 ---
 room: sd-1003
+---
+duration: 25 min
+---
+video: https://youtu.be/hjgW_5ivrjo
+---
+material:
+
+#### file ####
+description: Behavioral Biometrics: Re-inventing Authentication using Python
+----
+attachment: behavioral-biometrics-re-inventing-authentication-using-python.pdf

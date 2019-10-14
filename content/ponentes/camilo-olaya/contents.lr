@@ -6,8 +6,6 @@ country_origin: co
 ---
 country_residence: co
 ---
-github: yilsey
----
 image: camilo-olaya.jpeg
 ---
 information:
@@ -25,4 +23,4 @@ name: Camilo
 ---
 position_company: Profesor Asociado
 ---
-topic: GEOCIENCIAS
+is_speaker: no

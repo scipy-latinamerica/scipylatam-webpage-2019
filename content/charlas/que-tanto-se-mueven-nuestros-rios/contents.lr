@@ -25,3 +25,14 @@ topic: geosciences
 type: talk
 ---
 room: ml-507
+---
+duration: 25 min
+---
+video: https://youtu.be/a-VSVRgEwUA
+---
+material:
+
+#### file ####
+description: ¿Qué tanto se mueven nuestros ríos?
+----
+attachment: que-tanto-se-mueven-nuestros-rios.pdf

@@ -23,3 +23,14 @@ topic: computational_physics
 type: talk
 ---
 room: w-lleras
+---
+duration: 25 min
+---
+video: https://youtu.be/YpLvDsRuThg
+---
+material:
+
+#### file ####
+description: Black Holes and Gravitational Theories beyond General Relativity Research using Python
+----
+attachment: black-holes-and-gravitational-theories-beyond-general-relativity-research.pdf

@@ -1,7 +1,7 @@
 {%- extends "layout.html" -%} {%- from "macros/background.html" import
 render_background -%} {%- from "macros/translation.html" import transbag -%} {%
 block title %}
-{{ this.title }}
+{{ this.title }} | SciPyLA 2019
 {% endblock %} {% block body %}
 <div class="container">
   {{ render_background(background='general', content_background='true', alt=this.alt) }}
@@ -54,6 +54,7 @@ block title %}
               {%- set talks = site.query('/charlas', alt=this.alt).order_by('+datetime', 'room', 'author',) -%}
               {%- set filtered_talks = OrderedDict() -%}
               {%- for talk in talks -%}
+                 
                 {%- if talk.datetime.date() == date -%}
                    {% set time = talk.datetime.strftime('%H:%M') %}
                    {%- if time not in filtered_talks -%}
@@ -75,31 +76,36 @@ block title %}
                       <div class="list-text">
                         
                         {% if talk.type %}
-                        {% if talk.type in ['talk', 'workshop', 'keynote', 'scipy_tools', 'lightning'] %}
-                        <span class="talk-type">{{ transbag('translate', alt, talk.type)|upper }}</span>
+                          {% if talk.type in ['talk', 'workshop', 'keynote', 'scipy_tools', 'lightning'] %}
+                          <span class="talk-type">{{ transbag('translate', alt, talk.type)|upper }}</span>
                           {% endif %}
-                        {% if talk.room %}
-                        {% set room = site.get('/auditorios/' + talk.room, alt=this.alt) %}
-                        <span class="talk-room"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;&nbsp;Edificio {{ room.building }} - {{ room.room }}</span><br>
-                        {% endif %}
-                        {% if talk.topic is defined %}
-                        <span class="talk-topic">{{ transbag('translate', this.alt, talk.topic)|upper }}</span>
-                        <span class="talk-language">
-                          <i class="fa fa-globe left"></i>
-                            <b>{{ transbag('translate', alt, 'language') }}:</b>
-                            {{ transbag('translate', alt, talk.language) }}
-                          </span>
-                        {% endif %}
-                        {% if talk.level is defined %}
-                        <span class="talk-language">
-                            <i class="fa fa-star-o"></i>
-                            <b>{{ transbag('translate', alt, 'level') }}:</b>
-                            {{ transbag('translate', alt, talk.level) }}
-                          </span>
-                        {% endif %}
-                        <span class="talk-title"><a href="{{ talk|url(alt=alt) }}">{{ talk.name }}</a></span>
-                        {% else %}
-                        <span class="talk-title">{{ talk.name }}</span>
+
+                          {% if talk.room %}
+                            {% set room = site.get('/auditorios/' + talk.room, alt=this.alt) %}
+                            <span class="talk-room"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;&nbsp;Edificio {{ room.building }} - {{ room.room }}</span><br>
+                          {% endif %}
+ 
+                          {% if talk.topic is defined %}
+                          <span class="talk-topic">{{ transbag('translate', this.alt, talk.topic)|upper }}</span>
+                          <span class="talk-language">
+                            <i class="fa fa-globe left"></i>
+                              <b>{{ transbag('translate', alt, 'language') }}:</b>
+                              {{ transbag('translate', alt, talk.language) }}
+                            </span>
+                          {% endif %}
+
+                          {% if talk.level is defined %}
+                          <span class="talk-language">
+                              <i class="fa fa-star-o"></i>
+                              <b>{{ transbag('translate', alt, 'level') }}:</b>
+                              {{ transbag('translate', alt, talk.level) }}
+                            </span>
+                          {% endif %}
+                          {% if talk.type in ['talk', 'workshop', 'keynote', 'scipy_tools', 'lightning'] %}
+                          <span class="talk-title"><a href="{{ talk|url(alt=alt) }}">{{ talk.name }}</a></span>
+                          {% else %}
+                          <span class="talk-title">{{ talk.name }}</span>
+                          {% endif %}
                         {% endif %}
                         <div class="schedule__authors-container">
                           {% set authors = talk.authors %}

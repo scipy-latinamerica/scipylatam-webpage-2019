@@ -27,3 +27,14 @@ type: talk
 room: ml-507
 ---
 file: material.pdf
+---
+duration: 25 min
+---
+material:
+
+#### file ####
+description: Julia: a next generation language
+----
+attachment: julia-a-next-generation-language.pdf
+---
+video: https://youtu.be/eCoW4flWvJc

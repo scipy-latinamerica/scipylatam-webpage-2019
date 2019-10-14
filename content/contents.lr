@@ -2,7 +2,7 @@ _template: home.html
 ---
 _model: event
 ---
-title: SciPy Latam 2019
+title: Bienvenido a SciPyLA 2019
 ---
 menu_label: Inicio
 ---
@@ -14,7 +14,7 @@ body: Comparte experiencias sobre el uso de Python científico tanto académica 
 ---
 _slug: 
 ---
-sections: tickets
+sections: 
 ---
 description: Comparte experiencias sobre el uso de Python científico tanto académica como profesionalmente.
 ---

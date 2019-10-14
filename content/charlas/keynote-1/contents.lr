@@ -1,0 +1,34 @@
+_model: talk
+---
+datetime: 2019-10-09 09:15:00 -0500
+---
+datetime_end: 2019-10-09 10:00:00 -0500
+---
+name: Ponencia magistral: SciPy and NumFOCUS communities: past, present, and future
+---
+type: keynote
+---
+authors: travis-oliphant
+---
+language: en
+---
+language_slides: en
+---
+room: w-lleras
+---
+level: all
+---
+duration: 40 min
+---
+topic: data_science
+---
+_slug: scipy-and-numfocus-communities-past-present-and-future
+---
+video: https://youtu.be/3EH11xhW2iw
+---
+material:
+
+#### file ####
+description: SciPy and NumFOCUS communities: past, present, and future
+----
+attachment: scipy-and-numfocus-communities-past-present-and-future.pdf

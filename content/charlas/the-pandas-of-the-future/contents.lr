@@ -23,3 +23,22 @@ topic: tools
 type: talk
 ---
 room: sd-1003
+---
+duration: 25 min
+---
+video: https://youtu.be/hlZsecUPEdU
+---
+material:
+
+#### uri ####
+description: 
+----
+uri: https://github.com/datapythonista/pandas_future
+#### uri ####
+description: 
+----
+uri: https://mybinder.org/v2/gh/datapythonista/pandas_future.git/master
+#### file ####
+description: 
+----
+attachment: the-pandas-of-the-future.zip

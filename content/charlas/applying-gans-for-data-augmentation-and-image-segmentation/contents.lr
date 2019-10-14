@@ -27,3 +27,14 @@ type: talk
 room: ml-a
 ---
 file: material.pdf
+---
+duration: 25 min
+---
+material:
+
+#### file ####
+description: Applying GANs for data augmentation and image segmentation for brain MRI
+----
+attachment: applying-gans-for-data-augmentation-and-image-segmentation.pdf
+---
+video: https://youtu.be/lHLa7p7hldM

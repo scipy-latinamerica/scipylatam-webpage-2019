@@ -5,7 +5,7 @@ from "macros/translation.html" import transbag -%} {%- set t_call_for_proposals
 transbag('translate', this.alt, 'date') -%}
 {%- set t_team = transbag('translate', this.alt, 'team') -%}
 {%- set venue = site.get('/lugar',
-alt=this.alt) -%} {% block title %}{{ this.title }}{% endblock %} {% block body
+alt=this.alt) -%} {% block title %}{{ this.title }} | SciPyLA 2019{% endblock %} {% block body
 %}
 <div class="container menu-background">
   {{ render_background(background='general', content_background='true', alt=this.alt) }}

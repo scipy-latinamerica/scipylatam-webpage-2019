@@ -23,3 +23,14 @@ topic: bioinformatics
 type: talk
 ---
 room: sd-1003
+---
+duration: 25 min
+---
+video: https://youtu.be/ZmR1oQ_vYIg
+---
+material:
+
+#### file ####
+description: 
+----
+attachment: diagnostico-de-epilepsia-utilizando-python-para-analizar-senales-cerebrales.pdf

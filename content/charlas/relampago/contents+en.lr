@@ -1,0 +1,21 @@
+datetime: 2019-10-09 17:15:00 -0500
+---
+datetime_end: 2019-10-09 18:00:00 -0500
+---
+language: en
+---
+language_slides: en
+---
+level: all
+---
+name: Lightning talks
+---
+room: w-lleras
+---
+topic: lightning
+---
+type: lightning
+---
+_slug: lightning-talks
+---
+authors: carlos-de-la-torre, maria-remolina, carlos-sierra, marc-garcia, steven-pineda

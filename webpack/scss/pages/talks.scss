@@ -292,7 +292,7 @@
     display: flex; 
     padding: 20px;
     align-items: center;
-    width: 350px;
+    width: 400px;
   }
 
   &type {
@@ -415,4 +415,24 @@
       }
     }
   }
+}
+
+.talk-material {
+  list-style-type: circle;
+  list-style-position: inside;
+}
+
+.talk-material-item {
+  padding: 5px;
+  text-align: center;
+  font-weight: 300;
+
+  a {
+    color: $black;
+    text-decoration:none;
+    &:hover {
+      color: $soft-red;
+    }
+  }
+
 }

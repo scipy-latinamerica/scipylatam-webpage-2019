@@ -29,3 +29,5 @@ github: teoliphant
 order: 1
 ---
 web: http://technicaldiscovery.blogspot.com
+---
+is_speaker: yes

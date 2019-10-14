@@ -23,3 +23,14 @@ topic: computational_math
 type: talk
 ---
 room: w-101
+---
+duration: 25 min
+---
+material:
+
+#### file ####
+description: 
+----
+attachment: python-in-algotrading-lectures.pdf
+---
+video: https://youtu.be/xZRIfJZAkX0

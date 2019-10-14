@@ -10,11 +10,11 @@ type: scipy_tools
 ---
 topic: tools
 ---
-language: en
+language: en-es
 ---
 language_slides: en
 ---
-authors: carlos-cordoba, damian-avila, marc-garcia, juan-cano, ivan-ogasawara, lindsey-heagy
+authors: carlos-cordoba, damian-avila, marc-garcia, ivan-ogasawara, lindsey-heagy, travis-oliphant
 ---
 level: all
 ---

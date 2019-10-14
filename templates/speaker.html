@@ -20,7 +20,7 @@ render_background -%} {%- from "macros/translation.html" import transbag -%}
 {%- endblock -%}
 
 {% block title %}
-{{ this.parent.title }} - {{ this.name }} {{ this.last_name }}
+{{ this.name }} {{ this.last_name }} | SciPyLA 2019
 {% endblock %} {% block body %}
 <div class="container">
   {{ render_background(background='general', content_background='true', alt=this.alt) }}

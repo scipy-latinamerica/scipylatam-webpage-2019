@@ -25,3 +25,14 @@ type: talk
 room: ml-a
 ---
 file: material.pptx
+---
+duration: 25 min
+---
+video: https://youtu.be/M3hkA8n5f2M
+---
+material:
+
+#### file ####
+description: High Performance Pandas part 2: Time Based Analysis Using Pandas
+----
+attachment: high-performance-pandas-part-2-time-based-analysis-using-pandas.pdf

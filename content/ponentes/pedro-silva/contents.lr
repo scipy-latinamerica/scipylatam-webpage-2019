@@ -28,4 +28,6 @@ position_company: NVIDIA
 ---
 image: pedro-silva.jpeg
 ---
-_slug: accelerating-python-data-science-with-nvidia-rapids
+_slug: 
+---
+is_speaker: yes

@@ -16,7 +16,7 @@ level: intermediate
 ---
 name:
 
-Uplift Modelling for selecting the maximal impact treatment for customers 
+Uplift Modelling for selecting the maximal impaact treatment for customers 
 ---
 summary: Uplift modeling is a useful methodology to predict the buying behavior of customers under different treatments. In this case study, we use it to score the expected customers buying with and without a monetary incentive. This allows us to solely contact users for whom the incentive is influential.
 ---
@@ -27,3 +27,16 @@ type: talk
 room: sd-1003
 ---
 file: material.pdf
+---
+material:
+
+#### file ####
+description:
+
+Uplift Modelling for selecting the maximal impaact treatment for customers 
+----
+attachment: uplift-modelling-for-selecting-the-maximal-impact-treatment-for-customers.pdf
+---
+video: https://youtu.be/5uq2L-IbaVQ
+---
+duration: 25 min

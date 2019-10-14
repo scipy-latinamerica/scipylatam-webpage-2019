@@ -8,7 +8,7 @@ t_want_to_sponsor_title = transbag('translate', this.alt,
 'want_to_sponsor_title') -%} {%- set t_want_to_sponsor_text =
 transbag('translate', this.alt, 'want_to_sponsor_text') -%} {%- set
 t_sponsor_event = transbag('translate', alt, 'sponsor_event') -%} {% block title
-%}{{ this.title }}{% endblock %} {% block body%}
+%}{{ this.title }} | SciPyLA 2019{% endblock %} {% block body%}
 {{ render_background(background='general', content_background='true', alt=this.alt) }}
 
 <div class="sponsors-page container">

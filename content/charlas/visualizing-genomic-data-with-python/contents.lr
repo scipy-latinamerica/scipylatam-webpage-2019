@@ -14,7 +14,7 @@ language_slides: en
 ---
 level: beginner
 ---
-name: Visualizing genomic data with python.
+name: Visualizing genomic data with python
 ---
 summary: Challenges genomic data visualization
 ---
@@ -23,3 +23,18 @@ topic: bioinformatics
 type: talk
 ---
 room: sd-1003
+---
+duration: 25 min
+---
+material:
+
+#### file ####
+description: Visualizing genomic data with python
+----
+attachment: visualizing-genomic-data-with-python.pdf
+#### file ####
+description: Video
+----
+attachment: video.mp4
+---
+video: https://youtu.be/EdnZstiva6M

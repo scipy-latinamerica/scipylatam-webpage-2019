@@ -23,3 +23,14 @@ topic: tools
 type: talk
 ---
 room: ml-a
+---
+duration: 25 min
+---
+video: https://youtu.be/Do6CaXrBFoc
+---
+material:
+
+#### file ####
+description: Beyond Jupyter: Other environments to do scientific programming in Python
+----
+attachment: beyond-jupyter-other-environments-to-do-scientific-programming-in-python.pdf

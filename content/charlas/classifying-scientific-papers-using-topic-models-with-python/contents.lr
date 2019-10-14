@@ -25,3 +25,14 @@ topic: natural_language_processing
 type: talk
 ---
 room: ml-507
+---
+duration: 25 min
+---
+video: https://youtu.be/QsvGkO_P8x0
+---
+material:
+
+#### file ####
+description: 
+----
+attachment: classifying-scientific-papers-using-topic-models-with-python.pdf

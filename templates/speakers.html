@@ -7,7 +7,9 @@
 {%- set t_keynotes = transbag('translate', this.alt, 'keynotes') -%}
 {%- set t_speakers = transbag('translate', this.alt, 'speakers') -%}
 
-{% block title %}{{ this.title }}{% endblock %}
+{% block title %}
+{{ this.title }} | SciPyLA 2019
+{% endblock %}
 {% block body %}
 {{ render_background(background='general', content_background='true', alt=this.alt) }}
 
@@ -29,13 +31,15 @@
 
   <div class="container">
     <div class="keynote-landing content">
-      {% set speakers = site.query('/ponentes', alt=this.alt).filter(F.keynote == False).order_by('+name', '+last_name') %}
+      {% set speakers = site.query('/ponentes', alt=this.alt).filter(F.keynote == False).filter(F.is_speaker == True).order_by('+name', '+last_name') %}
       {% if speakers.count() %}
       <h1 style="color:black;">{{ t_speakers|upper }} ({{ speakers.count() }})</h1><br>
       {% endif %}
       <div class="team-members-container">
           {% for speaker in speakers %}
+          {% if speaker.is_speaker %}
           {{ render_speaker(speaker, alt=this.alt, compact=true) }}
+          {% endif %}
           {% endfor %}
       </div>
     </div>

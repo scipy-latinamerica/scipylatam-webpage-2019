@@ -16,10 +16,23 @@ level: intermediate
 ---
 name: BackCLIP: a tool to identify common background presence in PAR-CLIP datasets
 ---
-summary:  We used the measured sets of non-specific RNA backgrounds to build a common background set. Each element from the common background set has a score that reflects its presence in several PAR-CLIP datasets. We present a tool that uses this score to identify the amount of common backgrounds. 
+summary:
+
+We used the measured sets of non-specific RNA backgrounds to build a common background set. Each element from the common background set has a score that reflects its presence in several PAR-CLIP datasets. We present a tool that uses this score to identify the amount of common backgrounds. 
 ---
 topic: bioinformatics
 ---
 type: talk
 ---
 room: sd-1003
+---
+duration: 25 min
+---
+material:
+
+#### file ####
+description: BackCLIP: a tool to identify common background presence in PAR-CLIP datasets
+----
+attachment: backclip-a-tool-to-identify-common-background-presence.pdf
+---
+video: https://youtu.be/pi3ekjEwJHg
