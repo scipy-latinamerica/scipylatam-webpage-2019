@@ -14,7 +14,9 @@ github: luisdavidcamacho
 ---
 image: luis-camacho.jpeg
 ---
-information: Machine learning engineer and Data Scientist holding 10+ years of experience as sofware developer and team leading. Passionate about data and focused on adding value to business through data understanding and applied machine learning. 
+information:
+
+Machine learning engineer and Data Scientist holding 10+ years of experience as sofware developer and team leading. Passionate about data and focused on adding value to business through data understanding and applied machine learning. 
 ---
 keynote: no
 ---
@@ -31,3 +33,5 @@ topic: HERRAMIENTAS
 twitter: luisdcamachog
 ---
 is_speaker: yes
+---
+image_open_graph: og-luis-camacho.jpg

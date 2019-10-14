@@ -14,7 +14,9 @@ github: engandres
 ---
 image: carlos-sierra.jpeg
 ---
-information: Computer Engineer, Master of Science on Computer Engineer, PhD. student (in Computer Engineering), with concentration on Artificial Life, Evolutionary Computation and Mathematical Optimization. Professor with +7 years experience, with analytical skills and coding skills (Java and Python with +10 years experience). Researcher with +8 years experience, working on multiple projects of early warning systems, pest population modeling, genomic data analysis, agronic with IoT, and artificial intelligence applied to medicine. 
+information:
+
+Computer Engineer, Master of Science on Computer Engineer, PhD. student (in Computer Engineering), with concentration on Artificial Life, Evolutionary Computation and Mathematical Optimization. Professor with +7 years experience, with analytical skills and coding skills (Java and Python with +10 years experience). Researcher with +8 years experience, working on multiple projects of early warning systems, pest population modeling, genomic data analysis, agronic with IoT, and artificial intelligence applied to medicine. 
 ---
 keynote: no
 ---
@@ -31,3 +33,5 @@ topic: BIOINFORMÁTICA
 twitter: casierrav_alife
 ---
 is_speaker: yes
+---
+image_open_graph: og-carlos-sierra.jpg

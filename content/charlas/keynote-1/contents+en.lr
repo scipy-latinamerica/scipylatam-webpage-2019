@@ -10,7 +10,7 @@ language_slides: en
 ---
 name: Keynote: SciPy and NumFOCUS communities: past, present, and future
 ---
-room: w-lleras
+room: 0-w-lleras
 ---
 type: keynote
 ---
@@ -19,3 +19,14 @@ duration: 40 min
 level: all
 ---
 topic: data_science
+---
+_slug: scipy-and-numfocus-communities-past-present-and-future
+---
+material:
+
+#### file ####
+description: SciPy and NumFOCUS communities: past, present, and future
+----
+attachment: scipy-and-numfocus-communities-past-present-and-future.pdf
+---
+video: https://youtu.be/3EH11xhW2iw

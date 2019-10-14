@@ -16,7 +16,9 @@ github: switchfools
 ---
 image: nicolas-vergara.jpeg
 ---
-information: I'm a Physics and electrical engineering bachelor student. The last year I have been working in the three of main fields of physics in the Universidad de los Andes. that are particle physics, quantum optics and solid state physics. in terms of computational physics, I have develop a simulation of nano-materials' magnetic properties based on Monte Carlo methods. in order to recover information of the physic behind the observables. 
+information:
+
+I'm a Physics and electrical engineering bachelor student. The last year I have been working in the three of main fields of physics in the Universidad de los Andes. that are particle physics, quantum optics and solid state physics. in terms of computational physics, I have develop a simulation of nano-materials' magnetic properties based on Monte Carlo methods. in order to recover information of the physic behind the observables. 
 ---
 keynote: no
 ---
@@ -24,10 +26,14 @@ last_name: Vergara Durán
 ---
 linkedin: https://www.linkedin.com/in/nicolás-vergara-durán-490324123/
 ---
-name: Nicolás Felipe 
+name:
+
+Nicolás Felipe 
 ---
 position_company: Universidad de los Andes.
 ---
 topic: FÍSICA COMPUTACIONAL
 ---
 is_speaker: yes
+---
+image_open_graph: og-nicolas-vergara.jpg

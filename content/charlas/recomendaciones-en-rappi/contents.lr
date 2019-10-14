@@ -1,0 +1,36 @@
+_model: talk
+---
+authors: ariel-wolfmann
+---
+datetime: 2019-10-09 11:30:00 -0500
+---
+datetime_end: 2019-10-09 12:00:00 -0500
+---
+description:
+
+We will introduce the recommendation system topic, what are the main goals, requirements, best practices and benchmarks. During the talk we will go over all the data pipeline architecture we use at Rappi required to make different kind of recommendations depending on which step of the funnel the user is. Starting from data collection going through Machine Learning model, system architecture and how we mix Data Science and UX, to improve them. Data collection requires an analytics infrastructure and transactional data processed, aggregated and available to the Machine Learning Models. Depending on the funnel step, there are different objectives for the recommendations and so different metrics to evaluate the model. Operationalizing an ML product is not trivial, so we will also talk about how to expose our ML model to system, including software engineering best practices. Differences between offline / batch predictions and real time predictions. Hypothesis and experimentations, A/B Testing. Finally we will show the impact of User Experience Designer in a Data Product, specially for recommendations.  
+---
+language: es
+---
+language_slides: en
+---
+level: intermediate
+---
+name: Recommendations at Rappi
+---
+summary: Recommendations at Rappi: Data pipeline from analytics events to personalized recommendations.
+---
+topic: machine_learning
+---
+type: talk
+---
+room: 2-sd-1003
+---
+duration: 25 min
+---
+material:
+
+#### file ####
+description: 
+----
+attachment: recomendaciones-en-rappi.pdf

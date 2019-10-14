@@ -1,0 +1,34 @@
+_model: talk
+---
+authors: javier-mansilla
+---
+datetime: 2019-10-09 14:30:00 -0500
+---
+datetime_end: 2019-10-09 15:00:00 -0500
+---
+description: There's a big difference between a machine-learning model in a Jupyter Notebook and a 24/7, high-performance, highly-available, high-throughput, online service. You won't find easily how to go from one to the other: not in tutorials nor in scientific publications. In this talk we'll review some recommendations and industry's best-practices, for a robust lifecycle of a production-ready machine-learning related project.  We will cover some taxonomy of topics to pay attention, with some suggested paths of action. We are going to start by defining the phases we identified in which a machine learning project can be: discovery, MVP building, or production-improving-and-maintenance. Later, describe a rich and deep set of different practices that can help with targeting risks, reducing, of even eliminating them. By the end, there is a section of recommendations about which of these practices, in our experience, fit better for each of the previously mentioned phases of a project.
+---
+language: es
+---
+language_slides: en
+---
+level: intermediate
+---
+name: Testing in machine-learning based systems
+---
+summary: There's a big difference between a machine-learning model in a Jupyter Notebook and a 24/7, high-performance, highly-available, high-throughput, online service. In this talk we'll review some recommendations and industry's best-practices, for a robust lifecycle of a production-ready system.
+---
+topic: machine_learning
+---
+type: talk
+---
+room: 2-sd-1003
+---
+duration: 25 min
+---
+material:
+
+#### file ####
+description: 
+----
+attachment: pruebas-en-sistemas-basados-en-aprendizaje-automatico.pdf

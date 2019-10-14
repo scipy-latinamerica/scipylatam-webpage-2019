@@ -1,0 +1,36 @@
+_model: talk
+---
+authors: sebastian-arango
+---
+datetime: 2019-10-09 11:30:00 -0500
+---
+datetime_end: 2019-10-09 12:00:00 -0500
+---
+description: While lots of cutting-edge ML/DL algorithms are yielding amazing results, the APIs and environments which wrap them up tend to be so high-level that practitioners do not always get to understand the logic underneath. This talk is intended to take a direct look into a specific branch of statistical analysis which is very used from years ago in probabilistic learning issues, by explaining the core concepts and exploring such tools as PyMC3 and TensorFlow Probability (TFP). Even though several cutting-edge frameworks allow to abstract the way "intelligent" algorithms make decisions at a high-level, probabilistic and bayesian modeling often provide an increase in the ability to interpret model parameters and results, along with a reasonable handling for uncertainty. Nowadays, advances in computational statistics and software capacities help the average user enhance their decision making processes through specialized software libraries such as PyMC3 and TFP, which provide data scientists/analysts with a robust set of tools for probabilistic modeling and inference.
+---
+language: es
+---
+language_slides: en
+---
+level: intermediate
+---
+name: Fundamentals of Bayesian Analysis with PyMC3 and TensorFlow Probability
+---
+summary:
+
+Have you wondered what is happening inside your ML/DL models? Do you want to have a sharper understanding of how probabilistic computing models can make such strong inferences? Do you know which Python tools can serve this purpose? Well, this talk is intended for you, then! 
+---
+topic: computational_math
+---
+type: talk
+---
+room: 0-w-lleras
+---
+duration: 25 min
+---
+material:
+
+#### file ####
+description: 
+----
+attachment: fundamentos-de-analisis-bayesiano-con-pymc3-y-tensorflow.pdf

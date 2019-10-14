@@ -24,7 +24,9 @@ last_name: Wolfmann
 ---
 linkedin: https://www.linkedin.com/in/ariel-wolfmann/
 ---
-name: Ariel 
+name:
+
+Ariel 
 ---
 position_company: Rappi
 ---
@@ -33,3 +35,5 @@ topic: APRENDIZAJE AUTOMÁTICO
 twitter: OSOWOLFMANN14
 ---
 is_speaker: yes
+---
+image_open_graph: og-ariel-wolfmann.jpg

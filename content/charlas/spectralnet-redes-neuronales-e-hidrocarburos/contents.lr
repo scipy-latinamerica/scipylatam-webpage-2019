@@ -24,6 +24,13 @@ topic: geosciences
 ---
 type: talk
 ---
-room: ml-507
+room: 3-ml-507
 ---
 duration: 25 min
+---
+material:
+
+#### file ####
+description: 
+----
+attachment: spectralnet-redes-neuronales-e-hidrocarburos.pdf

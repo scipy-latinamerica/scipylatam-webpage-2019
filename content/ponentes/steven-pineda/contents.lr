@@ -14,7 +14,9 @@ github: steven2308
 ---
 image: steven-pineda.jpeg
 ---
-information: Ingeniero de sistemas computación de la UTP, estudiante de maestría en ISC, línea IA. Desarrollador en Python desde hace 5 años, esposo y políglota. Ingeniero de sistemas computación de la UTP, estudiante de maestría en ISC, línea IA. Desarrollador en Python desde hace 5 años, esposo y políglota. 
+information:
+
+Ingeniero de sistemas computación de la UTP, estudiante de maestría en ISC, línea IA. Desarrollador en Python desde hace 5 años, esposo y políglota. Ingeniero de sistemas computación de la UTP, estudiante de maestría en ISC, línea IA. Desarrollador en Python desde hace 5 años, esposo y políglota. 
 ---
 keynote: no
 ---
@@ -29,3 +31,5 @@ topic: VISIÓN POR COMPUTADORA
 twitter: Steven2308
 ---
 is_speaker: yes
+---
+image_open_graph: og-steven-pineda.jpg

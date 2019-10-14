@@ -1,0 +1,35 @@
+_discoverable: yes
+---
+_hidden: no
+---
+country_origin: co
+---
+country_residence: co
+---
+dob: 1993-05-27
+---
+email: david@kiwicampus.com
+---
+facebook: davidnet18
+---
+github: davidnet
+---
+image: david-cardozo.jpeg
+---
+image_open_graph: og-david-cardozo.jpg
+---
+information: David Cardozo works as a machine learning engineer leading the artificial intelligence and robotics team at Kiwi Campus. We work in the development of parallel autonomous systems, using deep learning tools, representations learned, statistical inference and artificial vision techniques. Consultant on embedded systems of Nvidia production, with experience in computer security, mathematics and physics. Member of the winning team of the first computer security competition at the Universidad de los Andes and previous researcher in quantum computing complexity and post quantum cryptography.
+---
+is_speaker: yes
+---
+keynote: no
+---
+last_name: Cardozo
+---
+linkedin: https://www.linkedin.com/in/davidcardozo/
+---
+name: David
+---
+position_company: Kiwi Campus
+---
+twitter: _davidcardozo

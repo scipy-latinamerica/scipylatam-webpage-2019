@@ -14,7 +14,9 @@ github: mneira10
 ---
 image: mauricio-neira.jpeg
 ---
-information: Assistant researcher @ the biomedical computer vision lab @ Universidad de los Andes. 
+information:
+
+Assistant researcher @ the biomedical computer vision lab @ Universidad de los Andes. 
 ---
 keynote: no
 ---
@@ -27,3 +29,5 @@ position_company: Universidad de los Andes
 topic: FÍSICA COMPUTACIONAL
 ---
 is_speaker: yes
+---
+image_open_graph: og-mauricio-neira.jpg

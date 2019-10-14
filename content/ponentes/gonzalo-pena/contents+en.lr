@@ -1,0 +1,49 @@
+_discoverable: yes
+---
+_hidden: no
+---
+company: Quansight
+---
+country_origin: co
+---
+country_residence: co
+---
+dob: 1983-04-24
+---
+email: goanpeca@gmail.com
+---
+facebook: goanpeca
+---
+github: goanpeca
+---
+image: goanpeca.jpg
+---
+information:
+
+I am Colombian Civil Engineer with an MSc. in Hydroinformatics and an MSc. in Sanitary Engineering that discovered a passion for Software Development and Data Science which led me to collaborate in different open source projects and to eventually join Anaconda, Inc (formerly known as Continuum Analytics) and currently Quansight, Inc as Software Engineer.
+
+I am a Senior Python Developer and Data Scientist (in development) with experience in Desktop Development (Qt/PyQt), Backend Web Development (Flask, Tornado, Django, Lektor, MySQL, PostgreSQL, MongoDB), Scientific Computing (Numpy, Scipy, Pandas, Matplotlib, Dask) and Devops (Amazon Web Services, Heroku). I have worked as a developer in different teams and as Technical Lead for the Anaconda Navigator Project, following agile, test-driven, and continuous integration & deployment methodologies. Although I work primarily with Python, during my career as an engineer I have worked with other stacks including C, Java, PHP, Visual Basic, JavaScript, R, Matlab, and Bash.
+
+I am an active member of the open source community contributing to different projects and a leader in the Python Colombia Community helping shape and organize communities such as Django Girls Colombia, Python Bucaramanga, Python Colombia and the national and Latin American Python Conferences, PyCon Colombia (2018, 2019, 2020) and SciPy Latam (2019) respectively.
+---
+instagram: goanpeca
+---
+is_speaker: no
+---
+keynote: no
+---
+last_name: Peña Castellanos
+---
+linkedin: https://www.linkedin.com/in/goanpeca
+---
+name: Gonzalo
+---
+position: Software Engineer
+---
+position_company: Quansight
+---
+publish: yes
+---
+twitter: goanpeca
+---
+web: https://www.linkedin.com/in/goanpeca

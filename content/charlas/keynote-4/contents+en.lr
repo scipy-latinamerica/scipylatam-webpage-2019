@@ -10,6 +10,31 @@ language_slides: es
 ---
 name: Keynote: "La R[*]volución de Jupyter"
 ---
-room: w-lleras
+room: 0-ml-b
 ---
 type: keynote
+---
+_slug: the-revolution-of-jupyter
+---
+duration: 40 min
+---
+level: all
+---
+material:
+
+#### uri ####
+description: 
+----
+uri: https://github.com/damianavila/scipy_latam_2019
+#### uri ####
+description: 
+----
+uri: https://mybinder.org/v2/gh/damianavila/scipy_latam_2019/master?filepath=SciPyLATAM%202019%20talk.ipynb
+#### file ####
+description: 
+----
+attachment: la-revolucion-de-jupyter.zip
+---
+topic: communities
+---
+video: https://youtu.be/Uobe-csdb_A

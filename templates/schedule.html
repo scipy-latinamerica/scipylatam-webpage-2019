@@ -104,7 +104,8 @@ block title %}
                           {% if talk.type in ['talk', 'workshop', 'keynote', 'scipy_tools', 'lightning'] %}
                           <span class="talk-title"><a href="{{ talk|url(alt=alt) }}">{{ talk.name }}</a></span>
                           {% else %}
-                          <span class="talk-title">{{ talk.name }}</span>
+                          <span class="talk-title"><a href="{{ talk|url(alt=alt) }}">{{ talk.name }}</a></span>
+                          <!-- <span class="talk-title">{{ talk.name }}</span> -->
                           {% endif %}
                         {% endif %}
                         <div class="schedule__authors-container">

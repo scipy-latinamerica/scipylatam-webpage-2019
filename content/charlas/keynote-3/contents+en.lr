@@ -10,6 +10,27 @@ language_slides: en
 ---
 name: Keynote: "Capturing knowledge in code"
 ---
-room: w-lleras
+room: 0-ml-b
 ---
 type: keynote
+---
+_slug: capturing-knowledge-in-code
+---
+duration: 40 min
+---
+level: all
+---
+material:
+
+#### file ####
+description: 
+----
+attachment: capturing-knowledge-in-code.pdf
+#### file ####
+description: 
+----
+attachment: pangeo.mp4
+---
+topic: geosciences
+---
+video: https://youtu.be/cb-gFHRZCIc

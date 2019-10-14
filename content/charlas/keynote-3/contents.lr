@@ -14,7 +14,7 @@ language: en
 ---
 language_slides: en
 ---
-room: ml-a
+room: 0-ml-b
 ---
 level: all
 ---
@@ -22,7 +22,7 @@ duration: 40 min
 ---
 topic: geosciences
 ---
-_slug: capturing-knowledge-in-code
+_slug: capturando-conocimiento-en-codigo
 ---
 material:
 

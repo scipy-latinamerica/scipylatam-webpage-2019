@@ -14,12 +14,29 @@ language: en
 ---
 language_slides: en
 ---
-room: w-lleras
+room: 0-w-lleras
 ---
 level: all
----
-authors: 
 ---
 _slug: charlas-relampago
 ---
 duration: 25 min
+---
+material:
+
+#### file ####
+description: 
+----
+attachment: searching-for-aliens.pdf
+#### uri ####
+description: 
+----
+uri: https://mlflow.org/docs/latest/tutorial.html
+#### uri ####
+description: 
+----
+uri: https://www.pyopensci.org/
+#### uri ####
+description: 
+----
+uri: https://twitter.com/davorabbit/status/1176314998806630400?s=19

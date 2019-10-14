@@ -1,0 +1,38 @@
+_model: talk
+---
+datetime: 2019-10-09 13:45:00 -0500
+---
+datetime_end: 2019-10-09 14:30:00 -0500
+---
+name: Plenaria de Herramientas de SciPy
+---
+type: scipy_tools
+---
+topic: tools
+---
+language: en-es
+---
+language_slides: en
+---
+authors: carlos-cordoba, damian-avila, marc-garcia, ivan-ogasawara, lindsey-heagy, travis-oliphant
+---
+level: all
+---
+room: 0-w-lleras
+---
+material:
+
+#### file ####
+description: Spyder
+----
+attachment: spyder.pdf
+#### file ####
+description: Numba, XND, uarray
+----
+attachment: numba-xnd-uarray.pdf
+#### file ####
+description: IBIS
+----
+attachment: ibis.pdf
+---
+duration: 40 min

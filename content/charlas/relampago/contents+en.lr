@@ -10,7 +10,7 @@ level: all
 ---
 name: Lightning talks
 ---
-room: w-lleras
+room: 0-w-lleras
 ---
 topic: lightning
 ---
@@ -18,4 +18,4 @@ type: lightning
 ---
 _slug: lightning-talks
 ---
-authors: carlos-de-la-torre, maria-remolina, carlos-sierra, marc-garcia, steven-pineda
+duration: 25 min

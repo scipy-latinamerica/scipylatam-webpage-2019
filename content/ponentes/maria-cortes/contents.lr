@@ -12,13 +12,15 @@ email: maria.cortes@rappi.com
 ---
 image: maria-cortes.jpeg
 ---
-information: My name is Maria Fernanda. I hold a Master of Science in Industrial Engineering from Universidad de los Andes, Colombia. I currently work as a Data Scientist at Rappi, where I design and implement projects related to growth and customer relationship management using machine learning models and statistical algorithms. I previously worked as a graduate research and teaching assistant on the course “Probability Models” at Universidad de los Andes. I have a passion for research and problem-solving, and I am greatly interested in stochastic modelling and statistical data analysis for decision-making.  
+information:
+
+My name is Maria Fernanda. I hold a Master of Science in Industrial Engineering from Universidad de los Andes, Colombia. I currently work as a Data Scientist at Rappi, where I design and implement projects related to growth and customer relationship management using machine learning models and statistical algorithms. I previously worked as a graduate research and teaching assistant on the course “Probability Models” at Universidad de los Andes. I have a passion for research and problem-solving, and I am greatly interested in stochastic modelling and statistical data analysis for decision-making.  
 ---
 keynote: no
 ---
 last_name: Cortes Soler
 ---
-linkedin:  https://www.linkedin.com/in/maría-fernanda-cortés-soler-564355106
+linkedin: https://www.linkedin.com/in/maría-fernanda-cortés-soler-564355106
 ---
 name: Maria Fernanda
 ---
@@ -27,3 +29,5 @@ position_company: Rappi
 topic: APRENDIZAJE AUTOMÁTICO
 ---
 is_speaker: yes
+---
+image_open_graph: og-maria-cortez.jpg

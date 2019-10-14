@@ -16,7 +16,9 @@ github: ccastroiragorri
 ---
 image: carlos-castro.jpeg
 ---
-information: Profesor asociado, Facultad de Económica, Universidad del Rosario.  PhD en economía y gestión; Maestría en estadística., Université Libre de Bruxelles; Subdirector de Estudios Sectoriales y Regulación, Departamento Nacional de Planeación (2004-2005). Consultor del Banco Interamericano de Desarrollo, Banco Central de Bélgica (BNB), DNP. Durante sus estudios doctorales colaboro con el área de Riesgo de Crédito, en DEXIA SA (Bruselas). Su experiencia de investigación es principalmente en finanzas y estadística aplicada. 
+information:
+
+Profesor asociado, Facultad de Económica, Universidad del Rosario.  PhD en economía y gestión; Maestría en estadística., Université Libre de Bruxelles; Subdirector de Estudios Sectoriales y Regulación, Departamento Nacional de Planeación (2004-2005). Consultor del Banco Interamericano de Desarrollo, Banco Central de Bélgica (BNB), DNP. Durante sus estudios doctorales colaboro con el área de Riesgo de Crédito, en DEXIA SA (Bruselas). Su experiencia de investigación es principalmente en finanzas y estadística aplicada. 
 ---
 keynote: no
 ---
@@ -31,3 +33,5 @@ position_company: Universidad del Rosario
 topic: MATEMÁTICA COMPUTACIONAL
 ---
 is_speaker: yes
+---
+image_open_graph: og-carlos-castro.jpg

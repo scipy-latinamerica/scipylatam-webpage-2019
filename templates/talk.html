@@ -22,22 +22,19 @@ render_background -%} {%- from "macros/translation.html" import transbag -%}
           <span class="talk__topic">{{ transbag('translate', alt, this.topic)|upper }}</span>
           {% endif %}
           <div class="talk__language">
+            {% if this.language %}
             <span class="talk__language-item">
               <i class="fa fa-globe"></i>
               &nbsp;&nbsp;&nbsp;<b>{{ transbag('translate', alt, 'language') }}:</b>
               &nbsp;&nbsp;{{ transbag('translate', alt, this.language) }}
             </span>
-            {% if this.type in ['talk', 'workshop'] %}
+            {% endif %}
+            {% if this.type in ['talk', 'workshop', 'keynote'] %}
             <span class="talk__language-item">
               <i class="fa fa-clock-o"></i>
               &nbsp;&nbsp;&nbsp;<b>{{ transbag('translate', alt, 'duration') }}:</b>
               &nbsp;&nbsp;
-              {% if this.type == 'talk' %}
-              {{ transbag('translate', alt, 'duration_talk') }}
-              {% elif this.type == 'workshop' %}
-              {{ transbag('translate', alt, 'duration_workshop') }}
-              {% else %}
-              {% endif %}
+              {{ this.duration }}
             </span>
             {% endif %}
             {% if this.level is defined %}
@@ -63,7 +60,9 @@ render_background -%} {%- from "macros/translation.html" import transbag -%}
             {% endif %}
           {% endfor %}
           {% endif %}
+          {% if this.authors %}
           <span class="talk__subtitle">{{ transbag('translate', this.alt, word)|upper }}:</span>
+          {% endif %}
           <div class="talk__container">
               {% for author_id in this.authors %}
               <div class="talk__item">
@@ -96,11 +95,11 @@ render_background -%} {%- from "macros/translation.html" import transbag -%}
             {% if blk._flowblock == 'file' %}
               {% for attachment in this.attachments %}
                 {% if blk.attachment in attachment|url %}
-                <li class="talk-material-item"><a href="{{ attachment|url }}">{{ blk.attachment }}</a></li>
+                <li class="talk-material-item"><a href="{{ attachment|url }}" target="_blank">{{ blk.attachment }}</a></li>
                 {% endif %}
               {% endfor %}
             {% else %}
-            <li class="talk-material-item"><a href="{{ blk.uri }}">{{ blk.uri }}</a></li>
+            <li class="talk-material-item"><a href="{{ blk.uri }}" target="_blank">{{ blk.uri }}</a></li>
             {% endif %}  
           {% endfor %}
           </ul>

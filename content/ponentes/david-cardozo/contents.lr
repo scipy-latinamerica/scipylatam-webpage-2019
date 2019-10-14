@@ -16,7 +16,9 @@ github: davidnet
 ---
 image: david-cardozo.jpeg
 ---
-information: David Cardozo trabaja como ingeniero de aprendizaje de máquinas liderando el equipo de inteligencia artificial y robótica en Kiwi Campus. Trabajamos en el desarrollo de sistemas paralelamente autónomos, utilizando herramientas de aprendizaje profundo, representaciones aprendidas, inferencia estadística y técnicas de visión artificial. Consultor sobre sistemas embebidos de producción Nvidia, con experiencia en seguridad informática, matemáticas y física. Miembro del equipo ganador de la primera competencia de seguridad informática en la Universidad de los Andes y previo investigador en complejidad de computación cuántica y criptografía post cuántica.  
+information:
+
+David Cardozo trabaja como ingeniero de aprendizaje de máquinas liderando el equipo de inteligencia artificial y robótica en Kiwi Campus. Trabajamos en el desarrollo de sistemas paralelamente autónomos, utilizando herramientas de aprendizaje profundo, representaciones aprendidas, inferencia estadística y técnicas de visión artificial. Consultor sobre sistemas embebidos de producción Nvidia, con experiencia en seguridad informática, matemáticas y física. Miembro del equipo ganador de la primera competencia de seguridad informática en la Universidad de los Andes y previo investigador en complejidad de computación cuántica y criptografía post cuántica.  
 ---
 keynote: no
 ---
@@ -33,3 +35,5 @@ topic: COMUNIDADES OPEN SOURCE
 twitter: _davidcardozo
 ---
 is_speaker: yes
+---
+image_open_graph: og-david-cardozo.jpg

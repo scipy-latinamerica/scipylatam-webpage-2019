@@ -36,7 +36,9 @@ render_background -%} {%- from "macros/translation.html" import transbag -%}
     <div class="speaker_text">
       {%- set talks = site.query('/charlas').filter(F.authors.contains(this._id)) -%}
       {%- for talk in talks -%}
-      <h2 style="margin-top:30px; font-weight:800;">{{ sentence_case(transbag('translate', alt, talk.type)).strip()|upper }}:</h2>
+        {% if talk.type in ['keynote', 'workshop', 'talk'] %}
+        <h2 style="margin-top:30px; font-weight:800;">{{ sentence_case(transbag('translate', alt, talk.type)).strip()|upper }}:</h2>
+        {% endif %}
       <a href="{{ talk|url(alt=this.alt) }}"><span class="speaker_text">{{ talk.name }}</span></a>
       {% endfor %}
     </div>

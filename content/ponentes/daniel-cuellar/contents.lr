@@ -12,7 +12,9 @@ email: dh.cuellar@uniandes.edu.co
 ---
 image: daniel-cuellar.jpeg
 ---
-information: Daniel Cuellar Usaquen recibió el título de Ingeniería Industrial de la Universidad de La Salle Bogotá, Colombia, en 2017. Es estudiante de magister en Ingeniería Industrial en la Universidad de Los Andes (Colombia) desde 2018. Su interés actual de investigación incluye la optimización y simulación para problemas de producción, transporte y logística junto con problemas combinatorios. Además de la mejora de procesos utilizando metodologías lean six sigma. Es fiel amante de la música electrónica como de la escena underground de la ciudad. Vive con sus padres, pero su segundo hogar es la casa de sus mejores amigos. Le gustan los restos y no solo de forma académica. 
+information:
+
+Daniel Cuellar Usaquen recibió el título de Ingeniería Industrial de la Universidad de La Salle Bogotá, Colombia, en 2017. Es estudiante de magister en Ingeniería Industrial en la Universidad de Los Andes (Colombia) desde 2018. Su interés actual de investigación incluye la optimización y simulación para problemas de producción, transporte y logística junto con problemas combinatorios. Además de la mejora de procesos utilizando metodologías lean six sigma. Es fiel amante de la música electrónica como de la escena underground de la ciudad. Vive con sus padres, pero su segundo hogar es la casa de sus mejores amigos. Le gustan los restos y no solo de forma académica. 
 ---
 keynote: no
 ---
@@ -27,3 +29,5 @@ position_company: Universidad de Los Andes
 topic: MATEMÁTICA COMPUTACIONAL
 ---
 is_speaker: yes
+---
+image_open_graph: og-daniel-cuellar.jpg

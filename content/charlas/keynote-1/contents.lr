@@ -14,7 +14,7 @@ language: en
 ---
 language_slides: en
 ---
-room: w-lleras
+room: 0-w-lleras
 ---
 level: all
 ---
@@ -22,7 +22,7 @@ duration: 40 min
 ---
 topic: data_science
 ---
-_slug: scipy-and-numfocus-communities-past-present-and-future
+_slug: scipy-y-numfocus-pasado-presente-y-futuro-de-las-comunidades
 ---
 video: https://youtu.be/3EH11xhW2iw
 ---
