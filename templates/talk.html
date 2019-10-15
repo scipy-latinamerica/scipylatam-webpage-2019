@@ -80,7 +80,7 @@ render_background -%} {%- from "macros/translation.html" import transbag -%}
                 {% endif %}
               </div>
               {% if author.last_name %}
-              <span class="talk__name"><a href="{{ author|url(alt=alt) }}">{{ author.name.split(' ')[0] }} {{ author.last_name.split(' ')[0] }}</a></span>
+              <span class="talk__name"><a href="{{ author|url(alt=alt) }}">{{ author.name.split(' ')[0] }} {{ author.last_name_prefix }} {{ author.last_name.split(' ')[0] }}</a></span>
               {% endif %}
              </div>
               {% endfor %}
