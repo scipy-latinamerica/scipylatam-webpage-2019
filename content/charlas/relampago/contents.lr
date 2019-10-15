@@ -25,13 +25,17 @@ duration: 25 min
 material:
 
 #### file ####
-description: 
+description: PyCon Colombia 2020
 ----
-attachment: searching-for-aliens.pdf
+attachment: pycon-colombia-2020.pdf
 #### uri ####
 description: 
 ----
 uri: https://mlflow.org/docs/latest/tutorial.html
+#### file ####
+description: 
+----
+attachment: searching-for-aliens.pdf
 #### uri ####
 description: 
 ----
@@ -40,3 +44,17 @@ uri: https://www.pyopensci.org/
 description: 
 ----
 uri: https://twitter.com/davorabbit/status/1176314998806630400?s=19
+#### uri ####
+description: 
+----
+uri: https://www.python.org.co/pyladies/
+#### uri ####
+description: 
+----
+uri: https://joss.theoj.org/
+#### uri ####
+description: 
+----
+uri: https://www.youtube.com/channel/UCUo2ocRqUXIHcVwtAjJ5ZHQ
+---
+video: https://youtu.be/8bO8oge4ic4

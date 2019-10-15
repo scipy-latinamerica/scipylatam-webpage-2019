@@ -34,5 +34,11 @@ attachment: numba-xnd-uarray.pdf
 description: IBIS
 ----
 attachment: ibis.pdf
+#### file ####
+description: Jupyter Updates
+----
+attachment: jupyter.pdf
 ---
 duration: 40 min
+---
+video: 
