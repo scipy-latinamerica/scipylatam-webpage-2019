@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es"">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="description" content="" />
+  <meta name="google-site-verification" content="tS192x5OfHOZKosOfhq39D1Wlk6EwH_gaSw8ZUVe_bs" />
+
+  <link rel="canonical" href="http://conf.scipyla.org/charlas/accelerating-python-data-science-with-nvidia-rapids/" />
+  <meta property="og:locale" content="" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:url" content="http://conf.scipyla.org/charlas/accelerating-python-data-science-with-nvidia-rapids/" />
+  <meta property="og:site_name" content="SciPy Latam 2019" />
+  <meta property="og:updated_time" content="2019-08-13T17:51:00+00:00" /><meta property="og:image" content="http://conf.scipyla.org/static/images/ogimage.jpg" />
+  <meta property="og:image:secure_url" content="http://conf.scipyla.org/static/images/ogimage.jpg" />
+  <meta property="og:image:width" content="2400" />
+  <meta property="og:image:height" content="1260" />
+
+  <!-- Favicon -->
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../static/favicon/apple-touch-icon.png?h=ac032284">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../static/favicon/favicon-32x32.png?h=a4abd457">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../static/favicon/favicon-16x16.png?h=30175b39">
+  <link rel="mask-icon" href="" color="#5bbad5">
+
+  <title>
+Ponencia magistral: Accelerating Python Data Science with NVIDIA RAPIDS | SciPyLA 2019
+</title>
+
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Poppins:300,500,700"
+    rel="stylesheet"
+  />
+  <script src="https://use.fontawesome.com/53338901d9.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../../static/gen/styles.css?h=946802d3" />
+</head>
+
+<body>
+  <div class="global-container">
+    <div class="wrapper-hamburger">
+      <button class="general__hamburger">
+        <img
+          src="../../static/images/hamburger.svg?h=61b89864"
+          alt="Hamburger menu"
+        />
+      </button>
+    </div>
+    <nav class="general__menu">
+      <button class="general__close-button">
+        <img
+        src="../../static/images/close.svg?h=f9b7536d" alt="Close menu">
+      </button>
+      <ul class="general__menu-list">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <li class="general__menu-item">
+              <a class="general__menu-link "
+                 href="../../entradas/">ENTRADAS
+              </a>
+                      
+          </li>
+          
+        
+          
+        
+          
+          <li class="general__menu-item">
+              <a class="general__menu-link "
+                 href="../../lugar/">LUGAR
+              </a>
+                      
+          </li>
+          
+        
+          
+          <li class="general__menu-item">
+              <a class="general__menu-link "
+                 href="../../ponentes/">PONENTES
+              </a>
+                      
+          </li>
+          
+        
+          
+        
+          
+        
+          
+          <li class="general__menu-item">
+              <a class="general__menu-link "
+              href="">
+               PROGRAMA&nbsp;&nbsp;<i class="fa fa-caret-down soft-red"></i>
+             </a>
+             <ul class="general__menu-sublist">
+                  
+                  <li class="general__menu-subitem "><a href="../../programa/talleres/">Talleres</a></li>
+                          
+                  
+                  <li class="general__menu-subitem "><a href="../../programa/charlas/">Charlas</a></li>
+                          
+                  
+                  <li class="general__menu-subitem "><a href="../../programa/cronograma/">Cronograma</a></li>
+                          
+                  
+              </ul>
+                      
+          </li>
+          
+        
+          
+        
+          
+          <li class="general__menu-item">
+              <a class="general__menu-link "
+                 href="../../patrocinadores/">PATROCINADORES
+              </a>
+                      
+          </li>
+          
+        
+          
+          <li class="general__menu-item">
+              <a class="general__menu-link "
+                 href="../../equipo/">EQUIPO
+              </a>
+                      
+          </li>
+          
+        
+          
+        
+          
+        
+        <li class="general__menu-language"><a class="general__menu-language-button"
+          href="../../en/talks/accelerating-python-data-science-with-nvidia-rapids/">EN</a></li>
+      </ul>
+      <div class="general__menu-line"></div>
+      <ul class="general__language-menu"><li class="general__language-item">
+          <a class="general__language-link" href="../../en/talks/accelerating-python-data-science-with-nvidia-rapids/"
+            >ENGLISH</a
+          >
+        </li></ul>
+      <a class="general__menu-code" href="../../charlas/keynote-2/code-of-conduct">
+        Código de conducta
+      </a>
+      
+<ul class="general__menu-logos">
+  
+  <li>
+    <a href="https://www.instagram.com/scipyla" aria-label="Go to Instagram profile">
+      <i class="fa fa-instagram"></i>
+    </a>
+  </li>
+   
+  <li>
+    <a href="https://www.twitter.com/scipyla" aria-label="Go to Twitter profile">
+      <i class="fa fa-twitter"></i>
+    </a>
+  </li>
+   
+  <li>
+    <a href="https://www.facebook.com/scipyla" aria-label="Go to Facebook profile">
+      <i class="fa fa-facebook"></i>
+    </a>
+  </li>
+   
+  <li>
+    <a href="https://www.linkedin.com/company/scipy-latin-america/about" aria-label="Go to LinkedIn profile">
+      <i class="fa fa-linkedin"></i>
+    </a>
+  </li>
+    
+</ul>
+
+    </nav>
+    
+<div class="container">
+   
+<img
+  class="general__background"
+  src="../../static/images/scipy-bg1.svg?h=fb01fdd9"
+  alt="Background 1"
+/>
+<a
+  href="../../"
+  aria-label="Bienvenido a SciPyLA 2019"
+>
+  <img
+    class="general__menu-logo"
+    src="../../static/images/logo-menu.svg?h=8aaed2a3"
+    alt="Logo"
+  />
+</a>
+ 
+<img
+  class="content_background__top"
+  src="../../static/images/scipy-bg2.svg?h=1091fcb1"
+  alt="Background 2"
+/>
+<img
+  class="content_background__bottom"
+  src="../../static/images/scipy-bg2.svg?h=1091fcb1"
+  alt="Background 2"
+/>
+ 
+
+
+
+  
+
+  <div class="content">
+      <div class="talk-container">
+          
+          <span class="talk__title">Ponencia magistral: Accelerating Python Data Science with NVIDIA RAPIDS</span>
+          
+          <span class="talk__topic">CIENCIA DE DATOS</span>
+          
+          <div class="talk__language">
+            
+            <span class="talk__language-item">
+              <i class="fa fa-globe"></i>
+              &nbsp;&nbsp;&nbsp;<b>Idioma:</b>
+              &nbsp;&nbsp;Inglés
+            </span>
+            
+            
+            <span class="talk__language-item">
+              <i class="fa fa-clock-o"></i>
+              &nbsp;&nbsp;&nbsp;<b>Duración:</b>
+              &nbsp;&nbsp;
+              40 min
+            </span>
+            
+            
+            <span class="talk__language-item"></span>
+              <i class="fa fa-star-o"></i>
+              &nbsp;&nbsp;&nbsp;<b>Nivel:</b>
+              &nbsp;&nbsp;Todos
+            </span>
+            
+          </div>
+          <span class="talk__description"><p>Pedro Mário Cruz e Silva did his BSc (1995), and MSc (1998) at Federal University of Pernambuco (UFPE), he also did his DSc in 2004 at PUC-Rio. Worked for 15 years as Manager of Computational Geophysics Group at PUC-Rio, during this period was responsible for several Software Development and R&amp;D projects for Geophysics with strong focus on innovation. He also finished an MBA in 2015 at Getúlio Vargas Foundation (FGV/RJ). Is member of the main board of The Brazilian Geophysical Society (SBGf). Currently is the Solution Architect Manager at NVIDIA responsible for all technologies in the Latin America Region.</p>
+</span>
+          
+          
+          
+          
+          
+          <span class="talk__subtitle">PONENTE:</span>
+          
+          <div class="talk__container">
+              
+              <div class="talk__item">
+              <div class="talk__wrapper">
+                
+                
+                  
+                    
+                    <a href="../../ponentes/pedro-silva/" style="line-height:0px;">
+                      <img class="talk__photo-wrapper"
+                          src='../../ponentes/pedro-silva/pedro-silva@172x172_crop.jpeg'
+                          alt="Member photo: Pedro Silva" /></a>
+                    
+                  
+                    
+                  
+                
+              </div>
+              
+              <span class="talk__name"><a href="../../ponentes/pedro-silva/">Pedro Silva</a></span>
+              
+             </div>
+              
+          </div>
+          
+          
+          <br><br><br><br><br><br><br><br>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+  <footer class="footer">
+    <div class="footer__links">
+      <ul>
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <li>
+            <a href="../../codigo-de-conducta/">Código de Conducta</a>
+          </li>
+          
+        
+          
+        
+          
+          <li>
+            <a href="../../diversidad/">Diversidad</a>
+          </li>
+          
+        
+          
+        
+          
+        
+          
+          <li>
+            <a href="../../politica-de-datos/">Política de datos</a>
+          </li>
+          
+        
+          
+          <li>
+            <a href="../../guia-ponentes/">Guía ponentes</a>
+          </li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <li>
+            <a href="../../convence-a-tu-jefe/">Convence a tu jefe</a>
+          </li>
+          
+        
+          
+          <li>
+            <a href="../../preguntas-frecuentes/">Preguntas</a>
+          </li>
+          
+        
+      </ul>
+      
+<ul class="general__menu-logos">
+  
+  <li>
+    <a href="https://www.instagram.com/scipyla" aria-label="Go to Instagram profile">
+      <i class="fa fa-instagram"></i>
+    </a>
+  </li>
+   
+  <li>
+    <a href="https://www.twitter.com/scipyla" aria-label="Go to Twitter profile">
+      <i class="fa fa-twitter"></i>
+    </a>
+  </li>
+   
+  <li>
+    <a href="https://www.facebook.com/scipyla" aria-label="Go to Facebook profile">
+      <i class="fa fa-facebook"></i>
+    </a>
+  </li>
+   
+  <li>
+    <a href="https://www.linkedin.com/company/scipy-latin-america/about" aria-label="Go to LinkedIn profile">
+      <i class="fa fa-linkedin"></i>
+    </a>
+  </li>
+    
+</ul>
+
+    </div>
+    <div class="footer__copyright">
+      <span class="footer__copyright-copy">Hecho con amor en Colombia. Derechos de autor, Python Colombia 2019. Todos los derechos reservados.</span>
+    </div>
+  </footer>
+  
+  
+  <!-- Scripts -->
+  <script type=text/javascript src="../../static/gen/app.js?h=ced4b94d" charset="utf-8"></script>
+
+  <!---->
+
+  <!-- Scripts: Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138156801-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-138156801-1');
+  </script>
+  
+</body>
+</html>
