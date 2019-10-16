@@ -25,3 +25,18 @@ type: workshop
 room: 4-au-101
 ---
 duration: 2:30 h
+---
+material:
+
+#### uri ####
+description: 
+----
+uri: https://github.com/iyepes/pythonexamples
+#### uri ####
+description: 
+----
+uri: https://blog.hacemoscontactos.com/2018/07/28/analisis-de-sentimientos-sobre-twitter-usando-la-libreria-textblob-de-python/
+#### file ####
+description: 
+----
+attachment: analisis-de-sentimiento.zip
