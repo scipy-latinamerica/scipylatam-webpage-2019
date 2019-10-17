@@ -25,3 +25,22 @@ type: workshop
 room: 3-ml-508
 ---
 duration: 4 h
+---
+material:
+
+#### uri ####
+description: 
+----
+uri: https://github.com/ramirojc/SciPyLA
+#### uri ####
+description: Aplicación final
+----
+uri: https://scipyla.herokuapp.com
+#### file ####
+description: 
+----
+attachment: creacion-de-aplicaciones-web-para-visualizacion.zip
+#### file ####
+description: 
+----
+attachment: presentacion.pdf
