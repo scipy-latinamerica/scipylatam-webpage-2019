@@ -27,3 +27,14 @@ type: workshop
 room: 3-ml-507
 ---
 duration: 4 h
+---
+material:
+
+#### uri ####
+description: 
+----
+uri: https://github.com/lheagy/scipyla-jupyter
+#### file ####
+description: 
+----
+attachment: cuadernos-cientificos-interactivos.zip
