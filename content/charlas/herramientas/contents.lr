@@ -23,6 +23,14 @@ room: 0-w-lleras
 material:
 
 #### file ####
+description: Jupyter Updates
+----
+attachment: jupyter.pdf
+#### file ####
+description: IBIS
+----
+attachment: ibis.pdf
+#### file ####
 description: Spyder
 ----
 attachment: spyder.pdf
@@ -30,15 +38,7 @@ attachment: spyder.pdf
 description: Numba, XND, uarray
 ----
 attachment: numba-xnd-uarray.pdf
-#### file ####
-description: IBIS
-----
-attachment: ibis.pdf
-#### file ####
-description: Jupyter Updates
-----
-attachment: jupyter.pdf
 ---
 duration: 40 min
 ---
-video: 
+video: https://youtu.be/jJTAxmOPCc4
